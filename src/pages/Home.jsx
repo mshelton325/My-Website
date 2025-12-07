@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ChartIcon, TargetIcon, CogIcon, ShieldIcon } from '../components/Icons';
 
 export default function Home() {
   return (
@@ -121,7 +122,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <div className="text-primary-700 text-3xl mb-4">📊</div>
+              <div className="text-primary-700 mb-4 flex justify-center">
+                <ChartIcon className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold mb-3">Review-First Marketing</h3>
               <p className="text-gray-600 mb-4">
                 Build a sustainable lead generation engine that reduces ad spend by 50%+ while bringing in warmer prospects.
@@ -129,7 +132,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <div className="text-primary-700 text-3xl mb-4">🎯</div>
+              <div className="text-primary-700 mb-4 flex justify-center">
+                <TargetIcon className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold mb-3">Sales Training Systems</h3>
               <p className="text-gray-600 mb-4">
                 Multi-phase training paths, scripts, and frameworks that turn new hires into reliable producers—no flooring background required.
@@ -137,7 +142,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <div className="text-primary-700 text-3xl mb-4">⚙️</div>
+              <div className="text-primary-700 mb-4 flex justify-center">
+                <CogIcon className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold mb-3">Operational Systems</h3>
               <p className="text-gray-600 mb-4">
                 Reduce mistakes, callbacks, and chaos with plug-and-play tools for quoting, lead qualification, and job tracking.
@@ -145,7 +152,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <div className="text-primary-700 text-3xl mb-4">🛡️</div>
+              <div className="text-primary-700 mb-4 flex justify-center">
+                <ShieldIcon className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold mb-3">Manufacturer Accountability</h3>
               <p className="text-gray-600 mb-4">
                 Hold manufacturers accountable when products fail using data, documentation, and leverage to protect you and your customers.

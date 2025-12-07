@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ChartIcon, TargetIcon, CogIcon, ShieldIcon } from '../components/Icons';
 
 export default function Services() {
   return (
@@ -35,7 +36,9 @@ export default function Services() {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/3 bg-primary-700 p-8 text-white flex flex-col justify-center">
-                <div className="text-5xl mb-4">📊</div>
+                <div className="mb-4">
+                  <ChartIcon className="w-20 h-20" />
+                </div>
                 <h3 className="text-3xl font-bold">Review-First Marketing Systems</h3>
               </div>
               <div className="md:w-2/3 p-8">
@@ -87,7 +90,9 @@ export default function Services() {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex md:flex-row-reverse">
               <div className="md:w-1/3 bg-primary-700 p-8 text-white flex flex-col justify-center">
-                <div className="text-5xl mb-4">🎯</div>
+                <div className="mb-4">
+                  <TargetIcon className="w-20 h-20" />
+                </div>
                 <h3 className="text-3xl font-bold">Sales Training Systems</h3>
               </div>
               <div className="md:w-2/3 p-8">
@@ -143,7 +148,9 @@ export default function Services() {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/3 bg-primary-700 p-8 text-white flex flex-col justify-center">
-                <div className="text-5xl mb-4">⚙️</div>
+                <div className="mb-4">
+                  <CogIcon className="w-20 h-20" />
+                </div>
                 <h3 className="text-3xl font-bold">Operational Systems</h3>
               </div>
               <div className="md:w-2/3 p-8">
@@ -199,7 +206,9 @@ export default function Services() {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex md:flex-row-reverse">
               <div className="md:w-1/3 bg-primary-700 p-8 text-white flex flex-col justify-center">
-                <div className="text-5xl mb-4">🛡️</div>
+                <div className="mb-4">
+                  <ShieldIcon className="w-20 h-20" />
+                </div>
                 <h3 className="text-3xl font-bold">Manufacturer Accountability</h3>
               </div>
               <div className="md:w-2/3 p-8">

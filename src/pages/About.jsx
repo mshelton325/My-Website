@@ -13,6 +13,37 @@ export default function About() {
         </div>
       </section>
 
+      {/* Wake-Up Call */}
+      <section className="py-12 md:py-16 px-4 bg-primary-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            The Wake-Up Call That Changed Everything
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <p>
+              A couple years ago, while in his thirties, Matt suffered a transient ischemic attack (TIA)—a mini-stroke tied to chronic stress and overwork. Lying in a hospital bed, he realized he couldn't continue to ignore the signs and carry the business on his back forever.
+            </p>
+            <p>
+              <strong>Something had to change.</strong>
+            </p>
+            <p>
+              Shortly afterward, a dog came into his life. Caring for the dog forced him to set boundaries and work remotely. "That dog saved my sanity," he says now.
+            </p>
+            <p>
+              The combined jolt of a health scare and a furry companion made him redesign the business so it would survive—and even thrive—without him constantly putting out fires.
+            </p>
+            <div className="bg-white border-l-4 border-primary-700 p-6 rounded-lg my-8">
+              <p className="text-lg font-medium text-gray-900 mb-2">
+                These events aren't ploys for sympathy—they're reminders that unchecked stress takes a toll.
+              </p>
+              <p className="text-gray-700">
+                They fuel Matt's mission to help other owners avoid the same trap: building a business that consumes your life instead of enriching it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The Turnaround Story */}
       <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -224,13 +255,47 @@ export default function About() {
         </div>
       </section>
 
-      {/* Personal Note */}
-      <section className="py-12 md:py-16 px-4 bg-primary-900 text-white">
+      {/* The Beach Blanket Vision */}
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-primary-700 to-primary-900 text-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            The Vision That Keeps Him Going
+          </h2>
+          <div className="prose prose-lg max-w-none text-primary-100 space-y-6">
+            <p className="text-xl">
+              Matt's "beach blanket vision" is what pulled him through the darkest days of burnout.
+            </p>
+            <p>
+              He pictures himself—from a third-person view, like a scene from <em>A Christmas Carol</em>—sitting on a beach next to his future spouse. In his hand is a phone showing dashboards of his business and, increasingly, the progress of other owners he's helped.
+            </p>
+            <p>
+              In front of them play two children and a dog. A small bay boat sits anchored in the shallows.
+            </p>
+            <p>
+              This vision reminds him that he wants to <strong>experience life with his family</strong>, not watch from afar. He missed out on a social life for years, working 70-hour weeks to turn the business around.
+            </p>
+            <div className="bg-primary-800 p-6 rounded-lg my-8">
+              <p className="text-xl font-semibold text-white mb-2">
+                "I endured so I'd never have to be dragged back into chaos—and so I could help others avoid that fate."
+              </p>
+            </div>
+            <p>
+              Beyond building successful businesses, Matt dreams of a charter-boat nonprofit. He wants to take underprivileged kids, foster families, single parents, and veterans out on the water—offering a day of peace, fun, and encouragement at no cost.
+            </p>
+            <p>
+              "It's not a new business venture," he explains. "It's an extension of being a wave maker: to create ripples of freedom and joy far beyond my own shop."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Personal Note */}
+      <section className="py-12 md:py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Personal Note: Faith, ADHD, and Building a Life Worth Living
           </h2>
-          <div className="prose prose-lg max-w-none text-gray-100 space-y-6">
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p>
               Outside of flooring and consulting, Matt is building a life that aligns with his values.
             </p>

@@ -6,7 +6,7 @@ import ResultsMetrics from '../components/ResultsMetrics';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto">

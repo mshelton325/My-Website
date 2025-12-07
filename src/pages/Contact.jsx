@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">

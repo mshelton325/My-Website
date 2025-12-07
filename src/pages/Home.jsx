@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ChartIcon, TargetIcon, CogIcon, ShieldIcon } from '../components/Icons';
+import Testimonials from '../components/Testimonials';
+import SuccessStory from '../components/SuccessStory';
 
 export default function Home() {
   return (
@@ -198,6 +200,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Success Story */}
+      <SuccessStory />
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-gray-50 to-white">

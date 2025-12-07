@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             About Matt Shelton
@@ -14,7 +14,7 @@ export default function About() {
       </section>
 
       {/* The Turnaround Story */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             The Turnaround Story
@@ -40,7 +40,7 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 px-4 bg-primary-50">
+      <section className="py-12 md:py-16 px-4 bg-primary-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             The Mission: Prove That Ethics and Profitability Aren't Mutually Exclusive
@@ -88,7 +88,7 @@ export default function About() {
       </section>
 
       {/* Methodology Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900">
             The Methodology: Logical, Simple Systems That Protect People and Profit
@@ -159,7 +159,7 @@ export default function About() {
       </section>
 
       {/* The Consulting Practice */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             The Consulting Practice: Building Systems That Protect Time, Energy, and Freedom
@@ -193,7 +193,7 @@ export default function About() {
       </section>
 
       {/* Long-Term Vision */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             The Long-Term Vision: Proving That Businesses Can Change the World by Doing the Right Thing
@@ -225,7 +225,7 @@ export default function About() {
       </section>
 
       {/* Personal Note */}
-      <section className="py-20 px-4 bg-primary-900 text-white">
+      <section className="py-12 md:py-16 px-4 bg-primary-900 text-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Personal Note: Faith, ADHD, and Building a Life Worth Living
@@ -248,7 +248,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Let's Build Something That Matters

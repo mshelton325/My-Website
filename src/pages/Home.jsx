@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -32,7 +32,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof / Stats Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-white p-8 rounded-lg shadow-md">
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Built for Independent Flooring Dealers Who Are Done with the Chaos
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Core Offerings Preview */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             How I Can Help
@@ -165,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-20 px-4 bg-primary-900 text-white">
+      <section className="py-12 md:py-16 px-4 bg-primary-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ethics and Profitability Aren't Mutually Exclusive
@@ -191,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Build Systems That Actually Work?

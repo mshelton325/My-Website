@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-primary-700 to-primary-900 text-white py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Services
@@ -16,7 +16,7 @@ export default function Services() {
       </section>
 
       {/* Overview */}
-      <section className="py-20 px-4">
+      <section className="py-8 md:py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Built for Real-World Implementation
@@ -28,7 +28,7 @@ export default function Services() {
       </section>
 
       {/* Core Services */}
-      <section className="py-12 px-4 bg-gray-50">
+      <section className="py-8 md:py-12 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto space-y-20">
           
           {/* Service 1: Review-First Marketing */}
@@ -251,7 +251,7 @@ export default function Services() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             How We Work Together
@@ -292,7 +292,7 @@ export default function Services() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             This Is For You If...
@@ -345,7 +345,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-primary-900 text-white">
+      <section className="py-12 md:py-16 px-4 bg-primary-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Build Systems That Actually Work?

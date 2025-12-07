@@ -223,97 +223,64 @@ export default function About() {
         </div>
       </section>
 
-      {/* Long-Term Vision */}
-      <section className="py-12 md:py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            The Long-Term Vision: Proving That Businesses Can Change the World by Doing the Right Thing
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              Matt is convinced that the business world—and the world in general—can turn around through honesty, kindness, and respect for everyone: customers, executives, front-line staff, and everyone in between.
-            </p>
-            <p>
-              He believes that:
-            </p>
-            <ul className="space-y-3">
-              <li><strong>Customers</strong> deserve to be treated with integrity, not manipulated with high-pressure tactics or misleading offers.</li>
-              <li><strong>Salespeople</strong> deserve systems and training that make them successful, not vague advice like "just be confident" or "sell value."</li>
-              <li><strong>Installers and support staff</strong> deserve recognition and respect for the critical work they do—even if they're not customer-facing.</li>
-              <li><strong>Owners and managers</strong> deserve businesses that don't require 70-hour weeks and constant firefighting just to stay afloat.</li>
-            </ul>
-            <p>
-              And he's building a consulting practice to prove it.
-            </p>
-            <p>
-              Every system he creates, every manual he writes, every training session he runs is designed to show that you don't have to sacrifice your values to build a profitable, sustainable, high-performing business.
-            </p>
-            <p>
-              You just have to be willing to lead by example, take the harder path, and trust that doing the right thing—consistently, over time—compounds into something far more valuable than any gimmick ever could.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* The Beach Blanket Vision */}
+
+      {/* Vision & Legacy */}
       <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-primary-700 to-primary-900 text-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            The Vision That Keeps Him Going
+            The Vision That Drives Everything
           </h2>
+          
           <div className="prose prose-lg max-w-none text-primary-100 space-y-6">
-            <p className="text-xl">
-              Matt's "beach blanket vision" is what pulled him through the darkest days of burnout.
+            <p className="text-xl font-semibold">
+              Matt is convinced that the business world can transform through honesty, kindness, and respect for everyone—from customers to front-line staff to owners.
+            </p>
+            
+            <div className="bg-primary-800 p-6 rounded-lg my-6">
+              <p className="text-lg text-white">
+                Every system he creates is designed to prove you don't have to sacrifice your values to build a profitable, sustainable, high-performing business. You just have to lead by example, take the harder path, and trust that doing the right thing compounds into something far more valuable than any gimmick.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">The Beach Blanket Vision</h3>
+            <p>
+              What pulled Matt through the darkest days of burnout was a vivid vision: He pictures himself—from a third-person view, like a scene from <em>A Christmas Carol</em>—sitting on a beach next to his future spouse.
             </p>
             <p>
-              He pictures himself—from a third-person view, like a scene from <em>A Christmas Carol</em>—sitting on a beach next to his future spouse. In his hand is a phone showing dashboards of his business and, increasingly, the progress of other owners he's helped.
-            </p>
-            <p>
-              In front of them play two children and a dog. A small bay boat sits anchored in the shallows.
+              In his hand is a phone showing dashboards of his business and, increasingly, the progress of other owners he's helped. In front of them play two children and a dog. A small bay boat sits anchored in the shallows.
             </p>
             <p>
               This vision reminds him that he wants to <strong>experience life with his family</strong>, not watch from afar. He missed out on a social life for years, working 70-hour weeks to turn the business around.
             </p>
-            <div className="bg-primary-800 p-6 rounded-lg my-8">
-              <p className="text-xl font-semibold text-white mb-2">
+            <div className="bg-primary-600 p-6 rounded-lg my-6">
+              <p className="text-xl font-semibold text-white">
                 "I endured so I'd never have to be dragged back into chaos—and so I could help others avoid that fate."
               </p>
             </div>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">Beyond Business: A Wave Maker's Legacy</h3>
             <p>
-              Beyond building successful businesses, Matt dreams of a charter-boat nonprofit. He wants to take underprivileged kids, foster families, single parents, and veterans out on the water—offering a day of peace, fun, and encouragement at no cost.
+              Matt is a Christian who believes that <strong>business is ministry</strong>—an opportunity to serve others, lead with integrity, and leave the world better than he found it.
+            </p>
+            <p>
+              Beyond building successful businesses, he dreams of a charter-boat nonprofit to take underprivileged kids, foster families, single parents, and veterans out on the water—offering a day of peace, fun, and encouragement at no cost.
             </p>
             <p>
               "It's not a new business venture," he explains. "It's an extension of being a wave maker: to create ripples of freedom and joy far beyond my own shop."
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Personal Note */}
-      <section className="py-12 md:py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Personal Note: Faith, ADHD, and Building a Life Worth Living
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p>
-              Outside of flooring and consulting, Matt is building a life that aligns with his values.
+              He's also using systems to create an ADHD-friendly, location-flexible lifestyle that allows him to work remotely, spend time near water, and make space for deeper relationships, future family, and a pace of life that doesn't burn him out.
             </p>
-            <p>
-              He's a Christian who believes that <strong>business is ministry</strong>—an opportunity to serve others, lead with integrity, and leave the world better than he found it.
-            </p>
-            <p>
-              He's also using systems to create an ADHD-friendly, location-flexible lifestyle that allows him to work remotely, spend time near water (fishing, road trips, future conversion-van travel), and make space for deeper relationships, future family, and a pace of life that doesn't burn him out.
-            </p>
-            <p>
-              His long-term goal? Build a business and lifestyle that protect his time, energy, and freedom—not just his revenue—and help other people do the same.
+            <p className="text-lg font-medium mt-6">
+              His goal? Build a business and lifestyle that protect time, energy, and freedom—not just revenue—and help other people do the same.
             </p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-16 px-4 bg-gray-50">
+      <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Let's Build Something That Matters

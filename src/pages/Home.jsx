@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ChartIcon, TargetIcon, CogIcon, ShieldIcon } from '../components/Icons';
 import Testimonials from '../components/Testimonials';
 import SuccessStory from '../components/SuccessStory';
+import ResultsMetrics from '../components/ResultsMetrics';
 
 export default function Home() {
   return (
@@ -203,6 +204,9 @@ export default function Home() {
 
       {/* Success Story */}
       <SuccessStory />
+
+      {/* Results Metrics */}
+      <ResultsMetrics />
 
       {/* Testimonials */}
       <Testimonials />

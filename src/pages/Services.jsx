@@ -259,6 +259,78 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Mobile Manager Advantage */}
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              The Mobile Manager Advantage
+            </h2>
+            <p className="text-xl text-primary-100">
+              Crisis-tested, Industry-specific, Faith-driven Systems
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+              <div className="text-4xl mb-4">📱</div>
+              <h3 className="text-2xl font-bold mb-4">Built for Remote Freedom</h3>
+              <p className="text-primary-100 mb-4">
+                Matt managed his entire operation from his phone—working just 20-30 hours/week while growing revenue 60%. These systems are designed for mobility, not micromanagement.
+              </p>
+              <p className="text-primary-50 text-sm italic">
+                You deserve a business that works without you being chained to a desk.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+              <div className="text-4xl mb-4">🔥</div>
+              <h3 className="text-2xl font-bold mb-4">Crisis-Tested</h3>
+              <p className="text-primary-100 mb-4">
+                These aren't theoretical frameworks. Matt built these systems while down to just himself and one 21-year-old employee—and still achieved 60% growth during COVID-19.
+              </p>
+              <p className="text-primary-50 text-sm italic">
+                When you're backed into a corner, you figure out what actually works.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-2xl font-bold mb-4">Flooring-Specific</h3>
+              <p className="text-primary-100 mb-4">
+                No generic business advice here. Matt understands installer challenges, manufacturer relationships, CCA/Carpet One dynamics, and the unique pressures of independent flooring retail.
+              </p>
+              <p className="text-primary-50 text-sm italic">
+                Finally, a consultant who actually gets what it's like in the trenches.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+              <div className="text-4xl mb-4">⛪</div>
+              <h3 className="text-2xl font-bold mb-4">Faith-Driven Mission</h3>
+              <p className="text-primary-100 mb-4">
+                10% of Matt's consulting profits go directly to community impact and charitable work. When you hire Matt, you're not just building your business—you're contributing to something bigger.
+              </p>
+              <p className="text-primary-50 text-sm italic">
+                "Would I be proud to have full transparency in front of God?"
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center bg-white/10 backdrop-blur-sm p-8 rounded-lg border-2 border-white/40">
+            <p className="text-2xl font-bold mb-4">
+              💯 Money-Back Guarantee
+            </p>
+            <p className="text-xl text-primary-100 mb-4">
+              If you implement the systems and don't see measurable improvement within 90 days, Matt will refund 100% of your investment—no questions asked.
+            </p>
+            <p className="text-primary-200 text-lg">
+              That's how confident Matt is in these proven, battle-tested systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">

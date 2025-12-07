@@ -3,6 +3,7 @@ export default function ResultsMetrics() {
     {
       category: "Marketing Transformation",
       stats: [
+        { label: "Revenue Growth", value: "60%", detail: "$4.57M → $7.3M total" },
         { label: "Marketing Spend Reduction", value: "64%", detail: "$110k → $40k annually" },
         { label: "Organic Lead Generation", value: "70%", detail: "From Google reviews" },
         { label: "Sales Growth During Reduction", value: "+70%", detail: "While cutting ad spend" },

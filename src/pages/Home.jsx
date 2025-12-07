@@ -3,6 +3,8 @@ import { ChartIcon, TargetIcon, CogIcon, ShieldIcon } from '../components/Icons'
 import Testimonials from '../components/Testimonials';
 import SuccessStory from '../components/SuccessStory';
 import ResultsMetrics from '../components/ResultsMetrics';
+import OriginStory from '../components/OriginStory';
+import WorkLifeBalance from '../components/WorkLifeBalance';
 
 export default function Home() {
   return (
@@ -38,25 +40,33 @@ export default function Home() {
       {/* Social Proof / Stats Section */}
       <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="text-4xl font-bold text-primary-700 mb-2">70%</div>
-              <div className="text-gray-600">Marketing Spend Reduction</div>
-              <div className="text-sm text-gray-500 mt-2">From $110k to $40k annually</div>
+              <div className="text-4xl font-bold text-primary-700 mb-2">60%</div>
+              <div className="text-gray-600">Revenue Growth</div>
+              <div className="text-sm text-gray-500 mt-2">$4.57M → $7.3M</div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="text-4xl font-bold text-primary-700 mb-2">70%</div>
-              <div className="text-gray-600">Organic Lead Generation</div>
-              <div className="text-sm text-gray-500 mt-2">From Google reviews, not paid ads</div>
+              <div className="text-4xl font-bold text-primary-700 mb-2">64%</div>
+              <div className="text-gray-600">Marketing Spend Cut</div>
+              <div className="text-sm text-gray-500 mt-2">$110k → $40k annually</div>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="text-4xl font-bold text-primary-700 mb-2">52.5%</div>
+              <div className="text-gray-600">Close Rate</div>
+              <div className="text-sm text-gray-500 mt-2">vs 35-40% industry avg</div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="text-4xl font-bold text-primary-700 mb-2">4.9★</div>
               <div className="text-gray-600">Google Rating</div>
-              <div className="text-sm text-gray-500 mt-2">450+ authentic reviews</div>
+              <div className="text-sm text-gray-500 mt-2">450+ reviews</div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Origin Story */}
+      <OriginStory />
 
       {/* Who This Is For */}
       <section className="py-12 md:py-16 px-4">
@@ -204,6 +214,9 @@ export default function Home() {
 
       {/* Success Story */}
       <SuccessStory />
+
+      {/* Work-Life Balance */}
+      <WorkLifeBalance />
 
       {/* Results Metrics */}
       <ResultsMetrics />

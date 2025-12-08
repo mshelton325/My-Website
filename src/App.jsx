@@ -6,13 +6,15 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import ResourceRouter from './pages/resources';
+import ReviewLeverageManual from './pages/ReviewLeverageManual';
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
         <Routes>
-          {/* Resource pages - no navigation/footer */}
+          {/* Standalone Product Pages - no navigation/footer */}
+          <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />
           <Route path="/resources/:token" element={<ResourceRouter />} />
           
           {/* Main site pages - with navigation/footer */}

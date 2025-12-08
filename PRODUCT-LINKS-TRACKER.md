@@ -6,7 +6,35 @@ Keep track of your shareable product links here.
 
 ---
 
-## 🎁 Review System Sales Page (SEND THIS TO PROSPECTS)
+## 🔥 Review System Sales Preview (SEND THIS TO PROSPECTS - MAIN OPTION)
+
+**Primary Link:** `/review-system-sales-preview`
+
+**Full URL (Local):** `http://localhost:5173/review-system-sales-preview`
+
+**Full URL (Production):** `https://yourdomain.com/review-system-sales-preview`
+
+**Purpose:** PREMIUM SALES PAGE - Beautiful showcase WITHOUT file access
+
+**Target Audience:** Prospects, potential buyers, decision-makers
+
+**Status:** ✅ Active - **USE THIS AS YOUR PRIMARY SALES PAGE**
+
+**Features:**
+- Professional showcase of all 12 resources (2 manuals + 10 bonuses)
+- Detailed descriptions of each component
+- Real results & social proof (60% growth, 4.9★ rating, etc.)
+- Clear pricing ($997 one-time)
+- ROI calculator ("If this saves $5k/year in ads, pays for itself in 10 weeks")
+- 100% Money-back guarantee
+- Strong CTAs (Purchase / Ask Questions / Schedule Call)
+- **NO FILE ACCESS** - Pure preview/sales page
+
+**When To Use:** Share with ALL prospects to generate sales (your go-to link)
+
+---
+
+## 🎁 Review System Sales Page (ALTERNATIVE OPTION)
 
 **Primary Link:** `/review-system-sales`
 
@@ -14,11 +42,11 @@ Keep track of your shareable product links here.
 
 **Full URL (Production):** `https://yourdomain.com/review-system-sales`
 
-**Purpose:** SALES PAGE - Shows what's included WITHOUT giving away content
+**Purpose:** SALES PAGE - Alternative sales version
 
 **Target Audience:** Prospects, potential buyers
 
-**Status:** ✅ Active - **USE THIS TO SELL**
+**Status:** ✅ Active
 
 **Features:**
 - Shows all 12 resources they'll get
@@ -29,7 +57,7 @@ Keep track of your shareable product links here.
 - Clear CTAs (Email to Purchase / Schedule Call)
 - NO ACCESS to actual files (preview only)
 
-**When To Use:** Share with prospects to generate interest and sales
+**When To Use:** Alternative sales page if you prefer different pricing tiers
 
 ---
 

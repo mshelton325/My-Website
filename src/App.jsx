@@ -10,6 +10,7 @@ import ReviewLeverageManual from './pages/ReviewLeverageManual';
 import ReviewSystemOwner from './pages/ReviewSystemOwner';
 import ReviewSystemComplete from './pages/ReviewSystemComplete';
 import ReviewSystemSales from './pages/ReviewSystemSales';
+import ReviewSystemSalesPreview from './pages/ReviewSystemSalesPreview';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Routes>
           {/* Standalone Product Pages - no navigation/footer */}
+          <Route path="/review-system-sales-preview" element={<ReviewSystemSalesPreview />} />
           <Route path="/review-system-sales" element={<ReviewSystemSales />} />
           <Route path="/review-system-complete" element={<ReviewSystemComplete />} />
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />

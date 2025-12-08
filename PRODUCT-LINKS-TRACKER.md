@@ -6,7 +6,34 @@ Keep track of your shareable product links here.
 
 ---
 
-## 🎁 Review System Complete Package (RECOMMENDED)
+## 🎁 Review System Sales Page (SEND THIS TO PROSPECTS)
+
+**Primary Link:** `/review-system-sales`
+
+**Full URL (Local):** `http://localhost:5173/review-system-sales`
+
+**Full URL (Production):** `https://yourdomain.com/review-system-sales`
+
+**Purpose:** SALES PAGE - Shows what's included WITHOUT giving away content
+
+**Target Audience:** Prospects, potential buyers
+
+**Status:** ✅ Active - **USE THIS TO SELL**
+
+**Features:**
+- Shows all 12 resources they'll get
+- Detailed descriptions of each manual
+- Testimonials & social proof
+- Pricing options ($997 / $1,997 / $2,997)
+- Money-back guarantee
+- Clear CTAs (Email to Purchase / Schedule Call)
+- NO ACCESS to actual files (preview only)
+
+**When To Use:** Share with prospects to generate interest and sales
+
+---
+
+## 🎁 Review System Complete Package (FOR BUYERS)
 
 **Primary Link:** `/review-system-complete`
 
@@ -16,9 +43,9 @@ Keep track of your shareable product links here.
 
 **Purpose:** Complete system with 2 core manuals + 10 bonus implementation resources
 
-**Target Audience:** Serious buyers, full implementation clients
+**Target Audience:** PAYING CLIENTS ONLY - Full access to all files
 
-**Status:** ✅ Active - **FLAGSHIP PRODUCT**
+**Status:** ✅ Active - **SEND AFTER PURCHASE**
 
 **What's Included:**
 - 2 Core Manuals (Owner + Salesperson versions)

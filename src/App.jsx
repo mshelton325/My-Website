@@ -9,6 +9,7 @@ import ResourceRouter from './pages/resources';
 import ReviewLeverageManual from './pages/ReviewLeverageManual';
 import ReviewSystemOwner from './pages/ReviewSystemOwner';
 import ReviewSystemComplete from './pages/ReviewSystemComplete';
+import ReviewSystemSales from './pages/ReviewSystemSales';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Routes>
           {/* Standalone Product Pages - no navigation/footer */}
+          <Route path="/review-system-sales" element={<ReviewSystemSales />} />
           <Route path="/review-system-complete" element={<ReviewSystemComplete />} />
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />
           <Route path="/review-system-owner" element={<ReviewSystemOwner />} />

@@ -51,6 +51,40 @@ Keep track of your shareable product links here.
 
 ---
 
+## Review System Complete Bundle (Premium Package)
+
+**Primary Link:** `/review-system-bundle`
+
+**Full URL (Local):** `http://localhost:5173/review-system-bundle`
+
+**Full URL (Production):** `https://yourdomain.com/review-system-bundle`
+
+**Purpose:** Complete Review Leverage System with all 12 resources
+
+**Target Audience:** Serious buyers, full implementation clients
+
+**Status:** ✅ Active
+
+**Includes:**
+- Core Manuals (2): Salesperson Guide + Ultimate Leverage System
+- Implementation (2): 90-Day Plan + Sales Meeting Plans  
+- Scripts & Templates (3): Salesperson Scripts + Manager Scripts + Text Templates
+- Training (1): Advanced Scripts & Role-Play Scenarios
+- Sales Tools (1): Review Catalog Playbook
+- Tracking (1): Weekly Meeting Dashboard
+- Marketing (1): Social Media Efficiency Guide
+- Troubleshooting (1): Overcoming Barriers to Implementation
+
+**Pricing Suggestion:** $497-$997 (complete package value)
+
+**Notes:**
+- All 12 resources organized by category
+- Professional bundle landing page
+- Individual view/download for each resource
+- Perfect for complete system implementation
+
+---
+
 ## Future Products
 
 ### Template for New Products:

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Efficiency Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .step-header {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 40px 0 20px 0;
+        line-height: 1.3;
+        padding: 16px 20px;
+        background: #f0f9ff;
+        border-left: 4px solid #1e3a8a;
+        border-radius: 6px;
+      }
+
+      .callout-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+      }
+
+      .callout-header {
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        color: #1e3a8a;
+      }
+
+      .script-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .template-box {
+        background: #f0f9ff;
+        padding: 16px 20px;
+        border-radius: 6px;
+        border-left: 3px solid #3b82f6;
+        margin: 16px 0;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .template-title {
+        font-weight: 600;
+        color: #1e3a8a;
+        margin-bottom: 8px;
+        font-size: 1.05em;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      .stats-callout {
+        font-size: 1em;
+        font-weight: 600;
+        background: #f1f5f9;
+        padding: 20px 24px;
+        margin: 24px 0;
+        border: 2px solid #1e3a8a;
+        border-radius: 6px;
+      }
+
+      .time-box {
+        background: #fef3c7;
+        padding: 16px 20px;
+        border-radius: 6px;
+        border-left: 4px solid #f59e0b;
+        margin: 20px 0;
+        font-weight: 600;
+        color: #7c2d12;
+      }
+
+      .workflow-box {
+        background: #ecfccb;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #22c55e;
+        margin: 24px 0;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      .dont-do-section {
+        background: #fef2f2;
+        padding: 24px;
+        border-radius: 8px;
+        border-left: 4px solid #dc2626;
+        margin: 32px 0;
+      }
+
+      .dont-do-item {
+        margin: 16px 0;
+        padding: 12px 0;
+      }
+
+      .dont-do-label {
+        font-weight: 700;
+        color: #dc2626;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+      }
+
+      .numbered-list {
+        counter-reset: step-counter;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .numbered-list li {
+        counter-increment: step-counter;
+        margin: 12px 0;
+        padding-left: 40px;
+        position: relative;
+      }
+
+      .numbered-list li::before {
+        content: counter(step-counter);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #1e3a8a;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .template-list {
+        background: #f8fafc;
+        padding: 24px;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        margin: 24px 0;
+      }
+
+      .template-list ol {
+        counter-reset: template-counter;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .template-list ol li {
+        counter-increment: template-counter;
+        margin: 16px 0;
+        padding: 12px 16px;
+        background: white;
+        border-radius: 6px;
+        border-left: 3px solid #3b82f6;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+        color: #374151;
+      }
+
+      .template-list ol li::before {
+        content: counter(template-counter) '.';
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-right: 8px;
+        font-style: normal;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      ul,
+      ol {
+        list-style: inherit;
+      }
+
+      ul.benefits-list,
+      .benefits-list ul {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      ul.benefits-list li,
+      .benefits-list ul li {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .page-number {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">SOCIAL MEDIA EFFICIENCY GUIDE</h1>
+      <div class="cover-subtitle">How to Leverage Your Google Reviews on Social Media in 5–10 Minutes Per Week</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction: Why Social Media Matters (But Don't Overcomplicate It)</h2>
+
+      <p>You're working hard to earn Google reviews. Why not get more mileage out of them?</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Every review you capture can also be:</div>
+        <ul class="benefits-list">
+          <li>A Facebook post</li>
+          <li>An Instagram post</li>
+          <li>A LinkedIn post</li>
+          <li>Content for your email newsletter</li>
+        </ul>
+      </div>
+
+      <p>The goal isn't to become a social media expert.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">The goal is to leverage the reviews you're already earning to:</div>
+        <ul class="benefits-list">
+          <li>Reinforce trust with people who follow you on social media</li>
+          <li>Reach new customers who might not have found you on Google yet</li>
+          <li>Build brand awareness in your local community</li>
+          <li>Show your team that their work is being celebrated publicly</li>
+        </ul>
+      </div>
+
+      <div class="time-box">Time commitment: 5–10 minutes per week.</div>
+
+      <div class="page-number">Page 1</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">The Simple System: One Review, One Post, Once a Week</h2>
+
+      <div class="pull-quote">
+        Here's the entire system in one sentence: Pick one great review each week, screenshot it, write a short caption,
+        and post it on Facebook, Instagram, and LinkedIn.
+      </div>
+
+      <p>That's it. That's the system.</p>
+
+      <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page-break">
+      <div class="step-header">STEP 1: PICK YOUR BEST REVIEW FROM THE WEEK</div>
+
+      <p>
+        Every Monday (or whatever day you update your Review Leaderboard), look at the reviews you captured in the last
+        7 days.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Pick one that:</div>
+        <ul class="benefits-list">
+          <li>Is detailed and specific (not just "Great service!")</li>
+          <li>Mentions something concrete (installers, cleanliness, communication, quality, etc.)</li>
+          <li>Has emotional impact ("We're so happy!" or "Best experience ever!")</li>
+          <li>Optional: Mentions a team member by name (great for recognition)</li>
+        </ul>
+      </div>
+
+      <div class="time-box">Time investment: 2 minutes.</div>
+
+      <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page-break">
+      <div class="step-header">STEP 2: SCREENSHOT THE REVIEW</div>
+
+      <h3 class="sub-header">Option A: Screenshot Directly from Google (Low-Lift)</h3>
+
+      <ol class="numbered-list">
+        <li>Go to your Google Business Profile.</li>
+        <li>Find the review.</li>
+        <li>Take a screenshot on your phone or computer.</li>
+        <li>
+          Crop the screenshot so it only shows:
+          <ul class="benefits-list">
+            <li>The customer's name (first name + last initial)</li>
+            <li>The star rating</li>
+            <li>The review text</li>
+            <li>The date (optional)</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div class="time-box">Time investment: 1 minute.</div>
+
+      <h3 class="sub-header">Option B: Create a Branded Graphic (Deep-Dive)</h3>
+
+      <p>If you want your posts to look more polished, use a tool like Canva to create a branded review graphic.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Action items:</div>
+        <ol class="numbered-list">
+          <li>Go to Canva.com (free version works fine).</li>
+          <li>Create a new design (square format: 1080 x 1080 pixels for Instagram, or 1200 x 630 for Facebook).</li>
+          <li>
+            Choose a simple template or create your own:
+            <ul class="benefits-list">
+              <li>Background: Your brand colors or a photo of a completed job</li>
+              <li>Text: Paste the review text</li>
+              <li>Logo: Add your company logo in the corner</li>
+              <li>Star rating: Add 5 gold stars at the top</li>
+            </ul>
+          </li>
+          <li>Download the image and save it.</li>
+        </ol>
+      </div>
+
+      <div class="time-box">
+        Time investment: 5 minutes (first time). Once you create a template, you can reuse it every week in 2 minutes.
+      </div>
+
+      <div class="callout-box">
+        <p>
+          <strong>Pro Tip:</strong> Create 2–3 Canva templates and rotate through them so your posts don't all look
+          identical.
+        </p>
+      </div>
+
+      <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page-break">
+      <div class="step-header">STEP 3: WRITE A SHORT CAPTION</div>
+
+      <p>Your caption should be short, genuine, and conversational.</p>
+
+      <p>Here are 5 proven caption templates you can copy and customize:</p>
+
+      <div class="template-box">
+        <div class="template-title">Template 1: Simple Gratitude</div>
+        <p style="font-style: italic; margin: 0">"This is why we do what we do. Thanks, [Customer Name]! 🙌"</p>
+      </div>
+
+      <div class="template-box">
+        <div class="template-title">Template 2: Team Recognition</div>
+        <p style="font-style: italic; margin: 0">
+          "Shout-out to [Salesperson Name] and our install team for taking great care of [Customer Name]. This is what
+          it's all about. 💪"
+        </p>
+      </div>
+
+      <div class="template-box">
+        <div class="template-title">Template 3: Value Highlight</div>
+        <p style="font-style: italic; margin: 0">
+          "'You get what you pay for.' We hear this a lot—and it never gets old. Thanks for trusting us, [Customer
+          Name]!"
+        </p>
+      </div>
+
+      <div class="template-box">
+        <div class="template-title">Template 4: Problem Resolution</div>
+        <p style="font-style: italic; margin: 0">
+          "We're not perfect, but we always make it right. Thanks for giving us the chance to fix it, [Customer Name].
+          This is what standing behind your work looks like."
+        </p>
+      </div>
+
+      <div class="template-box">
+        <div class="template-title">Template 5: Emotional Impact</div>
+        <p style="font-style: italic; margin: 0">
+          "'Best experience ever.' That's what we're going for every single time. Thanks, [Customer Name]—we're so glad
+          we could help! ❤️"
+        </p>
+      </div>
+
+      <div class="time-box">Time investment: 1 minute.</div>
+
+      <div class="page-number">Page 5</div>
+    </div>
+
+    <div class="page-break">
+      <div class="step-header">STEP 4: POST IT ON FACEBOOK, INSTAGRAM, AND LINKEDIN</div>
+
+      <div class="callout-box">
+        <div class="callout-header">Where to post:</div>
+        <ul class="benefits-list">
+          <li>Facebook: Your business page</li>
+          <li>Instagram: Your business account (feed and/or stories)</li>
+          <li>LinkedIn: Your personal profile or company page</li>
+        </ul>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">How to post:</div>
+        <ol class="numbered-list">
+          <li>Open the app or website.</li>
+          <li>Upload the screenshot or graphic.</li>
+          <li>Paste your caption.</li>
+          <li>
+            Add a hashtag or two (optional):
+            <ul class="benefits-list">
+              <li>#FlooringDoneRight</li>
+              <li>#HappyCustomers</li>
+              <li>#LocalBusiness</li>
+              <li>#[YourCityName]Flooring</li>
+            </ul>
+          </li>
+          <li>Hit "Post."</li>
+        </ol>
+      </div>
+
+      <div class="time-box">Time investment: 2 minutes per platform (6 minutes total if you post on all three).</div>
+
+      <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Total Time Per Week: 10 Minutes</h2>
+
+      <div class="stats-callout">
+        <strong>Let's add it up:</strong><br>
+        • Pick the review: 2 minutes<br>
+        • Screenshot or create graphic: 1–5 minutes<br>
+        • Write caption: 1 minute<br>
+        • Post on 3 platforms: 6 minutes<br>
+        • <strong>Total: 10 minutes</strong> (or less if you skip the graphic design step).
+      </div>
+
+      <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Advanced Strategies (Optional)</h2>
+
+      <p>Once you've built the habit of posting one review per week, you can layer in these advanced tactics.</p>
+
+      <h3 class="sub-header">1. Tag Your Team Members (If They're on Social Media)</h3>
+
+      <p>
+        If the review mentions a salesperson or installer by name, and they have a Facebook or Instagram account, tag
+        them in the post.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>It gives them public recognition.</li>
+          <li>It shows prospective customers that real people work at your company.</li>
+          <li>It boosts engagement (their friends and family will see the post and like/comment).</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-header">2. Post on Instagram Stories (In Addition to Your Feed)</h3>
+
+      <p>Instagram Stories are quick, casual, and high-engagement.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to do it:</div>
+        <ol class="numbered-list">
+          <li>Post the review graphic to your Instagram feed (as usual).</li>
+          <li>
+            Then, share it to your Instagram Story with a sticker or handwritten note:
+            <ul class="benefits-list">
+              <li>"We love our customers! 💙"</li>
+              <li>"This made our day!"</li>
+            </ul>
+          </li>
+          <li>
+            Add a "Swipe Up" link (if you have 10K+ followers) or just tell people to check your profile for more info.
+          </li>
+        </ol>
+      </div>
+
+      <div class="time-box">Time investment: 1 minute.</div>
+
+      <h3 class="sub-header">3. Create a "Review Highlight" Reel on Instagram</h3>
+
+      <p>Instagram lets you save Stories to "Highlights" that stay on your profile permanently.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to do it:</div>
+        <ol class="numbered-list">
+          <li>Create a Highlight called "Reviews" or "Happy Customers."</li>
+          <li>Every time you post a review to your Story, add it to the Highlight.</li>
+          <li>Over time, you'll build a library of reviews that new followers can scroll through.</li>
+        </ol>
+      </div>
+
+      <p><strong>Why this works:</strong> It's social proof that lives on your profile 24/7.</p>
+
+      <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page-break">
+      <h3 class="sub-header">4. Post a "Review of the Month" Roundup</h3>
+
+      <p>At the end of each month, create a single post that highlights 3–5 of your best reviews from that month.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to do it:</div>
+        <ol class="numbered-list">
+          <li>Use Canva to create a multi-slide carousel post (Instagram) or a single graphic (Facebook/LinkedIn).</li>
+          <li>Include short snippets from 3–5 reviews.</li>
+          <li>
+            Caption: "Here are some of our favorite reviews from [Month]. Thanks to everyone who took the time to share
+            their experience! ❤️"
+          </li>
+        </ol>
+      </div>
+
+      <div class="time-box">Time investment: 10 minutes per month.</div>
+
+      <h3 class="sub-header">5. Repurpose Reviews for Email Newsletters</h3>
+
+      <p>
+        If you send a monthly email newsletter to past customers or leads, include a "Customer Spotlight" section with
+        1–2 reviews.
+      </p>
+
+      <p>
+        <strong>Why this works:</strong> It reminds past customers that you're still doing great work (which leads to
+        referrals) and builds trust with leads who haven't bought yet.
+      </p>
+
+      <h3 class="sub-header">6. Share Before-and-After Photos with Reviews</h3>
+
+      <p>If you have a great before-and-after photo of a completed job, pair it with a review from that customer.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to do it:</div>
+        <ol class="numbered-list">
+          <li>Create a side-by-side before-and-after graphic in Canva.</li>
+          <li>Add the customer's review as text below or on top of the image.</li>
+          <li>Post it with a caption like: "From outdated to amazing! Here's what [Customer Name] had to say..."</li>
+        </ol>
+      </div>
+
+      <p><strong>Why this works:</strong> Visual transformation + social proof = high engagement.</p>
+
+      <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">What NOT to Do</h2>
+
+      <div class="dont-do-section">
+        <div class="dont-do-item">
+          <div class="dont-do-label">❌ Don't Post Every Single Review</div>
+          <p>If you post reviews every day, it feels spammy and people will tune out. Once a week is perfect.</p>
+        </div>
+
+        <div class="dont-do-item">
+          <div class="dont-do-label">❌ Don't Copy-Paste the Exact Same Caption Every Week</div>
+          <p>Vary your captions so they don't feel robotic. Use the 5 templates above and rotate through them.</p>
+        </div>
+
+        <div class="dont-do-item">
+          <div class="dont-do-label">❌ Don't Ignore Comments</div>
+          <p>
+            If someone comments on your post ("Congrats!" or "Love this!"), take 10 seconds to reply: "Thanks so much!"
+            or "We appreciate you!"
+          </p>
+          <p>
+            <strong>Why this matters:</strong> Engagement signals to Facebook and Instagram that your content is
+            valuable, so they'll show it to more people.
+          </p>
+        </div>
+
+        <div class="dont-do-item">
+          <div class="dont-do-label">❌ Don't Overthink It</div>
+          <p>
+            You don't need professional photography, fancy graphics, or viral captions. Simple, genuine posts work best.
+          </p>
+        </div>
+      </div>
+
+      <div class="page-number">Page 10</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Delegate This (If You Don't Want to Do It Yourself)</h2>
+
+      <p>If you don't want to spend 10 minutes per week on social media, delegate it.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Who can do it:</div>
+        <ul class="benefits-list">
+          <li>Office manager</li>
+          <li>Marketing assistant</li>
+          <li>Part-time virtual assistant</li>
+          <li>Your salesperson who loves social media</li>
+        </ul>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">How to delegate:</div>
+        <ol class="numbered-list">
+          <li>Show them this guide.</li>
+          <li>Give them access to your Google Business Profile and social media accounts.</li>
+          <li>Set a weekly reminder: "Post one review every Monday by noon."</li>
+          <li>Review their posts for the first 2–3 weeks to make sure they're on-brand.</li>
+        </ol>
+      </div>
+
+      <div class="stats-callout">
+        <strong>Cost:</strong> If you hire a VA, this task takes 10 minutes per week = $10–$20/week at $50–$100/hour VA
+        rates.
+      </div>
+
+      <div class="page-number">Page 11</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Tracking: How to Measure Impact</h2>
+
+      <p>
+        You don't need to obsess over metrics, but here are a few simple ways to track whether your social media posts
+        are working:
+      </p>
+
+      <h3 class="sub-header">1. Engagement (Likes, Comments, Shares)</h3>
+
+      <p>Are people engaging with your review posts?</p>
+
+      <div class="stats-callout"><strong>Goal:</strong> At least 10–20 likes and 2–5 comments per post.</div>
+
+      <div class="callout-box">
+        <div class="callout-header">If your engagement is low:</div>
+        <ul class="benefits-list">
+          <li>Post at better times (e.g., weekday mornings or evenings when people are scrolling)</li>
+          <li>Tag team members in the post</li>
+          <li>Ask a question in the caption (e.g., "What's your favorite thing about new floors?")</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-header">2. New Followers</h3>
+
+      <p>Are you gaining followers on Facebook or Instagram?</p>
+
+      <div class="stats-callout">
+        <strong>Goal:</strong> Slow, steady growth (5–10 new followers per month is fine for a local business).
+      </div>
+
+      <h3 class="sub-header">3. Lead Source</h3>
+
+      <p>When a new customer calls or fills out a form, ask: "How did you hear about us?"</p>
+
+      <p>If they say "I saw you on Facebook" or "I follow you on Instagram," make a note of it.</p>
+
+      <p>
+        <strong>Why this matters:</strong> It tells you that your social media presence is contributing to lead
+        generation.
+      </p>
+
+      <div class="page-number">Page 12</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Sample Weekly Workflow</h2>
+
+      <p>Here's what your weekly social media routine looks like:</p>
+
+      <div class="workflow-box">
+        <h3 class="sub-header">Monday Morning (10 Minutes)</h3>
+
+        <p><strong>9:00 AM:</strong></p>
+        <ol class="numbered-list">
+          <li>Open your Google Business Profile.</li>
+          <li>Review last week's reviews and pick the best one.</li>
+          <li>Screenshot it (or create a Canva graphic).</li>
+          <li>Write a short caption using one of the 5 templates.</li>
+          <li>Post it on Facebook, Instagram, and LinkedIn.</li>
+        </ol>
+
+        <p><strong>9:10 AM:</strong> Done. You're finished for the week.</p>
+      </div>
+
+      <div class="page-number">Page 13</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Templates You Can Save and Reuse</h2>
+
+      <p>Here are 10 caption templates you can copy, paste, and customize:</p>
+
+      <div class="template-list">
+        <ol>
+          <li>"This is why we do what we do. Thanks, [Customer Name]! 🙌"</li>
+          <li>
+            "Shout-out to [Team Member Name] for taking great care of [Customer Name]. This is what it's all about. 💪"
+          </li>
+          <li>"We're not perfect, but we always make it right. Thanks for trusting us, [Customer Name]!"</li>
+          <li>"'You get what you pay for.' We hear this a lot—and it never gets old. Thanks, [Customer Name]!"</li>
+          <li>
+            "From start to finish, this is what a great flooring experience looks like. Thanks, [Customer Name]! ❤️"
+          </li>
+          <li>"Our installers get a lot of love—and they deserve it. Thanks for the kind words, [Customer Name]!"</li>
+          <li>"'Best experience ever.' That's what we're going for every single time. Thanks, [Customer Name]!"</li>
+          <li>
+            "When you stand behind your work, customers notice. Thanks for sharing your experience, [Customer Name]!"
+          </li>
+          <li>"This review made our day. Thanks for choosing us, [Customer Name]! 🙏"</li>
+          <li>"Happy customers = happy team. Thanks for the kind words, [Customer Name]!"</li>
+        </ol>
+      </div>
+
+      <div class="page-number">Page 14</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Conclusion: Simple, Consistent, and Effective</h2>
+
+      <p>You don't need to be a social media guru to leverage your reviews.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">You just need to:</div>
+        <ol class="numbered-list">
+          <li>Pick one great review each week.</li>
+          <li>Screenshot it.</li>
+          <li>Write a short caption.</li>
+          <li>Post it on Facebook, Instagram, and LinkedIn.</li>
+        </ol>
+      </div>
+
+      <div class="stats-callout">
+        <strong>Time commitment:</strong> 10 minutes per week.<br>
+        <strong>ROI:</strong> More brand awareness, more trust, more leads.
+      </div>
+
+      <p>Simple. Consistent. Effective.</p>
+
+      <div class="pull-quote">Let's get to work.</div>
+
+      <div class="page-number">Page 15</div>
+    </div>
+  
+
+</body></html>

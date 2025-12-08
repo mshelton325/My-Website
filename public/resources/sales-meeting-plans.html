@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Meeting Plans for Review Leverage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .week-header {
+        font-size: 1.8em;
+        font-weight: 700;
+        color: #dc2626;
+        margin: 40px 0 20px 0;
+        line-height: 1.3;
+        padding: 20px 24px;
+        background: #fef2f2;
+        border-left: 4px solid #dc2626;
+        border-radius: 6px;
+      }
+
+      .goal-box {
+        background: #ecfdf5;
+        padding: 16px 20px;
+        border-radius: 6px;
+        border-left: 4px solid #22c55e;
+        margin: 20px 0;
+        font-weight: 600;
+        color: #047857;
+      }
+
+      .time-box {
+        background: #fef3c7;
+        padding: 12px 16px;
+        border-radius: 6px;
+        border-left: 4px solid #f59e0b;
+        margin: 16px 0;
+        font-weight: 600;
+        color: #7c2d12;
+        font-size: 0.95em;
+      }
+
+      .agenda-item {
+        background: #f0f9ff;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #3b82f6;
+        margin: 24px 0;
+      }
+
+      .agenda-header {
+        font-weight: 700;
+        color: #1e3a8a;
+        font-size: 1.2em;
+        margin-bottom: 12px;
+      }
+
+      .script-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 20px 0;
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+        line-height: 1.6;
+      }
+
+      .action-items {
+        background: #ecfccb;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #22c55e;
+        margin: 24px 0;
+      }
+
+      .action-header {
+        font-weight: 700;
+        color: #047857;
+        font-size: 1.1em;
+        margin-bottom: 12px;
+      }
+
+      .callout-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+      }
+
+      .callout-header {
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        color: #1e3a8a;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      .numbered-list {
+        counter-reset: step-counter;
+        list-style: none;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .numbered-list li {
+        counter-increment: step-counter;
+        margin: 16px 0;
+        padding-left: 40px;
+        position: relative;
+      }
+
+      .numbered-list li::before {
+        content: counter(step-counter) '.';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.1em;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      .page-number {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">SALES MEETING PLANS FOR REVIEW LEVERAGE</h1>
+      <div class="cover-subtitle">Ready-to-Use Agendas for Weekly Sales Meetings (Weeks 1–12 + Ongoing)</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction: Why Consistent Sales Meetings Matter</h2>
+
+      <p>
+        Reviews don't capture themselves. Your team needs consistent reinforcement, celebration, coaching, and
+        accountability.
+      </p>
+
+      <p>Most managers know they SHOULD talk about reviews in team meetings—but they don't know:</p>
+
+      <ul class="benefits-list">
+        <li>What to say</li>
+        <li>How long to spend on it</li>
+        <li>How to make it engaging (not just a lecture)</li>
+        <li>How to balance celebration with accountability</li>
+      </ul>
+
+      <p>This document solves that problem.</p>
+
+      <p>
+        It gives you 12 ready-to-use sales meeting agendas (one for each week of the first 90 days) that integrate
+        review capture into your weekly sales rhythm—plus a maintenance mode agenda for Weeks 13 and beyond.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Each agenda includes:</div>
+        <ul class="benefits-list">
+          <li>Time allocation (5–60 minutes depending on the week)</li>
+          <li>What to say (scripts and talking points)</li>
+          <li>What to track (leaderboard, metrics, progress)</li>
+          <li>What to celebrate (wins, milestones, top performers)</li>
+          <li>What to practice (role-plays, objection handling)</li>
+          <li>What to troubleshoot (bottlenecks, resisters, drift)</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 1</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Use This Document</h2>
+
+      <ul class="benefits-list">
+        <li><strong>Weeks 1–4:</strong> Longer meetings (15–60 minutes) to train, practice, and build the habit.</li>
+        <li>
+          <strong>Weeks 5–12:</strong> Shorter check-ins (5–15 minutes) to celebrate wins, troubleshoot bottlenecks, and
+          maintain momentum.
+        </li>
+        <li>
+          <strong>Weeks 13+:</strong> Maintenance mode (5–10 minutes/week) to keep the habit alive without
+          over-managing.
+        </li>
+      </ul>
+
+      <p>
+        You can run these as standalone "review meetings" OR (better yet) integrate them into your existing weekly sales
+        meetings (recommended—it shows reviews are part of the sales process, not a separate initiative).
+      </p>
+
+      <h2 class="section-header">The 12-Week Meeting Plan</h2>
+
+      <div class="week-header">WEEK 1: KICKOFF MEETING (60 minutes—one-time investment)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Explain the "why," introduce the 4-step process, announce incentives, address objections,
+        and get verbal buy-in from the entire team.
+      </div>
+
+      <div class="time-box">
+        <strong>When to hold it:</strong> Monday or Tuesday of Week 1 (first thing in the morning if possible)
+      </div>
+
+      <div class="time-box">
+        <strong>Who attends:</strong> Sales team, installers (if possible), office staff (anyone involved in the
+        customer experience)
+      </div>
+
+      <h3 class="sub-header">AGENDA (60 minutes):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Explain the "Why" (15 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, we're launching a new system to capture more Google reviews. Here's why this matters—and why
+          it's worth your time. Right now, we're spending [$X per month] on marketing. Most of those leads are
+          cold—they've never heard of us, they're shopping price, and they're skeptical. That makes your job harder.
+          Meanwhile, our competitors with 200+ reviews are getting leads for free—and those leads already trust them
+          before they even call. Here's the data—and this is real, proven data from a high-performing flooring dealer
+          who implemented this exact system: • Digital leads tripled when they started capturing reviews consistently. •
+          70% of their phone calls came from their Google Business Profile—not paid ads. • Total lead volume increased
+          30–40% during review-active months (typically building toward this level over 6-12 months as the review count reaches critical mass). This isn't theory. This is what happens when you
+          build a review-first marketing engine. And here's the thing: this isn't just about marketing. It's about
+          culture, morale, and attracting top talent. When we have 300+ five-star reviews, we become the company
+          everyone wants to work for—and the company every customer wants to hire. But here's the hidden benefit most
+          people don't talk about: This system saves us time and mental energy. When we have a strong review presence: •
+          We're not chasing down cold leads or babysitting skeptical customers through 8 follow-ups. • We're not
+          constantly deciding which marketing channel to bet on next (Facebook? Google? Mailers? Billboards?). • We're
+          not burning 192–252 hours per year managing 20+ marketing channels. That's 18–32 work days per year we get
+          back. We can use that time to train the team, improve operations, or just breathe. And for those of you on
+          commission: more reviews = more warm leads = easier sales = higher commissions. Every review you capture makes
+          your job easier and your paycheck bigger. So this isn't just good for the company. It's good for you."
+        </div>
+      </div>
+
+      <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">2. Introduce the 4-Step Process (20 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, so how do we actually capture reviews? It's simple. There are four steps—and the whole thing takes less
+          than 3 minutes per customer. Here's the process:
+
+          <strong>Step 1: Plant the seed (during the sale)</strong>
+          During or at the end of the sales consultation, say: 'By the way, one of the ways we've grown is through word
+          of mouth and online reviews. If we do a great job for you—and I'm confident we will—I'll ask you to leave us a
+          quick review on Google. Fair enough?' Time investment: 10 seconds.
+
+          <strong>Step 2: Post-installation call (24–48 hours after the job)</strong>
+          Call the customer 24–48 hours after installation to check in and make sure everything went smoothly. Why?
+          Because not all unhappy customers complain. Some will smile, say everything's fine, and then quietly decide
+          never to refer you—or worse, leave a bad review months later. We call this 'Silent Death.' The
+          post-installation call prevents Silent Death. You're catching small issues early and fixing them before they
+          turn into big problems. Here's the script: 'Hi [Customer Name], this is [Your Name] from [Company]. I'm just
+          calling to check in and make sure everything went smoothly with your installation. How's the floor looking?
+          Any questions or concerns I can help with?' If everything's great: 'That's great to hear! I'm so glad we could
+          take care of you. Now, I know you're probably busy, but if you have a minute this week, I'd really appreciate
+          it if you could leave us a quick review on Google. It helps us out a ton and helps other people feel confident
+          choosing us. I'm going to text you a link right now so it's easy—does that work?' If there's a small issue:
+          'Thanks so much for letting me know. I'm going to get that taken care of right away. Let me call you back once
+          it's fixed, and then I'll send you that review link. Sound good?' Time investment: 2 minutes.
+
+          <strong>Step 3: Text the link immediately (while you're still on the phone)</strong>
+          Don't wait. Don't say 'I'll send it later.' Send the text while you're talking to them. Text template: 'Hi
+          [Customer Name], thanks again for choosing us! Here's the link to leave your review: [Google Review Link].
+          It'll only take a minute, and it really helps us out. We appreciate you!' Time investment: 30 seconds.
+
+          <strong>Step 4: Follow up (3–5 days later if they haven't left a review)</strong>
+          Life gets busy. People forget. A friendly reminder is not pushy—it's helpful. Follow-up text: 'Hi [Customer
+          Name], just checking in—did the link I sent work okay? I know things get busy, but if you get a chance, we'd
+          love that review! Here's the link again: [link]. Thanks!' Time investment: 30 seconds. Total time per
+          customer: 3 minutes, 10 seconds. That's less time than it takes to follow up on a cold lead three times. And
+          every review you capture brings us more warm leads next month. Now, I'm going to hand out the scripts. You'll
+          have them at your desk so you can reference them anytime you need." [Hand out laminated scripts or binders
+          with the Review Capture Scripts file.]
+        </div>
+      </div>
+
+      <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">3. Launch the Incentive Program (10 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, so here's what's in it for you—directly. Starting today, you'll earn $15 for every verified Google
+          review you capture. That gets added to your paycheck every two weeks. If you capture 10 reviews a month,
+          that's an extra $150. Over a year, that's $1,800. And here's the bigger picture: more reviews = more warm
+          leads = easier sales = higher commissions. So you're not just earning $15 per review—you're investing in your
+          future income. We're also running a monthly contest: Whoever captures the most reviews each month wins a $100
+          gift card (or cash—your choice). We're going to track this on a leaderboard [point to whiteboard or show
+          digital dashboard]. I'll update it every week. You'll be able to see exactly where you stand. And every week,
+          we're going to celebrate wins publicly. When you capture a great review, I'm going to read it out loud at the
+          team meeting and thank you by name. This isn't just about the money—it's about recognition and pride in the
+          work you do. Does that sound fair?" [Let them respond. Get verbal agreement.]
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Address Objections (10 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, I know some of you might be thinking: 'What if the customer says no?' or 'What if I get a bad review?'
+          or 'I'm too busy.' Let me address those right now.
+
+          <strong>Objection #1: 'I don't want to be pushy.'</strong>
+          You're not being pushy. You're giving the customer an opportunity to help the next family who's trying to
+          decide where to go. That's not pushy—that's generous. And here's the reality: most customers are happy to
+          leave a review. They're just waiting for someone to ask.
+
+          <strong>Objection #2: 'What if we get a negative review?'</strong>
+          The post-installation call is your insurance policy against bad reviews. When you call 24–48 hours after the
+          job, you're catching small issues early and fixing them before they turn into big problems. And here's the
+          thing: the best defense against a bad review is volume. If you have 150 five-star reviews and one two-star,
+          nobody cares. But if you only have 20 reviews total, one bad one kills you.
+
+          <strong>Objection #3: 'I'm too busy.'</strong>
+          I get it. But the post-installation call takes 2 minutes. The text takes 30 seconds. That's less time than it
+          takes to follow up on a cold lead three times. And every review you capture brings us more warm leads next
+          month—which makes your job easier. So you're not too busy. You're investing 3 minutes now to save yourself
+          hours later. Does anyone else have concerns or questions?" [Let them ask questions. Use the scripts from the
+          Overcoming Barriers file to address any additional objections.]
+        </div>
+      </div>
+
+      <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">5. Set the First Goal and Get Buy-In (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, here's our goal for Week 1: Let's capture 5 reviews as a team. That's it. Just 5. If we complete 20
+          jobs this week and capture 5 reviews, that's a 25% capture rate—and that's a great start. Who's in? Can I
+          count on you to do this?" [Go around the room and get a verbal "yes" from each person.] "Great. Let's make it
+          happen. I believe in you, and I know we can do this. Let's go out there and take care of our customers—and
+          let's ask them to tell the world about it."
+        </div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Print and distribute laminated scripts to every salesperson</li>
+          <li>Set up the leaderboard (whiteboard or digital)</li>
+          <li>Add Google review link to shared document or CRM</li>
+          <li>Set a reminder to check progress daily (5 minutes/day)</li>
+        </ul>
+      </div>
+
+      <div class="week-header">WEEK 2: FIRST WINS &amp; TROUBLESHOOTING (15 minutes)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Celebrate early wins, identify who's struggling, offer 1-on-1 support, and set this
+        week's goal.
+      </div>
+
+      <div class="time-box"><strong>When to hold it:</strong> Monday morning (start of Week 2)</div>
+
+      <h3 class="sub-header">AGENDA (15 minutes):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Review the Scoreboard (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, let's look at how we did last week. [Pull up the leaderboard or whiteboard.] We captured [X]
+          reviews as a team. Our goal was 5, and we hit [X]. [If you hit the goal: 'Great job, everyone!'] [If you
+          didn't: 'We're close—let's push harder this week.'] Now, let's recognize the top performers: • [Name] captured
+          3 reviews. Let's give them a round of applause. • [Name] captured 2 reviews. Great work. • [Name] captured 1
+          review. Keep it going. Thank you all for buying in and making this happen."
+        </div>
+      </div>
+
+      <div class="page-number">Page 5</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">2. Read the Best Review Aloud (3 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Now, I want to share one of the best reviews we got last week. Listen to this: [Read the review out loud,
+          slowly and clearly.] This is why we do what we do. This is proof that the work you're doing matters. And
+          [Salesperson Name] and [Installer Name]—this review is about you. Thank you for taking care of this customer.
+          Let's keep it going."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Troubleshoot and Offer Support (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, now let's talk about what's hard. I know some of you are still getting comfortable with the script.
+          That's normal. Who's struggling? What's hard about this?" [Let them share. Common responses: "I forget to make
+          the call," "The customer said no," "I don't know what to say."] For "I forget to make the call": "That's the
+          #1 issue in the first few weeks. Here's the fix: set a reminder on your phone for 9:00 AM every day. That's
+          your cue to check yesterday's installs and make the calls. Do it first thing in the morning before anything
+          else. After two weeks, it'll become automatic." For "The customer said no": "That's going to happen sometimes.
+          But here's the thing: most customers who say no just need a softer ask. Try the 'pay it forward' framing:
+          'When you leave a review, you're helping the next family who's trying to decide where to go—kind of like
+          paying it forward.' That reframes it from 'help me' to 'help others,' and people respond to that." For "I
+          don't know what to say": "That's why we gave you the scripts. Don't try to wing it—just follow the script. If
+          you want, we can practice it together. Let's do a quick 2-minute role-play right now. I'll be the customer.
+          You call me. Go." [Do a quick role-play if needed.]
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Set This Week's Goal (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, here's our goal for this week: Let's capture 7 reviews as a team. We did [X] last week. Let's push a
+          little harder this week. Who's with me?" [Get verbal agreement.] "Great. Let's do this."
+        </div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Follow up 1-on-1 with anyone who captured zero reviews (5-10 minutes each)</li>
+          <li>Update the leaderboard daily</li>
+          <li>Celebrate wins via text/Slack when reviews come in during the week</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page-break">
+      <div class="week-header">WEEK 3: ROLE-PLAY PRACTICE (20 minutes)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Build confidence through practice. Let the team hear the scripts out loud, practice
+        objection handling, and get comfortable with the process.
+      </div>
+
+      <div class="time-box"><strong>When to hold it:</strong> Mid-week (Tuesday or Wednesday)</div>
+
+      <h3 class="sub-header">AGENDA (20 minutes):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Introduce the Exercise (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, today we're going to practice the post-installation call. I want everyone to feel confident
+          with this script—and the best way to build confidence is to practice out loud. Here's how this works: I need
+          two volunteers. One person plays the salesperson. One person plays the customer. We'll run through the script
+          from start to finish. Then we'll get feedback from the group. Who wants to go first?"
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">2. First Role-Play: The Happy Customer (3 minutes)</div>
+        <p><strong>Setup:</strong></p>
+        <ul class="benefits-list">
+          <li>One person plays the salesperson.</li>
+          <li>Another person plays a happy customer who just had their floor installed.</li>
+          <li>
+            Scenario: The salesperson calls the customer 24–48 hours after installation to check in and ask for a
+            review.
+          </li>
+          <li>
+            Script Reference: Use Script 2: The Post-Installation Call (If Everything Went Well) from the Review Capture
+            Scripts file.
+          </li>
+        </ul>
+        <p>[Let them run through the script.]</p>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Team Feedback (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, let's give some feedback. What did [Salesperson] do well?" [Let the team share positive feedback.]
+          "Great. Now, what could they improve?" [Let the team share constructive feedback.]
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Second Role-Play: The Customer Who Says "I Don't Do Reviews" (3 minutes)</div>
+        <p><strong>Setup:</strong></p>
+        <ul class="benefits-list">
+          <li>Same two people (or switch).</li>
+          <li>Scenario: The customer says, "I don't really do reviews."</li>
+          <li>
+            Script Reference: Use Script 5: Handling Customer Objections → Objection #1 from the Review Capture Scripts
+            file.
+          </li>
+        </ul>
+        <p>[Let them run through the objection-handling script.]</p>
+      </div>
+
+      <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">5. Team Feedback (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "How did they handle the objection? What made the customer feel comfortable?" [Let the team share feedback.]
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">6. Third Role-Play: The Customer Who Had a Small Issue (3 minutes)</div>
+        <p><strong>Setup:</strong></p>
+        <ul class="benefits-list">
+          <li>Switch to two new people if possible.</li>
+          <li>
+            Scenario: The customer mentioned a small issue (e.g., a crooked transition strip) during the callback. The
+            salesperson is calling back after the issue was fixed.
+          </li>
+          <li>
+            Script Reference: Use Script 7: Asking After You've Fixed a Problem from the Review Capture Scripts file.
+          </li>
+        </ul>
+        <p>[Let them run through the script.]</p>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">7. Wrap-Up and Key Takeaways (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Great job, everyone. Here are the key takeaways from today: • Make the post-installation call 24–48 hours
+          after the job. This prevents 'Silent Death' and sets you up for a positive review. • Send the text
+          immediately—don't wait. • If the customer hesitates, reframe the ask as 'paying it forward' and offer no
+          pressure. • If you fixed a problem, ask for a review—it shows you stand behind your work, and customers often
+          leave glowing reviews after you make something right. The more you practice, the more natural it will feel.
+          And the more natural it feels, the more reviews you'll capture. Alright, let's go out there and capture some
+          reviews this week. Who's with me?"
+        </div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Offer 1-on-1 practice sessions to anyone who's still uncomfortable</li>
+          <li>Continue tracking daily and celebrating wins</li>
+        </ul>
+      </div>
+
+      <div class="week-header">WEEK 4: CELEBRATE FIRST MONTH + SHOW EARLY RESULTS (10 minutes)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Celebrate the team's progress, show early data (ranking improvements, lead volume), and
+        set next month's goal.
+      </div>
+
+      <div class="time-box"><strong>When to hold it:</strong> Monday morning (start of Week 4)</div>
+
+      <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page-break">
+      <h3 class="sub-header">AGENDA (10 minutes):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Celebrate the Milestone (3 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, we just wrapped up our first month of the review system. And I want to take a minute to
+          celebrate. In the last 30 days, we captured [X] reviews. That's a big deal. [If you hit your goal:] "We set a
+          goal to capture 25 reviews in Month 1, and we hit [X]. That's fantastic. You should be proud." [If you didn't
+          quite hit the goal:] "We set a goal to capture 25 reviews, and we hit [X]. We're close—and we're building
+          momentum. Let's keep pushing." Thank you all for buying in and making this work."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">2. Show Early Results (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Now, here's what's already happening: [Pull up Google and show your Google Business Profile.] • Our review
+          count went from [X] to [Y]. That's [Z] new reviews in 30 days. • Our star rating improved from [X] to [Y]. •
+          Our Google ranking went from #[X] to #[Y] in the map pack. [If applicable—check by searching "flooring near
+          me" or your target keyword.] And here's the biggest thing: We're getting more calls. [If you track lead
+          sources:] "In the last 30 days, [X%] of our leads came from organic Google—up from [Y%] last month." This is
+          working. The reviews you're capturing are already bringing us more leads. And those leads are warmer, easier
+          to close, and less price-focused. Keep it up."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Set Next Month's Goal (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, here's our goal for Month 2: Let's capture 30 reviews. We did [X] in Month 1. Let's push a little
+          harder in Month 2. If we complete 80 jobs and capture 30 reviews, that's a 37.5% capture rate—and that's
+          excellent. Who's in?" [Get verbal agreement.] "Great. Let's do this."
+        </div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Pay out Month 1 bonuses (if not already done)</li>
+          <li>Award the $100 contest prize to the top performer</li>
+          <li>Continue daily tracking and weekly celebrations</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page-break">
+      <div class="week-header">WEEKS 5–8: QUICK CHECK-INS (5–10 minutes each)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Maintain momentum without over-meeting. These are short, focused check-ins to celebrate
+        wins, address bottlenecks, and set weekly goals.
+      </div>
+
+      <div class="time-box"><strong>When to hold them:</strong> Monday morning (start of each week)</div>
+
+      <h3 class="sub-header">AGENDA (same for Weeks 5, 6, 7, and 8):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Review the Leaderboard (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, let's look at last week's numbers. [Pull up the leaderboard.] We captured [X] reviews last
+          week. Our goal was [Y]. Top performers: • [Name] captured [X] reviews. Great work. • [Name] captured [X]
+          reviews. Keep it up. Thank you all for staying on it."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">2. Read One Great Review Aloud (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Now, let me share one of the best reviews from last week: [Read the review out loud.] [Salesperson Name] and
+          [Installer Name]—this is about you. Thank you for taking care of this customer. This is the standard we're
+          holding ourselves to."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Address Any Bottlenecks (3 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, quick check: Is anyone struggling? Do you need help with a script? Any customers giving you pushback?"
+          [Let them share. Address any issues using scripts from the Overcoming Barriers file.] Common issues in Weeks
+          5-8: • "I'm forgetting to make the call." → "Set a daily reminder. Do it first thing every morning." •
+          "Customers are saying 'I'll do it later' and then not doing it." → "That's why we follow up 3–5 days later.
+          The follow-up text is key—don't skip it." • "I'm getting more 'no's than 'yes's." → "Let's practice the
+          objection-handling scripts together. Come see me after this meeting."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Set This Week's Goal (1 minute)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, our goal for this week: [X] reviews as a team. Who's with me?" [Get verbal agreement.] "Great. Let's
+          go."
+        </div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Continue daily tracking (5 minutes/day)</li>
+          <li>Follow up 1-on-1 with anyone who's consistently not capturing reviews</li>
+          <li>Celebrate wins via text/Slack during the week</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 10</div>
+    </div>
+
+    <div class="page-break">
+      <div class="week-header">WEEK 9: MID-QUARTER CHECK-IN (15 minutes)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Review 60-day progress, celebrate top performers, address any drift or complacency, and
+        set the goal for Weeks 10-12.
+      </div>
+
+      <div class="time-box"><strong>When to hold it:</strong> Monday morning (start of Week 9)</div>
+
+      <h3 class="sub-header">AGENDA (15 minutes):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Review 60-Day Progress (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, we're 60 days into this system. Let's look at where we are. [Pull up your tracking data.] •
+          Total reviews captured: [X] (up from [Y] when we started) • Current star rating: [X] (up from [Y]) • Google
+          ranking: #[X] in the map pack (up from #[Y]) • Lead volume: [X]% of our leads are now coming from organic
+          Google (up from [Y]%) This is working. The reviews you're capturing are bringing us more leads, warmer leads,
+          and easier sales. And here's what that means for you: more warm leads = easier sales = higher commissions.
+          Every review you capture is an investment in your future income. Keep it up."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">2. Celebrate Top Performers (3 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Now, let's recognize the top performers over the last 60 days: [Pull up your leaderboard or tracking sheet.]
+          • [Name] has captured [X] reviews. That's the most on the team. Let's give them a round of applause. • [Name]
+          has captured [X] reviews. Great work. • [Name] has captured [X] reviews. Keep it going. Thank you all for
+          staying on it."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Address Resisters and Drift (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, now let's be honest: some of you are crushing it. Some of you are inconsistent. And some of you haven't
+          captured a review in weeks. If you're in that last group, here's what I need you to hear: This is not
+          optional. Making the post-installation call and asking for reviews is part of the job—just like making sales
+          calls and writing quotes. If you're struggling with the script, I want to help. Come see me this week and
+          we'll practice it together. If you're forgetting to make the call, set a daily reminder on your phone. Do it
+          first thing every morning. And if you're not bought in yet, I need to know why. Because this system works—but
+          only if everyone's on board. So here's the deal: starting this week, I'm going to check in with each of you
+          individually. I want to know where you stand, what's hard, and how I can help. But I also need you to commit.
+          Can I count on you to do this?" [Get verbal agreement from the team.]
+        </div>
+      </div>
+
+      <div class="page-number">Page 11</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">4. Set Goal for Weeks 10-12 (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, here's our goal for the next 3 weeks: Let's capture 25 reviews as a team between now and Day 90. If
+          we do that, we'll hit [X] total reviews by Day 90—which is a huge milestone. Who's in?" [Get verbal
+          agreement.] "Great. Let's finish strong."
+        </div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Schedule 1-on-1s with anyone who's not capturing reviews consistently (10-15 minutes each)</li>
+          <li>Continue daily tracking and celebrating wins</li>
+          <li>Prepare for the 90-day celebration (Week 12)</li>
+        </ul>
+      </div>
+
+      <div class="week-header">WEEKS 10–12: FINAL PUSH (5–10 minutes each)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Finish strong, hit the 90-day benchmark, build urgency, and maintain momentum heading
+        into Month 4.
+      </div>
+
+      <div class="time-box"><strong>When to hold them:</strong> Monday morning (start of each week)</div>
+
+      <h3 class="sub-header">AGENDA (same for Weeks 10, 11, and 12):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Leaderboard Update (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, let's look at where we are. [Pull up the leaderboard.] We're [X] days away from our 90-day
+          mark. Our goal is [Y] total reviews by Day 90. We're at [Z] right now. That means we need [Y - Z] more reviews
+          in the next [X] days. That's totally doable if everyone stays on it. Top performers this week: • [Name]
+          captured [X] reviews. Great work. • [Name] captured [X] reviews. Keep it up."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">2. Read One Review Aloud (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Here's one of the best reviews from this week: [Read the review out loud.] This is what we're building. This
+          is proof that the work you do matters. Let's keep it going."
+        </div>
+      </div>
+
+      <div class="page-number">Page 12</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">3. Countdown to 90 Days (3 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Okay, here's the deal: we're [X] days away from our 90-day mark. This is the home stretch. Our goal is [Y]
+          total reviews by Day 90. We're at [Z] right now. We need [Y - Z] more. Who's going to help us get there? Who's
+          going to capture 3–5 reviews this week and push us over the finish line?" [Let them respond. Build urgency and
+          excitement.] "I believe in you. Let's finish strong. Who's with me?" [Get verbal agreement.]
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Set This Week's Goal (1 minute)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">"This week's goal: [X] reviews as a team. Let's do this."</div>
+      </div>
+
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Continue daily tracking and celebrating wins</li>
+          <li>Prepare for the 90-Day Celebration Meeting (end of Week 12)</li>
+        </ul>
+      </div>
+
+      <div class="week-header">WEEK 12 (END OF 90 DAYS): CELEBRATION &amp; RESULTS MEETING (20 minutes)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Celebrate the team's 90-day success, show the financial impact, recognize top performers,
+        and transition into Maintenance Mode.
+      </div>
+
+      <div class="time-box">
+        <strong>When to hold it:</strong> End of Week 12 (Friday afternoon or Monday of Week 13)
+      </div>
+
+      <h3 class="sub-header">AGENDA (20 minutes):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Celebrate the 90-Day Milestone (5 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, we did it. We just wrapped up 90 days of the review system. And I want to take a few minutes to
+          celebrate what we accomplished. When we started, we had [X] Google reviews and a [Y]-star rating. Today, we
+          have [Z] reviews and a [A]-star rating. That's [Z - X] new reviews in 90 days. That's a massive
+          accomplishment. You should be proud. Thank you for buying in. Thank you for making the calls. Thank you for
+          asking. This doesn't happen without you."
+        </div>
+      </div>
+
+      <div class="page-number">Page 13</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-item">
+        <div class="agenda-header">2. Show the Financial Impact (10 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Now, let's talk about what this is actually doing for our business—and for you. [Pull up your tracking data
+          or metrics.] Here's what's changed in the last 90 days: • Our Google ranking: We went from #[X] to #[Y] in the
+          map pack. • Our lead volume: [X]% of our leads now come from organic Google (up from [Y]%). • Our total lead
+          volume: We're getting [X]% more leads than we were 90 days ago. • Our marketing spend: We've reduced our
+          monthly ad spend by $[X] (or reallocated it to higher-ROI channels). And here's the kicker: the leads we're
+          getting from Google are warmer, easier to close, and less price-focused than paid ad leads. That means: •
+          Higher close rates • Higher average tickets • Less time wasted on tire-kickers So this isn't just about the
+          reviews. It's about building a business that works smarter—not harder. And for those of you on commission:
+          every warm lead we get from Google is a lead you didn't have to chase. That's easier sales and bigger
+          paychecks for you. This is working. And we're just getting started."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Recognize Top Performers (3 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Now, let's recognize the top performers over the last 90 days. [Pull up your leaderboard or tracking data.] •
+          #1: [Name] captured [X] reviews. That's the most on the team. [Give them a $200 bonus or gift card.] • #2:
+          [Name] captured [X] reviews. [Give them a $100 bonus or gift card.] • #3: [Name] captured [X] reviews. [Give
+          them a $50 bonus or gift card.] Thank you all for leading the way. You set the standard for the rest of the
+          team."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Transition to Maintenance Mode (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright, here's what happens next: We're transitioning into Maintenance Mode. That means we're not going to
+          spend 20 minutes every week talking about reviews anymore. We've built the habit. Now we just need to maintain
+          it. Starting next week, we'll do a 5-minute check-in every Monday: quick leaderboard review, read one review
+          aloud, set the weekly goal. That's it. But the expectations don't change. You're still making the
+          post-installation call. You're still sending the text. You're still following up. This is part of how we do
+          business now. And if you stay on it, your paycheck will reflect it. Who's with me?" [Get verbal agreement.]
+          "Great. Let's keep it going."
+        </div>
+      </div>
+
+      <div class="page-number">Page 14</div>
+    </div>
+
+    <div class="page-break">
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Pay out 90-day bonuses and contest prizes</li>
+          <li>Update tracking systems for Month 4+</li>
+          <li>Transition to Maintenance Mode agendas (Weeks 13+)</li>
+        </ul>
+      </div>
+
+      <div class="week-header">WEEKS 13+ (MAINTENANCE MODE): ONGOING CHECK-INS (5–10 minutes/week)</div>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Keep the habit alive without over-managing. Celebrate wins, address bottlenecks, and
+        maintain accountability.
+      </div>
+
+      <div class="time-box"><strong>When to hold them:</strong> Monday morning (start of each week)</div>
+
+      <h3 class="sub-header">AGENDA (same every week):</h3>
+
+      <div class="agenda-item">
+        <div class="agenda-header">1. Quick Leaderboard Check (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Alright team, quick check: how many reviews did we capture last week? [Pull up the leaderboard.] We captured
+          [X] reviews. Our goal was [Y]. Top performers: • [Name] captured [X]. Great work. • [Name] captured [X]. Keep
+          it up. Thank you all for staying on it."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">2. Read One Review Aloud (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Here's one of the best reviews from last week: [Read the review out loud.] [Salesperson Name] and [Installer
+          Name]—thank you. This is what we're building."
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">3. Quick Troubleshoot (Optional—if needed) (2 minutes)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">
+          "Anyone struggling this week? Any customers giving you pushback?" [Address any issues quickly using scripts
+          from Overcoming Barriers file.]
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-header">4. Set This Week's Goal (1 minute)</div>
+        <p><strong>What to say:</strong></p>
+        <div class="script-box">"This week's goal: [X] reviews as a team. Let's do it."</div>
+      </div>
+
+      <div class="page-number">Page 15</div>
+    </div>
+
+    <div class="page-break">
+      <div class="action-items">
+        <div class="action-header">Post-Meeting Action Items for Manager:</div>
+        <ul class="benefits-list">
+          <li>Continue daily tracking (5 minutes/day)</li>
+          <li>Celebrate wins via text/Slack during the week</li>
+          <li>Follow up 1-on-1 with anyone who drops off</li>
+        </ul>
+      </div>
+
+      <h2 class="section-header">BONUS: Monthly "Review of the Month" Celebration</h2>
+
+      <div class="goal-box">
+        <strong>Goal:</strong> Create big, memorable moments that reinforce the behavior you want.
+      </div>
+
+      <div class="time-box">
+        <strong>When to hold it:</strong> Last Friday of every month (10 minutes at end of team meeting)
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">What to do:</div>
+        <ol class="numbered-list">
+          <li>Pick the single best review from the last 30 days.</li>
+          <li>Choose one that's detailed, emotional, and mentions specific team members.</li>
+          <li>Read it aloud to the entire team (sales, installers, office staff—everyone).</li>
+          <li>Give the salesperson and installer a bonus ($50–$100 each) or gift card.</li>
+          <li>
+            Post it publicly:
+            <ul class="benefits-list">
+              <li>Social media (Facebook, Instagram, LinkedIn)</li>
+              <li>Break room wall (print and frame it)</li>
+              <li>Email newsletter (if you send one)</li>
+            </ul>
+          </li>
+          <li>
+            Say something like this: "This is the review of the month. This is what we're striving for every single
+            time. [Salesperson Name] and [Installer Name]—you set the standard. Thank you."
+          </li>
+        </ol>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>Big, public celebrations create momentum and reinforce the behavior you want.</li>
+          <li>It shows the team that reviews aren't just numbers—they're stories about real people and real impact.</li>
+          <li>It creates friendly competition ("I want to win Review of the Month next time").</li>
+        </ul>
+      </div>
+
+      <h2 class="section-header">Final Thoughts: Consistency Beats Perfection</h2>
+
+      <p>You don't need perfect meetings. You need consistent meetings.</p>
+
+      <p>
+        If you follow this plan—especially the first 12 weeks—you'll build a review capture habit that becomes part of
+        your team's DNA.
+      </p>
+
+      <p>
+        After Week 12, you're just maintaining. 5–10 minutes per week. Quick check-ins. Celebrate wins. Address
+        bottlenecks. Set the goal.
+      </p>
+
+      <p>That's it.</p>
+
+      <p>The reviews will compound. The leads will come. And your business will transform.</p>
+
+      <div class="pull-quote">Let's get to work.</div>
+
+      <div class="page-number">Page 16</div>
+    </div>
+  
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9aaf806b5a21c5ce","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body></html>

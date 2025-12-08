@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Salesperson's Guide to Google Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .cover-footer {
+        font-size: 0.9em;
+        color: #6b7280;
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .callout-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+      }
+
+      .callout-header {
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        color: #1e3a8a;
+      }
+
+      .script-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      .stats-callout {
+        font-size: 1em;
+        font-weight: 600;
+        background: #f1f5f9;
+        padding: 20px 24px;
+        margin: 24px 0;
+        border: 2px solid #1e3a8a;
+        border-radius: 6px;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      ul,
+      ol {
+        list-style: inherit;
+      }
+
+      ul.benefits-list,
+      .benefits-list ul {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      ul.benefits-list li,
+      .benefits-list ul li {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .checklist {
+        list-style: none !important;
+        padding-left: 0;
+        margin: 24px 0;
+      }
+
+      .checklist li {
+        margin: 24px 0;
+        font-size: 16px;
+        padding: 16px;
+        background: #f8fafc;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        list-style: none !important;
+      }
+
+      .checklist .step-name {
+        font-weight: 700;
+        color: #1e3a8a;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      .checklist .step-script {
+        font-style: italic;
+        color: #6b7280;
+        margin-left: 0;
+        font-size: 0.95em;
+        line-height: 1.5;
+      }
+
+      .page-number {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 0.9em;
+      }
+
+      @page {
+        margin: 0.75in;
+        size: letter;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 20px;
+        }
+        .page-break {
+          page-break-before: always;
+          box-shadow: none;
+          margin-top: 0;
+        }
+        .cover-page {
+          box-shadow: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">THE SALESPERSON'S GUIDE TO GOOGLE REVIEWS</h1>
+      <div class="cover-subtitle">How to Turn Every Sale Into Warmer Leads, Easier Closes, and Higher Commissions</div>
+      <div class="cover-footer">
+        Part of the Review Leverage System<br>
+        By Matt Shelton, Flooring Retailer &amp; Performance Consultant
+      </div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction: Why This Matters to YOU</h2>
+
+      <p>Let's talk about what you care about most: your paycheck.</p>
+
+      <p>
+        You probably think reviews are something the marketing department worries about. Or something the owner cares
+        about because it makes the company look good.
+      </p>
+
+      <p>But here's the truth:</p>
+
+      <p>
+        <strong>Google reviews are the single most powerful tool you have to make your job easier and your commissions
+          bigger.</strong>
+      </p>
+
+      <p>Here's why:</p>
+
+      <h3 class="sub-header">1. Reviews Bring You Warmer Leads</h3>
+
+      <p>
+        When someone searches "flooring near me" and sees your company's 4.9-star rating and 200+ reviews, they don't
+        call five other places. They call you first.
+      </p>
+
+      <p>
+        And when they walk in the door, they're not starting from zero. They already trust you. They've already read
+        about your quality, your service, your installers.
+      </p>
+
+      <p>Translation: You spend less time convincing them and more time closing them.</p>
+
+      <h3 class="sub-header">2. Warmer Leads = Higher Commissions</h3>
+
+      <p>Warmer leads close faster. They're less price-sensitive. They buy more confidently.</p>
+
+      <p>
+        Cold leads (the ones from paid ads or random walk-ins) are skeptical. They want the cheapest price. They ghost
+        you after three follow-ups.
+      </p>
+
+      <p>
+        Warm leads (the ones who found you on Google and read your reviews) are ready to buy. They just need you to
+        guide them through the process.
+      </p>
+
+      <p>Which leads would you rather work with?</p>
+
+      <h3 class="sub-header">3. More Reviews = More Leads (Which Means More Opportunities for You)</h3>
+
+      <p>Here's the math:</p>
+
+      <p>More reviews = higher Google ranking</p>
+      <p>Higher Google ranking = more organic traffic</p>
+      <p>More organic traffic = more inbound calls and showroom visits</p>
+      <p>More inbound calls = more opportunities for you to sell</p>
+
+      <p>Translation: Every review you capture feeds the pipeline that keeps your calendar full.</p>
+
+      <h3 class="sub-header">4. You Can Build Your Own Personal Brand with Reviews</h3>
+
+      <p>When customers mention you by name in a review, that's proof you're good at what you do.</p>
+
+      <p>You can use those reviews to:</p>
+
+      <ul class="benefits-list">
+        <li>Build credibility with new customers</li>
+        <li>Stand out from other salespeople at your company</li>
+        <li>Build a personal portfolio that follows you wherever you go</li>
+      </ul>
+
+      <p>Bottom line: Reviews aren't just good for the company. They're good for your career.</p>
+
+      <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">The Data: What Reviews Actually Do for Lead Flow (And Your Paycheck)</h2>
+
+      <p>Let me show you some real numbers from our store.</p>
+
+      <p>We pulled years of data to answer one question: Do reviews actually drive more leads?</p>
+
+      <p>Here's what we found:</p>
+
+      <div class="stats-callout">
+        <div class="callout-header">Finding #1: Digital leads tripled.</div>
+        <p>
+          During months when we earned reviews consistently, digital/web-influenced leads—the people who found us on
+          Google, filled out a form, sent a text, or clicked through from our profile—tripled.
+        </p>
+        <p>
+          These are some of the warmest leads you'll ever get. They've already read reviews, looked at our star rating,
+          and decided to reach out.
+        </p>
+      </div>
+
+      <div class="stats-callout">
+        <div class="callout-header">Finding #2: Reviews drive phone calls, too—not just web leads.</div>
+        <p>
+          We use call tracking numbers in different places—one on our website, one on Google Ads, and one on our Google
+          Business Profile.
+        </p>
+        <p>
+          When we looked at all the inbound calls, 70%+ of our phone calls came from the number on our Google Business
+          Profile.
+        </p>
+        <p>
+          Let me say that again: 70% of our phone leads came from people who were staring at our Google listing—and our
+          reviews—when they decided to call.
+        </p>
+      </div>
+
+      <div class="stats-callout">
+        <div class="callout-header">Finding #3: Total lead volume increased 30–40%.</div>
+        <p>
+          During months when we earned reviews consistently, total lead volume—across all sources—increased by 30–40%.
+        </p>
+        <p>And we know where that growth came from:</p>
+        <ul class="benefits-list">
+          <li>Digital leads tripled</li>
+          <li>70% of phone calls are tied to our Google profile (where reviews live)</li>
+        </ul>
+        <p>
+          Translation: Reviews don't just drive a few web forms. They drive digital leads, phone calls, and overall lead
+          volume—across the board.
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">What This Means for YOUR Paycheck:</div>
+        <p>
+          If you're not earning reviews consistently, you're leaving 30–40% of your potential lead volume on the table
+          every single month.
+        </p>
+        <p>That's 30–40% fewer opportunities to sell.</p>
+        <p>30–40% fewer chances to earn commissions.</p>
+        <p>30–40% fewer warm leads walking through the door already trusting you.</p>
+        <p>
+          Every review you capture makes your job easier next month—because it brings more warm leads into your
+          pipeline.
+        </p>
+      </div>
+
+      <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">The 4-Step System to Capture Reviews (Without Being Pushy)</h2>
+
+      <p>Okay, so reviews matter. But how do you actually get them—without annoying the customer or feeling awkward?</p>
+
+      <p>Here's the proven 4-step process.</p>
+
+      <h3 class="sub-header">Step 1: Plant the Seed Early (During the Sale)</h3>
+
+      <p>
+        Don't surprise the customer with a review request after the job is done. Set the expectation early—during your
+        consultation—so they know it's coming.
+      </p>
+
+      <p>Here's the script:</p>
+
+      <div class="script-box">
+        <p>
+          "By the way, one of the ways we've grown is through word of mouth and online reviews. If we do a great job for
+          you—and I'm confident we will—I'll ask you to leave us a quick review on Google. Fair enough?"
+        </p>
+      </div>
+
+      <p>Why this works:</p>
+
+      <ul class="benefits-list">
+        <li>It frames the review request as conditional on great service (which builds confidence).</li>
+        <li>It removes the surprise factor. The customer already agreed to it.</li>
+        <li>It positions your company as successful and review-driven (social proof).</li>
+      </ul>
+
+      <p><strong>Time investment: 10 seconds.</strong></p>
+
+      <h3 class="sub-header">Step 2: Make the Post-Installation Call (24–48 Hours After the Job)</h3>
+
+      <p>This is the most important step—and the one most salespeople skip.</p>
+
+      <p>Here's why it matters:</p>
+
+      <p>
+        Not all unhappy customers complain. Some will smile, say everything's fine, and then quietly decide never to
+        refer you—or worse, leave a bad review months later.
+      </p>
+
+      <p>
+        We call this "Silent Death." The customer who doesn't complain, but also doesn't come back or recommend you.
+      </p>
+
+      <p>The post-installation call prevents Silent Death.</p>
+
+      <p>
+        When you call 24–48 hours after the job is done, you're giving the customer a chance to tell you about any small
+        issues (a crooked transition strip, a spot that needs touch-up) while they're still easy to fix.
+      </p>
+
+      <p>
+        Think of it like a punch list in construction. You catch the little stuff, fix it fast, and the customer is
+        thrilled you cared enough to check.
+      </p>
+
+      <p>This is the difference between a punch list and a problem:</p>
+
+      <ul class="benefits-list">
+        <li>A punch list is a small issue you catch early and fix fast. The customer appreciates it.</li>
+        <li>A problem is the same issue, ignored, that festers and turns into a bad review or lost referral.</li>
+      </ul>
+
+      <p>Here's the script:</p>
+
+      <div class="script-box">
+        <p>
+          "Hi [Customer Name], this is [Your Name] from [Company]. I'm just calling to check in and make sure everything
+          went smoothly with your installation. How's the floor looking? Any questions or concerns I can help with?"
+        </p>
+        <p><strong>If everything's great:</strong></p>
+        <p>
+          "That's great to hear! I'm so glad we could take care of you. Now, I know you're probably busy, but if you
+          have a minute this week, I'd really appreciate it if you could leave us a quick review on Google. It helps us
+          out a ton and helps other people feel confident choosing us. I'm going to text you a link right now so it's
+          easy—does that work?"
+        </p>
+        <p><strong>If there's an issue:</strong></p>
+        <p>
+          "Thanks so much for letting me know. I'm going to get that taken care of right away. Let me call you back once
+          it's fixed, and then I'll send you that review link. Sound good?"
+        </p>
+      </div>
+
+      <p>Why this works:</p>
+
+      <ul class="benefits-list">
+        <li>
+          You're demonstrating that you care about quality and follow-through (which makes them want to leave a good
+          review).
+        </li>
+        <li>You're catching issues early, before they escalate.</li>
+        <li>You're asking for the review while the positive experience is still fresh.</li>
+      </ul>
+
+      <p><strong>Time investment: 2 minutes per call.</strong></p>
+
+      <h3 class="sub-header">Step 3: Text the Link Immediately (While You're Still on the Phone)</h3>
+
+      <p>Don't wait. Don't say, "I'll send it later." Send it while you're talking to them.</p>
+
+      <p>Here's the text template:</p>
+
+      <div class="script-box">
+        <p>
+          "Hi [Customer Name], thanks again for choosing us! Here's the link to leave your review: [Google Review Link].
+          It'll only take a minute, and it really helps us out. We appreciate you!"
+        </p>
+        <p><strong>Alternative version (with "pay it forward" framing):</strong></p>
+        <p>
+          "Hi [Customer Name], thanks again for trusting us with your project! If you have a minute, we'd love it if you
+          could leave us a quick Google review. When you do, you're helping the next family who's trying to decide where
+          to go—kind of like paying it forward. Here's the link: [Google Review Link]. We really appreciate you!"
+        </p>
+      </div>
+
+      <p>Why this works:</p>
+
+      <ul class="benefits-list">
+        <li>The link is in their hand. There's no friction.</li>
+        <li>They can do it right now if they want, or later when they have time.</li>
+        <li>You're framing it as helping future customers, not just helping you.</li>
+      </ul>
+
+      <p><strong>Time investment: 30 seconds.</strong></p>
+
+      <h3 class="sub-header">Step 4: Follow Up (3–5 Days Later if They Haven't Left a Review)</h3>
+
+      <p>Life gets busy. People forget. A friendly follow-up reminder is not pushy—it's helpful.</p>
+
+      <p>Here's the follow-up text:</p>
+
+      <div class="script-box">
+        <p>
+          "Hi [Customer Name], just checking in—did the link I sent work okay? I know things get busy, but if you get a
+          chance, we'd love that review! Here's the link again: [link]. Let me know if you have any trouble with it.
+          Thanks!"
+        </p>
+      </div>
+
+      <p>Why this works:</p>
+
+      <ul class="benefits-list">
+        <li>You're not saying, "Hey, you forgot." You're saying, "Did the link work?"</li>
+        <li>It's a helpful, low-pressure nudge that often gets results.</li>
+      </ul>
+
+      <p><strong>Time investment: 30 seconds.</strong></p>
+
+      <div class="callout-box">
+        <div class="callout-header">Total Time Per Customer: 3 Minutes, 10 Seconds</div>
+        <p>That's it. That's the system.</p>
+        <p>If you do this consistently, you'll capture reviews from 40–60% of your customers.</p>
+        <p>And here's the payoff:</p>
+        <p>
+          Every review you capture makes your job easier next month—because it brings more warm leads through the door.
+        </p>
+      </div>
+
+      <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Use Reviews to Close More Sales</h2>
+
+      <p>Capturing reviews is only half the system. The other half is using them to close more deals.</p>
+
+      <p>Here's how.</p>
+
+      <h3 class="sub-header">Tactic #1: Ask "How Did You Hear About Us?" (And Use Their Answer)</h3>
+
+      <p>When a customer walks in or calls, ask:</p>
+
+      <p>"How did you hear about us?"</p>
+
+      <p>If they say, "I found you on Google" or "I read your reviews," call it out:</p>
+
+      <div class="script-box">
+        <p>
+          "That's great! Yeah, we're really proud of our reviews. We work hard to take care of every customer, and it's
+          nice to know people feel good enough about us to share their experience. We'll take great care of you too."
+        </p>
+      </div>
+
+      <p>
+        Why this works: You're reinforcing their decision to choose you. They already trust you—now you're validating
+        that trust.
+      </p>
+
+      <h3 class="sub-header">Tactic #2: Send Curated Reviews in Follow-Up Emails</h3>
+
+      <p>
+        After your initial consultation, send a follow-up email that includes 2–3 reviews that match the customer's
+        specific concerns.
+      </p>
+
+      <p>Example:</p>
+
+      <ul class="benefits-list">
+        <li>If they're worried about price, send a review that talks about value and affordability.</li>
+        <li>If they're concerned about installation quality, send a review that praises your installers.</li>
+        <li>If they're nervous about the process, send a review that talks about how easy and stress-free it was.</li>
+      </ul>
+
+      <p>
+        <strong>How to do this:</strong> Ask your manager for the Review Catalog (a document that organizes your best
+        reviews by theme). Then pull the 2–3 that are most relevant.
+      </p>
+
+      <p>
+        <strong>Pro Tip:</strong> Don't just paste the review text. Write a sentence like, "I thought you might like to
+        see what other customers said about [their concern]."
+      </p>
+
+      <h3 class="sub-header">Tactic #3: Use Reviews to Handle Objections</h3>
+
+      <p>When a customer says, "I'm getting quotes from a few other places," point them to your reviews.</p>
+
+      <div class="script-box">
+        <p>
+          "That makes total sense—you want to make sure you're making the right choice. One thing I'd encourage you to
+          do is compare our Google reviews to theirs. We've got over 200 five-star reviews, and people talk a lot about
+          our quality, our installers, and how we handle any issues that come up. That's not something every company can
+          say. You're not just buying a floor—you're buying peace of mind."
+        </p>
+      </div>
+
+      <p>
+        Why this works: You're shifting the conversation from price to value. And reviews are third-party proof that
+        backs up everything you're saying.
+      </p>
+
+      <h3 class="sub-header">Tactic #4: Frame Risk (Because You Can't Resell a Floor)</h3>
+
+      <p>Here's a line every customer needs to hear:</p>
+
+      <div class="script-box">
+        <p>
+          "You can't resell a floor. Once it's in, you're living with it for 10–15 years. So the real question isn't
+          'Who's cheapest?' It's 'Who's going to do it right the first time and be there if something goes wrong?'
+          That's where our reviews matter. People don't just talk about our product—they talk about our service, our
+          follow-through, and how we treat them after the sale."
+        </p>
+      </div>
+
+      <p>
+        Why this works: You're reframing the decision. It's not about saving $500 now. It's about avoiding a $5,000
+        mistake later.
+      </p>
+
+      <h3 class="sub-header">Tactic #5: Build Your Own "About Me" Sheet with Your Best Reviews</h3>
+
+      <p>
+        If customers mention you by name in a review, ask your manager to pull those reviews and create a simple
+        one-page "About Me" sheet for you.
+      </p>
+
+      <p>What to include:</p>
+
+      <ul class="benefits-list">
+        <li>Your name and photo</li>
+        <li>
+          A short intro (e.g., "I've been helping homeowners find the perfect flooring for 5 years, and I love making
+          the process easy and stress-free.")
+        </li>
+        <li>3–5 reviews where customers mention you by name</li>
+      </ul>
+
+      <p>How to use it: Keep it on your desk or hand it to customers during consultations.</p>
+
+      <p>
+        Why this works: It builds credibility fast. Customers see that other people trusted you, liked working with you,
+        and got great results.
+      </p>
+
+      <h3 class="sub-header">Tactic #6: Use the Review Wall During Consultations</h3>
+
+      <p>If your showroom has a review wall (physical or digital), use it during consultations.</p>
+
+      <p>When you're walking a customer through samples, gesture to the wall and say:</p>
+
+      <div class="script-box">
+        <p>
+          "By the way, if you want to see what other customers have said about us, we've got some of our best reviews
+          right over there. People talk a lot about our installers and how clean and professional they are—that's
+          something we're really proud of."
+        </p>
+      </div>
+
+      <p>
+        Why this works: It's a soft, conversational way to reinforce trust. You're not forcing them to read
+        reviews—you're just pointing out that they're there.
+      </p>
+
+      <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Track the Impact on YOUR Commissions</h2>
+
+      <p>Here's how to prove to yourself (and your manager) that reviews are making you more money.</p>
+
+      <h3 class="sub-header">Step 1: Ask Every Customer, "How Did You Hear About Us?"</h3>
+
+      <p>Write it down. Track it in your CRM or a simple notebook.</p>
+
+      <p>At the end of each month, count how many leads came from:</p>
+
+      <ul class="benefits-list">
+        <li>Google / organic search</li>
+        <li>Paid ads</li>
+        <li>Referrals</li>
+        <li>Walk-ins</li>
+      </ul>
+
+      <h3 class="sub-header">Step 2: Compare Your Close Rate on Google Leads vs. Other Sources</h3>
+
+      <p>You'll probably notice that Google leads close faster and at higher tickets than paid ad leads.</p>
+
+      <p>Example:</p>
+
+      <div class="callout-box">
+        <p><strong>Google leads:</strong> 50% close rate, $8,000 average ticket</p>
+        <p><strong>Paid ad leads:</strong> 25% close rate, $6,000 average ticket</p>
+        <p><strong>Translation:</strong> Google leads are worth 2× as much to you.</p>
+      </div>
+
+      <h3 class="sub-header">Step 3: Calculate Your Monthly "Review Bonus"</h3>
+
+      <p>Let's say you capture 10 reviews per month, and your company pays you $15 per review.</p>
+
+      <p>That's an extra $150/month in your paycheck—just for making a 2-minute phone call and sending a text.</p>
+
+      <p>Over a year, that's $1,800.</p>
+
+      <p>And that doesn't even count the indirect benefit: more leads, warmer leads, and higher commissions.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Real Talk: This Adds Up Fast</div>
+        <p>Let's say you're earning $60,000/year in base + commissions right now.</p>
+        <p>
+          If reviews increase your lead volume by 30% (and those leads are warmer and easier to close), your commissions
+          could jump by $10,000–$15,000/year.
+        </p>
+        <p>Add the $1,800/year review bonus on top of that, and you're looking at an extra $12,000–$17,000/year.</p>
+        <p>That's a car payment. That's a vacation. That's real money.</p>
+        <p>And all it costs you is 3 minutes 10 seconds per customer.</p>
+      </div>
+
+      <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Common Objections (And How to Handle Them)</h2>
+
+      <p>Let's address the concerns you might have about asking for reviews.</p>
+
+      <h3 class="sub-header">Objection #1: "I don't want to be pushy."</h3>
+
+      <p><strong>Response:</strong></p>
+
+      <p>
+        You're not being pushy. You're giving the customer an opportunity to help the next family who's trying to decide
+        where to go.
+      </p>
+
+      <p>Frame it as "paying it forward," not begging for a favor.</p>
+
+      <div class="script-box">
+        <p>
+          "When you leave a review, you're not doing me a favor—you're helping the next family who's trying to decide
+          where to go. You're basically paying it forward. That's not pushy. That's generous."
+        </p>
+      </div>
+
+      <h3 class="sub-header">Objection #2: "What if they leave a bad review?"</h3>
+
+      <p><strong>Response:</strong></p>
+
+      <p>
+        If you're making the post-installation call (Step 2), you're catching problems early—before they turn into bad
+        reviews.
+      </p>
+
+      <p>And here's the reality: Most customers are happy. They just haven't been asked to leave a review yet.</p>
+
+      <p>Bottom line: The post-installation call is your insurance policy against bad reviews.</p>
+
+      <h3 class="sub-header">Objection #3: "I'm too busy."</h3>
+
+      <p><strong>Response:</strong></p>
+
+      <p>The post-installation call takes 2 minutes. The text takes 30 seconds.</p>
+
+      <p>If you're too busy to spend 3 minutes capturing a review, you're too busy to make more money.</p>
+
+      <p>Because every review you capture brings you more warm leads next month.</p>
+
+      <h3 class="sub-header">Objection #4: "What if they say no?"</h3>
+
+      <p><strong>Response:</strong></p>
+
+      <p>Most customers won't say no. And if they do, it's not personal.</p>
+
+      <p>
+        Here's the reality: You'll get more "yeses" than "nos." And every "yes" brings you one step closer to more
+        leads, easier sales, and higher commissions.
+      </p>
+
+      <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">The 30-Day Challenge: Prove It to Yourself</h2>
+
+      <p>Here's how to test this system and see the results for yourself.</p>
+
+      <h3 class="sub-header">Week 1: Plant the Seed</h3>
+
+      <p>On every consultation this week, use the "plant the seed" script:</p>
+
+      <div class="script-box">
+        <p>
+          "By the way, one of the ways we've grown is through word of mouth and online reviews. If we do a great job for
+          you—and I'm confident we will—I'll ask you to leave us a quick review on Google. Fair enough?"
+        </p>
+      </div>
+
+      <p>Track how many times you say it. Goal: 100% of your consultations.</p>
+
+      <h3 class="sub-header">Week 2: Make the Post-Install Call</h3>
+
+      <p>For every job that wraps up this week, make the post-install call within 24–48 hours.</p>
+
+      <p>Use the script. Text the link immediately.</p>
+
+      <p>Track how many calls you make and how many reviews you capture.</p>
+
+      <h3 class="sub-header">Week 3: Follow Up</h3>
+
+      <p>
+        For any customer who didn't leave a review yet, send the follow-up text 3–5 days after the original request.
+      </p>
+
+      <p>Track how many follow-ups you send and how many reviews you capture.</p>
+
+      <h3 class="sub-header">Week 4: Review Your Results</h3>
+
+      <p>At the end of 30 days, count:</p>
+
+      <ul class="benefits-list">
+        <li>How many reviews did you capture?</li>
+        <li>How much bonus money did you earn?</li>
+        <li>How many leads came from Google this month vs. last month?</li>
+      </ul>
+
+      <p>Compare your numbers to the month before. You'll see the difference.</p>
+
+      <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">The Review Capture Checklist</h2>
+      <p style="text-align: center; font-style: italic; color: #6b7280; margin-bottom: 40px">
+        (Print This Out and Keep It on Your Desk)
+      </p>
+
+      <ul class="checklist">
+        <li>
+          <span class="step-name">☐ Step 1: Plant the Seed (during the consultation)</span>
+          <div class="step-script">
+            "If we do a great job for you, I'll ask you to leave us a quick review on Google. Fair enough?"
+          </div>
+        </li>
+
+        <li>
+          <span class="step-name">☐ Step 2: Make the Post-Install Call (24–48 hours after installation)</span>
+          <div class="step-script">
+            "How did everything go? Any concerns I can help with? Great! I'm going to text you a review link right now."
+          </div>
+        </li>
+
+        <li>
+          <span class="step-name">☐ Step 3: Text the Link Immediately (while you're on the phone)</span>
+          <div class="step-script">
+            "Here's the link to leave your review: [link]. It'll only take a minute. Thanks!"
+          </div>
+        </li>
+
+        <li>
+          <span class="step-name">☐ Step 4: Follow Up (3–5 days later if they haven't left a review)</span>
+          <div class="step-script">"Did the link work okay? Here it is again: [link]. Thanks!"</div>
+        </li>
+      </ul>
+
+      <div class="page-number">Page 10</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Conclusion: This Is How You Build a Career, Not Just a Job</h2>
+
+      <p>Here's the truth:</p>
+
+      <p>Most salespeople treat reviews as something the company cares about—not something they care about.</p>
+
+      <p>But the best salespeople understand that reviews are a leverage tool.</p>
+
+      <p>Every review you capture:</p>
+
+      <ul class="benefits-list">
+        <li>Brings you more warm leads next month</li>
+        <li>Makes your sales conversations easier</li>
+        <li>Increases your commissions</li>
+        <li>Builds your personal brand</li>
+      </ul>
+
+      <p>And over time, those reviews compound.</p>
+
+      <p>In six months, you'll have a personal portfolio of glowing reviews that mention you by name.</p>
+
+      <p>
+        In a year, you'll be the go-to salesperson in your company because your leads close faster and your customers
+        rave about you.
+      </p>
+
+      <p>In two years, you'll have a reputation that follows you wherever you go.</p>
+
+      <p>That's the power of making reviews part of your process.</p>
+
+      <div class="pull-quote">
+        So here's my challenge:<br><br>
+        For the next 30 days, commit to the 4-step system.<br><br>
+        Plant the seed. Make the call. Send the text. Follow up.<br><br>
+        Track your results. Compare your numbers.<br><br>
+        And then decide for yourself: Is this worth 3 minutes per customer?<br><br>
+        I think you'll find the answer is yes.<br><br>
+        Let's get to work.
+      </div>
+
+      <div class="page-number">Page 11</div>
+    </div>
+  
+
+</body></html>

@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import ResourceRouter from './pages/resources';
 import ReviewLeverageManual from './pages/ReviewLeverageManual';
 import ReviewSystemOwner from './pages/ReviewSystemOwner';
+import ReviewSystemBundle from './pages/ReviewSystemBundle';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />
           <Route path="/review-system-owner" element={<ReviewSystemOwner />} />
+          <Route path="/review-system-bundle" element={<ReviewSystemBundle />} />
           <Route path="/resources/:token" element={<ResourceRouter />} />
           
           {/* Main site pages - with navigation/footer */}

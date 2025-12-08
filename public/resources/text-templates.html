@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Request Text Templates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .step-header {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: #dc2626;
+        margin: 40px 0 20px 0;
+        line-height: 1.3;
+        padding: 16px 20px;
+        background: #fef2f2;
+        border-left: 4px solid #dc2626;
+        border-radius: 6px;
+      }
+
+      .template-box {
+        background: #f8fafc;
+        padding: 24px;
+        border-radius: 6px;
+        border: 2px solid #e5e7eb;
+        margin: 24px 0;
+      }
+
+      .template-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 20px;
+      }
+
+      .when-to-use {
+        background: #f3f4f6;
+        padding: 16px 20px;
+        border-radius: 6px;
+        margin: 16px 0;
+        border-left: 4px solid #6b7280;
+      }
+
+      .when-to-use-header {
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 8px;
+      }
+
+      .sms-box {
+        background: #f9fafb;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border: 2px solid #d1d5db;
+        font-family: 'Courier New', monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 16px 0;
+        color: #1f2937;
+      }
+
+      .why-works {
+        background: #e0f2fe;
+        padding: 16px 20px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 16px 0;
+      }
+
+      .why-works-header {
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 8px;
+      }
+
+      .code-box {
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 16px 20px;
+        border-radius: 6px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        margin: 16px 0;
+        overflow-x: auto;
+      }
+
+      .pro-tip-box {
+        background: #fffbeb;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #f59e0b;
+        margin: 24px 0;
+      }
+
+      .pro-tip-header {
+        font-weight: 700;
+        color: #d97706;
+        font-size: 1.1em;
+        margin-bottom: 12px;
+      }
+
+      .tool-box {
+        background: #f0fdf4;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #16a34a;
+        margin: 20px 0;
+      }
+
+      .warning-box {
+        background: #fef2f2;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #dc2626;
+        margin: 24px 0;
+      }
+
+      .warning-header {
+        font-weight: 700;
+        color: #dc2626;
+        font-size: 1.1em;
+        margin-bottom: 12px;
+      }
+
+      .workflow-box {
+        background: #ecfccb;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #22c55e;
+        margin: 24px 0;
+      }
+
+      .workflow-day {
+        font-weight: 700;
+        color: #047857;
+        font-size: 1.1em;
+        margin: 16px 0 8px 0;
+      }
+
+      .stats-callout {
+        background: #dbeafe;
+        padding: 16px 20px;
+        border-radius: 6px;
+        border: 2px solid #1e3a8a;
+        margin: 20px 0;
+        text-align: center;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">REVIEW REQUEST TEXT TEMPLATES</h1>
+      <div class="cover-subtitle">Copy-and-Paste SMS Messages for Every Scenario</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction</h2>
+
+      <p>Text messages are one of the most effective ways to request reviews because:</p>
+
+      <ul class="benefits-list">
+        <li>98% open rate (compared to 20% for email)</li>
+        <li>Immediate delivery (customers see it right away)</li>
+        <li>Easy to click (especially on mobile)</li>
+      </ul>
+
+      <div class="stats-callout">98% open rate vs. 20% for email</div>
+
+      <p>This document contains proven text templates you can copy, paste, and customize for your business.</p>
+
+      <h2 class="section-header">How to Generate Your Google Review Link</h2>
+
+      <p>Before you can send review requests, you need your unique Google review link.</p>
+
+      <div class="step-header">Step 1: Find Your Google Business Profile</div>
+      <p>Go to Google and search for your business name + city (e.g., "ABC Flooring Atlanta").</p>
+      <p>Your Google Business Profile should appear on the right side of the search results.</p>
+
+      <div class="step-header">Step 2: Get Your Place ID</div>
+      <p>Click "Share" on your Google Business Profile.</p>
+      <p>Copy the URL (it will look something like this: https://maps.app.goo.gl/abc123).</p>
+      <p>Go to this website: https://developers.google.com/maps/documentation/places/web-service/place-id</p>
+      <p>Paste your Google Maps URL and retrieve your Place ID.</p>
+
+      <div class="step-header">Step 3: Generate Your Review Link</div>
+      <p>Use this format:</p>
+
+      <div class="code-box">https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID_HERE</div>
+
+      <p>Replace YOUR_PLACE_ID_HERE with your actual Place ID.</p>
+
+      <p>Example:</p>
+      <div class="code-box">https://search.google.com/local/writereview?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4</div>
+
+      <div class="step-header">Step 4: Shorten the Link (Optional)</div>
+      <p>Use a URL shortener like Bitly or TinyURL to make the link cleaner and easier to track.</p>
+
+      <p>Example shortened link:</p>
+      <div class="code-box">https://bit.ly/ABCFlooringReview</div>
+    </div>
+
+    <div class="page-break">
+      <div class="template-box">
+        <div class="template-header">
+          TEMPLATE 1: STANDARD REVIEW REQUEST (Sent Immediately After Post-Install Call)
+        </div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          Right after you hang up from the post-installation call, while the customer is still thinking about the
+          conversation.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], thanks again for choosing us! Here's the link to leave your review: [Google Review Link].
+          It'll only take a minute, and it really helps us out. We appreciate you!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>Short, simple, and direct.</li>
+            <li>The link is right there—no friction.</li>
+            <li>Friendly tone without being pushy.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 2: "PAY IT FORWARD" VERSION (Emphasizes Helping Others)</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          Same as Template 1, but this version frames the review as altruistic (helping other customers), not
+          transactional.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], thanks again for trusting us with your project! If you have a minute, we'd love it if you
+          could leave us a quick Google review. When you do, you're helping the next family who's trying to decide where
+          to go—kind of like paying it forward. Here's the link: [Google Review Link]. We really appreciate you!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>Reframes the request from "help me" to "help others."</li>
+            <li>Customers are more willing to do something altruistic than transactional.</li>
+            <li>Still includes the link for easy action.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 3: FOLLOW-UP REMINDER (3–5 Days Later)</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          If the customer hasn't left a review within 3–5 days of your initial text.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], just checking in—did the link I sent work okay? I know things get busy, but if you get a
+          chance, we'd love that review! Here's the link again: [Google Review Link]. Let me know if you have any
+          trouble with it. Thanks!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>You're not saying, "Hey, you forgot." You're saying, "Did the link work?"</li>
+            <li>It's a helpful, low-pressure nudge.</li>
+            <li>The actionable question ("did the link work?") prompts a response and reduces customer guilt.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 4: AFTER YOU'VE FIXED A PROBLEM</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          After you've resolved a small issue the customer reported (e.g., a crooked transition strip, a spot that
+          needed touch-up, etc.).
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], just wanted to let you know we took care of that [issue]. Everything should be perfect
+          now! If you're happy with how we handled it, we'd love it if you could leave us a Google review. Here's the
+          link: [Google Review Link]. Thanks for giving us the chance to make it right!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>Customers often leave glowing reviews after you fix a problem—because it shows you care.</li>
+            <li>You're framing the review as proof that you stand behind your work.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 5: FOR CUSTOMERS WHO AREN'T TECH-SAVVY</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          If the customer mentioned during your call that they're not comfortable with technology or don't know how to
+          leave a review.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], here's the link to leave your Google review: [Google Review Link]. It's really easy—just
+          click the link, tap the stars to rate us, and write a sentence or two about your experience. If you have any
+          trouble, just call me and I'll walk you through it. Thanks!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>You're acknowledging their concern and making it feel easy.</li>
+            <li>You're offering to help if they get stuck.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 6: FOR CUSTOMERS WHO SAID "I'LL DO IT LATER"</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          If the customer said "I'll do it later" during your post-installation call.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], here's the link to leave your review whenever you're ready: [Google Review Link]. It only
+          takes about 60 seconds. Thanks so much!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>
+              You're honoring their request to do it later, but you're putting the link in their hands immediately.
+            </li>
+            <li>You're emphasizing how quick it is (60 seconds).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 7: FOR HIGH-VALUE OR VIP CUSTOMERS</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          For customers who spent a lot of money, referred other people, or had an exceptional experience.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], I just wanted to say thank you again for trusting us with your project. It was a pleasure
+          working with you! If you have a minute, we'd be honored if you'd leave us a Google review. Here's the link:
+          [Google Review Link]. Thanks so much!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>The tone is more personal and appreciative.</li>
+            <li>"We'd be honored" elevates the request and makes it feel special.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="template-box">
+        <div class="template-header">TEMPLATE 8: FOR CUSTOMERS WHO REFERRED SOMEONE</div>
+
+        <div class="when-to-use">
+          <div class="when-to-use-header">When to use:</div>
+          If the customer has already referred a friend, family member, or neighbor to you.
+        </div>
+
+        <div class="sms-box">
+          "Hi [Customer Name], thanks so much for referring [Referral Name] to us—we really appreciate it! If you have a
+          minute, we'd love it if you could also leave us a Google review. It's kind of like referring us to a hundred
+          people at once! Here's the link: [Google Review Link]. Thanks again!"
+        </div>
+
+        <div class="why-works">
+          <div class="why-works-header">Why this works:</div>
+          <ul class="benefits-list">
+            <li>You're acknowledging their referral first (which makes them feel good).</li>
+            <li>You're reframing a Google review as a "mass referral."</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Pro Tips for Text Message Success</h2>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">1. Send the Text Immediately</div>
+        <p>
+          Don't wait. Don't say "I'll send it later." Send it while you're on the phone with the customer or within 60
+          seconds of hanging up.
+        </p>
+      </div>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">2. Use Their First Name</div>
+        <p>Personalization matters. Always include the customer's first name in the text.</p>
+      </div>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">3. Keep It Short</div>
+        <p>Text messages should be short and scannable. Don't write a paragraph—get to the point.</p>
+      </div>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">4. Include the Link in Every Text</div>
+        <p>Don't make them search for it. Put the link right there so they can click it immediately.</p>
+      </div>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">5. Follow Up Once (and Only Once)</div>
+        <p>
+          If they don't leave a review within 3–5 days, send one follow-up text. After that, let it go. You don't want
+          to annoy them.
+        </p>
+      </div>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">6. Use a Business Texting Platform (If Possible)</div>
+        <p>If you're texting from a personal phone, use a business texting app like:</p>
+
+        <div class="tool-box">
+          <ul class="benefits-list">
+            <li>Podium</li>
+            <li>SimpleTexting</li>
+            <li>TextMagic</li>
+            <li>Twilio</li>
+          </ul>
+        </div>
+
+        <p>These platforms let you:</p>
+        <ul class="benefits-list">
+          <li>Track who opened the text</li>
+          <li>See who clicked the link</li>
+          <li>Schedule follow-ups automatically</li>
+        </ul>
+      </div>
+
+      <div class="pro-tip-box">
+        <div class="pro-tip-header">7. Track Your Response Rate</div>
+        <p>Keep a simple spreadsheet or dashboard that tracks:</p>
+        <ul class="benefits-list">
+          <li>How many review request texts you sent</li>
+          <li>How many customers left a review</li>
+          <li>Your response rate (goal: 40–60%)</li>
+        </ul>
+
+        <div class="stats-callout">Goal: 40–60% response rate</div>
+
+        <p>If your response rate is lower than 40%, troubleshoot:</p>
+        <ul class="benefits-list">
+          <li>Are you sending the text immediately?</li>
+          <li>Are you following up?</li>
+          <li>Is your link working?</li>
+          <li>Are you making the post-installation call first (to catch issues before asking for a review)?</li>
+        </ul>
+      </div>
+
+      <h2 class="section-header">What NOT to Do</h2>
+
+      <div class="warning-box">
+        <div class="warning-header">❌ Don't Send a Text Without Calling First</div>
+        <p>
+          The post-installation call is critical. It prevents "Silent Death" and sets you up for a positive review. If
+          you skip the call and just send a text, your response rate will be much lower.
+        </p>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-header">❌ Don't Send Multiple Follow-Ups</div>
+        <p>
+          One follow-up is enough. After that, let it go. You don't want to annoy the customer or damage the
+          relationship.
+        </p>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-header">❌ Don't Use All Caps or Too Many Exclamation Points</div>
+        <p>It looks desperate and spammy. Keep your tone professional and friendly.</p>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-header">❌ Don't Ask Them to Leave a Review on Multiple Platforms</div>
+        <p>
+          Focus on Google first. Once you have 100+ Google reviews, then you can branch out to Facebook, Yelp, etc. But
+          don't overwhelm customers by asking them to leave reviews on five different sites.
+        </p>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-header">❌ Don't Forget to Thank Them</div>
+        <p>
+          When a customer leaves a review, send them a thank-you text or call them. It reinforces the behavior and
+          strengthens the relationship.
+        </p>
+
+        <p>Example thank-you text:</p>
+        <div class="sms-box">
+          "Hi [Customer Name], I just saw your review—thank you so much! We really appreciate you taking the time to
+          share your experience. If you ever need anything, don't hesitate to reach out. Thanks again!"
+        </div>
+      </div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Sample Review Request Workflow (Start to Finish)</h2>
+
+      <p>Here's what the full process looks like:</p>
+
+      <div class="workflow-box">
+        <div class="workflow-day">Day 0: Plant the Seed (During the Sale)</div>
+        <p>
+          "By the way, if we do a great job for you, I'll ask you to leave us a quick review on Google. Fair enough?"
+        </p>
+
+        <div class="workflow-day">Day 1–2: Installation</div>
+        <p>The job gets done. Your installer does great work and cleans up thoroughly.</p>
+
+        <div class="workflow-day">Day 2–3: Post-Installation Call</div>
+        <p>You call the customer 24–48 hours after installation:</p>
+        <div class="sms-box">
+          "Hi [Customer Name], just checking in—how's the floor looking? Any concerns I can help with?" [Customer says
+          everything's great] "That's great to hear! I'm going to text you a review link right now. Does that work?"
+        </div>
+
+        <div class="workflow-day">Day 2–3: Send the Text (Immediately)</div>
+        <p>You hang up and immediately send:</p>
+        <div class="sms-box">
+          "Hi [Customer Name], thanks again for choosing us! Here's the link to leave your review: [Google Review Link].
+          It'll only take a minute, and it really helps us out. We appreciate you!"
+        </div>
+
+        <div class="workflow-day">Day 5–7: Follow-Up Text (If They Haven't Left a Review)</div>
+        <p>If they haven't left a review by Day 5–7, send one follow-up:</p>
+        <div class="sms-box">
+          "Hi [Customer Name], just checking in—did the link I sent work okay? I know things get busy, but if you get a
+          chance, we'd love that review! Here's the link again: [Google Review Link]. Thanks!"
+        </div>
+
+        <div class="workflow-day">Day 7+: Let It Go</div>
+        <p>If they still haven't left a review after the follow-up, let it go. Don't send a third text.</p>
+
+        <div class="workflow-day">When They Leave the Review: Thank Them</div>
+        <p>As soon as you see the review come in, send a thank-you text or call them:</p>
+        <div class="sms-box">
+          "Hi [Customer Name], I just saw your review—thank you so much! We really appreciate you taking the time. If
+          you ever need anything, don't hesitate to reach out!"
+        </div>
+      </div>
+
+      <h2 class="section-header">Conclusion</h2>
+
+      <p>Text messages are the fastest, easiest way to get Google reviews—if you do it right.</p>
+
+      <p>Your job is to:</p>
+      <ul class="benefits-list">
+        <li>Make the post-installation call first (to prevent "Silent Death").</li>
+        <li>Send the text immediately (with the link).</li>
+        <li>Follow up once (3–5 days later).</li>
+        <li>Thank the customer when they leave a review.</li>
+      </ul>
+
+      <div class="stats-callout">
+        If you do that consistently, you'll capture reviews from 40–60% of your customers.
+      </div>
+
+      <p>And over 90 days, that adds up to 50–100+ new Google reviews.</p>
+
+      <div class="pull-quote">Let's get to work.</div>
+    </div>
+  
+
+</body></html>

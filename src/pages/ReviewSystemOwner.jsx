@@ -23,7 +23,7 @@ export default function ReviewSystemOwner() {
           <div className="bg-primary-50 border-b border-primary-200 p-6">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="/resources/review-leverage-owner-manual.html"
+                href="/resources/review-system-complete.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors flex items-center gap-2"
@@ -34,8 +34,8 @@ export default function ReviewSystemOwner() {
                 Open in New Tab
               </a>
               <a
-                href="/resources/review-leverage-owner-manual.html"
-                download="Review-Leverage-System-Owner.html"
+                href="/resources/review-system-complete.html"
+                download="Review-System-Ultimate-Flooring-Dealers.html"
                 className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,10 +52,10 @@ export default function ReviewSystemOwner() {
           {/* Embedded Manual */}
           <div className="p-4">
             <iframe
-              src="/resources/review-leverage-owner-manual.html"
+              src="/resources/review-system-complete.html"
               className="w-full border-0 rounded"
               style={{ height: '1200px', minHeight: '800px' }}
-              title="Review Leverage System - Owner Manual"
+              title="Reviews: The Ultimate Leverage System for Flooring Dealers"
             />
           </div>
         </div>

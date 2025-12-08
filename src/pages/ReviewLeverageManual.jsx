@@ -23,7 +23,7 @@ export default function ReviewLeverageManual() {
           <div className="bg-primary-50 border-b border-primary-200 p-6">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="/resources/review-leverage-manual.html"
+                href="/resources/salesperson-guide-updated.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors flex items-center gap-2"
@@ -34,8 +34,8 @@ export default function ReviewLeverageManual() {
                 Open in New Tab
               </a>
               <a
-                href="/resources/review-leverage-manual.html"
-                download="Review-Leverage-Manual.html"
+                href="/resources/salesperson-guide-updated.html"
+                download="Salesperson-Guide-Google-Reviews.html"
                 className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,10 +52,10 @@ export default function ReviewLeverageManual() {
           {/* Embedded Manual */}
           <div className="p-4">
             <iframe
-              src="/resources/review-leverage-manual.html"
+              src="/resources/salesperson-guide-updated.html"
               className="w-full border-0 rounded"
               style={{ height: '1200px', minHeight: '800px' }}
-              title="Review Leverage Manual"
+              title="Salesperson's Guide to Google Reviews"
             />
           </div>
         </div>

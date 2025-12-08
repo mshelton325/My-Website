@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Sales Meeting Dashboard Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .callout-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+      }
+
+      .callout-header {
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        color: #1e3a8a;
+      }
+
+      .script-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      .stats-callout {
+        font-size: 1em;
+        font-weight: 600;
+        background: #f1f5f9;
+        padding: 20px 24px;
+        margin: 24px 0;
+        border: 2px solid #1e3a8a;
+        border-radius: 6px;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      ul,
+      ol {
+        list-style: inherit;
+      }
+
+      ul.benefits-list,
+      .benefits-list ul {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      ul.benefits-list li,
+      .benefits-list ul li {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .dashboard-table,
+      .roi-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size: 0.95em;
+      }
+
+      .dashboard-table th,
+      .roi-table th {
+        background: #1e3a8a;
+        color: white;
+        padding: 12px 10px;
+        text-align: left;
+        font-weight: 600;
+      }
+
+      .dashboard-table td,
+      .roi-table td {
+        padding: 10px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .dashboard-table tr:nth-child(even),
+      .roi-table tr:nth-child(even) {
+        background: #f9fafb;
+      }
+
+      .page-number {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 0.9em;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 20px;
+        }
+        .page-break {
+          page-break-before: always;
+          box-shadow: none;
+          margin-top: 0;
+        }
+        .cover-page {
+          box-shadow: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+        .dashboard-table,
+        .roi-table {
+          font-size: 0.85em;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">WEEKLY SALES MEETING DASHBOARD TEMPLATE</h1>
+      <div class="cover-subtitle">How to Track, Celebrate, and Drive Review Capture with a Simple Leaderboard</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction: Why You Need a Review Dashboard</h2>
+
+      <p>If you don't track review capture, it won't happen consistently.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Your team needs to see:</div>
+        <ul class="benefits-list">
+          <li>Who's asking for reviews (and who's not)</li>
+          <li>Who's capturing the most reviews (friendly competition)</li>
+          <li>How the team is progressing toward the goal (momentum and accountability)</li>
+        </ul>
+      </div>
+
+      <p>
+        A Weekly Sales Meeting Dashboard is a simple visual tool (whiteboard, spreadsheet, or printed sheet) that tracks
+        review capture by salesperson and makes it part of your weekly rhythm.
+      </p>
+
+      <p>When you track it, celebrate it, and incentivize it, your team will do it.</p>
+
+      <div class="page-number">Page 1</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">What Is the Weekly Sales Meeting Dashboard?</h2>
+
+      <p>It's a one-page scoreboard that you update weekly and review at every sales meeting.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">What it tracks:</div>
+        <ul class="benefits-list">
+          <li>Reviews captured per salesperson (this week)</li>
+          <li>Reviews captured per salesperson (this month)</li>
+          <li>Total reviews captured (all-time, per salesperson)</li>
+          <li>Team goal vs. actual results</li>
+          <li>Top performer of the week (optional: reward or recognition)</li>
+        </ul>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Where it lives:</div>
+        <ul class="benefits-list">
+          <li><strong>Low-Lift Option:</strong> A whiteboard in your sales office or break room</li>
+          <li><strong>Deep-Dive Option:</strong> A shared Google Sheet or Excel file that everyone can access</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Dashboard Layout (Simple Version)</h2>
+
+      <p>Here's what the dashboard looks like:</p>
+
+      <div class="stats-callout">
+        <strong>REVIEW LEADERBOARD – WEEK OF [DATE]</strong><br>
+        Team Goal This Week: 10 Reviews<br>
+        Actual Results: 8 Reviews<br>
+        Progress: 80%
+      </div>
+
+      <table class="dashboard-table">
+        <thead>
+          <tr>
+            <th>Salesperson</th>
+            <th>Reviews This Week</th>
+            <th>Reviews This Month</th>
+            <th>Total Reviews (All-Time)</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sarah</td>
+            <td>3</td>
+            <td>10</td>
+            <td>47</td>
+            <td>🏆 Top performer this week!</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>2</td>
+            <td>7</td>
+            <td>32</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Jessica</td>
+            <td>2</td>
+            <td>6</td>
+            <td>21</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tom</td>
+            <td>1</td>
+            <td>3</td>
+            <td>15</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Lisa</td>
+            <td>0</td>
+            <td>2</td>
+            <td>9</td>
+            <td>Needs coaching</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout-box">
+        <p><strong>Top Performer This Week:</strong> Sarah (3 reviews)</p>
+        <p><strong>Most Improved:</strong> Tom (up from 0 last week)</p>
+        <p><strong>Best Review of the Week:</strong> [Read one great review aloud at the meeting]</p>
+        <p><strong>Next Week's Goal:</strong> 10 Reviews</p>
+      </div>
+
+      <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Use the Dashboard in Your Weekly Sales Meeting</h2>
+
+      <p>Here's a simple agenda for integrating the dashboard into your weekly sales meeting.</p>
+
+      <div class="stats-callout">
+        <strong>Weekly Sales Meeting Agenda (15 Minutes for Review Capture)</strong><br>
+        Total Meeting Time: 30–45 minutes<br>
+        Review Capture Section: 10–15 minutes
+      </div>
+
+      <h3 class="sub-header">1. Review Last Week's Results (3 minutes)</h3>
+
+      <div class="script-box">
+        <p><strong>What to say:</strong></p>
+        <p>
+          "Alright, team, let's talk about reviews. Last week, our goal was 10 reviews. We captured 8. That's 80% of our
+          goal—not bad, but we can do better. Here's the breakdown:"
+        </p>
+        <p>[Point to the leaderboard and read the numbers aloud]</p>
+        <p>
+          "Sarah, great job—you captured 3 reviews this week. That's awesome. Mike and Jessica, you both captured 2.
+          Tom, you got 1. Lisa, I noticed you're at 0 this week—what's going on?"
+        </p>
+        <p>
+          [Give Lisa a chance to respond. Is she forgetting to make the post-install call? Does she need to practice the
+          script? Offer help, not criticism.]
+        </p>
+      </div>
+
+      <h3 class="sub-header">2. Celebrate the Best Review of the Week (3 minutes)</h3>
+
+      <div class="script-box">
+        <p><strong>What to say:</strong></p>
+        <p>
+          "Now, let's talk about the best review from last week. This one came from Mrs. Johnson, and Sarah captured it.
+          I'm going to read it out loud:"
+        </p>
+        <p>[Read the full review aloud]</p>
+        <p>
+          "Sarah, this is great. Mrs. Johnson specifically mentioned how clean the installers left her home and how
+          helpful you were during the consultation. That's exactly what we want to see. Great work."
+        </p>
+        <p>
+          [If the review mentions installers, call them out too: "And shout-out to Mike and Tony (installers) for doing
+          great work and leaving the job spotless."]
+        </p>
+      </div>
+
+      <h3 class="sub-header">3. Recognize the Top Performer (2 minutes)</h3>
+
+      <div class="script-box">
+        <p><strong>What to say:</strong></p>
+        <p>"Sarah, you're the top performer this week with 3 reviews. Here's your $50 bonus."</p>
+        <p>[Hand her a gift card, cash, or add it to her paycheck—whatever you've committed to.]</p>
+        <p>"Keep it up. You're making this look easy."</p>
+      </div>
+
+      <h3 class="sub-header">4. Set Next Week's Goal (2 minutes)</h3>
+
+      <div class="script-box">
+        <p><strong>What to say:</strong></p>
+        <p>
+          "Alright, here's the goal for next week: 10 reviews. If we hit it, I'm bringing in lunch on Friday. Who's with
+          me?"
+        </p>
+        <p>[Get verbal buy-in from the team. Make it fun and motivating.]</p>
+      </div>
+
+      <h3 class="sub-header">5. Quick Coaching or Role-Play (Optional – 5 minutes)</h3>
+
+      <p>If someone is struggling or if you want to reinforce the process, do a quick role-play.</p>
+
+      <div class="script-box">
+        <p><strong>What to say:</strong></p>
+        <p>
+          "Real quick—let's practice the post-install call. Lisa, can you come up here? I'll be the customer. You call
+          me and ask how the install went. Go."
+        </p>
+        <p>[Do a 60-second role-play in front of the team. Let the team give feedback and refine the approach.]</p>
+      </div>
+
+      <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Track Reviews (Step-by-Step)</h2>
+
+      <p>Here's how to keep your dashboard up to date.</p>
+
+      <h3 class="sub-header">Option A: Manual Tracking (Low-Lift)</h3>
+
+      <div class="callout-box">
+        <div class="callout-header">Tools:</div>
+        <p>Whiteboard, printed sheet, or simple notebook</p>
+
+        <div class="callout-header">Action items:</div>
+        <ul class="benefits-list">
+          <li>Every Monday morning, update the leaderboard with last week's results</li>
+          <li>Ask each salesperson: "How many reviews did you capture last week?"</li>
+          <li>Update the whiteboard or printed sheet</li>
+          <li>At your Tuesday team meeting, review the results and celebrate wins</li>
+        </ul>
+
+        <p><strong>Time investment:</strong> 10 minutes per week</p>
+      </div>
+
+      <h3 class="sub-header">Option B: Digital Tracking (Deep-Dive)</h3>
+
+      <div class="callout-box">
+        <div class="callout-header">Tools:</div>
+        <p>Google Sheets or Excel</p>
+
+        <div class="callout-header">Action items:</div>
+        <ul class="benefits-list">
+          <li>Create a shared Google Sheet with the dashboard layout (see template below)</li>
+          <li>
+            Each salesperson enters their reviews into the sheet as they capture them (or you update it weekly based on
+            what you see in your Google Business Profile)
+          </li>
+          <li>The sheet automatically calculates totals, averages, and percentages</li>
+          <li>At your weekly team meeting, pull up the sheet on a screen and review the results</li>
+        </ul>
+
+        <p><strong>Time investment:</strong> 5 minutes per week (once the sheet is set up)</p>
+      </div>
+
+      <div class="page-number">Page 5</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Google Sheets Template (Copy-Paste Ready)</h2>
+
+      <p>Here's a simple Google Sheets template you can use:</p>
+
+      <h3 class="sub-header">SHEET 1: WEEKLY LEADERBOARD</h3>
+
+      <table class="roi-table">
+        <thead>
+          <tr>
+            <th>Salesperson</th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Week 3</th>
+            <th>Week 4</th>
+            <th>Total This Month</th>
+            <th>Total All-Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sarah</td>
+            <td>3</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>=SUM(B2:E2)</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>2</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>=SUM(B3:E3)</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Jessica</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>=SUM(B4:E4)</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Tom</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>=SUM(B5:E5)</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Lisa</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>=SUM(B6:E6)</td>
+            <td>9</td>
+          </tr>
+          <tr style="background: #e5e7eb">
+            <td><strong>TEAM TOTAL</strong></td>
+            <td>=SUM(B2:B6)</td>
+            <td>=SUM(C2:C6)</td>
+            <td>=SUM(D2:D6)</td>
+            <td>=SUM(E2:E6)</td>
+            <td>=SUM(F2:F6)</td>
+            <td>=SUM(G2:G6)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="sub-header">SHEET 2: MONTHLY SUMMARY</h3>
+
+      <table class="roi-table">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Total Reviews Captured</th>
+            <th>Team Goal</th>
+            <th>% of Goal</th>
+            <th>Top Performer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January 2025</td>
+            <td>42</td>
+            <td>40</td>
+            <td>105%</td>
+            <td>Sarah (12 reviews)</td>
+          </tr>
+          <tr>
+            <td>February 2025</td>
+            <td>38</td>
+            <td>40</td>
+            <td>95%</td>
+            <td>Mike (10 reviews)</td>
+          </tr>
+          <tr>
+            <td>March 2025</td>
+            <td>45</td>
+            <td>40</td>
+            <td>113%</td>
+            <td>Sarah (14 reviews)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">How to Gamify the Dashboard (Make It Fun)</h2>
+
+      <p>
+        People are motivated by recognition, competition, and rewards. Here's how to make your dashboard more engaging.
+      </p>
+
+      <h3 class="sub-header">1. Weekly Prizes</h3>
+
+      <p><strong>What to do:</strong> The salesperson who captures the most reviews each week wins a small prize.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Prize ideas:</div>
+        <ul class="benefits-list">
+          <li>$50 cash or gift card</li>
+          <li>Free lunch</li>
+          <li>Extra PTO day</li>
+          <li>Reserved parking spot for the week</li>
+          <li>"Review Champion" trophy (that rotates week to week)</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-header">2. Monthly Competitions</h3>
+
+      <p>
+        <strong>What to do:</strong> At the end of each month, the salesperson with the most reviews wins a bigger
+        prize.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Prize ideas:</div>
+        <ul class="benefits-list">
+          <li>$100–$200 cash or gift card</li>
+          <li>Dinner for two at a nice restaurant</li>
+          <li>Extra day off</li>
+          <li>Public recognition (e.g., "Salesperson of the Month" plaque)</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-header">3. Team Challenges</h3>
+
+      <p>
+        <strong>What to do:</strong> Set a team goal for the week or month. If the team hits the goal, everyone wins.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Prize ideas:</div>
+        <ul class="benefits-list">
+          <li>Catered lunch</li>
+          <li>Early close on Friday</li>
+          <li>Team outing (bowling, escape room, etc.)</li>
+        </ul>
+
+        <p><strong>Example:</strong></p>
+        <p>
+          "If we capture 40 reviews as a team this month, I'm taking everyone out to lunch at [restaurant]. Let's hit
+          it!"
+        </p>
+      </div>
+
+      <h3 class="sub-header">4. Visual Milestones</h3>
+
+      <p>
+        <strong>What to do:</strong> Mark major milestones on the leaderboard (e.g., 50 reviews, 100 reviews, 200
+        reviews) and celebrate them publicly.
+      </p>
+
+      <div class="script-box">
+        <p><strong>Example:</strong></p>
+        <p>
+          "Team, we just hit 100 total reviews on our Google Business Profile! That's a huge milestone. Great work,
+          everyone. I'm buying lunch on Friday to celebrate."
+        </p>
+      </div>
+
+      <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Pro Tips for Dashboard Success</h2>
+
+      <h3 class="sub-header">1. Update It Weekly (Not Monthly)</h3>
+      <p>
+        If you only update the leaderboard once a month, it loses its power. Weekly updates create momentum and keep it
+        top of mind.
+      </p>
+
+      <h3 class="sub-header">2. Make It Visible</h3>
+      <p>Put the leaderboard somewhere everyone can see it:</p>
+      <ul class="benefits-list">
+        <li>In the sales office (where salespeople gather)</li>
+        <li>In the break room (where installers and support staff can see it too)</li>
+        <li>On a shared screen in your showroom</li>
+      </ul>
+
+      <h3 class="sub-header">3. Celebrate Publicly, Coach Privately</h3>
+      <ul class="benefits-list">
+        <li>When someone does well, celebrate them in front of the team</li>
+        <li>
+          When someone is struggling, pull them aside privately and ask: "What's hard about this? How can I help?"
+        </li>
+      </ul>
+
+      <h3 class="sub-header">4. Track Percentage of Jobs (Not Just Raw Numbers)</h3>
+      <p>
+        A salesperson who captures 5 reviews from 10 jobs (50% capture rate) is performing better than someone who
+        captures 7 reviews from 20 jobs (35% capture rate).
+      </p>
+
+      <p>Add this column to your dashboard:</p>
+
+      <table class="dashboard-table">
+        <thead>
+          <tr>
+            <th>Salesperson</th>
+            <th>Jobs Completed</th>
+            <th>Reviews Captured</th>
+            <th>Capture Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sarah</td>
+            <td>10</td>
+            <td>5</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>20</td>
+            <td>7</td>
+            <td>35%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="sub-header">5. Don't Penalize—Incentivize</h3>
+      <p>Don't punish people for not capturing reviews. Instead, incentivize the behavior you want to see.</p>
+
+      <div class="callout-box">
+        <p><strong>Bad:</strong> "Lisa, you didn't capture any reviews this week. That's unacceptable."</p>
+        <p>
+          <strong>Good:</strong> "Lisa, I noticed you're at 0 this week. What's going on? Do you need help practicing
+          the script? Let's role-play it together."
+        </p>
+      </div>
+
+      <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Sample Weekly Sales Meeting Script (Full 15-Minute Review Section)</h2>
+
+      <p>Here's what the full review capture section of your weekly sales meeting might sound like:</p>
+
+      <div class="script-box">
+        <p><strong>Manager:</strong></p>
+        <p>
+          "Alright, team, let's talk about reviews. Last week, our goal was 10 reviews. We captured 8. That's 80% of our
+          goal—solid, but we can do better.
+        </p>
+        <p>Here's the breakdown: Sarah captured 3, Mike and Jessica both got 2, Tom got 1, and Lisa is at 0.</p>
+        <p>Sarah, great work—you're the top performer this week. Here's your $50 gift card. Keep it up.</p>
+        <p>Lisa, I noticed you're at 0 this week. What's going on?"</p>
+
+        <p><strong>Lisa:</strong></p>
+        <p>"I've just been really busy, and I keep forgetting to make the post-install call."</p>
+
+        <p><strong>Manager:</strong></p>
+        <p>
+          "I get it. Here's what I want you to do: set a reminder on your phone for 24 hours after every install. That
+          way, you won't forget. And if you need help with the script, let's practice it after this meeting. Sound
+          good?"
+        </p>
+
+        <p><strong>Lisa:</strong></p>
+        <p>"Yeah, that works."</p>
+
+        <p><strong>Manager:</strong></p>
+        <p>
+          "Great. Now, let's talk about the best review from last week. This one came from Mrs. Johnson, and Sarah
+          captured it. Listen to this:"
+        </p>
+        <p>[Reads review aloud]</p>
+        <p>
+          "Sarah, this is awesome. Mrs. Johnson specifically mentioned how clean the installers left her home and how
+          patient you were during the consultation. That's exactly what we want.
+        </p>
+        <p>And shout-out to Mike and Tony (installers) for doing great work and leaving the job spotless.</p>
+        <p>
+          Alright, here's the goal for next week: 10 reviews. If we hit it, I'm bringing in pizza on Friday. Who's with
+          me?"
+        </p>
+
+        <p><strong>Team:</strong></p>
+        <p>"Let's do it!"</p>
+      </div>
+
+      <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Conclusion: The Dashboard Is Your Accountability Tool</h2>
+
+      <p>The Weekly Sales Meeting Dashboard is simple, but it's powerful.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Here's what it does:</div>
+        <ul class="benefits-list">
+          <li>Makes review capture visible (so people know it matters)</li>
+          <li>Creates friendly competition (so people want to win)</li>
+          <li>Holds people accountable (so you can coach and support stragglers)</li>
+          <li>Celebrates wins publicly (so people feel recognized and motivated)</li>
+        </ul>
+      </div>
+
+      <p>
+        If you update it weekly, review it at team meetings, and tie it to incentives, your team will capture reviews
+        consistently—and your review presence will explode over the next 90 days.
+      </p>
+
+      <div class="pull-quote">Let's get to work.</div>
+
+      <div class="page-number">Page 10</div>
+    </div>
+  
+
+</body></html>

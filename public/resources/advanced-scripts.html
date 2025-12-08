@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Scripts and Role-Play Scenarios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .scenario-header {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: #dc2626;
+        margin: 40px 0 20px 0;
+        line-height: 1.3;
+        padding: 16px 20px;
+        background: #fef2f2;
+        border-left: 4px solid #dc2626;
+        border-radius: 6px;
+      }
+
+      .role-play-header {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: #059669;
+        margin: 40px 0 20px 0;
+        line-height: 1.3;
+        padding: 16px 20px;
+        background: #ecfdf5;
+        border-left: 4px solid #059669;
+        border-radius: 6px;
+      }
+
+      .callout-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+      }
+
+      .callout-header {
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        color: #1e3a8a;
+      }
+
+      .script-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+      }
+
+      .coaching-box {
+        background: #fef3c7;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #f59e0b;
+        margin: 24px 0;
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+      }
+
+      .micro-script-box {
+        background: #f0f9ff;
+        padding: 16px 20px;
+        border-radius: 6px;
+        border-left: 3px solid #3b82f6;
+        margin: 16px 0;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .micro-script-label {
+        font-weight: 600;
+        color: #1e3a8a;
+        margin-bottom: 8px;
+        font-size: 1.05em;
+      }
+
+      .agenda-box {
+        background: #ecfccb;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #22c55e;
+        margin: 24px 0;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      .context-label {
+        font-weight: 700;
+        color: #7c2d12;
+        font-size: 1.1em;
+        margin: 16px 0 8px 0;
+      }
+
+      .script-label {
+        font-weight: 700;
+        color: #1e3a8a;
+        font-size: 1.1em;
+        margin: 16px 0 8px 0;
+      }
+
+      .why-works-label {
+        font-weight: 700;
+        color: #059669;
+        font-size: 1.1em;
+        margin: 16px 0 8px 0;
+      }
+
+      .setup-label {
+        font-weight: 700;
+        color: #7c3aed;
+        font-size: 1.05em;
+        margin: 16px 0 8px 0;
+      }
+
+      .debrief-label {
+        font-weight: 700;
+        color: #dc2626;
+        font-size: 1.05em;
+        margin: 16px 0 8px 0;
+      }
+
+      .numbered-list {
+        counter-reset: step-counter;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .numbered-list li {
+        counter-increment: step-counter;
+        margin: 12px 0;
+        padding-left: 40px;
+        position: relative;
+      }
+
+      .numbered-list li::before {
+        content: counter(step-counter) '.';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.1em;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      ul,
+      ol {
+        list-style: inherit;
+      }
+
+      ul.benefits-list,
+      .benefits-list ul {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      ul.benefits-list li,
+      .benefits-list ul li {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .page-number {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">ADVANCED SCRIPTS AND ROLE-PLAY SCENARIOS</h1>
+      <div class="cover-subtitle">Detailed Scripts for Tricky Situations and Training Exercises for Your Team</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction: When to Use This Document</h2>
+
+      <p>
+        The basic review capture scripts (in the Review Capture Scripts file) work 90% of the time and cover the most
+        common customer objections.
+      </p>
+
+      <p>
+        This document is for the other 10%—the tricky situations that require more nuance, and the training exercises
+        you'll use to build your team's confidence.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Use this document to:</div>
+        <ul class="benefits-list">
+          <li>Train new hires on how to handle objections</li>
+          <li>Practice difficult scenarios in team meetings</li>
+          <li>Coach struggling salespeople 1-on-1</li>
+          <li>Build confidence through role-play and repetition</li>
+        </ul>
+      </div>
+
+      <p>
+        <strong>Note:</strong> For basic customer objections ("I don't do reviews," "I'll do it later," "I'm not
+        tech-savvy," etc.), refer to the Review Capture Scripts file (Script 5: Handling Customer Objections). This
+        document focuses on advanced scenarios and team training.
+      </p>
+
+      <div class="page-number">Page 1</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Part 1: Advanced Customer Scripts</h2>
+
+      <p>
+        These are detailed, word-for-word scripts for specific situations that are NOT covered in the basic Review
+        Capture Scripts file.
+      </p>
+
+      <div class="scenario-header">SCENARIO 1: THE CUSTOMER WHO MENTIONS A COMPETITOR'S LOWER PRICE</div>
+
+      <div class="context-label">Context:</div>
+      <p>
+        During the sales consultation, the customer says, "Your price is higher than [Competitor]." You want to use
+        reviews to justify the price difference.
+      </p>
+
+      <div class="script-label">Script:</div>
+      <div class="script-box">
+        "I totally get it—you want to make sure you're making the right choice. Here's the thing: we're not the
+        cheapest, and we're not trying to be. But we are the best value. And here's how you know: we have over 200
+        Google reviews with a 4.9-star rating. [Competitor] has 40 reviews and a 4.2-star rating. Our customers are
+        telling you something—they're saying we do what we promise, we show up on time, and we make the process smooth.
+        That's worth a few extra dollars, especially when you're living with this floor for the next 15 years. You're
+        not just buying a floor—you're buying peace of mind." [Pause and let them think] "I'd encourage you to read a
+        few of our reviews and compare them to [Competitor]'s. I think you'll see the difference."
+      </div>
+
+      <div class="why-works-label">Why this works:</div>
+      <ul class="benefits-list">
+        <li>You're not being defensive about price.</li>
+        <li>You're reframing the conversation from "cheapest" to "best value."</li>
+        <li>You're using reviews as third-party proof that backs up your claim.</li>
+      </ul>
+
+      <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Part 2: Manager Coaching Scripts</h2>
+
+      <p>These are scripts for managers to use when coaching team members who are struggling to ask for reviews.</p>
+
+      <p>
+        <strong>Note:</strong> For scripts to address customer objections during the post-installation call, see the
+        Review Capture Scripts – Manager Edition file (Script 8: Handling Internal Team Objections). The scripts below
+        focus on 1-on-1 coaching conversations with individual team members.
+      </p>
+
+      <div class="scenario-header">SCENARIO 2: A SALESPERSON SAYS "I DON'T WANT TO BE PUSHY"</div>
+
+      <div class="context-label">Context:</div>
+      <p>One of your salespeople is hesitant to ask for reviews because they don't want to annoy customers.</p>
+
+      <div class="script-label">Script:</div>
+      <div class="coaching-box">
+        "I get it. But here's the thing: you're not being pushy. You're giving the customer an opportunity to help the
+        next family who's trying to decide where to go. That's not pushy—that's generous. And here's the reality: if we
+        don't ask, we don't get. And if we don't get reviews, we spend more money on ads, which means less money for
+        raises, bonuses, and benefits. So asking for reviews isn't just good for the company—it's good for you. Let's
+        practice the script together so it feels more natural. I'll be the customer. You call me and ask how the install
+        went. Go."
+      </div>
+
+      <div class="why-works-label">Why this works:</div>
+      <ul class="benefits-list">
+        <li>You're reframing the ask from "pushy" to "generous."</li>
+        <li>You're connecting it to their paycheck (which makes it personal).</li>
+        <li>You're offering to practice with them (which builds confidence).</li>
+      </ul>
+
+      <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page-break">
+      <div class="scenario-header">SCENARIO 3: A SALESPERSON SAYS "WHAT IF THEY LEAVE A BAD REVIEW?"</div>
+
+      <div class="context-label">Context:</div>
+      <p>
+        One of your salespeople is afraid to ask for reviews because they're worried the customer will leave a negative
+        review.
+      </p>
+
+      <div class="script-label">Script:</div>
+      <div class="coaching-box">
+        "That's a valid concern. But here's the reality: the post-installation call is your insurance policy against bad
+        reviews. When you call the customer 24–48 hours after the job, you're catching small issues early and fixing
+        them before they turn into big problems. And here's the thing: most customers are happy. They're just waiting
+        for someone to ask them to leave a review. Plus, the best defense against a bad review is volume. If you have
+        150 five-star reviews and one two-star review, nobody cares about the two-star review. But if you only have 20
+        reviews total, one bad one kills you. So the question isn't 'What if we get a bad review?' The question is 'What
+        if we don't ask and we stay stuck at 20 reviews while our competitor climbs to 200?'"
+      </div>
+
+      <div class="why-works-label">Why this works:</div>
+      <ul class="benefits-list">
+        <li>You're addressing their fear directly (not dismissing it).</li>
+        <li>You're showing them how the post-installation call prevents bad reviews.</li>
+        <li>You're reframing the risk (staying stuck is worse than getting one bad review).</li>
+      </ul>
+
+      <div class="scenario-header">SCENARIO 4: A SALESPERSON SAYS "I'M TOO BUSY"</div>
+
+      <div class="context-label">Context:</div>
+      <p>One of your salespeople says they don't have time to make post-installation calls or ask for reviews.</p>
+
+      <div class="script-label">Script:</div>
+      <div class="coaching-box">
+        "I hear you. But here's the thing: the post-installation call takes 2 minutes. The text takes 30 seconds. That's
+        less time than it takes to follow up on a cold lead three times. And every review you capture brings us more
+        warm leads next month—which makes your job easier. So you're not too busy. You're investing 3 minutes now to
+        save yourself hours later. Let's make it automatic. Set a reminder on your phone for 24 hours after every
+        install. That way, you won't forget. And if you're really slammed, I can help you make a few of the calls this
+        week. Sound good?"
+      </div>
+
+      <div class="why-works-label">Why this works:</div>
+      <ul class="benefits-list">
+        <li>You're showing them the ROI (3 minutes now = easier sales later).</li>
+        <li>You're offering a solution (set a reminder).</li>
+        <li>You're offering to help (which shows you're not just criticizing).</li>
+      </ul>
+
+      <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Part 3: Role-Play Scenarios for Team Training</h2>
+
+      <p>These are exercises you can run during team meetings to practice the scripts and build confidence.</p>
+
+      <p>
+        <strong>Note:</strong> For the basic scripts your team will practice, refer to the Review Capture Scripts file.
+        The scenarios below show you how to structure role-play exercises and what to focus on during training.
+      </p>
+
+      <div class="role-play-header">ROLE-PLAY 1: THE HAPPY CUSTOMER</div>
+
+      <div class="setup-label">Setup:</div>
+      <p>One person plays the salesperson. Another person plays a happy customer who just had their floor installed.</p>
+
+      <div class="setup-label">Scenario:</div>
+      <p>The salesperson calls the customer 24–48 hours after installation to check in and ask for a review.</p>
+
+      <div class="setup-label">Script Reference:</div>
+      <p>Use Script 2: The Post-Installation Call (If Everything Went Well) from the Review Capture Scripts file.</p>
+
+      <div class="debrief-label">Debrief (After the Role-Play):</div>
+      <ul class="benefits-list">
+        <li>Ask the team: "What did the salesperson do well?"</li>
+        <li>Ask: "What could they improve?"</li>
+        <li>Practice it 2–3 more times with different team members.</li>
+      </ul>
+
+      <div class="role-play-header">ROLE-PLAY 2: THE CUSTOMER WHO SAYS "I DON'T DO REVIEWS"</div>
+
+      <div class="setup-label">Setup:</div>
+      <p>One person plays the salesperson. Another person plays a customer who's hesitant to leave a review.</p>
+
+      <div class="setup-label">Scenario:</div>
+      <p>The salesperson calls the customer to check in, and the customer says, "I don't really do reviews."</p>
+
+      <div class="setup-label">Script Reference:</div>
+      <p>Use Script 5: Handling Customer Objections → Objection #1 from the Review Capture Scripts file.</p>
+
+      <div class="debrief-label">Debrief (After the Role-Play):</div>
+      <ul class="benefits-list">
+        <li>Ask the team: "How did the salesperson handle the objection?"</li>
+        <li>Ask: "What made the customer feel comfortable?"</li>
+        <li>Practice it 2–3 more times with different scenarios.</li>
+      </ul>
+
+      <div class="page-number">Page 5</div>
+    </div>
+
+    <div class="page-break">
+      <div class="role-play-header">ROLE-PLAY 3: THE CUSTOMER WHO HAD A SMALL ISSUE</div>
+
+      <div class="setup-label">Setup:</div>
+      <p>
+        One person plays the salesperson. Another person plays a customer who mentioned a small issue (e.g., a crooked
+        transition strip).
+      </p>
+
+      <div class="setup-label">Scenario:</div>
+      <p>The salesperson calls to follow up after the issue was fixed.</p>
+
+      <div class="setup-label">Script Reference:</div>
+      <p>Use Script 7: Asking After You've Fixed a Problem from the Review Capture Scripts file.</p>
+
+      <div class="debrief-label">Debrief (After the Role-Play):</div>
+      <ul class="benefits-list">
+        <li>Ask the team: "Why is this a powerful script?"</li>
+        <li>
+          Answer: "Because it turns a potential negative into a positive. Customers often leave glowing reviews after
+          you fix a problem—because it shows you care."
+        </li>
+      </ul>
+
+      <div class="role-play-header">ROLE-PLAY 4: THE CUSTOMER WHO'S NOT TECH-SAVVY</div>
+
+      <div class="setup-label">Setup:</div>
+      <p>
+        One person plays the salesperson. Another person plays an elderly customer who's not comfortable with
+        technology.
+      </p>
+
+      <div class="setup-label">Scenario:</div>
+      <p>The customer says, "I don't know how to do that."</p>
+
+      <div class="setup-label">Script Reference:</div>
+      <p>Use Script 5: Handling Customer Objections → Objection #3 from the Review Capture Scripts file.</p>
+
+      <div class="debrief-label">Debrief (After the Role-Play):</div>
+      <ul class="benefits-list">
+        <li>Ask the team: "How did the salesperson make the customer feel comfortable?"</li>
+        <li>
+          Answer: "They offered to help, and they gave the customer an out (ask a family member). That reduced anxiety."
+        </li>
+      </ul>
+
+      <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Part 4: Quick Reference Micro-Scripts</h2>
+
+      <p>These are short, powerful one-liners you can use in various situations.</p>
+
+      <div class="micro-script-box">
+        <div class="micro-script-label">When a Customer Says "I Already Told My Friends About You":</div>
+        <p style="font-style: italic; margin: 0">
+          "That's awesome—thank you! And a Google review is kind of like telling a hundred friends at once. If you have
+          a minute, we'd really appreciate it!"
+        </p>
+      </div>
+
+      <div class="micro-script-box">
+        <div class="micro-script-label">When a Customer Says "I'll Do It Later":</div>
+        <p style="font-style: italic; margin: 0">
+          "Perfect! I'm going to text you the link right now so you have it whenever you're ready. It only takes about
+          60 seconds. Thanks!"
+        </p>
+      </div>
+
+      <div class="micro-script-box">
+        <div class="micro-script-label">When a Customer Hesitates:</div>
+        <p style="font-style: italic; margin: 0">
+          "No pressure at all! If you get a chance, we'd love it. But either way, thanks so much for choosing us."
+        </p>
+      </div>
+
+      <div class="micro-script-box">
+        <div class="micro-script-label">When You've Fixed a Problem:</div>
+        <p style="font-style: italic; margin: 0">
+          "I'm really glad we could make it right. If you're comfortable with it, a review would actually help other
+          people know that we stand behind our work. I'm going to text you the link—no pressure, though!"
+        </p>
+      </div>
+
+      <div class="micro-script-box">
+        <div class="micro-script-label">When a Customer Says "I Don't Have Time":</div>
+        <p style="font-style: italic; margin: 0">
+          "I totally get it. It only takes about 60 seconds—just rate us with stars and write a quick sentence. But no
+          worries if you're too busy. Thanks again!"
+        </p>
+      </div>
+
+      <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Part 5: Team Training Meeting Format (20-Minute Role-Play Session)</h2>
+
+      <p>Here's how to run a role-play training session at your weekly sales meeting.</p>
+
+      <h3 class="sub-header">Agenda (20 Minutes Total)</h3>
+
+      <div class="agenda-box">
+        <div class="callout-header">1. Introduce the Scenario (2 minutes)</div>
+        <p>What to say:</p>
+        <p style="font-style: italic">
+          "Alright, team, we're going to practice the post-installation call today. I want everyone to feel confident
+          with this script. Here's the scenario: The customer just had their floor installed 24 hours ago. You're
+          calling to check in and ask for a review. Who wants to go first?"
+        </p>
+      </div>
+
+      <div class="agenda-box">
+        <div class="callout-header">2. First Role-Play (3 minutes)</div>
+        <ul class="benefits-list">
+          <li>One person plays the salesperson.</li>
+          <li>Another person (or you, the manager) plays the customer.</li>
+          <li>Run through the script from start to finish.</li>
+        </ul>
+      </div>
+
+      <div class="agenda-box">
+        <div class="callout-header">3. Team Feedback (2 minutes)</div>
+        <p>Ask the team:</p>
+        <ul class="benefits-list">
+          <li>"What did [Salesperson] do well?"</li>
+          <li>"What could they improve?"</li>
+        </ul>
+      </div>
+
+      <div class="agenda-box">
+        <div class="callout-header">4. Second Role-Play with a Twist (3 minutes)</div>
+        <ul class="benefits-list">
+          <li>Same setup, but this time the customer says, "I don't do reviews."</li>
+          <li>The salesperson practices handling the objection.</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page-break">
+      <div class="agenda-box">
+        <div class="callout-header">5. Team Feedback (2 minutes)</div>
+        <p>Ask the team:</p>
+        <ul class="benefits-list">
+          <li>"How did they handle the objection?"</li>
+          <li>"What made the customer feel comfortable?"</li>
+        </ul>
+      </div>
+
+      <div class="agenda-box">
+        <div class="callout-header">6. Third Role-Play (3 minutes)</div>
+        <ul class="benefits-list">
+          <li>Same setup, but this time the customer had a small issue that was fixed.</li>
+          <li>The salesperson practices asking for a review after resolving the issue.</li>
+        </ul>
+      </div>
+
+      <div class="agenda-box">
+        <div class="callout-header">7. Wrap-Up and Takeaways (5 minutes)</div>
+        <p>What to say:</p>
+        <div class="script-box">
+          "Great job, everyone. Here are the key takeaways: • Make the post-installation call 24–48 hours after the job.
+          This prevents 'Silent Death' and sets you up for a positive review. • Send the text immediately—don't wait. •
+          If the customer hesitates, reframe the ask as 'paying it forward' and offer no pressure. • If you fixed a
+          problem, ask for a review—it shows you stand behind your work. Alright, let's go out there and capture some
+          reviews this week. Who's with me?"
+        </div>
+      </div>
+
+      <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Conclusion: Confidence Comes from Repetition</h2>
+
+      <p>Your team won't feel comfortable asking for reviews after reading a script once.</p>
+
+      <p>They need to practice—in team meetings, in 1-on-1 coaching sessions, and in real-world situations.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">Use this document to:</div>
+        <ul class="benefits-list">
+          <li>Train new hires</li>
+          <li>Coach struggling salespeople</li>
+          <li>Run role-play exercises at team meetings</li>
+          <li>Build confidence through repetition</li>
+        </ul>
+      </div>
+
+      <p>The more your team practices, the more natural it will feel—and the more reviews you'll capture.</p>
+
+      <div class="pull-quote">Let's get to work.</div>
+
+      <div class="page-number">Page 10</div>
+    </div>
+  
+
+</body></html>

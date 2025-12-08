@@ -6,6 +6,36 @@ Keep track of your shareable product links here.
 
 ---
 
+## 🎁 Review System Complete Package (RECOMMENDED)
+
+**Primary Link:** `/review-system-complete`
+
+**Full URL (Local):** `http://localhost:5173/review-system-complete`
+
+**Full URL (Production):** `https://yourdomain.com/review-system-complete`
+
+**Purpose:** Complete system with 2 core manuals + 10 bonus implementation resources
+
+**Target Audience:** Serious buyers, full implementation clients
+
+**Status:** ✅ Active - **FLAGSHIP PRODUCT**
+
+**What's Included:**
+- 2 Core Manuals (Owner + Salesperson versions)
+- 90-Day Acceleration Plan
+- Sales Meeting Plans (12 ready-to-use agendas)
+- Review Capture Scripts (Manager & Salesperson editions)
+- Text Templates Library
+- Review Catalog Playbook
+- Advanced Scripts & Role-Play Scenarios
+- Social Media Efficiency Guide
+- Overcoming Barriers to Implementation
+- Weekly Sales Meeting Dashboard
+
+**Pricing Suggestion:** $497-$997 (or $197-$497 for digital only)
+
+---
+
 ## Review Leverage Manual (Salesperson Version)
 
 **Primary Link:** `/review-leverage-manual`
@@ -25,6 +55,8 @@ Keep track of your shareable product links here.
 - 4-step capture system
 - Word-for-word scripts
 - Personal brand building
+
+**Pricing Suggestion:** $47-$97 (or included in Complete Package)
 
 ---
 
@@ -48,6 +80,8 @@ Keep track of your shareable product links here.
 - Implementation plan
 - Negative review protocol
 - 90-day rollout strategy
+
+**Pricing Suggestion:** $197-$497 (or included in Complete Package)
 
 ---
 

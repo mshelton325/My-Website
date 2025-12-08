@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Capture Scripts - Manager Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 60px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .cover-page {
+        text-align: center;
+        padding: 80px 0 100px 0;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .cover-title {
+        font-size: 2.8em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      .cover-subtitle {
+        font-size: 1.3em;
+        color: #4b5563;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        padding: 0 40px;
+      }
+
+      .page-break {
+        margin-top: 60px;
+        padding: 40px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 0 0 24px 0;
+        line-height: 1.3;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      .sub-header {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #1e3a8a;
+        margin: 32px 0 16px 0;
+        line-height: 1.3;
+      }
+
+      .callout-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+      }
+
+      .callout-header {
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        color: #1e3a8a;
+      }
+
+      .script-box {
+        background: #e0f2fe;
+        padding: 20px 24px;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+        margin: 24px 0;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .pull-quote {
+        text-align: center;
+        font-size: 1.35em;
+        font-weight: 700;
+        font-style: italic;
+        color: #1e3a8a;
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-top: 3px solid #1e3a8a;
+        border-bottom: 3px solid #1e3a8a;
+        line-height: 1.6;
+        background: #f8fafc;
+      }
+
+      .stats-callout {
+        font-size: 1em;
+        font-weight: 600;
+        background: #f1f5f9;
+        padding: 20px 24px;
+        margin: 24px 0;
+        border: 2px solid #1e3a8a;
+        border-radius: 6px;
+      }
+
+      .benefits-list {
+        list-style: none !important;
+        list-style-type: none !important;
+        padding-left: 0;
+        margin: 16px 0;
+      }
+
+      .benefits-list li {
+        margin: 12px 0;
+        font-size: 16px;
+        padding-left: 28px;
+        position: relative;
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .benefits-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 5px;
+        color: #1e3a8a;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+
+      p {
+        margin: 14px 0;
+      }
+
+      ul,
+      ol {
+        list-style: inherit;
+      }
+
+      ul.benefits-list,
+      .benefits-list ul {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      ul.benefits-list li,
+      .benefits-list ul li {
+        list-style: none !important;
+        list-style-type: none !important;
+      }
+
+      .page-number {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 0.9em;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 20px;
+        }
+        .page-break {
+          page-break-before: always;
+          box-shadow: none;
+          margin-top: 0;
+        }
+        .cover-page {
+          box-shadow: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          font-size: 15px;
+        }
+        .cover-title {
+          font-size: 2em;
+        }
+        .cover-subtitle {
+          font-size: 1.1em;
+          padding: 0 20px;
+        }
+        .page-break {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <div class="cover-page">
+      <h1 class="cover-title">REVIEW CAPTURE SCRIPTS – MANAGER EDITION</h1>
+      <div class="cover-subtitle">Complete Playbook: Customer Scripts + Team Coaching</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Introduction for Managers</h2>
+
+      <p>This document contains two critical parts:</p>
+
+      <p>
+        <strong>Part 1:</strong> The exact customer-facing scripts your team should use to capture Google reviews at
+        every stage of the customer journey (Scripts 1–7). These are the same scripts your salespeople will receive.
+      </p>
+
+      <p>
+        <strong>Part 2:</strong> Internal team management scripts and rollout guidance (Script 8 + implementation plan).
+        This section is for managers only—do not distribute it to your sales team.
+      </p>
+
+      <p>
+        Why keep them separate? Because your salespeople need clear, confident scripts they can trust and use. They
+        don't need to see you preparing for their objections in advance—that undermines trust and makes the system feel
+        top-down instead of collaborative.
+      </p>
+
+      <p>
+        Use Part 1 to train your team. Use Part 2 to coach resisters, troubleshoot adoption challenges, and hold people
+        accountable.
+      </p>
+
+      <div class="page-number">Page 1</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">PART 1: CUSTOMER-FACING SCRIPTS</h2>
+      <p><em>(Scripts 1–7: These are the same scripts your sales team will receive)</em></p>
+
+      <h3 class="sub-header">SCRIPT 1: Planting the Seed (During the Initial Consultation)</h3>
+
+      <p><strong>When to use:</strong> During or at the end of the sales consultation, before the customer signs.</p>
+      <p><strong>Purpose:</strong> Set the expectation that you'll ask for a review later—so it's not a surprise.</p>
+
+      <div class="script-box">
+        "By the way, one of the ways we've grown is through word of mouth and online reviews. If we do a great job for
+        you—and I'm confident we will—I'll ask you to leave us a quick review on Google. Fair enough?"
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>It's conditional ("if we do a great job"), which builds confidence.</li>
+          <li>It removes the surprise factor—the customer already agreed.</li>
+          <li>It positions your company as successful and review-driven (social proof).</li>
+        </ul>
+      </div>
+
+      <p><strong>Time investment:</strong> 10 seconds.</p>
+
+      <h3 class="sub-header">SCRIPT 2: The Post-Installation Call (24–48 Hours After the Job)</h3>
+
+      <p><strong>When to use:</strong> 24–48 hours after installation is complete.</p>
+      <p>
+        <strong>Purpose:</strong> Check for "Silent Death" issues (small problems the customer hasn't reported), fix
+        them fast, and ask for the review while the positive experience is fresh.
+      </p>
+
+      <h4><strong>Script (If Everything Went Well):</strong></h4>
+
+      <div class="script-box">
+        <p>
+          "Hi [Customer Name], this is [Your Name] from [Company]. I'm just calling to check in and make sure everything
+          went smoothly with your installation. How's the floor looking? Any questions or concerns I can help with?"
+        </p>
+        <p><em>[Customer says everything's great]</em></p>
+        <p>
+          "That's great to hear! I'm so glad we could take care of you. Now, I know you're probably busy, but if you
+          have a minute this week, I'd REALLY appreciate it if you could leave us a quick review on Google. It helps us
+          out a ton and helps other people feel confident choosing us. I'm going to text you a link right now so it's
+          easy—does that work?"
+        </p>
+        <p><em>[Customer agrees]</em></p>
+        <p>"Perfect! You'll see the text in just a second. Thanks so much—we really appreciate you!"</p>
+      </div>
+
+      <h4><strong>Script (If There's a Small Issue):</strong></h4>
+
+      <div class="script-box">
+        <p>
+          "Hi [Customer Name], this is [Your Name] from [Company]. I'm just calling to check in and make sure everything
+          went smoothly with your installation. How's the floor looking? Any questions or concerns I can help with?"
+        </p>
+        <p>
+          <em>[Customer mentions a small issue—e.g., a transition strip is crooked, a spot needs touch-up, etc.]</em>
+        </p>
+        <p>
+          "Thanks so much for letting me know. I really appreciate you telling me—that's exactly the kind of thing I
+          want to catch early. I'm going to get that taken care of right away. Let me call you back once it's fixed, and
+          then I'll send you that review link. Sound good?"
+        </p>
+        <p><em>[Fix the issue, then call back]</em></p>
+        <p>
+          "Hi [Customer Name], this is [Your Name] again. Just wanted to let you know we took care of that [issue].
+          Everything should be perfect now. If you're happy with how we handled it, I'd love it if you could leave us a
+          quick review on Google. I'm going to text you the link right now. Does that work?"
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>
+            You're demonstrating that you care about quality and follow-through (which makes them want to leave a good
+            review).
+          </li>
+          <li>You're catching issues early, before they escalate into bad reviews.</li>
+          <li>You're asking for the review while the positive experience is still fresh.</li>
+        </ul>
+      </div>
+
+      <p><strong>Time investment:</strong> 2 minutes per call.</p>
+
+      <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page-break">
+      <h3 class="sub-header">SCRIPT 3: The Text Message (Sent Immediately After the Call)</h3>
+
+      <p>
+        <strong>When to use:</strong> Immediately after the post-installation call, while you're still on the phone or
+        right after you hang up.
+      </p>
+      <p><strong>Purpose:</strong> Get the review link into the customer's hands so there's no friction.</p>
+
+      <h4><strong>Text Template (Standard Version):</strong></h4>
+
+      <div class="script-box">
+        "Hi [Customer Name], thanks again for choosing us! Here's the link to leave your review: [Google Review Link].
+        It'll only take a minute, and it really helps us out. We appreciate you!"
+      </div>
+
+      <h4><strong>Text Template (Pay It Forward Version):</strong></h4>
+
+      <div class="script-box">
+        "Hi [Customer Name], thanks again for trusting us with your project! If you have a minute, we'd love it if you
+        could leave us a quick Google review. When you do, you're helping the next family who's trying to decide where
+        to go—kind of like paying it forward. Here's the link: [Google Review Link]. We really appreciate you!"
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>The link is in their hand. There's no friction.</li>
+          <li>They can do it right now if they want, or later when they have time.</li>
+          <li>The "pay it forward" framing makes it feel altruistic, not transactional.</li>
+        </ul>
+      </div>
+
+      <p><strong>Time investment:</strong> 30 seconds.</p>
+
+      <h3 class="sub-header">SCRIPT 4: The Follow-Up Text (3–5 Days Later)</h3>
+
+      <p><strong>When to use:</strong> If the customer hasn't left a review within 3–5 days of your initial text.</p>
+      <p><strong>Purpose:</strong> Give them a gentle, helpful reminder.</p>
+
+      <div class="script-box">
+        "Hi [Customer Name], just checking in—did the link I sent work okay? I know things get busy, but if you get a
+        chance, we'd love that review! Here's the link again: [Google Review Link]. Let me know if you have any trouble
+        with it. Thanks!"
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>You're not saying, "Hey, you forgot." You're saying, "Did the link work?"</li>
+          <li>It's a helpful, low-pressure nudge that often gets results.</li>
+          <li>The actionable question ("did the link work?") prompts a response and reduces customer guilt.</li>
+        </ul>
+      </div>
+
+      <p><strong>Time investment:</strong> 30 seconds.</p>
+
+      <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page-break">
+      <h3 class="sub-header">SCRIPT 5: Handling Customer Objections</h3>
+
+      <p>Sometimes customers will hesitate or push back. Here's how to handle the most common objections.</p>
+
+      <h4><strong>Objection #1: "I don't really do reviews."</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Response:</div>
+        "I totally understand—not everyone does. But I'll tell you, it really does help us out. And it also helps the
+        next family who's trying to decide where to go—kind of like paying it forward. If you have a minute, I'd really
+        appreciate it. No pressure, though!"
+      </div>
+
+      <h4><strong>Objection #2: "I'll do it later."</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Response:</div>
+        "That's great, thank you! I'm going to text you the link right now so you have it whenever you're ready. It only
+        takes about 60 seconds. Thanks so much!"
+        <p><em>[Send the text immediately. Then follow up 3–5 days later if they don't leave the review.]</em></p>
+      </div>
+
+      <h4><strong>Objection #3: "I'm not tech-savvy / I don't know how."</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Response:</div>
+        "No problem at all! It's really easy—I'll text you a link, and all you have to do is click it, rate us with
+        stars, and write a sentence or two about your experience. If you have any trouble, just call me back and I'll
+        walk you through it. Sound good?"
+      </div>
+
+      <h4><strong>Objection #4: "What if something goes wrong later?"</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Response:</div>
+        "That's exactly why I'm calling you now—to make sure everything's perfect before we ask for a review. If
+        anything comes up later, you can always call us and we'll take care of it. That's part of our commitment to you.
+        But if everything looks good right now, I'd love it if you could leave us a review. Does that sound fair?"
+      </div>
+
+      <h4><strong>Objection #5: "I already recommended you to my neighbor."</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Response:</div>
+        "That's awesome—thank you so much! And honestly, an online review is kind of like recommending us to a hundred
+        neighbors at once. It helps other people find us the same way you did. If you have a minute, I'd really
+        appreciate it!"
+      </div>
+
+      <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page-break">
+      <h3 class="sub-header">SCRIPT 6: Asking in Person (If the Customer Comes Back to Your Showroom)</h3>
+
+      <p>
+        <strong>When to use:</strong> If the customer stops by your showroom after the job is done (to pick up leftover
+        materials, ask a question, etc.).
+      </p>
+      <p><strong>Purpose:</strong> Ask for the review face-to-face.</p>
+
+      <div class="script-box">
+        <p>"Hey [Customer Name]! Great to see you. How's the floor looking? Everything holding up well?"</p>
+        <p><em>[Customer says yes]</em></p>
+        <p>
+          "That's great! Hey, real quick—if you have a minute, I'd love it if you could leave us a Google review. It
+          helps us out a ton. I can text you the link right now, or if you have your phone handy, I can pull it up for
+          you. Which works better?"
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>You're asking in person, which is harder to say no to.</li>
+          <li>You're offering to make it easy (text the link or pull it up right there).</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-header">SCRIPT 7: Asking After You've Fixed a Problem</h3>
+
+      <p><strong>When to use:</strong> After you've resolved a small issue the customer reported.</p>
+      <p><strong>Purpose:</strong> Turn a potential negative into a positive by showing you care and follow through.</p>
+
+      <div class="script-box">
+        <p>
+          "Hi [Customer Name], this is [Your Name] from [Company]. Just wanted to let you know we took care of that
+          [issue you mentioned]. Everything should be perfect now. Are you happy with how we handled it?"
+        </p>
+        <p><em>[Customer says yes]</em></p>
+        <p>
+          "That's great to hear. I'm really glad we could make it right. Now, if you're comfortable with it, I'd love it
+          if you could leave us a review on Google. It helps other people know that if something does come up, we'll
+          take care of it fast. I'm going to text you the link right now. Does that work?"
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>Customers often leave glowing reviews after you fix a problem—because it shows you care.</li>
+          <li>You're framing the review as proof that you stand behind your work.</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 5</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">PART 2: INTERNAL TEAM MANAGEMENT SCRIPTS</h2>
+      <p><em>(For Managers Only – Do Not Distribute to Sales Team)</em></p>
+
+      <h3 class="sub-header">SCRIPT 8: Handling Internal Team Objections</h3>
+
+      <p>
+        Sometimes your team will push back on asking for reviews. Here's how to handle the three most common
+        objections—with data, logic, and real-world framing that connects the review system to their paycheck and job
+        satisfaction.
+      </p>
+
+      <p>
+        <strong>When to use these scripts:</strong> In one-on-one coaching conversations, team meetings (when someone
+        voices resistance publicly), or when you're rolling out the system for the first time.
+      </p>
+
+      <p>
+        <strong>Tone:</strong> Direct, empathetic, but firm. You're not asking for permission—you're explaining why this
+        matters and holding them accountable.
+      </p>
+
+      <h4><strong>Objection #1: "I don't want to be pushy."</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Manager Response:</div>
+        <p>
+          "I get it. And here's the thing: you're not being pushy. You're giving the customer an opportunity to help the
+          next family who's trying to decide where to go. That's not pushy—that's generous.
+        </p>
+        <p>
+          But here's the reality: if we don't ask, we don't get. And if we don't get reviews, we spend more money on
+          ads—which means less money for raises, bonuses, and benefits. So asking for reviews isn't just good for the
+          company—it's good for you.
+        </p>
+        <p>
+          And one more thing: you're already doing great work. The review is just the customer telling other people what
+          you already know—that we did a great job. You're not asking them to lie. You're asking them to share the
+          truth. That's not pushy. That's confidence."
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>You're reframing "pushy" as "generous" and "confident."</li>
+          <li>You're connecting reviews to their paycheck (raises, bonuses, benefits).</li>
+          <li>You're reminding them that they're asking customers to share the truth, not exaggerate.</li>
+        </ul>
+      </div>
+
+      <h4><strong>Objection #2: "What if they leave a bad review?"</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Manager Response:</div>
+        <p>
+          "That's exactly why we make the post-installation call—to catch problems early and fix them before they turn
+          into bad reviews. If you're calling every customer 24–48 hours after the job, you're going to catch 95% of
+          issues while they're still easy to fix.
+        </p>
+        <p>
+          And if someone does leave a bad review, we'll respond professionally and make it right. But the best defense
+          against bad reviews is volume—and that's what this system builds.
+        </p>
+        <p>
+          Here's the truth: right now, unhappy customers are already leaving bad reviews—we're just not asking the happy
+          ones to leave good reviews. So we're fighting with one hand tied behind our back. This system fixes that.
+        </p>
+        <p>
+          And one more thing: if you're worried about bad reviews, that tells me you care about quality—which is exactly
+          the kind of person I want on this team. So let's use that energy to make sure we're delivering great work and
+          capturing great reviews."
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>
+            You're addressing the fear head-on with a logical process (post-installation calls catch issues early).
+          </li>
+          <li>You're reframing the fear as a quality-control strength.</li>
+          <li>You're explaining that volume of good reviews is the best defense against occasional bad ones.</li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page-break">
+      <h4><strong>Objection #3: "I'm too busy."</strong></h4>
+
+      <div class="script-box">
+        <div class="callout-header">Manager Response:</div>
+        <p>
+          "I hear you. But here's the thing: the post-installation call takes 2 minutes. The text takes 30 seconds.
+          That's less time than it takes to follow up on a cold lead three times.
+        </p>
+        <p>
+          And every review you capture brings us more warm leads next month—which makes your job easier. So you're not
+          too busy. You're investing 3 minutes now to save yourself hours later.
+        </p>
+        <p>
+          Here's the math: if you spend 3 minutes per customer asking for reviews, and we capture 40–60% of them, we'll
+          triple our digital leads in 6 months. That means more warm leads, fewer cold calls, higher close rates, and
+          bigger paychecks.
+        </p>
+        <p>
+          So the question isn't 'Am I too busy?' The question is 'Do I want to keep grinding on cold leads, or do I want
+          to invest 3 minutes per job to make my life easier?'
+        </p>
+        <p>
+          And here's the reality: this isn't optional. This is part of the job now. Just like you call to confirm the
+          install, you call to ask for the review. It's that simple."
+        </p>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">Why this works:</div>
+        <ul class="benefits-list">
+          <li>
+            You're breaking down the time investment (3 minutes total) and comparing it to the time they already spend
+            on lower-value tasks.
+          </li>
+          <li>
+            You're connecting the review system to their paycheck and job satisfaction (more warm leads, less cold
+            calling).
+          </li>
+          <li>You're making it clear that this is now a non-negotiable part of the process.</li>
+        </ul>
+      </div>
+
+      <h3 class="sub-header">How to Roll Out These Scripts to Your Team</h3>
+
+      <p>
+        Rolling out a new system isn't just about handing people a script and saying "go do it." You need to create
+        buy-in, train the process, hold people accountable, and celebrate wins. Here's your step-by-step rollout plan.
+      </p>
+
+      <h4><strong>Step 1: The Kickoff Meeting (30–45 minutes)</strong></h4>
+
+      <p>
+        <strong>Goal:</strong> Explain why reviews matter, show the data, address objections proactively, and get verbal
+        commitment from the team.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">Meeting Agenda:</div>
+        <ul class="benefits-list">
+          <li>
+            <strong>Start with the problem (5 minutes):</strong> "Right now, we're spending $X per month on ads to
+            generate leads. But most of those leads are cold—they've never heard of us, they're shopping price, and
+            they're skeptical. That makes your job harder."
+          </li>
+          <li>
+            <strong>Show the data (5 minutes):</strong> Share the three findings: digital leads tripled, 70% of phone
+            calls came from Google Business Profile, 30–40% total lead growth during review-active months.
+          </li>
+          <li>
+            <strong>Explain the system (10 minutes):</strong> Walk through the 4-step process: plant the seed,
+            post-installation call, text the link, follow-up.
+          </li>
+          <li>
+            <strong>Address objections proactively (10 minutes):</strong> Use the responses from Script 8 to address the
+            three big objections (pushy, bad reviews, too busy).
+          </li>
+          <li>
+            <strong>Connect it to their paycheck (5 minutes):</strong> "Here's what this means for you: more reviews =
+            more warm leads = higher close rates = bigger paychecks."
+          </li>
+          <li>
+            <strong>Get verbal commitment (5 minutes):</strong> Go around the room and get a verbal "yes" from each
+            person.
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page-break">
+      <h4><strong>Step 2: Role-Play Training (30 minutes)</strong></h4>
+
+      <p><strong>Goal:</strong> Practice the scripts out loud so they feel natural and confident.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to run it:</div>
+        <ul class="benefits-list">
+          <li>Pair people up (or do it as a group with you playing the customer).</li>
+          <li>
+            Have them practice each script 2–3 times: Script 1: Planting the seed, Script 2: Post-installation call
+            (both versions), Script 5: Handling customer objections
+          </li>
+          <li>Give feedback on tone, pacing, and confidence.</li>
+          <li>
+            Encourage them to adjust the wording slightly to match their voice—but don't let them rewrite the whole
+            script.
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        <strong>Key point:</strong> Role-playing feels awkward, but it's critical. If they don't practice out loud, they
+        won't use the scripts in the field.
+      </p>
+
+      <h4><strong>Step 3: Build Accountability into the Process</strong></h4>
+
+      <p>
+        <strong>Goal:</strong> Make asking for reviews a non-negotiable part of the job—not an "extra" thing they might
+        forget.
+      </p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to do it:</div>
+        <ul class="benefits-list">
+          <li>
+            <strong>Job Folder Accountability Stamp:</strong> Add a checklist stamp to every job folder with these
+            items: ☐ Seed planted during consultation, ☐ Post-installation call made (date: ______), ☐ Review link
+            texted (date: ______), ☐ Follow-up sent (if needed) (date: ______), ☐ Review captured? (Y/N)
+          </li>
+          <li>
+            <strong>Weekly check-ins:</strong> In your weekly sales meetings, ask each salesperson: "How many
+            post-installation calls did you make this week?" "How many review links did you send?" "How many reviews did
+            you capture?"
+          </li>
+          <li>
+            <strong>Track it publicly:</strong> Use the Weekly Sales Meeting Dashboard Template to display each
+            salesperson's review capture rate on a leaderboard.
+          </li>
+        </ul>
+      </div>
+
+      <h4><strong>Step 4: Celebrate Wins Publicly</strong></h4>
+
+      <p><strong>Goal:</strong> Create positive reinforcement and social proof that the system works.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">How to do it:</div>
+        <ul class="benefits-list">
+          <li>
+            <strong>In team meetings:</strong> Read new reviews out loud and recognize the salesperson who captured
+            them.
+          </li>
+          <li><strong>Break room wall:</strong> Print and post new reviews on a "Wall of Fame" in the break room.</li>
+          <li>
+            <strong>Bonuses/incentives:</strong> Consider a small bonus ($25–$50) for every review captured, or a bigger
+            bonus for hitting monthly targets (e.g., "First person to 10 reviews this month gets $200").
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page-break">
+      <h4><strong>Step 5: Coach the Resisters One-on-One</strong></h4>
+
+      <p><strong>Goal:</strong> Address individual objections privately and hold people accountable.</p>
+
+      <p>
+        <strong>When to do it:</strong> If someone consistently skips the post-installation call or doesn't send review
+        links, pull them aside for a one-on-one conversation.
+      </p>
+
+      <div class="script-box">
+        <div class="callout-header">What to say:</div>
+        <p>"Hey [Name], I noticed you didn't make post-installation calls on your last three jobs. What's going on?"</p>
+        <p><em>[Listen to their objection—usually one of the three from Script 8.]</em></p>
+        <p><em>[Use the appropriate response from Script 8 to address it.]</em></p>
+        <p>
+          "Here's the deal: this is part of the job now. It's not optional. Just like you confirm the install, you make
+          the post-installation call. I need you on board with this. Can I count on you to do it moving forward?"
+        </p>
+        <p><em>[Get a verbal commitment.]</em></p>
+        <p>"Great. I'm going to check in with you next week to see how it's going."</p>
+      </div>
+
+      <p><strong>Key point:</strong> Be direct, empathetic, but firm. Don't let resisters drag the team down.</p>
+
+      <h4><strong>Step 6: Track and Report Results</strong></h4>
+
+      <p><strong>Goal:</strong> Show the team that the system is working—and that their effort is paying off.</p>
+
+      <div class="callout-box">
+        <div class="callout-header">What to track:</div>
+        <ul class="benefits-list">
+          <li>Number of post-installation calls made per week</li>
+          <li>Number of review links sent per week</li>
+          <li>Number of reviews captured per week</li>
+          <li>Overall review count and average star rating</li>
+          <li>Lead volume from Google Business Profile (track in your CRM or spreadsheet)</li>
+        </ul>
+      </div>
+
+      <div class="callout-box">
+        <div class="callout-header">How to report it:</div>
+        <ul class="benefits-list">
+          <li>
+            Share results in weekly team meetings: "Great week, team—we captured 8 new reviews, and our digital leads
+            are up 15% this month."
+          </li>
+          <li>Post results on the break room wall or leaderboard.</li>
+        </ul>
+      </div>
+
+      <p><strong>Why this matters:</strong> When people see that their effort is working, they'll keep doing it.</p>
+
+      <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page-break">
+      <h3 class="sub-header">Pro Tips for Managers</h3>
+
+      <ul class="benefits-list">
+        <li>
+          <strong>Lead by example.</strong> If you're not making post-installation calls and asking for reviews, your
+          team won't either.
+        </li>
+        <li>
+          <strong>Don't let perfect be the enemy of good.</strong> If someone uses the script and tweaks the wording
+          slightly, that's fine—as long as they're asking.
+        </li>
+        <li>
+          <strong>Address resistance early.</strong> If someone pushes back in a team meeting, address it immediately
+          (using Script 8). Don't let it fester.
+        </li>
+        <li>
+          <strong>Celebrate small wins.</strong> Every review matters. Make a big deal out of each one, especially in
+          the first 30 days.
+        </li>
+        <li>
+          <strong>Be patient but firm.</strong> It takes 30–60 days for the system to become a habit. Hold people
+          accountable, but give them time to adjust.
+        </li>
+      </ul>
+
+      <div class="page-number">Page 10</div>
+    </div>
+
+    <div class="page-break">
+      <h2 class="section-header">Conclusion</h2>
+
+      <p>
+        These scripts work. The system works. Your job is to train it, reinforce it, hold people accountable, and
+        celebrate wins.
+      </p>
+
+      <p>
+        If you do that consistently for 90 days, you'll capture 40–60% of your customers as reviewers—and you'll see the
+        results in your lead volume, close rates, and bottom line.
+      </p>
+
+      <div class="pull-quote">Let's get to work.</div>
+
+      <div class="page-number">Page 11</div>
+    </div>
+  
+
+</body></html>

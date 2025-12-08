@@ -6,7 +6,7 @@ Keep track of your shareable product links here.
 
 ---
 
-## Review Leverage Manual
+## Review Leverage Manual (Salesperson Version)
 
 **Primary Link:** `/review-leverage-manual`
 
@@ -14,17 +14,40 @@ Keep track of your shareable product links here.
 
 **Full URL (Production):** `https://yourdomain.com/review-leverage-manual`
 
-**Purpose:** Standalone landing page for the Review Leverage System manual
+**Purpose:** Salesperson-focused guide to capturing and leveraging Google reviews
+
+**Target Audience:** Sales teams, individual salespeople
 
 **Status:** ✅ Active
 
 **Notes:** 
-- Clean, professional landing page
-- No navigation/footer (focused experience)
-- Embedded manual + download option
-- "What's Inside" section showcases value
-- Real results displayed
-- Contact CTAs included
+- Focus: How reviews increase individual commissions
+- 4-step capture system
+- Word-for-word scripts
+- Personal brand building
+
+---
+
+## Review System Owner Manual (Owner/Manager Version)
+
+**Primary Link:** `/review-system-owner`
+
+**Full URL (Local):** `http://localhost:5173/review-system-owner`
+
+**Full URL (Production):** `https://yourdomain.com/review-system-owner`
+
+**Purpose:** Complete marketing leverage system for flooring dealers
+
+**Target Audience:** Owners, managers, decision-makers
+
+**Status:** ✅ Active
+
+**Notes:** 
+- Focus: ROI, marketing spend reduction, lead generation
+- Team accountability systems
+- Implementation plan
+- Negative review protocol
+- 90-day rollout strategy
 
 ---
 

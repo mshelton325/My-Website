@@ -1,22 +1,40 @@
 # 🔬 A/B Test: Sales Preview Page Versions
 
-## 🔗 Access Both Versions:
+## 🔗 Access All Versions:
 
-### **Preview A (Aggressive Positioning)**
+### **Preview A (Aggressive Positioning + Lower Pricing)**
 **Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-a`
 
 **Production:** `https://yourdomain.com/preview-a`
 
-### **Preview B (Conservative Positioning)**
+**Positioning:** 50-100 reviews in 90 days, detailed ROI math (360x-670x)  
+**Pricing:** $997 DIY starting point
+
+---
+
+### **Preview B (Conservative Positioning + Lower Pricing)**
 **Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-b`
 
 **Production:** `https://yourdomain.com/preview-b`
 
-**Note:** URLs changed from `/review-system-sales-preview` to `/preview-a` and `/preview-b` for cleaner, more neutral prospect-facing links.
+**Positioning:** 30-60 reviews in 90 days, implementation warning  
+**Pricing:** $997 DIY starting point
 
 ---
 
-## ✅ UNIVERSAL IMPROVEMENTS (Applied to BOTH Versions)
+### **Preview C (Conservative Positioning + Premium Pricing)** 🔥 NEW
+**Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-c`
+
+**Production:** `https://yourdomain.com/preview-c`
+
+**Positioning:** 30-60 reviews in 90 days, implementation warning (same as Preview B)  
+**Pricing:** $2,997 Founding Member Rate (normally $4,997), with scarcity positioning
+
+**Note:** URLs are clean and neutral (`/preview-a`, `/preview-b`, `/preview-c`) for professional prospect-facing links.
+
+---
+
+## ✅ UNIVERSAL IMPROVEMENTS (Applied to ALL Versions)
 
 These are NOT A/B test variables—these are critical clarity fixes applied to BOTH versions:
 
@@ -32,12 +50,15 @@ These are NOT A/B test variables—these are critical clarity fixes applied to B
 
 ## 📊 A/B TEST VARIABLES (Actual Differences):
 
-| Element | Version 1 (Aggressive) | Version 2 (Conservative) |
-|---------|----------------------|-------------------------|
-| **Review Timeline (90 days)** | 50-100 reviews | 30-60 reviews |
-| **ROI Math Section** | ✅ Detailed 360x-670x ROI breakdown | ❌ Removed (streamlined) |
-| **Implementation Disclaimer** | ❌ Not present | ✅ "Results Require Consistent Implementation" warning |
-| **Page Flow** | Multiple proof touchpoints | Streamlined single flow |
+| Element | Preview A (Aggressive) | Preview B (Conservative) | Preview C (Premium Pricing) |
+|---------|----------------------|-------------------------|----------------------------|
+| **Review Timeline (90 days)** | 50-100 reviews | 30-60 reviews | 30-60 reviews |
+| **ROI Math Section** | ✅ Detailed 360x-670x ROI | ❌ Removed | ❌ Removed |
+| **Implementation Warning** | ❌ Not present | ✅ Present | ✅ Present |
+| **Starting Price** | $997 DIY | $997 DIY | $2,997 Founding Member |
+| **Pricing Structure** | 4-tier ($997/$2,997/$4,997/$7,997+) | 4-tier ($997/$2,997/$4,997/$7,997+) | 3-tier ($2,997/$4,997/$7,997+) |
+| **Scarcity Positioning** | ❌ None | ❌ None | ✅ "First 20 clients" + 90-day deadline |
+| **Founding Member Benefits** | ❌ None | ❌ None | ✅ Lifetime updates, private network, priority support |
 
 ---
 
@@ -52,14 +73,28 @@ These are NOT A/B test variables—these are critical clarity fixes applied to B
 
 ---
 
-## 🎯 Version 2 Strengths (Conservative):
+## 🎯 Preview B Strengths (Conservative):
 
 ✅ **Conservative review timeline** (30-60 in 90 days—more believable)  
 ✅ **Implementation disclaimer** (sets realistic expectations upfront)  
 ✅ **Streamlined flow** (less overwhelming, easier to digest)  
-✅ **Consolidated messaging** (no redundancy)
+✅ **Consolidated messaging** (no redundancy)  
+✅ **Lower entry price** ($997 DIY option)
 
 **Best for:** Skeptical prospects, burned-by-promises buyers, conservative operators
+
+---
+
+## 🎯 Preview C Strengths (Premium Pricing):
+
+✅ **Premium positioning** ($2,997 starting—3x Preview A/B)  
+✅ **Scarcity mechanics** (First 20 clients + 90-day deadline)  
+✅ **Founding Member exclusivity** (Lifetime benefits, private network, priority support)  
+✅ **Perceived value increase** ($4,997 "normal" price anchors higher value)  
+✅ **Conservative positioning** (same 30-60 reviews timeline as Preview B)  
+✅ **No DIY option** (Complete System is entry point)
+
+**Best for:** High-revenue dealers ($5M-$10M+), value-driven buyers, exclusivity-seekers, those who equate price with quality
 
 ---
 
@@ -131,6 +166,6 @@ This data will help you determine which version to use for different prospect pr
 ---
 
 **Last Updated:** December 9, 2024  
-**Status:** ✅ Both versions live and ready for testing  
-**Clarity Sync:** ✅ All universal improvements applied to BOTH versions (Dec 9, 2024)  
-**Latest Update:** ✅ Added "Marketing Rep Refund" trust section + measurable guarantee + clean URLs (Dec 9, 2024)
+**Status:** ✅ All three versions live and ready for testing  
+**Clarity Sync:** ✅ All universal improvements applied to ALL versions (Dec 9, 2024)  
+**Latest Update:** ✅ Added Preview C with premium pricing ($2,997-$7,997) and Founding Member scarcity positioning (Dec 9, 2024)

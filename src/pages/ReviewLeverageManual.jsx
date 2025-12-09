@@ -195,7 +195,7 @@ export default function ReviewLeverageManual() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="mailto:matt@mattshelton.consulting"
+                  href="mailto:matt@mattshelton.co"
                   className="inline-block bg-primary-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-800 transition-colors text-center text-sm"
                 >
                   Email Matt

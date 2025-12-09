@@ -353,13 +353,13 @@ export default function ReviewSystemSalesPreview() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:matt@mattshelton.consulting?subject=Purchase Review System Complete Package"
+              href="mailto:matt@mattshelton.co?subject=Purchase Review System Complete Package"
               className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-lg"
             >
               💳 Purchase Package ($997)
             </a>
             <a
-              href="mailto:matt@mattshelton.consulting?subject=Questions About Review System"
+              href="mailto:matt@mattshelton.co?subject=Questions About Review System"
               className="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
               📧 Ask Questions
@@ -409,7 +409,7 @@ export default function ReviewSystemSalesPreview() {
         {/* Footer Note */}
         <div className="mt-8 text-center text-sm text-gray-500">
           <p>© 2024 Matt Shelton Consulting. All rights reserved.</p>
-          <p className="mt-2">Questions? Email matt@mattshelton.consulting</p>
+          <p className="mt-2">Questions? Email matt@mattshelton.co</p>
         </div>
       </main>
     </div>

@@ -218,7 +218,7 @@ export default function ReviewSystemBundle() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:matt@mattshelton.consulting"
+              href="mailto:matt@mattshelton.co"
               className="bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
               Email Matt

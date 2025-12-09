@@ -102,7 +102,7 @@ export default function ResourceAccess({
                   <li>• This link is unique to you and your purchase</li>
                   <li>• You can access this resource anytime using this URL</li>
                   <li>• Bookmark this page for easy future access</li>
-                  <li>• Questions? Email matt@mattshelton.consulting</li>
+                  <li>• Questions? Email matt@mattshelton.co</li>
                 </ul>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function ResourceAccess({
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:matt@mattshelton.consulting"
+              href="mailto:matt@mattshelton.co"
               className="bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
               Email Matt

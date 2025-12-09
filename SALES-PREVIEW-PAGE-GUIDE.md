@@ -245,7 +245,7 @@ The page includes a section showing ideal prospects:
 
 ## 📞 Support
 
-Questions about this page? Email: matt@mattshelton.consulting
+Questions about this page? Email: matt@mattshelton.co
 
 ---
 

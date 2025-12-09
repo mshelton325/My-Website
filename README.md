@@ -193,4 +193,4 @@ VITE_ANALYTICS_ID=your_analytics_id
 
 ## 🤝 Support
 
-For questions or support regarding this website, contact: matt@mattshelton.consulting
+For questions or support regarding this website, contact: matt@mattshelton.co

@@ -32,7 +32,7 @@ export default function ResourceRouter() {
             This resource link is invalid or has expired. Please check your email for the correct link or contact support.
           </p>
           <a
-            href="mailto:matt@mattshelton.consulting"
+            href="mailto:matt@mattshelton.co"
             className="inline-block bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors"
           >
             Contact Support

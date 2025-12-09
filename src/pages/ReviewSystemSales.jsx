@@ -409,7 +409,7 @@ export default function ReviewSystemSales() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:matt@mattshelton.consulting?subject=Review System Package Inquiry"
+                href="mailto:matt@mattshelton.co?subject=Review System Package Inquiry"
                 className="bg-white text-primary-700 px-8 py-4 rounded-lg font-bold hover:bg-primary-50 transition-colors text-lg"
               >
                 📧 Email to Purchase
@@ -431,7 +431,7 @@ export default function ReviewSystemSales() {
         {/* Footer Note */}
         <div className="text-center text-sm text-gray-500">
           <p>© 2024 Matt Shelton Consulting. All rights reserved.</p>
-          <p className="mt-2">Questions? Email matt@mattshelton.consulting or call to discuss your specific needs.</p>
+          <p className="mt-2">Questions? Email matt@mattshelton.co or call to discuss your specific needs.</p>
         </div>
       </main>
     </div>

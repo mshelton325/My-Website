@@ -244,8 +244,8 @@ export default function Contact() {
               <div className="mt-6 text-center text-gray-600">
                 <p className="text-sm">
                   Prefer email? Reach out directly at{' '}
-                  <a href="mailto:matt@mattshelton.consulting" className="text-primary-700 hover:underline font-medium">
-                    matt@mattshelton.consulting
+                  <a href="mailto:matt@mattshelton.co" className="text-primary-700 hover:underline font-medium">
+                    matt@mattshelton.co
                   </a>
                 </p>
               </div>

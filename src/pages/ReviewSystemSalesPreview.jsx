@@ -259,6 +259,9 @@ export default function ReviewSystemSalesPreview() {
                   <span className="text-green-600 mt-0.5">✓</span>
                   <span>30-40% sustained lead increase</span>
                 </li>
+                <li className="text-xs text-gray-500 mt-2 list-none">
+                  💡 <em>Note: "Digital leads" = website forms, chat, and Google Local Services clicks. "Total lead volume" includes all sources: digital, phone calls, walk-ins, and referrals.</em>
+                </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 mt-0.5">✓</span>
                   <span>Marketing spend starts dropping</span>
@@ -346,13 +349,16 @@ export default function ReviewSystemSalesPreview() {
             </p>
             
             <p>
-              This isn't textbook theory or generic marketing advice cobbled together from blog posts. It's the exact system I built <strong>in the trenches</strong>, running a real flooring store, with real customers, real salespeople, and real consequences if it didn't work.
+              This isn't a system I built in 6 months and then started selling. I've been refining this for <strong>6+ years</strong> while growing a real flooring business from $4.57M to $7.3M. Every script, every accountability structure, every tracking dashboard—it all comes from <strong>real-world trial and error with real money on the line.</strong>
             </p>
             
             <div className="bg-white border-2 border-purple-300 rounded-lg p-6 my-6">
               <p className="font-bold text-gray-900 text-xl mb-2">You're not buying a PDF.</p>
               <p className="text-gray-700">
                 You're buying <strong>years of my life condensed into a proven, replicable system</strong> that you can implement in 90 days instead of the 3-5 years it took me to figure it out.
+              </p>
+              <p className="text-gray-700 mt-3">
+                You're not buying theory. You're buying a <strong>battle-tested system that's already proven</strong> in a real store with real salespeople and real customers.
               </p>
             </div>
             
@@ -599,8 +605,9 @@ export default function ReviewSystemSalesPreview() {
             </div>
             <div className="bg-primary-800 rounded-lg p-6">
               <div className="text-4xl font-bold text-yellow-400 mb-2">52.5%</div>
-              <div className="text-primary-100 font-semibold mb-2">Close Rate</div>
-              <div className="text-sm text-primary-200">vs. 35-40% industry average • Reviews pre-qualify leads</div>
+              <div className="text-primary-100 font-semibold mb-2">Overall Close Rate</div>
+              <div className="text-sm text-primary-200 mb-1">(All Leads → Orders) vs. 20-35% industry average</div>
+              <div className="text-sm text-primary-200">Reviews pre-qualify leads and eliminate tire-kickers before they waste your time</div>
             </div>
             <div className="bg-primary-800 rounded-lg p-6">
               <div className="text-4xl font-bold text-yellow-400 mb-2">20-30</div>

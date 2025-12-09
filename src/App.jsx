@@ -11,6 +11,7 @@ import ReviewSystemOwner from './pages/ReviewSystemOwner';
 import ReviewSystemComplete from './pages/ReviewSystemComplete';
 import ReviewSystemSales from './pages/ReviewSystemSales';
 import ReviewSystemSalesPreview from './pages/ReviewSystemSalesPreview';
+import ReviewSystemSalesPreviewV2 from './pages/ReviewSystemSalesPreviewV2';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/review-system-sales-preview" element={<ReviewSystemSalesPreview />} />
+          <Route path="/review-system-sales-preview-v2" element={<ReviewSystemSalesPreviewV2 />} />
           <Route path="/review-system-sales" element={<ReviewSystemSales />} />
           <Route path="/review-system-complete" element={<ReviewSystemComplete />} />
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />

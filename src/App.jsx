@@ -19,8 +19,8 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Routes>
           {/* Standalone Product Pages - no navigation/footer */}
-          <Route path="/review-system-sales-preview" element={<ReviewSystemSalesPreview />} />
-          <Route path="/review-system-sales-preview-v2" element={<ReviewSystemSalesPreviewV2 />} />
+          <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />
+          <Route path="/preview-b" element={<ReviewSystemSalesPreviewV2 />} />
           <Route path="/review-system-sales" element={<ReviewSystemSales />} />
           <Route path="/review-system-complete" element={<ReviewSystemComplete />} />
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />

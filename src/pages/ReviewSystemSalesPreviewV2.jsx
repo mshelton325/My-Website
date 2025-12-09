@@ -629,6 +629,61 @@ export default function ReviewSystemSalesPreviewV2() {
           </div>
         </div>
 
+        {/* Marketing Rep Contrast Section */}
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg shadow-xl p-8 mb-8 border-2 border-gray-300">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            🤔 When's The Last Time a Marketing Rep Refunded You?
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-lg text-gray-700 font-semibold">
+              Think about it:
+            </p>
+            
+            <p className="text-gray-700">
+              Every marketing vendor you've ever worked with was <strong>confident</strong> their solution would work. Radio reps, Facebook ad agencies, direct mail companies—they all made big promises.
+            </p>
+            
+            <div className="bg-red-50 border-2 border-red-300 rounded-lg p-6">
+              <p className="font-bold text-red-900 mb-3">But here's the thing:</p>
+              <ul className="space-y-2 text-gray-700">
+                <li>• They've never run a flooring store</li>
+                <li>• They get paid whether it works or not</li>
+                <li>• When it doesn't work? "Well, marketing takes time..."</li>
+                <li>• And you <strong>never</strong> get your money back</li>
+              </ul>
+              <p className="mt-4 font-bold text-red-900">
+                You've been buying from biased salespeople with zero skin in the game.
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-primary-50 to-blue-50 border-2 border-primary-300 rounded-lg p-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                👔 I'm Not a Marketing Rep. I'm a Flooring Dealer.
+              </h3>
+              
+              <p className="text-gray-700 mb-4">
+                I'm not selling you something I <em>think</em> will work.<br />
+                I'm sharing the system <strong>I use every single day</strong> in my own store.
+              </p>
+              
+              <ul className="space-y-2 text-gray-700 mb-4">
+                <li>✅ I've proven it works ($4.57M → $7.3M revenue)</li>
+                <li>✅ I've saved $70K/year in marketing costs with this system</li>
+                <li>✅ I still use it today—it's not some "course" I built and abandoned</li>
+                <li>✅ I'm in the <strong>exact same seat you're in</strong> (owner, operator, decision-maker)</li>
+              </ul>
+              
+              <div className="bg-white border-2 border-primary-400 rounded-lg p-4 mt-4">
+                <p className="font-bold text-primary-900 text-lg text-center">
+                  And unlike every marketing vendor you've worked with:<br />
+                  <span className="text-2xl">If this doesn't work for you, I'll refund 100% of your investment.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Guarantee */}
         <div className="bg-white rounded-lg shadow-xl p-8 mb-8 border-2 border-green-400">
           <div className="text-center">
@@ -637,10 +692,10 @@ export default function ReviewSystemSalesPreviewV2() {
               100% Money-Back Guarantee
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-3">
-              If you implement this system for 90 days and don't see measurable improvement in your review capture rate or lead quality, I'll refund your investment. No questions asked.
+              If you implement this system for 90 days and don't see <strong>measurable improvement in your review capture rate</strong> (reviews per sale), I'll refund your investment. No questions asked.
             </p>
             <p className="text-sm text-gray-600 italic">
-              I'm that confident this system works because I built it, tested it in my own store, and use it every single day.
+              Why can I do this when no marketing vendor ever has? Because I'm not a biased salesperson—I'm a dealer who's proven this works, and I'm putting my money where my mouth is.
             </p>
           </div>
         </div>

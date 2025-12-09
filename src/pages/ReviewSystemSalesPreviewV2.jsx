@@ -532,7 +532,7 @@ export default function ReviewSystemSalesPreviewV2() {
                 <div>
                   <div className="text-2xl font-bold text-yellow-400 mb-2">60% Revenue Growth</div>
                   <p className="text-primary-100">Grew from $4.57M to $7.3M in 6 years</p>
-                  <p className="text-sm text-primary-200 mt-2 italic">"And I work 20-30 hours/week, not 80+."</p>
+                  <p className="text-sm text-primary-200 mt-2 italic">"And I now work 20-30 hours/week <strong>on the flooring business</strong>, not 80+."</p>
                 </div>
               </div>
             </div>
@@ -543,10 +543,13 @@ export default function ReviewSystemSalesPreviewV2() {
                 <div>
                   <div className="text-2xl font-bold text-yellow-400 mb-2">18-32 Work Days/Year Reclaimed</div>
                   <p className="text-primary-100 text-sm mb-3">
-                    Matt works 20-30 hrs/week now—but for years, he was working <strong>80+ hour weeks</strong>, running at 12 mph when his team could only handle 5. He was overextended, burned out, and stressed.
+                    Matt now works 20-30 hrs/week <strong>on the flooring business</strong>—but for years, he was working 80+ hour weeks, running at 12 mph when his team could only handle 5. He was overextended, burned out, and stressed.
                   </p>
                   <p className="text-primary-100 text-sm mb-2">
                     <strong>Shifting focus to building this review-driven system was one of the biggest variables that changed everything.</strong> He got his time back, his sanity back, and his business became more profitable with less chaos.
+                  </p>
+                  <p className="text-primary-100 text-sm mb-2">
+                    <strong>Now he spends the rest of his time helping dealers like you implement these same systems—so you don't have to spend 6 years figuring it out yourself.</strong>
                   </p>
                   <p className="text-sm text-primary-200 italic">"I have a life outside of work now—and you can too."</p>
                 </div>
@@ -593,6 +596,22 @@ export default function ReviewSystemSalesPreviewV2() {
                 <p className="font-bold text-gray-900 text-lg">Your investment: $997</p>
                 <p className="font-bold text-green-700 text-2xl">Your Year 1 return: $390K-$670K+</p>
               </div>
+            </div>
+
+            <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6">
+              <h3 className="font-bold text-gray-900 text-xl mb-3">If you do $5M-$10M+/year in revenue:</h3>
+              <ul className="space-y-2 text-gray-700 mb-4">
+                <li>• A 30% lead increase = <strong>$1.5M-$3M+ in additional sales opportunities</strong></li>
+                <li>• At a 40% close rate, that's <strong>$600K-$1.2M+ in new revenue</strong></li>
+                <li>• Marketing savings: <strong>$50K-$100K+/year</strong> (or more for multi-location dealers)</li>
+              </ul>
+              <div className="bg-purple-100 border-2 border-purple-400 rounded-lg p-4 text-center">
+                <p className="font-bold text-gray-900 text-lg">Your investment: $997</p>
+                <p className="font-bold text-purple-700 text-2xl">Your Year 1 return: $650K-$1.3M+</p>
+              </div>
+              <p className="text-sm text-gray-600 italic mt-3 text-center">
+                *Note: Multi-location dealers or larger operations may benefit from the VIP package for custom implementation and on-site training.*
+              </p>
             </div>
 
             <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-6">

@@ -205,6 +205,105 @@ export default function ReviewSystemSalesPreview() {
           </div>
         </div>
 
+        {/* Realistic Results Timeline */}
+        <div className="bg-white rounded-lg shadow-xl p-8 mb-8 border-l-4 border-primary-700">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            📅 What to Expect: Realistic Timeline
+          </h2>
+          <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+            This isn't a "get rich quick" scheme. It's a proven system with predictable, compounding results.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* First 90 Days */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border-2 border-blue-300">
+              <div className="text-center mb-4">
+                <div className="text-4xl mb-2">🌱</div>
+                <h3 className="text-xl font-bold text-gray-900">First 90 Days</h3>
+                <div className="text-sm text-blue-700 font-semibold">Foundation Phase</div>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-600 mt-0.5">✓</span>
+                  <span>50-100 new reviews captured</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-600 mt-0.5">✓</span>
+                  <span>10-20% initial lead growth</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-600 mt-0.5">✓</span>
+                  <span>Team trained & system deployed</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-600 mt-0.5">✓</span>
+                  <span>Google ranking starts improving</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Months 6-12 */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 border-2 border-green-300">
+              <div className="text-center mb-4">
+                <div className="text-4xl mb-2">📈</div>
+                <h3 className="text-xl font-bold text-gray-900">Months 6-12</h3>
+                <div className="text-sm text-green-700 font-semibold">Growth Phase</div>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span>Digital leads triple (3x growth)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span>30-40% sustained lead increase</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span>Marketing spend starts dropping</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span>System runs on autopilot</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Year 1 Impact */}
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-100 rounded-lg p-6 border-2 border-yellow-400">
+              <div className="text-center mb-4">
+                <div className="text-4xl mb-2">🚀</div>
+                <h3 className="text-xl font-bold text-gray-900">Year 1 Impact</h3>
+                <div className="text-sm text-orange-700 font-semibold">Proven Results</div>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600 mt-0.5">✓</span>
+                  <span><strong>$30K-$70K</strong> ad savings</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600 mt-0.5">✓</span>
+                  <span><strong>$50K-$100K+</strong> revenue growth</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600 mt-0.5">✓</span>
+                  <span>70% of leads from organic search</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600 mt-0.5">✓</span>
+                  <span>System becomes business asset</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-6 bg-primary-50 border-2 border-primary-300 rounded-lg p-4 text-center">
+            <p className="font-semibold text-gray-900">
+              💡 These timelines are based on Matt's actual results and feedback from dealers implementing this system.
+            </p>
+          </div>
+        </div>
+
         {/* Bonus Materials Section */}
         <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg p-8 mb-8 border-2 border-yellow-300">
           <div className="text-center mb-8">
@@ -514,34 +613,176 @@ export default function ReviewSystemSalesPreview() {
         </div>
 
         {/* Who This Is For */}
-        <div className="bg-white rounded-lg shadow-xl p-8 mt-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            ✅ This System Is For You If...
+        <div className="bg-white rounded-lg shadow-xl p-8 mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            🎯 Who This System Is For
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+            This system works best for independent flooring dealers who are ready to build a sustainable lead-generation asset.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">✓</span>
-              <span className="text-gray-700">You're tired of spending $5k-$15k/month on ads that barely break even</span>
+              <span className="text-green-600 text-xl flex-shrink-0">✓</span>
+              <span className="text-gray-700"><strong>Independent flooring dealers</strong> with under 200 Google reviews</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">✓</span>
-              <span className="text-gray-700">You want more organic leads from Google search (not just paid ads)</span>
+              <span className="text-green-600 text-xl flex-shrink-0">✓</span>
+              <span className="text-gray-700"><strong>Owners tired of spending</strong> $60K-$120K/year on ads that barely break even</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">✓</span>
-              <span className="text-gray-700">Your sales team doesn't consistently ask for reviews (or doesn't know how)</span>
+              <span className="text-green-600 text-xl flex-shrink-0">✓</span>
+              <span className="text-gray-700"><strong>Sales teams that struggle</strong> with consistent review capture</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">✓</span>
-              <span className="text-gray-700">You want a proven system (not generic marketing fluff)</span>
+              <span className="text-green-600 text-xl flex-shrink-0">✓</span>
+              <span className="text-gray-700"><strong>Dealers ready to build a system,</strong> not chase quick fixes</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">✓</span>
-              <span className="text-gray-700">You're an independent flooring dealer (not a big-box store)</span>
+              <span className="text-green-600 text-xl flex-shrink-0">✓</span>
+              <span className="text-gray-700"><strong>Businesses wanting</strong> 70% of leads from organic search (not ads)</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">✓</span>
-              <span className="text-gray-700">You want implementation tools (not just theory)</span>
+              <span className="text-green-600 text-xl flex-shrink-0">✓</span>
+              <span className="text-gray-700"><strong>Owners who value</strong> implementation tools over generic marketing theory</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Proof: This System Works */}
+        <div className="bg-primary-900 text-white rounded-lg shadow-xl p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            🌟 This System Works for Dealers Like You
+          </h2>
+          <p className="text-center text-primary-100 mb-8 max-w-3xl mx-auto text-lg">
+            These aren't projections or estimates. These are real results from Matt's flooring store in McMinnville, Oregon.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-primary-800 rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl">💰</div>
+                <div>
+                  <div className="text-2xl font-bold text-yellow-400 mb-2">$70,000/Year Saved</div>
+                  <p className="text-primary-100">Reduced marketing spend from $110K to $40K annually</p>
+                  <p className="text-sm text-primary-200 mt-2 italic">"That's $70K back in my pocket every single year."</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-primary-800 rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl">⭐</div>
+                <div>
+                  <div className="text-2xl font-bold text-yellow-400 mb-2">4.9★ Rating</div>
+                  <p className="text-primary-100">Built 450+ Google reviews dominating local search</p>
+                  <p className="text-sm text-primary-200 mt-2 italic">"We own 'flooring near me' in our market."</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-primary-800 rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl">📈</div>
+                <div>
+                  <div className="text-2xl font-bold text-yellow-400 mb-2">60% Revenue Growth</div>
+                  <p className="text-primary-100">Grew from $4.57M to $7.3M in 6 years</p>
+                  <p className="text-sm text-primary-200 mt-2 italic">"And I work 20-30 hours/week, not 80+."</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-primary-800 rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl">⏰</div>
+                <div>
+                  <div className="text-2xl font-bold text-yellow-400 mb-2">18-32 Days/Year Reclaimed</div>
+                  <p className="text-primary-100">Systems run the business so you don't have to</p>
+                  <p className="text-sm text-primary-200 mt-2 italic">"I have a life outside of work now."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center bg-primary-950 rounded-lg p-6">
+            <p className="text-primary-100 text-lg">
+              <strong className="text-white">Built by a flooring dealer. Tested in a real store. Proven with real numbers.</strong>
+            </p>
+            <p className="text-primary-200 mt-2">
+              This isn't consultant theory—it's a system I use every single day.
+            </p>
+          </div>
+        </div>
+
+        {/* Pricing & Next Steps */}
+        <div className="bg-gradient-to-br from-primary-700 to-primary-900 text-white rounded-lg shadow-xl p-8 mb-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">
+              💼 Ready to Stop Feeding the Paid Ad Machine?
+            </h2>
+            <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+              Let's talk about your current review count, lead volume, and whether this system is a fit for your business.
+            </p>
+          </div>
+
+          {/* Pricing Tiers Preview */}
+          <div className="bg-white text-gray-900 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-center mb-6">📊 Implementation Options</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+              <div className="text-center p-4 bg-gray-50 rounded-lg border-2 border-gray-200">
+                <div className="font-bold text-primary-700 mb-2">DIY</div>
+                <div className="text-2xl font-bold mb-1">$997</div>
+                <div className="text-xs text-gray-600">Complete package<br/>Self-implementation</div>
+              </div>
+              <div className="text-center p-4 bg-primary-50 rounded-lg border-2 border-primary-300">
+                <div className="font-bold text-primary-700 mb-2">Guided</div>
+                <div className="text-2xl font-bold mb-1">$2,997</div>
+                <div className="text-xs text-gray-600">Package + setup call<br/>90-day check-ins</div>
+              </div>
+              <div className="text-center p-4 bg-green-50 rounded-lg border-2 border-green-400">
+                <div className="font-bold text-green-700 mb-2">Accelerated</div>
+                <div className="text-2xl font-bold mb-1">$4,997</div>
+                <div className="text-xs text-gray-600">Full training<br/>Team implementation</div>
+              </div>
+              <div className="text-center p-4 bg-yellow-50 rounded-lg border-2 border-yellow-400">
+                <div className="font-bold text-orange-700 mb-2">VIP</div>
+                <div className="text-2xl font-bold mb-1">$7,997+</div>
+                <div className="text-xs text-gray-600">Done-with-you<br/>Custom consulting</div>
+              </div>
+            </div>
+            <p className="text-center text-sm text-gray-600 mt-4">
+              Exact pricing depends on your store size, team structure, and implementation needs.
+            </p>
+          </div>
+
+          {/* Primary CTA */}
+          <div className="text-center">
+            <div className="mb-6">
+              <p className="text-primary-100 text-lg mb-2">
+                <strong>Step 1:</strong> Schedule a 20-minute discovery call (no pressure, no pitch)
+              </p>
+              <p className="text-primary-200 text-sm">
+                We'll review your current situation and determine if this system makes sense for your business.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+              <a
+                href="mailto:matt@mattshelton.co?subject=Discovery Call - Review System"
+                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors text-lg inline-flex items-center justify-center gap-2"
+              >
+                📅 Schedule Discovery Call
+              </a>
+              <a
+                href="mailto:matt@mattshelton.co?subject=Pricing Question - Review System"
+                className="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors inline-flex items-center justify-center gap-2"
+              >
+                💬 Ask Questions First
+              </a>
+            </div>
+
+            <div className="text-sm text-primary-200">
+              <p>📧 Email: <a href="mailto:matt@mattshelton.co" className="underline hover:text-white">matt@mattshelton.co</a></p>
+              <p className="mt-1">⏱️ Typical response time: Within 24 hours</p>
             </div>
           </div>
         </div>

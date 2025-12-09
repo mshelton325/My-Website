@@ -298,6 +298,146 @@ export default function ReviewSystemSalesPreview() {
           </div>
         </div>
 
+        {/* ROI: Asset vs Expense */}
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg shadow-xl p-8 mb-8 border-2 border-green-300">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            💎 This Is an Asset, Not an Expense
+          </h2>
+          
+          <div className="max-w-4xl mx-auto mb-8">
+            <p className="text-xl text-gray-700 text-center mb-6">
+              Unlike traditional marketing that disappears the moment you stop paying, this system generates leads <strong>24/7/365</strong> — forever.
+            </p>
+          </div>
+
+          {/* One Sale Math */}
+          <div className="bg-white rounded-lg p-6 mb-6 border-2 border-green-400">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              📊 The Math: Just ONE Extra Sale Per Month
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div>
+                <div className="text-gray-600 text-sm mb-2">Average Flooring Job</div>
+                <div className="text-4xl font-bold text-primary-700">$8,000</div>
+                <div className="text-xs text-gray-500 mt-1">(Conservative estimate)</div>
+              </div>
+              <div>
+                <div className="text-gray-600 text-sm mb-2">Gross Margin (35%)</div>
+                <div className="text-4xl font-bold text-green-600">$2,800</div>
+                <div className="text-xs text-gray-500 mt-1">(Per job profit)</div>
+              </div>
+              <div>
+                <div className="text-gray-600 text-sm mb-2">Break-Even</div>
+                <div className="text-4xl font-bold text-gray-900">0.35</div>
+                <div className="text-xs text-gray-500 mt-1">(Jobs needed to cover $997)</div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-lg font-bold text-gray-900">
+                Translation: <span className="text-green-600">If this system generates just ONE extra sale</span>, you're already profitable.
+              </p>
+              <p className="text-sm text-gray-600 mt-2">
+                And that sale will continue generating reviews that attract more leads... forever.
+              </p>
+            </div>
+          </div>
+
+          {/* Asset vs Expense Comparison */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Traditional Marketing (Expense) */}
+            <div className="bg-red-50 border-2 border-red-300 rounded-lg p-6">
+              <div className="text-center mb-4">
+                <div className="text-3xl mb-2">📉</div>
+                <h4 className="font-bold text-gray-900 text-lg">Traditional Marketing (Expense)</h4>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 mt-0.5">✗</span>
+                  <span><strong>Radio ad ($2,000):</strong> Heard once, forgotten immediately</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 mt-0.5">✗</span>
+                  <span><strong>Mailer ($1,500):</strong> 1% response rate, then trash</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 mt-0.5">✗</span>
+                  <span><strong>Facebook ads ($3,000/mo):</strong> Stop paying? Leads stop</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 mt-0.5">✗</span>
+                  <span><strong>TV commercial ($5,000):</strong> Airs for 30 days, then gone</span>
+                </li>
+              </ul>
+              <div className="mt-4 p-3 bg-red-100 rounded text-center">
+                <p className="font-bold text-red-900">Total: $11,500+</p>
+                <p className="text-xs text-red-700">And you have NOTHING permanent to show for it</p>
+              </div>
+            </div>
+
+            {/* Review System (Asset) */}
+            <div className="bg-green-50 border-2 border-green-400 rounded-lg p-6">
+              <div className="text-center mb-4">
+                <div className="text-3xl mb-2">📈</div>
+                <h4 className="font-bold text-gray-900 text-lg">Review System (Permanent Asset)</h4>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span><strong>Works 24/7/365:</strong> No ongoing ad spend required</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span><strong>Permanent visibility:</strong> Reviews stay on Google forever</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span><strong>Compounds over time:</strong> More reviews = more leads</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span><strong>Free organic traffic:</strong> Dominate "flooring near me" searches</span>
+                </li>
+              </ul>
+              <div className="mt-4 p-3 bg-green-100 rounded text-center">
+                <p className="font-bold text-green-900">One-Time: $997</p>
+                <p className="text-xs text-green-700">And it generates leads FOREVER</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Compounding Returns */}
+          <div className="bg-white rounded-lg p-6 border-2 border-green-400">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+              🚀 Compounding Returns Over Time
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+              <div>
+                <div className="text-gray-600 text-xs mb-1">Month 1-3</div>
+                <div className="text-2xl font-bold text-primary-700">+15</div>
+                <div className="text-xs text-gray-600">New reviews</div>
+              </div>
+              <div>
+                <div className="text-gray-600 text-xs mb-1">Month 4-6</div>
+                <div className="text-2xl font-bold text-primary-700">+30</div>
+                <div className="text-xs text-gray-600">More reviews</div>
+              </div>
+              <div>
+                <div className="text-gray-600 text-xs mb-1">Year 1</div>
+                <div className="text-2xl font-bold text-green-600">+120</div>
+                <div className="text-xs text-gray-600">Total reviews</div>
+              </div>
+              <div>
+                <div className="text-gray-600 text-xs mb-1">Forever</div>
+                <div className="text-2xl font-bold text-green-600">∞</div>
+                <div className="text-xs text-gray-600">Keep generating leads</div>
+              </div>
+            </div>
+            <p className="text-center text-sm text-gray-600 mt-4">
+              Each review you capture <strong>stays on Google permanently</strong> and continues attracting leads year after year.
+            </p>
+          </div>
+        </div>
+
         {/* Social Proof */}
         <div className="bg-primary-900 text-white rounded-lg shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold mb-6 text-center">

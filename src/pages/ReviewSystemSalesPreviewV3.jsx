@@ -585,19 +585,7 @@ export default function ReviewSystemSalesPreviewV3() {
           </h2>
           
           <div className="space-y-6 max-w-4xl mx-auto">
-            <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-gray-900 text-xl mb-3">If you do $3M-$5M/year in revenue:</h3>
-              <ul className="space-y-2 text-gray-700 mb-4">
-                <li>• A 30% lead increase = <strong>$900K-$1.5M in additional sales opportunities</strong></li>
-                <li>• Even at a 40% close rate, that's <strong>$360K-$600K in new revenue</strong></li>
-                <li>• Marketing savings: <strong>$30K-$70K/year</strong> (conservatively)</li>
-              </ul>
-              <div className="bg-green-100 border-2 border-green-400 rounded-lg p-4 text-center">
-                <p className="font-bold text-gray-900 text-lg">Your investment: $2,997</p>
-                <p className="font-bold text-green-700 text-2xl">Your Year 1 return: $387K-$667K+</p>
-              </div>
-            </div>
-
+            {/* $5M-$10M+ tier - LARGEST first */}
             <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6">
               <h3 className="font-bold text-gray-900 text-xl mb-3">If you do $5M-$10M+/year in revenue:</h3>
               <ul className="space-y-2 text-gray-700 mb-4">
@@ -614,6 +602,21 @@ export default function ReviewSystemSalesPreviewV3() {
               </p>
             </div>
 
+            {/* $3M-$5M tier - MIDDLE */}
+            <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
+              <h3 className="font-bold text-gray-900 text-xl mb-3">If you do $3M-$5M/year in revenue:</h3>
+              <ul className="space-y-2 text-gray-700 mb-4">
+                <li>• A 30% lead increase = <strong>$900K-$1.5M in additional sales opportunities</strong></li>
+                <li>• Even at a 40% close rate, that's <strong>$360K-$600K in new revenue</strong></li>
+                <li>• Marketing savings: <strong>$30K-$70K/year</strong> (conservatively)</li>
+              </ul>
+              <div className="bg-green-100 border-2 border-green-400 rounded-lg p-4 text-center">
+                <p className="font-bold text-gray-900 text-lg">Your investment: $2,997</p>
+                <p className="font-bold text-green-700 text-2xl">Your Year 1 return: $387K-$667K+</p>
+              </div>
+            </div>
+
+            {/* $1M-$2M tier - SMALLEST last */}
             <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-6">
               <h3 className="font-bold text-gray-900 text-xl mb-3">If you do $1M-$2M/year in revenue:</h3>
               <ul className="space-y-2 text-gray-700 mb-4">

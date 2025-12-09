@@ -2,15 +2,17 @@
 
 ## 🔗 Access Both Versions:
 
-### **Version 1 (Original + 7 Edits)**
-**URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/review-system-sales-preview`
+### **Preview A (Aggressive Positioning)**
+**Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-a`
 
-**Production:** `https://yourdomain.com/review-system-sales-preview`
+**Production:** `https://yourdomain.com/preview-a`
 
-### **Version 2 (Streamlined & Conservative)**
-**URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/review-system-sales-preview-v2`
+### **Preview B (Conservative Positioning)**
+**Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-b`
 
-**Production:** `https://yourdomain.com/review-system-sales-preview-v2`
+**Production:** `https://yourdomain.com/preview-b`
+
+**Note:** URLs changed from `/review-system-sales-preview` to `/preview-a` and `/preview-b` for cleaner, more neutral prospect-facing links.
 
 ---
 
@@ -130,4 +132,5 @@ This data will help you determine which version to use for different prospect pr
 
 **Last Updated:** December 9, 2024  
 **Status:** ✅ Both versions live and ready for testing  
-**Clarity Sync:** ✅ All universal improvements applied to BOTH versions (Dec 9, 2024)
+**Clarity Sync:** ✅ All universal improvements applied to BOTH versions (Dec 9, 2024)  
+**Latest Update:** ✅ Added "Marketing Rep Refund" trust section + measurable guarantee + clean URLs (Dec 9, 2024)

@@ -6,31 +6,52 @@ Keep track of your shareable product links here.
 
 ---
 
-## 🔥 Review System Sales Preview (SEND THIS TO PROSPECTS - MAIN OPTION)
+## 🔥 Sales Preview Pages (SEND TO PROSPECTS - A/B TEST)
 
-**Primary Link:** `/review-system-sales-preview`
+### **Preview A (Aggressive Positioning)**
 
-**Full URL (Local):** `http://localhost:5173/review-system-sales-preview`
+**Primary Link:** `/preview-a`
 
-**Full URL (Production):** `https://yourdomain.com/review-system-sales-preview`
+**Full URL (Sandbox):** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-a`
 
-**Purpose:** PREMIUM SALES PAGE - Beautiful showcase WITHOUT file access
+**Full URL (Production):** `https://yourdomain.com/preview-a`
 
-**Target Audience:** Prospects, potential buyers, decision-makers
+**Purpose:** SALES PAGE - Aggressive positioning with 50-100 reviews in 90 days, detailed ROI math
 
-**Status:** ✅ Active - **USE THIS AS YOUR PRIMARY SALES PAGE**
+**Target Audience:** Aggressive entrepreneurs, risk-takers, "show me the money" mindset
 
-**Features:**
+**Status:** ✅ Active - A/B Test Version A
+
+### **Preview B (Conservative Positioning)**
+
+**Primary Link:** `/preview-b`
+
+**Full URL (Sandbox):** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-b`
+
+**Full URL (Production):** `https://yourdomain.com/preview-b`
+
+**Purpose:** SALES PAGE - Conservative positioning with 30-60 reviews in 90 days, implementation warning
+
+**Target Audience:** Skeptical prospects, burned-by-promises buyers, conservative operators
+
+**Status:** ✅ Active - A/B Test Version B
+
+**Features (BOTH Versions):**
 - Professional showcase of all 12 resources (2 manuals + 10 bonuses)
 - Detailed descriptions of each component
-- Real results & social proof (60% growth, 4.9★ rating, etc.)
-- Clear pricing ($997 one-time)
-- ROI calculator ("If this saves $5k/year in ads, pays for itself in 10 weeks")
-- 100% Money-back guarantee
-- Strong CTAs (Purchase / Ask Questions / Schedule Call)
+- Real results & social proof (60% growth, 4.9★ rating, $70K saved)
+- Clear pricing ($997 starting / tiered options)
+- **NEW:** "Marketing Rep Refund" trust section (unique differentiator)
+- Revenue tier projections ($1M-$2M, $3M-$5M, $5M-$10M+)
+- 100% Money-back guarantee (measurable: review capture rate)
+- Strong CTAs (Discovery Call / Purchase DIY Package)
 - **NO FILE ACCESS** - Pure preview/sales page
 
-**When To Use:** Share with ALL prospects to generate sales (your go-to link)
+**A/B Test Variables:**
+- Preview A: 50-100 reviews in 90 days + detailed ROI math (360x-670x)
+- Preview B: 30-60 reviews in 90 days + implementation warning
+
+**When To Use:** Split-test with prospects (send 50% to A, 50% to B), track which converts better
 
 ---
 
@@ -250,4 +271,9 @@ Later (when scaling):
 
 ---
 
-**Last Updated:** December 8, 2024
+**Last Updated:** December 9, 2024  
+**Latest Changes:** 
+- URLs changed from `/review-system-sales-preview` to `/preview-a` and `/preview-b` (cleaner, neutral)
+- Added "Marketing Rep Refund" trust section to both versions
+- Updated guarantee to measurable metric (review capture rate only)
+- Both versions now have identical clarity improvements

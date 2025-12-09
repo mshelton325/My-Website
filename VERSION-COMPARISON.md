@@ -14,45 +14,50 @@
 
 ---
 
-## 📊 Key Differences:
+## ✅ UNIVERSAL IMPROVEMENTS (Applied to BOTH Versions)
 
-| Element | Version 1 | Version 2 |
-|---------|-----------|-----------|
-| **Review Timeline (90 days)** | 50-100 reviews | 30-60 reviews (more conservative) |
-| **ROI Math Section** | Detailed breakdown with 360x-670x ROI | Removed (streamlined) |
-| **Digital vs Total Leads** | Not explicitly clarified | Clear note explaining difference |
-| **Close Rate Metric** | Not prominently featured | "52.5% Overall Close Rate (All Leads → Orders)" |
-| **Credibility ("What You're Paying For")** | "Years of refinement" | **"6+ years"** of refinement (specific) |
-| **80+ Hour Work Week Story** | In separate section | Integrated into Real Results |
-| **Implementation Disclaimer** | ❌ Not present | ✅ **"Results Require Consistent Implementation"** |
-| **Redundant Sections** | Asset vs Expense + ROI Math | Asset vs Expense only (consolidated) |
-| **Page Flow** | Multiple touchpoints | Streamlined Hero → Timeline → Results → CTA |
+These are NOT A/B test variables—these are critical clarity fixes applied to BOTH versions:
+
+| Improvement | Applied to V1 & V2 |
+|-------------|-------------------|
+| **Close Rate Clarity** | ✅ "52.5% Overall Close Rate (All Leads → Orders) vs. 20-35% industry average" |
+| **Credibility Specificity** | ✅ "6+ years of refinement" + "Battle-tested system" |
+| **Work Hours Clarity** | ✅ "20-30 hrs/week **on the flooring business**" + consulting note |
+| **Lead Type Clarification** | ✅ Note explaining "Digital leads" vs "Total lead volume" |
+| **Revenue Tier Expansion** | ✅ Added $5M-$10M+ tier ($650K-$1.3M+ Year 1 return) |
 
 ---
 
-## 🎯 Version 1 Strengths:
+## 📊 A/B TEST VARIABLES (Actual Differences):
 
-✅ **More aggressive ROI claims** (360x-670x)  
-✅ **Detailed math breakdown** (shows specific calculations)  
-✅ **Separate "What This Means for YOUR Store"** section  
-✅ **Multiple proof points throughout**  
-✅ **Asset vs Expense + ROI Math sections** (hammers home value)
-
-**Best for:** Prospects who need maximum convincing, want detailed ROI proof, and respond to aggressive claims
+| Element | Version 1 (Aggressive) | Version 2 (Conservative) |
+|---------|----------------------|-------------------------|
+| **Review Timeline (90 days)** | 50-100 reviews | 30-60 reviews |
+| **ROI Math Section** | ✅ Detailed 360x-670x ROI breakdown | ❌ Removed (streamlined) |
+| **Implementation Disclaimer** | ❌ Not present | ✅ "Results Require Consistent Implementation" warning |
+| **Page Flow** | Multiple proof touchpoints | Streamlined single flow |
 
 ---
 
-## 🎯 Version 2 Strengths:
+## 🎯 Version 1 Strengths (Aggressive):
 
-✅ **More conservative/believable numbers** (30-60 reviews vs 50-100)  
-✅ **Clearer lead type distinction** (digital vs total)  
-✅ **Specific credibility** (6+ years, not vague "years")  
-✅ **Implementation disclaimer** (sets realistic expectations)  
+✅ **Aggressive review timeline** (50-100 in 90 days)  
+✅ **Detailed ROI math** (360x-670x calculations visible)  
+✅ **Multiple proof touchpoints** (hammers home value)  
+✅ **No implementation warning** (pure confidence)
+
+**Best for:** Aggressive entrepreneurs, risk-takers, "show me the money" mindset
+
+---
+
+## 🎯 Version 2 Strengths (Conservative):
+
+✅ **Conservative review timeline** (30-60 in 90 days—more believable)  
+✅ **Implementation disclaimer** (sets realistic expectations upfront)  
 ✅ **Streamlined flow** (less overwhelming, easier to digest)  
-✅ **Consolidated messaging** (no redundancy)  
-✅ **Better close rate positioning** (52.5% all leads → orders)
+✅ **Consolidated messaging** (no redundancy)
 
-**Best for:** Skeptical prospects, those burned by past promises, and buyers who value honesty over hype
+**Best for:** Skeptical prospects, burned-by-promises buyers, conservative operators
 
 ---
 
@@ -124,4 +129,5 @@ This data will help you determine which version to use for different prospect pr
 ---
 
 **Last Updated:** December 9, 2024  
-**Status:** ✅ Both versions live and ready for testing
+**Status:** ✅ Both versions live and ready for testing  
+**Clarity Sync:** ✅ All universal improvements applied to BOTH versions (Dec 9, 2024)

@@ -619,22 +619,23 @@ export default function ReviewSystemSalesPreviewV3() {
             </p>
             
             <p className="text-green-100 mb-4">
-              Not 8. Not 12. Four retail salespeople (plus 2 commercial reps).
+              Not 8. Not 12. Four retail salespeople (plus 2 commercial reps handling commercial projects separately).
             </p>
             
             <p className="text-green-100 mb-3">
-              And yet his store is producing:
+              And yet his retail team is producing:
             </p>
             
             <ul className="space-y-2 text-white font-semibold mb-6 ml-4">
               <li>• 202% of cohort average phone lead volume</li>
               <li>• 127% of cohort average digital lead volume</li>
               <li>• 45% higher written sales than similar stores</li>
+              <li>• $7.3M in annual revenue (retail + commercial combined)</li>
             </ul>
             
-            <p className="text-white text-lg font-bold mb-3">How is that possible?</p>
+            <p className="text-white text-lg font-bold mb-3">How is that possible with only 4 retail salespeople?</p>
             
-            <p className="text-green-100 mb-3">Two reasons:</p>
+            <p className="text-green-100 mb-3">Three reasons:</p>
             
             <div className="bg-green-950 rounded-lg p-6 mb-4 border-2 border-green-600">
               <p className="text-white font-bold mb-2">1. The review system brings warmer, pre-qualified leads</p>
@@ -660,7 +661,17 @@ export default function ReviewSystemSalesPreviewV3() {
                 Matt's store average: <span className="text-yellow-400 font-bold">~12 days</span>
               </p>
               <p className="text-green-100">
-                Why? Because reviews answer objections before the customer even calls. They're pre-sold on quality, service, and trustworthiness. Your salespeople don't have to spend 3 weeks convincing skeptical prospects.
+                Why? Because reviews answer objections before the customer even calls. They're pre-sold on quality, service, and trustworthiness. Your salespeople don't have to spend 3 weeks nurturing skeptical prospects through 8 follow-ups.
+              </p>
+            </div>
+            
+            <div className="bg-green-950 rounded-lg p-6 mb-4 border-2 border-green-600">
+              <p className="text-white font-bold mb-2">3. The team is streamlined and efficient</p>
+              <p className="text-green-100 mb-3">
+                Matt's not just running a review system—he's built sales training systems, lead qualification processes, and operational efficiencies that allow 4 people to do what most stores need 8-10 people to accomplish.
+              </p>
+              <p className="text-green-100">
+                The review system is the foundation. But it works because it's part of a larger philosophy: eliminate waste, focus on high-value activities, and let systems do the work.
               </p>
             </div>
             
@@ -671,6 +682,12 @@ export default function ReviewSystemSalesPreviewV3() {
               </p>
               <p className="text-gray-900 font-semibold">
                 This isn't about working harder. It's about working smarter—and letting reviews do the heavy lifting.
+              </p>
+            </div>
+            
+            <div className="mt-4 bg-green-900 rounded-lg p-4 border-2 border-green-500">
+              <p className="text-green-100 text-sm italic">
+                *Want to learn how Matt trains and manages a small, high-performing team? That's a separate consulting offering—reach out if you're interested.*
               </p>
             </div>
           </div>
@@ -1051,7 +1068,7 @@ export default function ReviewSystemSalesPreviewV3() {
             </p>
             
             <p>
-              Industry benchmarks (20-35% average close rate, consumer review behavior statistics) are from industry research and dealer feedback.
+              Industry benchmarks (20-35% average close rate, 20+ day sales cycle, consumer review behavior statistics) are from industry research and dealer feedback.
             </p>
             
             <p className="font-semibold text-gray-900">

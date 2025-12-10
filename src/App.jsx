@@ -13,6 +13,7 @@ import ReviewSystemSales from './pages/ReviewSystemSales';
 import ReviewSystemSalesPreview from './pages/ReviewSystemSalesPreview';
 import ReviewSystemSalesPreviewV2 from './pages/ReviewSystemSalesPreviewV2';
 import ReviewSystemSalesPreviewV3 from './pages/ReviewSystemSalesPreviewV3';
+import ReviewSystemSalesPreviewD from './pages/ReviewSystemSalesPreviewD';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />
           <Route path="/preview-b" element={<ReviewSystemSalesPreviewV2 />} />
           <Route path="/preview-c" element={<ReviewSystemSalesPreviewV3 />} />
+          <Route path="/preview-d" element={<ReviewSystemSalesPreviewD />} />
           <Route path="/review-system-sales" element={<ReviewSystemSales />} />
           <Route path="/review-system-complete" element={<ReviewSystemComplete />} />
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />

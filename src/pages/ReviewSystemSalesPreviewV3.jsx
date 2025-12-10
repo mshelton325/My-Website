@@ -363,8 +363,14 @@ export default function ReviewSystemSalesPreviewV3() {
             </div>
             
             <div className="text-center bg-indigo-100 border-2 border-indigo-300 rounded-lg p-4">
-              <p className="font-bold text-gray-900 text-lg">
-                <strong>Translation:</strong> You're paying $2,997 to skip 6+ years of expensive mistakes, wasted ad spend, and trial-and-error—condensed into a plug-and-play system you can implement in 90 days.
+              <p className="font-bold text-gray-900 text-lg mb-3">
+                <strong>Translation:</strong>
+              </p>
+              <p className="text-gray-900 mb-2">
+                For <strong>$497</strong>, you're getting the essentials to prove this works in your store in 60-90 days.
+              </p>
+              <p className="text-gray-900 mb-3">
+                For <strong>$2,997</strong>, you're skipping 6+ years of expensive mistakes, wasted ad spend, and trial-and-error—and getting the complete system Matt uses every day to run a 4-person retail team that outproduces stores with 10+ salespeople.
               </p>
               <p className="text-indigo-700 font-semibold mt-2">That's the real value.</p>
             </div>
@@ -411,8 +417,9 @@ export default function ReviewSystemSalesPreviewV3() {
           <div className="border-t-2 border-gray-200 pt-6">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-3">📦 Package Options</h3>
-              <div className="text-4xl font-bold text-primary-700 mb-2">STARTING AT $2,997</div>
-              <div className="text-gray-600 text-sm">(Founding Member Rate - Normally $4,997)</div>
+              <div className="text-4xl font-bold text-primary-700 mb-2">STARTING AT $497</div>
+              <div className="text-gray-600 text-sm">(Quick-Start Package)</div>
+              <div className="text-gray-700 text-sm font-semibold mt-2">Complete System: $2,997 Founding Member Rate</div>
               <div className="text-gray-500 text-xs mt-2 italic">(Full pricing & implementation options below)</div>
             </div>
           </div>
@@ -487,7 +494,7 @@ export default function ReviewSystemSalesPreviewV3() {
                 </li>
               </ul>
               <div className="mt-4 p-3 bg-green-100 rounded text-center">
-                <p className="font-bold text-green-900">One-Time: $2,997</p>
+                <p className="font-bold text-green-900">Starting at: $497 (Quick-Start) or $2,997 (Complete System)</p>
                 <p className="text-xs text-green-700">And it generates leads FOREVER</p>
               </div>
             </div>
@@ -845,125 +852,135 @@ export default function ReviewSystemSalesPreviewV3() {
             📊 Investment Options
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Complete System */}
-            <div className="text-center p-8 bg-gradient-to-br from-primary-50 to-blue-50 rounded-lg border-4 border-primary-400 shadow-lg relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
-                🔥 FOUNDING MEMBER
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Quick-Start Package */}
+            <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg border-2 border-blue-400 shadow-lg">
+              <div className="font-bold text-blue-700 mb-3 text-2xl flex items-center justify-center gap-2">
+                <span className="text-3xl">🚀</span>
+                QUICK-START
               </div>
-              <div className="font-bold text-primary-700 mb-3 text-xl mt-4">COMPLETE SYSTEM</div>
-              <div className="text-5xl font-bold mb-2 text-primary-700">$2,997</div>
-              <div className="text-sm text-gray-600 mb-4 line-through">Normally $4,997</div>
-              <div className="text-sm text-gray-600 italic mb-6">Founding Member Rate</div>
+              <div className="text-6xl font-bold mb-6 text-blue-700">$497</div>
+              
+              <p className="text-gray-700 font-semibold mb-6 text-lg">Perfect for proving the concept before scaling</p>
+              
               <ul className="text-left space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold">✓</span>
-                  <span>Everything you need to implement in 90 days</span>
+                  <span>One-page implementation checklist (4-step system)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold">✓</span>
-                  <span>Lifetime updates & private network access</span>
+                  <span>Complete script library (15+ customer scenarios)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Manager coaching guide (handle resisters & build buy-in)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Text templates (12 copy/paste ready)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Review catalog starter guide (organize reviews by theme)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Simple tracking dashboard (Excel/Google Sheets)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>30-minute setup call (customize for your team)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Email support for 90 days</span>
+                </li>
+              </ul>
+              
+              <div className="bg-blue-100 border-2 border-blue-400 rounded-lg p-4 mb-4">
+                <p className="font-bold text-gray-900 mb-2">Perfect for:</p>
+                <p className="text-sm text-gray-700">Dealers who need to prove ROI to ownership before investing in the full system, or managers who want to start small and scale once the system is working.</p>
+              </div>
+              
+              <div className="bg-blue-50 rounded-lg p-4">
+                <p className="font-bold text-gray-900 mb-2">Expected results in 90 days:</p>
+                <p className="text-sm text-gray-700">30-60 new reviews, 10-20% initial lead growth, team trained and system deployed.</p>
+              </div>
+            </div>
+
+            {/* Complete System */}
+            <div className="text-center p-8 bg-gradient-to-br from-primary-50 to-blue-50 rounded-lg border-4 border-primary-400 shadow-xl relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
+                🔥 FOUNDING MEMBER
+              </div>
+              <div className="font-bold text-primary-700 mb-3 text-2xl mt-4">COMPLETE SYSTEM</div>
+              <div className="text-6xl font-bold mb-2 text-primary-700">$2,997</div>
+              <div className="text-sm text-gray-600 mb-2 line-through">Normally $4,997</div>
+              <div className="text-sm text-gray-600 italic font-semibold mb-6">Founding Member Rate</div>
+              
+              <ul className="text-left space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span className="font-semibold">Everything in Quick-Start PLUS:</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>2 core manuals (143 pages: Owner/Manager + Salesperson editions)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>90-day implementation plan (week-by-week roadmap)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>12 weeks of sales meeting agendas (ready-to-use)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Advanced scripts & role-play scenarios</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Social media guide, troubleshooting guide, weekly dashboard</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Lifetime updates as system improves</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 font-bold">✓</span>
+                  <span>Private network access with other high-performing dealers</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 font-bold">✓</span>
                   <span>1 setup call + 90 days email support</span>
                 </li>
               </ul>
-            </div>
-
-            {/* Accelerated */}
-            <div className="text-center p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border-2 border-green-400">
-              <div className="font-bold text-green-700 mb-3 text-xl">ACCELERATED</div>
-              <div className="text-5xl font-bold mb-6">$4,997</div>
-              <ul className="text-left space-y-3 text-gray-700 mb-6">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>Complete System + ongoing coaching</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>4 coaching calls over 90 days</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>Team training call (60 min)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>Custom review catalog build</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* VIP Done-With-You */}
-            <div className="text-center p-8 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg border-2 border-yellow-400">
-              <div className="font-bold text-orange-700 mb-3 text-xl">VIP DONE-WITH-YOU</div>
-              <div className="text-5xl font-bold mb-6">$7,997+</div>
-              <ul className="text-left space-y-3 text-gray-700 mb-6">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>Everything in Accelerated</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>On-site training day</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>Custom assets (installer cards, stamps, etc.)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span>Quarterly check-ins for 12 months</span>
-                </li>
-              </ul>
+              
+              <div className="bg-primary-100 border-2 border-primary-400 rounded-lg p-4 mb-4">
+                <p className="font-bold text-gray-900 mb-2">Perfect for:</p>
+                <p className="text-sm text-gray-700">Dealers ready to build a full review-driven lead engine and implement the complete system in 90 days.</p>
+              </div>
+              
+              <div className="bg-primary-50 rounded-lg p-4">
+                <p className="font-bold text-gray-900 mb-2">Expected results in 12 months:</p>
+                <p className="text-sm text-gray-700">100-150+ new reviews, 30-40% total lead increase, $30K-$70K annual ad savings, 70% of leads from organic search.</p>
+              </div>
             </div>
           </div>
           
-          <div className="text-center mt-8 p-4 bg-yellow-50 border-2 border-yellow-400 rounded-lg max-w-3xl mx-auto">
+          {/* Founding Member Scarcity */}
+          <div className="text-center mt-8 p-6 bg-yellow-50 border-2 border-yellow-400 rounded-lg max-w-4xl mx-auto">
             <p className="text-gray-900 font-bold text-lg mb-2">🔥 Founding Member Rate available to first 20 clients only</p>
-            <p className="text-gray-700">After that, Complete System pricing increases to $4,997</p>
+            <p className="text-gray-700 mb-3">After the first 20 clients, Complete System pricing increases to $4,997 and lifetime benefits (updates + private network) go away.</p>
+            <p className="text-gray-900 font-semibold">This rate expires when: <strong>(1) 20 clients enroll, OR (2) 90 days from today</strong>—whichever comes first.</p>
           </div>
-        </div>
-
-        {/* Why Founding Member Rate */}
-        <div className="bg-gradient-to-br from-primary-50 to-blue-50 rounded-lg shadow-xl p-8 mb-8 border-2 border-primary-300">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-            🔥 Why the Founding Member Rate?
-          </h2>
           
-          <div className="max-w-4xl mx-auto space-y-4 text-gray-700">
-            <p className="text-lg">
-              You're one of the first 20 dealers getting access to this system. As a Founding Member, you get:
-            </p>
-            
-            <ul className="space-y-3 ml-6">
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Complete system at $2,000 off standard pricing</strong> ($2,997 vs. $4,997)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Lifetime updates</strong> as the system improves (scripts, tools, resources)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Private network access</strong> with other high-performing dealers</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Priority support</strong> and early access to future systems</span>
-              </li>
-            </ul>
-            
-            <div className="bg-white border-2 border-primary-400 rounded-lg p-6 mt-6">
-              <p className="font-bold text-gray-900 text-lg mb-2">
-                After the first 20 clients, pricing increases to $4,997 and these lifetime benefits go away.
-              </p>
-              <p className="text-gray-700">
-                This rate expires when: <strong>(1) 20 clients enroll, OR (2) 90 days from today</strong>—whichever comes first.
-              </p>
-            </div>
+          {/* Custom Packages Note */}
+          <div className="text-center mt-6 p-6 bg-gray-50 border-2 border-gray-300 rounded-lg max-w-4xl mx-auto">
+            <p className="text-gray-900 font-bold text-lg mb-2">💡 Need More Support?</p>
+            <p className="text-gray-700">If you want hands-on coaching, team training calls, or on-site implementation, custom packages are available starting at $4,997. Email <a href="mailto:matt@mattshelton.co" className="text-primary-700 font-semibold hover:underline">matt@mattshelton.co</a> to discuss your needs.</p>
           </div>
         </div>
 

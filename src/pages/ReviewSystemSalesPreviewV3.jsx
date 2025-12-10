@@ -364,7 +364,7 @@ export default function ReviewSystemSalesPreviewV3() {
             
             <div className="text-center bg-indigo-100 border-2 border-indigo-300 rounded-lg p-4">
               <p className="font-bold text-gray-900 text-lg">
-                <strong>Translation:</strong> You're paying $2,997 to skip 3-5 years of expensive mistakes, wasted ad spend, and trial-and-error.
+                <strong>Translation:</strong> You're paying $2,997 to skip 6+ years of expensive mistakes, wasted ad spend, and trial-and-error—condensed into a plug-and-play system you can implement in 90 days.
               </p>
               <p className="text-indigo-700 font-semibold mt-2">That's the real value.</p>
             </div>
@@ -500,7 +500,7 @@ export default function ReviewSystemSalesPreviewV3() {
             🌟 Real Results From Matt's Flooring Store
           </h2>
           <p className="text-center text-primary-100 mb-8 max-w-3xl mx-auto text-lg">
-            These aren't projections or estimates. These are real results from Matt's flooring store in McMinnville, Oregon.
+            These aren't projections or estimates. These are real results from Matt's flooring store in the Richmond, Virginia area.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
@@ -565,6 +565,106 @@ export default function ReviewSystemSalesPreviewV3() {
                 <p className="text-primary-100">(All Leads → Orders) vs. 20-35% industry average</p>
                 <p className="text-sm text-primary-200 mt-2">Reviews pre-qualify leads and eliminate tire-kickers before they waste your time</p>
               </div>
+            </div>
+          </div>
+
+          {/* Close Rate Explanation */}
+          <div className="mt-6 bg-primary-900 rounded-lg p-6 max-w-4xl mx-auto border-2 border-primary-600">
+            <h3 className="text-lg font-bold text-yellow-400 mb-3">*Important Note on Close Rate Measurement:*</h3>
+            
+            <p className="text-primary-100 mb-4">
+              Most flooring dealers measure close rate as <strong className="text-white">"quoted leads → orders."</strong> Matt measures <strong className="text-white">"all leads → orders"</strong>—meaning every phone call, web form, walk-in, and inquiry that comes in, whether they get a quote or not.
+            </p>
+            
+            <p className="text-primary-100 mb-4">
+              Matt's quoted lead → order conversion is higher, but quoted leads don't present a clear depiction of true sales performance. Why? Because there are too many variables that distort the number:
+            </p>
+            
+            <ul className="space-y-2 text-primary-200 mb-4 ml-4">
+              <li>• Salespeople who don't quote leads they've falsely deemed "unworthy" (pre-judging instead of qualifying properly)</li>
+              <li>• Salespeople who forget to follow up and send quotes</li>
+              <li>• Salespeople who only pursue leads they personally like working with (cherry-picking)</li>
+              <li>• Leads that request quotes but were never serious buyers to begin with</li>
+            </ul>
+            
+            <p className="text-primary-100 mb-4">
+              <strong className="text-white">Measuring "all leads → orders" is the only honest way to evaluate sales performance.</strong> It accounts for qualification discipline, follow-through, and real-world conversion—not just the easy wins.
+            </p>
+            
+            <p className="text-yellow-400 font-bold text-lg">
+              Matt's 52.5% "all leads → orders" close rate reflects true performance across his entire sales funnel—and it's 2x the industry average.
+            </p>
+          </div>
+
+          {/* 4-Person Team Proof Point - NEW SECTION */}
+          <div className="mt-8 bg-gradient-to-br from-green-900 to-emerald-900 rounded-lg p-8 max-w-4xl mx-auto border-2 border-green-500">
+            <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+              <span className="text-3xl">⚡</span>
+              How Matt's 4-Person Retail Team Outproduces Stores with 10+ Salespeople
+            </h3>
+            
+            <p className="text-green-100 mb-4">
+              Here's something most dealers miss when they look at Matt's numbers:
+            </p>
+            
+            <p className="text-white text-xl font-bold mb-4">
+              His retail sales team is only 4 people.
+            </p>
+            
+            <p className="text-green-100 mb-4">
+              Not 8. Not 12. Four retail salespeople (plus 2 commercial reps).
+            </p>
+            
+            <p className="text-green-100 mb-3">
+              And yet his store is producing:
+            </p>
+            
+            <ul className="space-y-2 text-white font-semibold mb-6 ml-4">
+              <li>• 202% of cohort average phone lead volume</li>
+              <li>• 127% of cohort average digital lead volume</li>
+              <li>• 45% higher written sales than similar stores</li>
+            </ul>
+            
+            <p className="text-white text-lg font-bold mb-3">How is that possible?</p>
+            
+            <p className="text-green-100 mb-3">Two reasons:</p>
+            
+            <div className="bg-green-950 rounded-lg p-6 mb-4 border-2 border-green-600">
+              <p className="text-white font-bold mb-2">1. The review system brings warmer, pre-qualified leads</p>
+              <p className="text-green-100 mb-3">
+                When 70% of your leads come from organic Google (not paid ads), those leads have already:
+              </p>
+              <ul className="space-y-2 text-green-200 ml-4 mb-3">
+                <li>• Read your reviews</li>
+                <li>• Seen your 4.9★ rating</li>
+                <li>• Decided to call YOU first (not 5 other stores)</li>
+              </ul>
+              <p className="text-yellow-400 font-bold">
+                Translation: Your team spends less time chasing cold leads and more time closing warm ones.
+              </p>
+            </div>
+            
+            <div className="bg-green-950 rounded-lg p-6 mb-4 border-2 border-green-600">
+              <p className="text-white font-bold mb-2">2. The sales cycle is compressed</p>
+              <p className="text-green-100 mb-2">
+                Industry average time from first contact → sale: <span className="text-white font-bold">20+ days</span>
+              </p>
+              <p className="text-green-100 mb-3">
+                Matt's store average: <span className="text-yellow-400 font-bold">~12 days</span>
+              </p>
+              <p className="text-green-100">
+                Why? Because reviews answer objections before the customer even calls. They're pre-sold on quality, service, and trustworthiness. Your salespeople don't have to spend 3 weeks convincing skeptical prospects.
+              </p>
+            </div>
+            
+            <div className="bg-yellow-400 rounded-lg p-6 border-2 border-yellow-500">
+              <p className="text-gray-900 font-bold text-lg mb-2">Bottom Line:</p>
+              <p className="text-gray-900 mb-3">
+                If Matt's 4-person team can outproduce stores with 10+ salespeople using this system, imagine what YOUR team could do.
+              </p>
+              <p className="text-gray-900 font-semibold">
+                This isn't about working harder. It's about working smarter—and letting reviews do the heavy lifting.
+              </p>
             </div>
           </div>
 
@@ -917,6 +1017,29 @@ export default function ReviewSystemSalesPreviewV3() {
               <p>📧 Email: <a href="mailto:matt@mattshelton.co" className="underline hover:text-white font-semibold">matt@mattshelton.co</a></p>
               <p className="mt-1">⏱️ Typical response time: Within 24 hours</p>
             </div>
+          </div>
+        </div>
+
+        {/* Data Sources Footnote */}
+        <div className="mt-8 mb-8 bg-gray-50 rounded-lg p-8 border-2 border-gray-200 max-w-5xl mx-auto">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">Data Sources & Methodology</h3>
+          
+          <div className="text-sm text-gray-700 space-y-3">
+            <p>
+              All performance data (marketing spend, revenue growth, lead volume, close rates) are from Matt Shelton's retail flooring operation in the Richmond, Virginia area (2010-2025).
+            </p>
+            
+            <p>
+              CCA (Carpet Contractors Association) cohort performance data (September-December 2025) shows Matt's store performing 127-202% above similar stores in lead volume and 45% higher in written sales.
+            </p>
+            
+            <p>
+              Industry benchmarks (20-35% average close rate, consumer review behavior statistics) are from industry research and dealer feedback.
+            </p>
+            
+            <p className="font-semibold text-gray-900">
+              Close rate definition: "All leads → orders" includes every inquiry (phone, digital, walk-in) whether quoted or not. Most dealers measure "quoted leads → orders," which excludes unqualified or unquoted leads and inflates the percentage.
+            </p>
           </div>
         </div>
 

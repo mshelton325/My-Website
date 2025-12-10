@@ -32,6 +32,38 @@
 
 **Note:** URLs are clean and neutral (`/preview-a`, `/preview-b`, `/preview-c`) for professional prospect-facing links.
 
+### **Preview D (Clean & Focused)** 
+**Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-d`
+
+**Production:** `https://yourdomain.com/preview-d`
+
+**Positioning:** Conservative (30-60 reviews)  
+**Structure:** 7 sections only (50% shorter, scannable in 30 seconds)  
+**Pricing:** 2-tier ($497 Quick-Start + $2,997 Complete)  
+**Best For:** Busy dealers, mobile viewers, email campaigns  
+**Read Time:** 2-3 minutes max
+
+---
+
+### **Preview E (Full Long-Form Sales Page)** 🔥 NEW
+**Sandbox URL:** `https://5173-i329azavze6e3zxg2coku-ad490db5.sandbox.novita.ai/preview-e`
+
+**Production:** `https://yourdomain.com/preview-e`
+
+**Positioning:** Conservative (30-60 reviews in 90 days)  
+**Structure:** 13 comprehensive sections (Hero, Proof, Problem, Solution, How It Works, Complete System, Timeline, Offers, Why Founding Member Rate, Guarantee, FAQ, Final CTA, Data Sources)  
+**Pricing:** 3-tier with **FREE lead magnet** - FREE Quick-Start Kit (email opt-in) + $497 Quick-Start Package + $2,997 Complete System (Founding Member Rate, normally $4,997)  
+**Best For:** Cold prospects, email campaigns, warm leads who need full story  
+**Read Time:** 8-12 minutes (comprehensive long-form)
+
+**Unique Features:**
+- **FREE opt-in offer** for lead generation
+- Detailed "How It Works" (4-step system, 3 min 10 sec per customer)
+- Complete System breakdown (6 core pillars: Capture, Leverage, Culture, Dominance, Optimization, Implementation)
+- Realistic Timeline (90 days → 6-12 months → Year 1 projections)
+- Comprehensive FAQ (8 questions addressing all major objections)
+- Data Sources footer for maximum credibility
+
 ---
 
 ## ✅ UNIVERSAL IMPROVEMENTS (Applied to ALL Versions)

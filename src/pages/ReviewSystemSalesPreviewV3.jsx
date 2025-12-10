@@ -355,7 +355,7 @@ export default function ReviewSystemSalesPreviewV3() {
             <div className="bg-white border-2 border-purple-300 rounded-lg p-6 my-6">
               <p className="font-bold text-gray-900 text-xl mb-2">You're not buying a PDF.</p>
               <p className="text-gray-700">
-                You're buying <strong>years of my life condensed into a proven, replicable system</strong> that you can implement in 90 days instead of the 3-5 years it took me to figure it out.
+                You're buying <strong>years of my life condensed into a proven, replicable system</strong> that you can implement in 90 days instead of the 6+ years it took me to figure it out.
               </p>
               <p className="text-gray-700 mt-3">
                 You're not buying theory. You're buying a battle-tested system that's already proven in a real store with real salespeople and real customers.
@@ -1030,7 +1030,7 @@ export default function ReviewSystemSalesPreviewV3() {
             </p>
             
             <p>
-              CCA (Carpet Contractors Association) cohort performance data (September-December 2025) shows Matt's store performing 127-202% above similar stores in lead volume and 45% higher in written sales.
+              CCA Global Partners cohort performance data (September-December 2025) shows Matt's store performing 127-202% above similar stores in lead volume and 45% higher in written sales.
             </p>
             
             <p>

@@ -15,6 +15,7 @@ import ReviewSystemSalesPreviewV2 from './pages/ReviewSystemSalesPreviewV2';
 import ReviewSystemSalesPreviewV3 from './pages/ReviewSystemSalesPreviewV3';
 import ReviewSystemSalesPreviewD from './pages/ReviewSystemSalesPreviewD';
 import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
+import Insights from './pages/Insights';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
                   <Route path="/about" element={<About />} />
                   <Route path="/services" element={<Services />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/insights" element={<Insights />} />
                 </Routes>
               </main>
               <Footer />

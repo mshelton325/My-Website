@@ -16,6 +16,7 @@ import ReviewSystemSalesPreviewV3 from './pages/ReviewSystemSalesPreviewV3';
 import ReviewSystemSalesPreviewD from './pages/ReviewSystemSalesPreviewD';
 import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
 import Insights from './pages/Insights';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
                   <Route path="/services" element={<Services />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/insights" element={<Insights />} />
+                  <Route path="/insights/:slug" element={<BlogPost />} />
                 </Routes>
               </main>
               <Footer />

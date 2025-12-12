@@ -10,12 +10,12 @@ export default function Insights() {
   const blogPosts = [
     {
       id: 1,
-      title: 'Why Your Review System Is Failing (And How to Fix It in 30 Days)',
-      category: 'Reviews & Reputation',
-      excerpt: 'Most flooring dealers capture reviews from only 5-10% of their customers. Here\'s the step-by-step system we use to hit 40-60% capture rates without awkward scripts or pushy tactics.',
-      date: '2024-12-15',
-      slug: 'why-your-review-system-is-failing',
-      image: '/images/blog/review-system-placeholder.jpg'
+      title: 'Why Reviews Are Your #1 Marketing Asset (And What Happens If You Ignore Them)',
+      category: 'Marketing',
+      excerpt: 'Most flooring dealers know reviews matter—but they don\'t have a system to get them. Here\'s why reviews are your most valuable marketing asset, the real cost of ignoring them, and what a systematic approach actually looks like.',
+      date: '2024-12-12',
+      slug: 'why-reviews-are-your-number-one-marketing-asset',
+      image: '/images/blog/reviews-marketing-asset.jpg'
     },
     {
       id: 2,

@@ -35,7 +35,7 @@ export default function ReviewSystemSalesPreviewE() {
         </div>
 
         {/* SECTION 2: PROOF */}
-        <div className="mb-16 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-8 border-2 border-blue-200">
+        <div className="mb-16 bg-white rounded-lg p-8 border-2 border-gray-200 shadow-sm">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
             Real Results from a Real Flooring Store
           </h2>
@@ -335,7 +335,7 @@ export default function ReviewSystemSalesPreviewE() {
         </div>
 
         {/* SECTION 7: TIMELINE */}
-        <div className="mb-16 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-8 border-2 border-blue-300">
+        <div className="mb-16 bg-white rounded-lg p-8 border-2 border-gray-200 shadow-sm">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
             What to Expect (This Isn't a "Get Rich Quick" Scheme)
           </h2>
@@ -448,7 +448,7 @@ export default function ReviewSystemSalesPreviewE() {
             </div>
             
             {/* $497 TIER */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-8 border-2 border-blue-400 shadow-lg">
+            <div className="bg-white rounded-lg p-8 border-2 border-blue-300 shadow-sm">
               <h3 className="text-3xl font-bold text-gray-900 mb-2 text-center">$497 Quick-Start Package</h3>
               <p className="text-xl text-gray-800 mb-6 text-center font-semibold">Everything You Need to Capture Your First 50 Reviews in 60 Days</p>
               

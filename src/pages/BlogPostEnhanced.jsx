@@ -309,10 +309,13 @@ export default function BlogPostEnhanced() {
           </div>
         </div>
 
-        {/* Featured Image Placeholder */}
+        {/* Featured Image - Subtle Banner */}
         <div className="max-w-4xl mx-auto px-4 -mt-8">
-          <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg shadow-2xl h-96 flex items-center justify-center">
-            <div className="text-white text-8xl opacity-20">⭐</div>
+          <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 rounded-lg shadow-md border border-gray-200 h-48 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-6xl mb-2">⭐</div>
+              <p className="text-gray-500 text-sm">Reviews & Reputation</p>
+            </div>
           </div>
         </div>
 
@@ -320,10 +323,10 @@ export default function BlogPostEnhanced() {
         <div className="max-w-4xl mx-auto px-4 py-8">
           <div className="grid md:grid-cols-3 gap-4">
             {post.keyStats.map((stat, index) => (
-              <div key={index} className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-400 rounded-lg p-6 text-center">
+              <div key={index} className="bg-white border-2 border-gray-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
                 <div className="text-4xl mb-2">{stat.icon}</div>
                 <div className="text-4xl font-bold text-primary-700 mb-2">{stat.stat}</div>
-                <div className="text-sm text-gray-700">{stat.description}</div>
+                <div className="text-sm text-gray-600">{stat.description}</div>
               </div>
             ))}
           </div>
@@ -422,7 +425,7 @@ export default function BlogPostEnhanced() {
                 {/* CTA Boxes */}
                 <div className="mt-12 space-y-6">
                   {/* Free Quick-Start Kit CTA */}
-                  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-400 rounded-lg p-8">
+                  <div className="bg-white border-2 border-blue-300 rounded-lg p-8 shadow-sm">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
                       📥 Download the Free Quick-Start Kit
                     </h3>
@@ -438,7 +441,7 @@ export default function BlogPostEnhanced() {
                   </div>
 
                   {/* Work With Me CTA */}
-                  <div className="bg-gradient-to-br from-primary-50 to-blue-50 border-2 border-primary-500 rounded-lg p-8">
+                  <div className="bg-white border-2 border-primary-300 rounded-lg p-8 shadow-sm">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
                       Ready for the Full System?
                     </h3>

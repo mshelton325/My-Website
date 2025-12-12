@@ -216,7 +216,7 @@ export default function Insights() {
         <section className="py-12 px-4 bg-white">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
             {/* Free Resources CTA */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-400 rounded-lg p-8">
+            <div className="bg-white border-2 border-blue-300 rounded-lg p-8 shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Start Here: Free Tools for Flooring Dealers
               </h3>
@@ -232,7 +232,7 @@ export default function Insights() {
             </div>
 
             {/* Work With Me CTA */}
-            <div className="bg-gradient-to-br from-primary-50 to-blue-50 border-2 border-primary-500 rounded-lg p-8">
+            <div className="bg-white border-2 border-primary-300 rounded-lg p-8 shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Ready to Build Real Systems?
               </h3>

@@ -871,7 +871,7 @@ export default function ReviewSystemSalesPreviewV3() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Quick-Start Package */}
-            <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg border-2 border-blue-400 shadow-lg">
+            <div className="text-center p-8 bg-white rounded-lg border-2 border-blue-300 shadow-sm">
               <div className="font-bold text-blue-700 mb-3 text-2xl flex items-center justify-center gap-2">
                 <span className="text-3xl">🚀</span>
                 QUICK-START

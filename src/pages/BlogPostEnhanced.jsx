@@ -16,14 +16,14 @@ const blogPosts = {
     featuredImage: '/images/blog/reviews-marketing-asset.jpg',
     featuredImageAlt: 'Split-screen showing sparse reviews vs hundreds of 5-star reviews',
     
-    // Table of Contents (auto-generated from H2 headings)
+    // Table of Contents (must match H2 heading IDs exactly)
     tableOfContents: [
-      { id: 'trust-gap', title: 'The Trust Gap: Why Half a Star Costs You 30% of Your Leads' },
-      { id: 'what-happens', title: 'What Happens If You Ignore This' },
-      { id: 'our-journey', title: 'How We Went From $110K in Ad Spend to $40K' },
-      { id: 'real-system', title: 'What a Real Review System Looks Like' },
-      { id: 'bottom-line', title: 'The Bottom Line' },
-      { id: 'next-steps', title: 'What\'s Next: Start Here' }
+      { id: 'the-trust-gap-why-half-a-star-costs-you-30-of-your-leads', title: 'The Trust Gap: Why Half a Star Costs You 30% of Your Leads' },
+      { id: 'what-happens-if-you-ignore-this-the-or-else-part', title: 'What Happens If You Ignore This' },
+      { id: 'how-we-went-from-110k-in-ad-spend-to-40k-and-70-organic-leads', title: 'How We Went From $110K in Ad Spend to $40K' },
+      { id: 'what-a-real-review-system-looks-like-the-30-000-foot-view', title: 'What a Real Review System Looks Like' },
+      { id: 'the-bottom-line-you-can-t-afford-to-ignore-this-anymore', title: 'The Bottom Line' },
+      { id: 'what-s-next-start-here', title: 'What\'s Next: Start Here' }
     ],
     
     // Key stats for callout boxes

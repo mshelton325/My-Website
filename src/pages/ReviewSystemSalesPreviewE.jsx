@@ -448,51 +448,94 @@ export default function ReviewSystemSalesPreviewE() {
             </div>
             
             {/* $497 TIER */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-8 border-2 border-blue-400">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-8 border-2 border-blue-400 shadow-lg">
               <h3 className="text-3xl font-bold text-gray-900 mb-2 text-center">$497 Quick-Start Package</h3>
-              <p className="text-lg text-gray-600 mb-6 text-center">(After you've tested the free kit and want the full implementation tools)</p>
+              <p className="text-xl text-gray-800 mb-6 text-center font-semibold">Everything You Need to Capture Your First 50 Reviews in 60 Days</p>
               
               <p className="text-lg text-gray-700 mb-6 text-center">
-                <strong>Who this is for:</strong> Dealers who've tested the free kit, captured 10–20 reviews, and are ready to scale to 50–100 reviews in 90 days.
+                <strong>Who this is for:</strong> Dealers who've tested the free kit, captured 10–20 reviews, and are ready to scale to 50–100 reviews in 60 days with a complete, week-by-week action plan and full implementation tools.
               </p>
               
               <div className="bg-white p-6 rounded-lg mb-6">
-                <h4 className="font-bold text-gray-900 mb-3">What you get:</h4>
+                <h4 className="font-bold text-gray-900 mb-4 text-xl">What you get:</h4>
+                
+                {/* FLAGSHIP FEATURE - The First 50 Reviews Playbook */}
+                <div className="bg-gradient-to-r from-blue-100 to-blue-50 border-2 border-blue-500 rounded-lg p-5 mb-5">
+                  <div className="flex items-start gap-3 mb-3">
+                    <span className="text-3xl">🎯</span>
+                    <div>
+                      <h5 className="font-bold text-xl text-gray-900 mb-2">NEW: "The First 50 Reviews Playbook" (15-20 pages)</h5>
+                      <p className="text-gray-700 mb-3">Your step-by-step, week-by-week action plan to hit 50 reviews in 60 days. This isn't just theory—it's exactly what to do each week to build momentum, troubleshoot resistance, and celebrate milestones.</p>
+                    </div>
+                  </div>
+                  
+                  <h6 className="font-bold text-gray-900 mb-2">What's inside the Playbook:</h6>
+                  <ul className="space-y-2 text-gray-700 ml-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>Week-by-week action plan (Weeks 1-8, with specific daily tasks)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>Team rollout scripts (kickoff meeting agenda, talking points, role-play exercises)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>Troubleshooting guide (what to do when someone isn't capturing reviews—with coaching scripts for the 3 most common objections)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>Milestone celebrations (what to do when you hit 10, 25, and 50 reviews to keep momentum going)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold">✓</span>
+                      <span>"First 50 Reviews" tracking dashboard (simple spreadsheet to track progress toward your goal)</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* Complete Implementation Tools */}
+                <h5 className="font-bold text-gray-900 mb-3">PLUS: Complete Implementation Tools</h5>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Expanded implementation guide (10 pages, week-by-week)</span>
+                    <span>Complete script library (15+ customer scenarios—every objection handled)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Complete script library (15+ customer scenarios)</span>
+                    <span>Text message templates (12 copy/paste ready for every situation)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Manager's coaching guide (8 pages)</span>
+                    <span>Manager's coaching guide (8 pages—how to handle resisters and build buy-in)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Text message templates (12 copy/paste ready)</span>
+                    <span>Review catalog starter guide (organize your best reviews by theme for sales leverage)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Review catalog starter guide (6 pages)</span>
+                    <span>Job folder accountability stamp template (make review capture non-negotiable)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Tracking dashboard (Excel/Google Sheets)</span>
+                    <span>30-minute setup call (customize the system for your store and plan your team rollout)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>30-minute setup call + 90 days email support</span>
+                    <span>Email support for 90 days (ask questions, get feedback, troubleshoot challenges)</span>
                   </li>
                 </ul>
               </div>
               
-              <div className="bg-blue-100 p-4 rounded mb-6">
-                <p className="font-bold text-gray-900 mb-1">Expected results in 90 days:</p>
-                <p className="text-gray-700">50–100 new reviews captured, 15–25% lead growth, team trained and system running consistently.</p>
+              <div className="bg-blue-100 p-5 rounded-lg mb-5">
+                <p className="font-bold text-gray-900 mb-2 text-lg">Expected results in 60 days:</p>
+                <p className="text-gray-700">50–100 new reviews captured, 15–25% lead growth, team trained and system running consistently, clear path to scaling to 150+ reviews in Year 1.</p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-5 rounded-lg mb-6">
+                <p className="font-bold text-gray-900 mb-2">Why this is a no-brainer upgrade from the FREE Kit:</p>
+                <p className="text-gray-700">The free kit gives you the basics to test the system. The $497 package gives you everything you need to execute at scale—with a proven, day-by-day roadmap that takes the guesswork out of implementation.</p>
               </div>
               
               <div className="text-center">

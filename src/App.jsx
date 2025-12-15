@@ -1,10 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+
+// NEW PUBLIC PAGES
+import Anchor from './pages/Anchor';
+import Diagnostic from './pages/Diagnostic';
+
+// HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import Insights from './pages/Insights';
+import BlogPost from './pages/BlogPost';
+import BlogPostEnhanced from './pages/BlogPostEnhanced';
+
+// PRODUCT PAGES (standalone, accessible via direct URL)
 import ResourceRouter from './pages/resources';
 import ReviewLeverageManual from './pages/ReviewLeverageManual';
 import ReviewSystemOwner from './pages/ReviewSystemOwner';
@@ -15,15 +26,16 @@ import ReviewSystemSalesPreviewV2 from './pages/ReviewSystemSalesPreviewV2';
 import ReviewSystemSalesPreviewV3 from './pages/ReviewSystemSalesPreviewV3';
 import ReviewSystemSalesPreviewD from './pages/ReviewSystemSalesPreviewD';
 import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
-import Insights from './pages/Insights';
-import BlogPost from './pages/BlogPost';
-import BlogPostEnhanced from './pages/BlogPostEnhanced';
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
         <Routes>
+          {/* NEW PUBLIC HOMEPAGE - Minimal Anchor Page (no nav/footer) */}
+          <Route path="/" element={<Anchor />} />
+          <Route path="/diagnostic" element={<Diagnostic />} />
+          
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />
           <Route path="/preview-b" element={<ReviewSystemSalesPreviewV2 />} />
@@ -36,23 +48,14 @@ function App() {
           <Route path="/review-system-owner" element={<ReviewSystemOwner />} />
           <Route path="/resources/:token" element={<ResourceRouter />} />
           
-          {/* Main site pages - with navigation/footer */}
-          <Route path="/*" element={
-            <>
-              <Navigation />
-              <main>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/services" element={<Services />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/insights" element={<Insights />} />
-                  <Route path="/insights/:slug" element={<BlogPostEnhanced />} />
-                </Routes>
-              </main>
-              <Footer />
-            </>
-          } />
+          {/* HIDDEN PAGES - Preserved for future expansion (accessible via direct URL only) */}
+          {/* Tagged: Future Expansion, Proof Library, Long-Form Authority Content */}
+          <Route path="/archive/home" element={<Home />} />
+          <Route path="/archive/about" element={<About />} />
+          <Route path="/archive/services" element={<Services />} />
+          <Route path="/archive/contact" element={<Contact />} />
+          <Route path="/archive/insights" element={<Insights />} />
+          <Route path="/archive/insights/:slug" element={<BlogPostEnhanced />} />
         </Routes>
       </div>
     </Router>

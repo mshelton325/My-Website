@@ -63,24 +63,24 @@ export default function Anchor() {
             Documented Results
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-4 mb-6">
-            <div className="bg-white border border-gray-200 rounded p-5">
-              <p className="text-gray-900 font-semibold mb-1">60% revenue growth</p>
+          <div className="grid md:grid-cols-2 gap-3 mb-5">
+            <div className="bg-white border border-gray-200 rounded p-4 shadow-sm">
+              <p className="text-gray-900 font-semibold text-base mb-0.5">60% revenue growth</p>
               <p className="text-gray-600 text-sm">($4.57M → $7.3M)</p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded p-5">
-              <p className="text-gray-900 font-semibold mb-1">64% marketing spend reduction</p>
+            <div className="bg-white border border-gray-200 rounded p-4 shadow-sm">
+              <p className="text-gray-900 font-semibold text-base mb-0.5">64% marketing spend reduction</p>
               <p className="text-gray-600 text-sm">($110k → $40k annually)</p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded p-5">
-              <p className="text-gray-900 font-semibold mb-1">52.5% close rate</p>
+            <div className="bg-white border border-gray-200 rounded p-4 shadow-sm">
+              <p className="text-gray-900 font-semibold text-base mb-0.5">52.5% close rate</p>
               <p className="text-gray-600 text-sm">(vs. 35–40% industry average)</p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded p-5">
-              <p className="text-gray-900 font-semibold mb-1">20–30 hours/week owner workload</p>
+            <div className="bg-white border border-gray-200 rounded p-4 shadow-sm">
+              <p className="text-gray-900 font-semibold text-base mb-0.5">20–30 hours/week owner workload</p>
               <p className="text-gray-600 text-sm">(vs. 80+ industry norm)</p>
             </div>
           </div>

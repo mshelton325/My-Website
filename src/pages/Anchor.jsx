@@ -1,5 +1,15 @@
 import { Link } from 'react-router-dom';
 
+/**
+ * ANCHOR PAGE - PUBLIC HOMEPAGE
+ * 
+ * ⚠️ INTERNAL NOTE:
+ * This page is intentionally minimal. Do not expand without a specific downstream use case.
+ * 
+ * Purpose: Calm, grounded entry point. No urgency, no hype, no complex navigation.
+ * Design Philosophy: Systems-built clarity over marketing tactics.
+ */
+
 export default function Anchor() {
   return (
     <div className="min-h-screen bg-white">

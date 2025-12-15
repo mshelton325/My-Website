@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 // NEW PUBLIC PAGES
 import Anchor from './pages/Anchor';
 import Diagnostic from './pages/Diagnostic';
+import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
 
 // HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
@@ -35,6 +36,7 @@ function App() {
           {/* NEW PUBLIC HOMEPAGE - Minimal Anchor Page (no nav/footer) */}
           <Route path="/" element={<Anchor />} />
           <Route path="/diagnostic" element={<Diagnostic />} />
+          <Route path="/diagnostic/confirmation" element={<DiagnosticConfirmation />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />

@@ -63,37 +63,25 @@ export default function Anchor() {
             Documented Results
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <p className="text-lg text-gray-700">
-                <strong className="text-gray-900">60% revenue growth</strong>
-                <br />
-                <span className="text-gray-600">($4.57M → $7.3M)</span>
-              </p>
+          <div className="grid md:grid-cols-2 gap-4 mb-6">
+            <div className="bg-white border border-gray-200 rounded p-5">
+              <p className="text-gray-900 font-semibold mb-1">60% revenue growth</p>
+              <p className="text-gray-600 text-sm">($4.57M → $7.3M)</p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <p className="text-lg text-gray-700">
-                <strong className="text-gray-900">64% marketing spend reduction</strong>
-                <br />
-                <span className="text-gray-600">($110k → $40k annually)</span>
-              </p>
+            <div className="bg-white border border-gray-200 rounded p-5">
+              <p className="text-gray-900 font-semibold mb-1">64% marketing spend reduction</p>
+              <p className="text-gray-600 text-sm">($110k → $40k annually)</p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <p className="text-lg text-gray-700">
-                <strong className="text-gray-900">52.5% close rate</strong>
-                <br />
-                <span className="text-gray-600">(vs. 35–40% industry average)</span>
-              </p>
+            <div className="bg-white border border-gray-200 rounded p-5">
+              <p className="text-gray-900 font-semibold mb-1">52.5% close rate</p>
+              <p className="text-gray-600 text-sm">(vs. 35–40% industry average)</p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <p className="text-lg text-gray-700">
-                <strong className="text-gray-900">20–30 hours/week owner workload</strong>
-                <br />
-                <span className="text-gray-600">(vs. 80+ industry norm)</span>
-              </p>
+            <div className="bg-white border border-gray-200 rounded p-5">
+              <p className="text-gray-900 font-semibold mb-1">20–30 hours/week owner workload</p>
+              <p className="text-gray-600 text-sm">(vs. 80+ industry norm)</p>
             </div>
           </div>
           

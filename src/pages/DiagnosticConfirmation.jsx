@@ -62,6 +62,16 @@ export default function DiagnosticConfirmation() {
             </ol>
           </div>
 
+          {/* DELIVERY TIMEFRAME */}
+          <div className="mb-8">
+            <p className="text-base text-gray-700 leading-relaxed mb-3">
+              Typical turnaround: 3–5 business days.
+            </p>
+            <p className="text-base text-gray-600 leading-relaxed">
+              If you don't see your diagnostic in your inbox, please check your spam or promotions folder.
+            </p>
+          </div>
+
           {/* BOUNDARY STATEMENT */}
           <div className="p-6 bg-gray-50 rounded-lg mb-8">
             <p className="text-base text-gray-700 leading-relaxed font-medium">

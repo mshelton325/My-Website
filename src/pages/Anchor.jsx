@@ -63,7 +63,7 @@ export default function Anchor() {
             Documented Results
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-3 mb-5">
+          <div className="space-y-3 mb-5">
             <div className="bg-white border border-gray-200 rounded p-4 shadow-sm">
               <p className="text-gray-900 font-semibold text-base mb-0.5">60% revenue growth</p>
               <p className="text-gray-600 text-sm">($4.57M → $7.3M)</p>

@@ -110,7 +110,8 @@ export default function EducationDay() {
             </ul>
             
             <a
-              href="#"
+              href="/pdfs/opportunity-leak-map.pdf"
+              download
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Download: Opportunity Leak Map (PDF)
@@ -156,7 +157,8 @@ export default function EducationDay() {
             </ul>
             
             <a
-              href="#"
+              href="/pdfs/owner-self-diagnosis-worksheet.pdf"
+              download
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Download: Owner Self-Diagnosis Worksheet (PDF)
@@ -202,7 +204,8 @@ export default function EducationDay() {
             </ul>
             
             <a
-              href="#"
+              href="/pdfs/one-leak-30-day-sprint.pdf"
+              download
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Download: One-Leak 30-Day Design Sprint (PDF)

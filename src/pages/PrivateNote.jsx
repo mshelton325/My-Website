@@ -31,13 +31,32 @@ export default function PrivateNote() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // TODO: Replace with actual form submission endpoint
-    // For now, just simulate submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setIsSubmitting(false);
+    try {
+      // Submit to Formspree endpoint
+      const response = await fetch('https://formspree.io/f/xanyrerj', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          store: formData.store || 'Not provided',
+          context: formData.context,
+          _subject: `Private Note from ${formData.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting your note. Please try again or email directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {

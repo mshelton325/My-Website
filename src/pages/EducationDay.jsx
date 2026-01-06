@@ -360,9 +360,18 @@ export default function EducationDay() {
             Use what's useful. Ignore the rest.
           </p>
           
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
             And if you want to talk through a specific situation, feel free to find me this week.
           </p>
+          
+          <div className="pt-4">
+            <a
+              href="/private-note"
+              className="text-base text-gray-600 hover:text-gray-900 underline"
+            >
+              Leave a private note
+            </a>
+          </div>
         </div>
       </section>
 

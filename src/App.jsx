@@ -28,6 +28,7 @@ import ReviewSystemSalesPreviewV3 from './pages/ReviewSystemSalesPreviewV3';
 import ReviewSystemSalesPreviewD from './pages/ReviewSystemSalesPreviewD';
 import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
 import EducationDay from './pages/EducationDay';
+import PrivateNote from './pages/PrivateNote';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/review-system-owner" element={<ReviewSystemOwner />} />
           <Route path="/resources/:token" element={<ResourceRouter />} />
           <Route path="/education-day" element={<EducationDay />} />
+          <Route path="/private-note" element={<PrivateNote />} />
           
           {/* HIDDEN PAGES - Preserved for future expansion (accessible via direct URL only) */}
           {/* Tagged: Future Expansion, Proof Library, Long-Form Authority Content */}

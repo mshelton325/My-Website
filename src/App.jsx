@@ -38,6 +38,7 @@ function App() {
           <Route path="/" element={<Anchor />} />
           <Route path="/diagnostic" element={<Diagnostic />} />
           <Route path="/diagnostic/confirmation" element={<DiagnosticConfirmation />} />
+          <Route path="/about" element={<About />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />

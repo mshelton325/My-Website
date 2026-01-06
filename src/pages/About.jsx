@@ -1,301 +1,242 @@
+/**
+ * ABOUT / MISSION PAGE
+ * 
+ * ⚠️ INTERNAL NOTE:
+ * This page is intentionally grounded and operator-focused.
+ * Copy is exact - do not rewrite or add credentials/offers.
+ * 
+ * Purpose: Establish credibility through lived experience, not credentials.
+ * Design: Calm, credible, operator-led (not consultant-led).
+ */
+
 export default function About() {
   return (
-    <div className="">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-12 md:py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            About Matt Shelton
+    <div className="min-h-screen bg-white">
+      {/* HEADLINE */}
+      <section className="py-20 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Why I Care About Design More Than Hustle
           </h1>
-          <p className="text-xl text-gray-300">
-            Second-generation flooring retailer, performance consultant, and advocate for ethical, systems-driven business growth.
+        </div>
+      </section>
+
+      {/* OPENING SECTION */}
+      <section className="py-12 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            For a long time, I thought stress was just part of ownership.
           </p>
-        </div>
-      </section>
-
-      {/* Wake-Up Call */}
-      <section className="py-12 md:py-16 px-4 bg-primary-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            The Wake-Up Call That Changed Everything
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              A couple years ago, while in his thirties, Matt suffered a transient ischemic attack (TIA)—a mini-stroke tied to chronic stress and overwork. Lying in a hospital bed, he realized he couldn't continue to ignore the signs and carry the business on his back forever.
-            </p>
-            <p>
-              <strong>Something had to change.</strong>
-            </p>
-            <p>
-              Shortly afterward, a dog came into his life. Caring for the dog forced him to set boundaries and work remotely. "That dog saved my sanity," he says now.
-            </p>
-            <p>
-              The combined jolt of a health scare and a furry companion made him redesign the business so it would survive—and even thrive—without him constantly putting out fires.
-            </p>
-            <div className="bg-white border-l-4 border-primary-700 p-6 rounded-lg my-8">
-              <p className="text-lg font-medium text-gray-900 mb-2">
-                These events aren't ploys for sympathy—they're reminders that unchecked stress takes a toll.
-              </p>
-              <p className="text-gray-700">
-                They fuel Matt's mission to help other owners avoid the same trap: building a business that consumes your life instead of enriching it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The Turnaround Story */}
-      <section className="py-12 md:py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            The Turnaround Story
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              Matt took his family's flooring store from an overextended, burnout-prone operation—"running at 12 mph when the team could only handle 5"—to a disciplined, data-driven business that consistently beats industry averages in close rate, average ticket, and profitability.
-            </p>
-            <p>
-              Along the way, he reduced annual marketing spend from <strong>$110,000 (2010)</strong> to <strong>$40,000 (2025)</strong>—while growing sales by <strong>70%</strong>—by building a review-first marketing engine. Today, 70% of his inbound leads come from organic Google search (not paid ads), and his store maintains a <strong>4.9-star rating with 450+ reviews</strong>.
-            </p>
-            <p>
-              But the numbers only tell part of the story.
-            </p>
-            <p>
-              The real transformation happened when Matt stopped chasing volume and started building systems: systems for hiring and training salespeople with no flooring background, systems for capturing and leveraging customer reviews, systems for qualifying leads and protecting margins, and systems for holding manufacturers accountable when products don't perform as promised.
-            </p>
-            <p>
-              He built a business that doesn't just generate revenue—it protects the time, energy, and integrity of everyone involved.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className="py-12 md:py-16 px-4 bg-primary-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            The Mission: Prove That Ethics and Profitability Aren't Mutually Exclusive
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              Matt is out to prove something the flooring industry (and much of the business world) has forgotten:
-            </p>
-            <p className="text-xl font-semibold text-primary-900">
-              You can be wildly successful without gimmicks, high-pressure sales tactics, or taking advantage of people.
-            </p>
-            <p>
-              He refuses to follow industry trends that prioritize short-term sales over long-term trust:
-            </p>
-            <ul className="space-y-3">
-              <li>
-                <strong>No bait-and-switch deals</strong> that lure customers in with fake discounts, only to upsell them on inflated products.
-              </li>
-              <li>
-                <strong>No "selling the sizzle"</strong>—vague, emotionally manipulative pitches that aren't backed by honest explanations of cost, durability, or real-world performance.
-              </li>
-              <li>
-                <strong>No hiding behind manufacturer fine print</strong> when a product fails. If a customer was sold a promise, Matt believes the dealer has a responsibility to make it right—even if the manufacturer won't.
-              </li>
-            </ul>
-            <p>
-              He's lost sales because of this approach. He's walked away from deals where the customer wanted him to cut corners, sell them the wrong product, or mislead them about timelines or warranties.
-            </p>
-            <p>
-              <strong>And he's proud of it.</strong>
-            </p>
-            <p>
-              Because Matt operates his business—and his life—with one guiding principle:
-            </p>
-            <blockquote className="border-l-4 border-primary-700 pl-6 py-4 my-8 bg-white">
-              <p className="text-2xl italic text-gray-900 font-medium">
-                "Would I be proud to have full transparency in front of God and have Him be proud of what I've done and what I continue to stand for?"
-              </p>
-            </blockquote>
-            <p>
-              That question drives every decision: how he trains his sales team, how he handles customer complaints, how he treats his installers, and how he advises his consulting clients.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Methodology Section */}
-      <section className="py-12 md:py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900">
-            The Methodology: Logical, Simple Systems That Protect People and Profit
-          </h2>
-
-          <div className="space-y-12">
-            {/* Pillar 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-primary-700">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                1. Simplicity Over Complexity
-              </h3>
-              <div className="text-gray-700 space-y-4">
-                <p>
-                  Most consultants overcomplicate things. Matt does the opposite.
-                </p>
-                <p>
-                  His systems are designed to be <strong>plug-and-play</strong>: clear scripts, step-by-step checklists, and practical tools that salespeople and managers can use immediately—without needing a PhD in business theory.
-                </p>
-                <p>
-                  He believes that if a system isn't simple enough for a front-line employee to execute consistently, it's not a system—it's a burden.
-                </p>
-              </div>
-            </div>
-
-            {/* Pillar 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-primary-700">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                2. Ethics Over Tactics
-              </h3>
-              <div className="text-gray-700 space-y-4">
-                <p>
-                  Matt trains salespeople to take the right path, not the path of least resistance.
-                </p>
-                <p>That means:</p>
-                <ul className="space-y-2 ml-6">
-                  <li>Asking the right questions to understand what the customer actually needs (not just what's easiest to sell).</li>
-                  <li>Presenting options honestly—including the trade-offs, limitations, and long-term costs.</li>
-                  <li>Walking away from sales that aren't in the customer's best interest, even if it hurts short-term revenue.</li>
-                </ul>
-                <p>
-                  He's convinced that honesty is the ultimate competitive advantage. In a world full of bait-and-switch dealers, slick-talking salespeople, and manufacturers who dodge accountability, the company that tells the truth—and backs it up—wins in the long run.
-                </p>
-              </div>
-            </div>
-
-            {/* Pillar 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-primary-700">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                3. Accountability at Every Level
-              </h3>
-              <div className="text-gray-700 space-y-4">
-                <p>
-                  Matt holds everyone accountable—including himself.
-                </p>
-                <ul className="space-y-2 ml-6">
-                  <li><strong>Salespeople</strong> are accountable for asking for reviews, following up with customers, and qualifying leads properly (not just chasing volume).</li>
-                  <li><strong>Managers</strong> are accountable for tracking performance, celebrating wins, and coaching team members who struggle.</li>
-                  <li><strong>Manufacturers</strong> are accountable for standing behind their products when they fail—and if they won't, Matt teaches dealers how to hold them to it.</li>
-                  <li><strong>Customers</strong> are accountable too: Matt doesn't chase tire-kickers or price-shoppers. He teaches dealers how to qualify leads early and invest their time in prospects who value quality and service.</li>
-                </ul>
-                <p>
-                  <strong>The result?</strong> Less chaos, less burnout, and more predictable, sustainable growth.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The Consulting Practice */}
-      <section className="py-12 md:py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            The Consulting Practice: Building Systems That Protect Time, Energy, and Freedom
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              Matt's consulting clients aren't just looking for more revenue. They're looking for less chaos, more consistency, and a business that doesn't run them into the ground.
-            </p>
-            <p>
-              He specializes in helping independent flooring dealers and regional chains:
-            </p>
-            <ul className="space-y-3">
-              <li>
-                <strong>Install review-first marketing systems</strong> that reduce ad spend by 50%+ while bringing in warmer, more qualified leads.
-              </li>
-              <li>
-                <strong>Build sales training ecosystems</strong> with multi-phase training paths, scripts, objection-handling frameworks, and accountability systems that turn new hires—often with no flooring background—into reliable producers.
-              </li>
-              <li>
-                <strong>Create operational systems</strong> that reduce mistakes, callbacks, and wasted time (quoting tools, lead qualification processes, job folder accountability, post-installation callback systems, etc.).
-              </li>
-              <li>
-                <strong>Hold manufacturers accountable</strong> when products fail, using data, documentation, and leverage to protect dealers and their customers.
-              </li>
-            </ul>
-            <p>
-              His clients describe his work as <em>"finally having a system that makes sense"</em> and <em>"the first consultant who actually gets what it's like in the trenches."</em>
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* Vision & Legacy */}
-      <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-primary-700 to-primary-900 text-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            The Vision That Drives Everything
-          </h2>
           
-          <div className="prose prose-lg max-w-none text-primary-100 space-y-6">
-            <p className="text-xl font-semibold">
-              Matt is convinced that the business world can transform through honesty, kindness, and respect for everyone—from customers to front-line staff to owners.
-            </p>
-            
-            <div className="bg-primary-800 p-6 rounded-lg my-6">
-              <p className="text-lg text-white">
-                Every system he creates is designed to prove you don't have to sacrifice your values to build a profitable, sustainable, high-performing business. You just have to lead by example, take the harder path, and trust that doing the right thing compounds into something far more valuable than any gimmick.
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-white mt-8 mb-4">The Beach Blanket Vision</h3>
-            <p>
-              What pulled Matt through the darkest days of burnout was a vivid vision: He pictures himself—from a third-person view, like a scene from <em>A Christmas Carol</em>—sitting on a beach next to his future spouse.
-            </p>
-            <p>
-              In his hand is a phone showing dashboards of his business and, increasingly, the progress of other owners he's helped. In front of them play two children and a dog. A small bay boat sits anchored in the shallows.
-            </p>
-            <p>
-              This vision reminds him that he wants to <strong>experience life with his family</strong>, not watch from afar. He missed out on a social life for years, working 70-hour weeks to turn the business around.
-            </p>
-            <div className="bg-primary-600 p-6 rounded-lg my-6">
-              <p className="text-xl font-semibold text-white">
-                "I endured so I'd never have to be dragged back into chaos—and so I could help others avoid that fate."
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-white mt-8 mb-4">Beyond Business: A Wave Maker's Legacy</h3>
-            <p>
-              Matt is a Christian who believes that <strong>business is ministry</strong>—an opportunity to serve others, lead with integrity, and leave the world better than he found it.
-            </p>
-            <p>
-              Beyond building successful businesses, he dreams of a charter-boat nonprofit to take underprivileged kids, foster families, single parents, and veterans out on the water—offering a day of peace, fun, and encouragement at no cost.
-            </p>
-            <p>
-              "It's not a new business venture," he explains. "It's an extension of being a wave maker: to create ripples of freedom and joy far beyond my own shop."
-            </p>
-            <p>
-              He's also using systems to create an ADHD-friendly, location-flexible lifestyle that allows him to work remotely, spend time near water, and make space for deeper relationships, future family, and a pace of life that doesn't burn him out.
-            </p>
-            <p className="text-lg font-medium mt-6">
-              His goal? Build a business and lifestyle that protect time, energy, and freedom—not just revenue—and help other people do the same.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-12 md:py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Build Something That Matters
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Ready to create systems that protect your time, energy, and integrity—while growing your business?
+          <p className="text-lg text-gray-700 mb-2 leading-relaxed">
+            If something went wrong, it landed on me.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-primary-700 text-white px-10 py-5 rounded-lg font-semibold hover:bg-primary-800 transition-colors text-lg"
-          >
-            Get in Touch
-          </a>
+          <p className="text-lg text-gray-700 mb-2 leading-relaxed">
+            If the team was unsure, I filled the gap.
+          </p>
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            If a process broke down, I became the workaround.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            Eventually, I realized the issue wasn't effort — it was design.
+          </p>
         </div>
       </section>
+
+      {/* CORE SHIFT */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            When a business runs on tribal knowledge and heroics, it only works:
+          </p>
+          
+          <ul className="space-y-3 mb-8">
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                When the right people are present
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                When nothing unusual happens
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                When the owner is available
+              </span>
+            </li>
+          </ul>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed font-medium">
+            That's not a system. That's a fragile arrangement.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I didn't want a business that only worked when I was stressed, present, and solving problems in real time.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            I wanted a business that held together because the design did.
+          </p>
+        </div>
+      </section>
+
+      {/* BELIEFS */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xl text-gray-900 mb-6 font-semibold">
+            A few things I've learned the hard way:
+          </p>
+          
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                Most owners don't have a lead problem — they have a conversion and clarity problem
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                Process beats talent more often than people want to admit
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                Small, well-placed design decisions outperform big overhauls
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                A system that works for an average rep will work for anyone
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                Stability is not about control — it's about clarity
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* PRACTICAL APPLICATION */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            The work I do — whether inside my own business or shared with others — focuses on:
+          </p>
+          
+          <ul className="space-y-3 mb-8">
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Designing guardrails instead of policing behavior
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Creating clarity so teams sound confident
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Reducing callbacks, rework, and emotional drain
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Helping owners stop being the bottleneck
+              </span>
+            </li>
+          </ul>
+          
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            This isn't about squeezing more out of people.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            It's about building businesses that don't rely on heroics to survive.
+          </p>
+        </div>
+      </section>
+
+      {/* LONG-TERM MISSION */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            My long-term focus is building practical, digital tools and playbooks that help owners:
+          </p>
+          
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                See leverage faster
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Make better decisions with less stress
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Build businesses they can actually breathe inside
+              </span>
+            </li>
+          </ul>
+          
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            No fluff. No hype. No dependency.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Just clear thinking, grounded in real experience.
+          </p>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section className="py-16 px-4 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            If you're looking for motivation, there are better places to find it.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            If you're looking for clarity, design, and systems that actually work — you're in the right place.
+          </p>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-12 px-4 bg-white border-t border-gray-200">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg font-semibold text-gray-900 mb-2">
+            Matt Shelton
+          </p>
+          <p className="text-gray-600 mb-1">
+            Systems-built clarity for flooring business owners
+          </p>
+          <p className="text-sm text-gray-500">
+            Operator experience. Ethical execution. Practical results.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

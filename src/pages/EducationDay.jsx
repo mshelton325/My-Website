@@ -340,7 +340,7 @@ export default function EducationDay() {
           </p>
           
           <a
-            href="#"
+            href="/about"
             className="text-gray-900 font-medium hover:underline"
           >
             About & Mission

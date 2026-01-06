@@ -33,7 +33,7 @@ export default function PrivateNote() {
 
     try {
       // Submit to Formspree endpoint
-      const response = await fetch('https://formspree.io/f/xanyrerj', {
+      const response = await fetch('https://formspree.io/f/xnjneqpl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

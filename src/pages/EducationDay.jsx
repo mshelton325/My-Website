@@ -251,7 +251,8 @@ export default function EducationDay() {
             </ul>
             
             <a
-              href="#"
+              href="/pdfs/owner-reflection-prompt.pdf"
+              download
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Download: Owner Reflection Prompt (PDF)

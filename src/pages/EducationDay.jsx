@@ -1,12 +1,12 @@
 /**
- * EDUCATION DAY LANDING PAGE
+ * EDUCATION DAY LANDING PAGE - REFINED VERSION
  * 
  * ⚠️ INTERNAL NOTE:
- * This is a standalone resource delivery page for "Gold Beneath Your Feet" session.
- * Copy is intentionally precise - do not rewrite or summarize.
+ * Updated structure: More owner-focused, clearer flow, better positioning.
+ * Copy is exact - do not rewrite or summarize.
  * 
- * Purpose: Deliver promised resources, build trust, position as operator (not vendor).
- * Design: Calm, credible, owner-focused. No hype, no pressure.
+ * Purpose: Deliver resources, build trust, position as operator.
+ * Design: Calm confidence, sequential flow, no hype.
  */
 
 export default function EducationDay() {
@@ -16,360 +16,257 @@ export default function EducationDay() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Thanks for attending Gold Beneath Your Feet
+            Gold Beneath Your Feet
+            <br />
+            <span className="text-3xl md:text-4xl lg:text-5xl">Stop Chasing. Start Converting.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed">
-            Below are the resources I promised — designed to help you identify leverage that already exists inside your business.
+          <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed max-w-3xl mx-auto">
+            A practical owner-level system for uncovering hidden revenue, reducing chaos, and converting more of what you already have — without adding headcount.
           </p>
           
-          <p className="text-sm text-gray-500">
-            No upsell. No pitch. Just practical tools you can actually use.
+          <p className="text-base text-gray-600">
+            Thank you for attending the CCA Education Day session. The resources below are the exact tools referenced during the presentation.
           </p>
         </div>
       </section>
 
-      {/* INTRO SECTION */}
+      {/* HOW TO USE THIS PAGE */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            If you're like most owners, the challenge isn't effort — it's knowing where design actually matters.
-          </p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Start Here (5 Minutes)
+          </h2>
           
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            The tools below are meant to help you:
+            You do not need to download or use everything at once.
           </p>
           
-          <ul className="space-y-3 mb-6">
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                See where opportunity is leaking between lead and profit
-              </span>
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            The goal is clarity — not activity.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-3 leading-relaxed">
+            If you take just one action after today's session, let it be this:
+          </p>
+          
+          <ol className="space-y-2 mb-6 ml-6">
+            <li className="text-lg text-gray-700">
+              1. Identify your biggest internal leak
             </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Focus on one meaningful fix instead of chasing everything at once
-              </span>
+            <li className="text-lg text-gray-700">
+              2. Fix that one thing first
             </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Reduce noise, stress, and unnecessary complexity
-              </span>
-            </li>
-          </ul>
+          </ol>
           
           <p className="text-lg text-gray-700 leading-relaxed">
-            Use them in order, or start with whichever one speaks to you most.
+            The resources below are designed to be used sequentially, not all at once.
           </p>
         </div>
       </section>
 
-      {/* DELIVERABLES SECTION */}
+      {/* PRIMARY OWNER DIAGNOSTIC */}
       <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Step 1: Find Your Biggest Leak
+          </h2>
           
-          {/* RESOURCE 1 */}
-          <div className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Opportunity Leak Map
-            </h2>
-            <p className="text-base text-gray-600 mb-6 font-medium">
-              Visual Diagnostic
-            </p>
-            
-            <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              This is a visual map of the most common places opportunity leaks after a lead comes in — from first contact through install and follow-up.
-            </p>
-            
-            <p className="text-base text-gray-700 mb-3 leading-relaxed">
-              Use it to quickly identify:
-            </p>
-            
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Where your process creates uncertainty
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Where handoffs break down
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Where small design changes can have outsized impact
-                </span>
-              </li>
-            </ul>
-            
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            This short diagnostic helps owners quickly identify where opportunity is being lost after the lead comes in — before blaming marketing, pricing, or people.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
+            Use this first. Everything else builds on it.
+          </p>
+          
+          <div className="space-y-4">
             <a
               href="/pdfs/opportunity-leak-map.pdf"
               download
-              className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
+              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
             >
-              Download: Opportunity Leak Map (PDF)
+              Download: Owner One-Page Diagnostic
             </a>
+            
+            <div className="mt-4">
+              <a
+                href="/pdfs/owner-self-diagnosis-worksheet.pdf"
+                download
+                className="text-base text-gray-600 hover:text-gray-900 underline"
+              >
+                Optional: Owner Reflection Worksheet
+              </a>
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* RESOURCE 2 */}
-          <div className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Owner Self-Diagnosis Worksheet
-            </h2>
-            <p className="text-base text-gray-600 mb-6 font-medium">
-              Clarity Before Action
-            </p>
-            
-            <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              This short worksheet helps you step out of the weeds and assess your business at an owner level.
-            </p>
-            
-            <p className="text-base text-gray-700 mb-3 leading-relaxed">
-              It's designed to surface:
-            </p>
-            
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Which systems are helping you
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Which ones are quietly draining energy or profit
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Where not to spend time right now
-                </span>
-              </li>
-            </ul>
-            
-            <a
-              href="/pdfs/owner-self-diagnosis-worksheet.pdf"
-              download
-              className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
-            >
-              Download: Owner Self-Diagnosis Worksheet (PDF)
-            </a>
-          </div>
+      {/* CORE EXECUTION TOOLS */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Step 2: Fix the Leak (Execution Tools)
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-12 leading-relaxed">
+            Once you know where the problem is, these tools help you design the fix — without rewriting your entire business.
+          </p>
 
-          {/* RESOURCE 3 */}
-          <div className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              One-Leak 30-Day Design Sprint
-            </h2>
-            <p className="text-base text-gray-600 mb-6 font-medium">
-              Focused Execution Plan
-            </p>
+          {/* TOOL BLOCK A - ONE-LEAK 30-DAY SPRINT (MOVED TO TOP) */}
+          <div className="mb-12 pb-12 border-b border-gray-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              One Leak, 30 Days
+            </h3>
             
-            <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              Most owners try to fix too much at once. This sprint is built to do the opposite.
+            <p className="text-base text-gray-700 mb-6 leading-relaxed">
+              A short sprint guide to fix one operational or sales leak at a time — instead of attempting a full overhaul.
             </p>
-            
-            <p className="text-base text-gray-700 mb-3 leading-relaxed">
-              It walks you through:
-            </p>
-            
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Choosing one meaningful constraint
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Designing guardrails instead of micromanaging
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Making progress in 30 days without overwhelming your team
-                </span>
-              </li>
-            </ul>
             
             <a
               href="/pdfs/one-leak-30-day-sprint.pdf"
               download
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
-              Download: One-Leak 30-Day Design Sprint (PDF)
+              Download: One-Leak 30-Day Sprint Guide
             </a>
           </div>
 
-          {/* RESOURCE 4 */}
-          <div className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Owner Reflection & Follow-Up Prompt
-            </h2>
-            <p className="text-base text-gray-600 mb-6 font-medium">
-              Turn Insight into Action
-            </p>
-            
-            <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              This is a short written reflection designed to be completed after the session — or later, when things quiet down.
-            </p>
-            
-            <p className="text-base text-gray-700 mb-3 leading-relaxed">
-              It helps you:
-            </p>
-            
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Clarify what actually resonated
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Decide what deserves attention now
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span className="text-base text-gray-700">
-                  Avoid losing momentum when you return to day-to-day operations
-                </span>
-              </li>
-            </ul>
-            
-            <a
-              href="/pdfs/owner-reflection-prompt.pdf"
-              download
-              className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
-            >
-              Download: Owner Reflection Prompt (PDF)
-            </a>
-          </div>
+          {/* PLACEHOLDERS FOR FUTURE TOOLS */}
+          <div className="space-y-12">
+            {/* Tool Block B - Follow-Up (Coming Soon) */}
+            <div className="pb-12 border-b border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Sales Follow-Up & Conversion
+              </h3>
+              
+              <p className="text-base text-gray-700 mb-6 leading-relaxed">
+                A proven call → voicemail → text rhythm that protects your time, humanizes follow-up, and increases response without pressure.
+              </p>
+              
+              <p className="text-sm text-gray-500 italic">
+                Coming soon: Call-Voicemail-Text Follow-Up Playbook
+              </p>
+            </div>
 
+            {/* Tool Block C - Quote Accuracy (Coming Soon) */}
+            <div className="pb-12 border-b border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Quote Accuracy & Margin Protection
+              </h3>
+              
+              <p className="text-base text-gray-700 mb-6 leading-relaxed">
+                A lightweight accuracy check designed to reduce silent margin erosion, callbacks, and rework — without slowing sales down.
+              </p>
+              
+              <p className="text-sm text-gray-500 italic">
+                Coming soon: Quote Accuracy & Margin Protection Checklist
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* WHY THIS APPROACH WORKS */}
-      <section className="py-16 px-4 bg-gray-50">
+      {/* MANAGEMENT & ACCOUNTABILITY */}
+      <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed font-medium">
-            Most businesses don't need more ideas.
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Step 3: Reinforce Without Micromanaging
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Systems only work when they're reinforced — but reinforcement does not mean hovering or approving every action.
           </p>
           
-          <p className="text-lg text-gray-700 mb-3 leading-relaxed">
-            They need:
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            These tools are designed for pattern-based management, not daily intervention.
+          </p>
+          
+          <p className="text-sm text-gray-500 italic">
+            Coming soon: 15-Minute Weekly KPI Performance Cadence
+          </p>
+        </div>
+      </section>
+
+      {/* OPTIONAL NEXT STEP */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Optional Next Step
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            If this session helped you see things differently — and you'd like support turning clarity into execution — you're welcome to reach out.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            I work with a limited number of owners who want systems that reduce chaos, improve conversion, and hold up without constant oversight.
+          </p>
+          
+          <div>
+            <a
+              href="/private-note"
+              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
+            >
+              Quiet Intake Form
+            </a>
+            <p className="text-sm text-gray-500 mt-3">
+              No pitch. No obligation. Used to understand fit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT / POSITIONING */}
+      <section className="py-16 px-4 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            About Matt
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I'm an operator first — not a theorist.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I run a flooring business and built these tools out of necessity: manager turnover, inconsistent execution, margin erosion, and the constant pressure of being the backstop.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            The systems you see here were designed to:
           </p>
           
           <ul className="space-y-3 mb-6">
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                Fewer assumptions
+                Work with real people
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                Clearer design
+                Reduce dependency on heroics
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                Less reliance on heroics
+                Convert more opportunity without adding staff
               </span>
             </li>
           </ul>
           
           <p className="text-lg text-gray-700 leading-relaxed">
-            The goal of these tools isn't to overhaul your business — it's to help you design around what already exists, so things feel lighter instead of heavier.
-          </p>
-        </div>
-      </section>
-
-      {/* ABOUT THE SPEAKER */}
-      <section className="py-16 px-4 border-t border-gray-200">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            About the Speaker
-          </h2>
-          
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            I run a flooring business.
+            My focus is simple: help owners design businesses that perform without constant supervision.
           </p>
           
-          <p className="text-base text-gray-700 mb-3 leading-relaxed">
-            This work didn't come from theory or consulting frameworks — it came from being in the middle of the mess:
-          </p>
-          
-          <ul className="space-y-3 mb-6">
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-base text-gray-700">
-                Carrying the business when systems didn't exist
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-base text-gray-700">
-                Training teams without relying on "superstars"
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-base text-gray-700">
-                Learning the hard way where profit and energy actually leak
-              </span>
-            </li>
-          </ul>
-          
-          <p className="text-base text-gray-700 mb-6 leading-relaxed">
-            I care about systems because they create stability — not just financially, but emotionally for owners and teams.
-          </p>
-          
-          <a
-            href="/about"
-            className="text-gray-900 font-medium hover:underline"
-          >
-            About & Mission
-          </a>
-        </div>
-      </section>
-
-      {/* SOFT CLOSE */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            If something here helped you see your business differently, I'm glad.
-          </p>
-          
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            Use what's useful. Ignore the rest.
-          </p>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            And if you want to talk through a specific situation, feel free to find me this week.
-          </p>
-          
-          <div className="pt-4">
+          <div className="mt-8">
             <a
-              href="/private-note"
-              className="text-base text-gray-600 hover:text-gray-900 underline"
+              href="/about"
+              className="text-gray-900 font-medium hover:underline"
             >
-              Leave a private note
+              Read full mission →
             </a>
           </div>
         </div>

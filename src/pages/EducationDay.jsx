@@ -144,9 +144,22 @@ export default function EducationDay() {
                 A proven call → voicemail → text rhythm that protects your time, humanizes follow-up, and increases response without pressure.
               </p>
               
-              <p className="text-sm text-gray-500 italic">
-                Coming soon: Call-Voicemail-Text Follow-Up Playbook
-              </p>
+              <div className="space-y-3">
+                <a
+                  href="/pdfs/call-voicemail-text-playbook.pdf"
+                  download
+                  className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors mr-4"
+                >
+                  Download: Call-Voicemail-Text Follow-Up Playbook
+                </a>
+                <a
+                  href="/pdfs/follow-up-enforcement-sop.pdf"
+                  download
+                  className="inline-block text-gray-600 hover:text-gray-900 underline text-base"
+                >
+                  Manager Version: Follow-Up Enforcement SOP
+                </a>
+              </div>
             </div>
 
             {/* Tool Block C - Quote Accuracy (Coming Soon) */}
@@ -159,9 +172,13 @@ export default function EducationDay() {
                 A lightweight accuracy check designed to reduce silent margin erosion, callbacks, and rework — without slowing sales down.
               </p>
               
-              <p className="text-sm text-gray-500 italic">
-                Coming soon: Quote Accuracy & Margin Protection Checklist
-              </p>
+              <a
+                href="/pdfs/quote-accuracy-checklist.pdf"
+                download
+                className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
+              >
+                Download: Quote Accuracy & Margin Protection Checklist
+              </a>
             </div>
           </div>
         </div>
@@ -182,9 +199,18 @@ export default function EducationDay() {
             These tools are designed for pattern-based management, not daily intervention.
           </p>
           
-          <p className="text-sm text-gray-500 italic">
-            Coming soon: 15-Minute Weekly KPI Performance Cadence
-          </p>
+          <div>
+            <a
+              href="/pdfs/weekly-kpi-cadence.pdf"
+              download
+              className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
+            >
+              Download: 15-Minute Weekly KPI Performance Cadence
+            </a>
+            <p className="text-sm text-gray-500 mt-3">
+              Designed for owners and GMs
+            </p>
+          </div>
         </div>
       </section>
 

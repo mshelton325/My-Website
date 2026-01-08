@@ -11,6 +11,17 @@
 // Check if gtag is available (GA4 loaded)
 const isGtagAvailable = () => typeof window !== 'undefined' && typeof window.gtag === 'function';
 
+// Log GA4 status on import
+if (typeof window !== 'undefined') {
+  setTimeout(() => {
+    if (isGtagAvailable()) {
+      console.log('✅ [Analytics] Google Analytics 4 loaded successfully');
+    } else {
+      console.warn('⚠️ [Analytics] Google Analytics 4 NOT loaded - check for ad blockers or script errors');
+    }
+  }, 2000);
+}
+
 /**
  * Track PDF download events
  * @param {string} fileName - Name of the PDF being downloaded
@@ -23,7 +34,9 @@ export const trackPDFDownload = (fileName, fileUrl = '') => {
       file_url: fileUrl,
       link_text: fileName,
     });
-    console.log(`[Analytics] PDF Download tracked: ${fileName}`);
+    console.log(`✅ [Analytics] PDF Download tracked: ${fileName}`);
+  } else {
+    console.warn('⚠️ [Analytics] Google Analytics not loaded. PDF download NOT tracked:', fileName);
   }
 };
 
@@ -38,7 +51,9 @@ export const trackFormSubmission = (formName, additionalData = {}) => {
       form_name: formName,
       ...additionalData,
     });
-    console.log(`[Analytics] Form submission tracked: ${formName}`);
+    console.log(`✅ [Analytics] Form submission tracked: ${formName}`);
+  } else {
+    console.warn('⚠️ [Analytics] Google Analytics not loaded. Form submission NOT tracked:', formName);
   }
 };
 

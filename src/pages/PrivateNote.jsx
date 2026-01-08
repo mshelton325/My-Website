@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { trackFormSubmission } from '../utils/analytics';
 
 /**
  * PRIVATE NOTE FORM
@@ -47,6 +48,11 @@ export default function PrivateNote() {
       });
 
       if (response.ok) {
+        // Track successful form submission
+        trackFormSubmission('Private Note Form', {
+          form_location: 'Education Day Follow-up',
+          has_store_info: formData.store ? 'yes' : 'no'
+        });
         setSubmitted(true);
       } else {
         throw new Error('Submission failed');

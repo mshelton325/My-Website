@@ -9,6 +9,8 @@
  * Design: Calm confidence, sequential flow, no hype.
  */
 
+import { trackPDFDownload } from '../utils/analytics';
+
 export default function EducationDay() {
   return (
     <div className="min-h-screen bg-white">
@@ -84,6 +86,7 @@ export default function EducationDay() {
             <a
               href="/pdfs/opportunity-leak-map.pdf"
               download
+              onClick={() => trackPDFDownload('Owner One-Page Diagnostic', '/pdfs/opportunity-leak-map.pdf')}
               className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
             >
               Download: Owner One-Page Diagnostic
@@ -93,6 +96,7 @@ export default function EducationDay() {
               <a
                 href="/pdfs/owner-self-diagnosis-worksheet.pdf"
                 download
+                onClick={() => trackPDFDownload('Owner Reflection Worksheet', '/pdfs/owner-self-diagnosis-worksheet.pdf')}
                 className="text-base text-gray-600 hover:text-gray-900 underline"
               >
                 Optional: Owner Reflection Worksheet
@@ -126,6 +130,7 @@ export default function EducationDay() {
             <a
               href="/pdfs/one-leak-30-day-sprint.pdf"
               download
+              onClick={() => trackPDFDownload('One-Leak 30-Day Sprint Guide', '/pdfs/one-leak-30-day-sprint.pdf')}
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Download: One-Leak 30-Day Sprint Guide
@@ -148,6 +153,7 @@ export default function EducationDay() {
                 <a
                   href="/pdfs/call-voicemail-text-playbook.pdf"
                   download
+                  onClick={() => trackPDFDownload('Call-Voicemail-Text Follow-Up Playbook', '/pdfs/call-voicemail-text-playbook.pdf')}
                   className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors mr-4"
                 >
                   Download: Call-Voicemail-Text Follow-Up Playbook
@@ -155,6 +161,7 @@ export default function EducationDay() {
                 <a
                   href="/pdfs/follow-up-enforcement-sop.pdf"
                   download
+                  onClick={() => trackPDFDownload('Follow-Up Enforcement SOP', '/pdfs/follow-up-enforcement-sop.pdf')}
                   className="inline-block text-gray-600 hover:text-gray-900 underline text-base"
                 >
                   Manager Version: Follow-Up Enforcement SOP
@@ -175,6 +182,7 @@ export default function EducationDay() {
               <a
                 href="/pdfs/quote-accuracy-checklist.pdf"
                 download
+                onClick={() => trackPDFDownload('Quote Accuracy & Margin Protection Checklist', '/pdfs/quote-accuracy-checklist.pdf')}
                 className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
               >
                 Download: Quote Accuracy & Margin Protection Checklist
@@ -203,6 +211,7 @@ export default function EducationDay() {
             <a
               href="/pdfs/weekly-kpi-cadence.pdf"
               download
+              onClick={() => trackPDFDownload('15-Minute Weekly KPI Performance Cadence', '/pdfs/weekly-kpi-cadence.pdf')}
               className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Download: 15-Minute Weekly KPI Performance Cadence

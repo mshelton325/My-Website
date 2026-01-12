@@ -223,31 +223,50 @@ export default function EducationDay() {
         </div>
       </section>
 
-      {/* OPTIONAL NEXT STEP */}
+      {/* OPTIONAL FOLLOW-UP */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Optional Next Step
+            Optional Follow-Up
           </h2>
           
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            If this session helped you see things differently — and you'd like support turning clarity into execution — you're welcome to reach out.
+          <p className="text-base text-gray-700 mb-4 leading-relaxed">
+            If something in this session sparked a question, a connection, or an idea you want to pressure-test, this gives you a simple way to follow up.
           </p>
           
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-            I work with a limited number of owners who want systems that reduce chaos, improve conversion, and hold up without constant oversight.
+          <p className="text-base text-gray-700 mb-8 leading-relaxed">
+            Nothing here is required. Use this only if it's helpful.
           </p>
           
-          <div>
-            <a
-              href="/private-note"
-              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
-            >
-              Quiet Intake Form
-            </a>
-            <p className="text-sm text-gray-500 mt-3">
-              No pitch. No obligation. Used to understand fit.
-            </p>
+          <div className="space-y-6">
+            {/* Primary: Google Form */}
+            <div>
+              <a
+                href="https://forms.gle/wmRC3FWVHirc35QT9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"
+              >
+                Request follow-up or resources
+              </a>
+              <p className="text-sm text-gray-600 mt-2">
+                Share what you'd like to talk through or what tools you want — I'll follow up personally.
+              </p>
+            </div>
+            
+            {/* Secondary: Save Contact */}
+            <div>
+              <a
+                href="/Matt-Shelton-Contact.vcf"
+                download
+                className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"
+              >
+                Save my contact info
+              </a>
+              <p className="text-sm text-gray-600 mt-2">
+                Prefer to reach out later? This saves my info to your phone.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -303,54 +322,6 @@ export default function EducationDay() {
             >
               Read full mission →
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* OPTIONAL FOLLOW-UP SECTION */}
-      <section className="py-16 px-4 border-t border-gray-200">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-xl font-medium text-gray-900 mb-6">
-            Optional: Continue the Conversation
-          </h2>
-          
-          <p className="text-base text-gray-700 mb-4 leading-relaxed">
-            If something in this session sparked a question, a connection, or an idea you want to pressure-test, this gives you a simple way to follow up.
-          </p>
-          
-          <p className="text-base text-gray-700 mb-8 leading-relaxed">
-            Nothing here is required. Use this only if it's helpful.
-          </p>
-          
-          <div className="space-y-6">
-            {/* Action 1: Google Form */}
-            <div>
-              <a
-                href="https://forms.gle/wmRC3FWVHirc35QT9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"
-              >
-                Request follow-up or resources
-              </a>
-              <p className="text-sm text-gray-600 mt-2">
-                Share what you'd like to talk through or what tools you want — I'll follow up personally.
-              </p>
-            </div>
-            
-            {/* Action 2: Save Contact */}
-            <div>
-              <a
-                href="/Matt-Shelton-Contact.vcf"
-                download
-                className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"
-              >
-                Save my contact info
-              </a>
-              <p className="text-sm text-gray-600 mt-2">
-                Prefer to reach out later? This saves my info to your phone.
-              </p>
-            </div>
           </div>
         </div>
       </section>

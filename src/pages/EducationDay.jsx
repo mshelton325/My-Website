@@ -326,7 +326,7 @@ export default function EducationDay() {
             {/* Action 1: Google Form */}
             <div>
               <a
-                href="[INSERT GOOGLE FORM LINK HERE]"
+                href="https://forms.gle/wmRC3FWVHirc35QT9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"

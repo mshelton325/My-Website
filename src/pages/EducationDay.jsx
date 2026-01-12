@@ -307,6 +307,54 @@ export default function EducationDay() {
         </div>
       </section>
 
+      {/* OPTIONAL FOLLOW-UP SECTION */}
+      <section className="py-16 px-4 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-xl font-medium text-gray-900 mb-6">
+            Optional: Continue the Conversation
+          </h2>
+          
+          <p className="text-base text-gray-700 mb-8 leading-relaxed">
+            A few owners asked for a simple way to follow up, ask questions, or request specific resources related to what we covered.
+          </p>
+          
+          <p className="text-base text-gray-700 mb-8 leading-relaxed">
+            Nothing here is required. Use this only if it's helpful.
+          </p>
+          
+          <div className="space-y-6">
+            {/* Action 1: Google Form */}
+            <div>
+              <a
+                href="[INSERT GOOGLE FORM LINK HERE]"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"
+              >
+                Request follow-up or resources
+              </a>
+              <p className="text-sm text-gray-600 mt-2">
+                Share what you'd like to talk through or what tools you want — I'll follow up personally.
+              </p>
+            </div>
+            
+            {/* Action 2: Save Contact */}
+            <div>
+              <a
+                href="/Matt-Shelton-Contact.vcf"
+                download
+                className="inline-block border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-50 transition-colors"
+              >
+                Save my contact info
+              </a>
+              <p className="text-sm text-gray-600 mt-2">
+                Prefer to reach out later? This saves my info to your phone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="py-12 px-4 bg-white border-t border-gray-200">
         <div className="max-w-3xl mx-auto text-center">

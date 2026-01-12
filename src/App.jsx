@@ -29,6 +29,7 @@ import ReviewSystemSalesPreviewD from './pages/ReviewSystemSalesPreviewD';
 import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
 import EducationDay from './pages/EducationDay';
 import PrivateNote from './pages/PrivateNote';
+import CcaQr from './pages/CcaQr';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           <Route path="/resources/:token" element={<ResourceRouter />} />
           <Route path="/education-day" element={<EducationDay />} />
           <Route path="/private-note" element={<PrivateNote />} />
+          <Route path="/cca-qr" element={<CcaQr />} />
           
           {/* HIDDEN PAGES - Preserved for future expansion (accessible via direct URL only) */}
           {/* Tagged: Future Expansion, Proof Library, Long-Form Authority Content */}

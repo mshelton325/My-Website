@@ -314,8 +314,8 @@ export default function EducationDay() {
             Optional: Continue the Conversation
           </h2>
           
-          <p className="text-base text-gray-700 mb-8 leading-relaxed">
-            A few owners asked for a simple way to follow up, ask questions, or request specific resources related to what we covered.
+          <p className="text-base text-gray-700 mb-4 leading-relaxed">
+            If something in this session sparked a question, a connection, or an idea you want to pressure-test, this gives you a simple way to follow up.
           </p>
           
           <p className="text-base text-gray-700 mb-8 leading-relaxed">

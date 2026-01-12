@@ -92,15 +92,27 @@ export default function EducationDay() {
               Download: Owner One-Page Diagnostic
             </a>
             
-            <div className="mt-4">
-              <a
-                href="/pdfs/owner-self-diagnosis-worksheet.pdf"
-                download
-                onClick={() => trackPDFDownload('Owner Reflection Worksheet', '/pdfs/owner-self-diagnosis-worksheet.pdf')}
-                className="text-base text-gray-600 hover:text-gray-900 underline"
-              >
-                Optional: Owner Reflection Worksheet
-              </a>
+            <div className="mt-4 space-y-2">
+              <div>
+                <a
+                  href="/pdfs/owner-self-diagnosis-worksheet.pdf"
+                  download
+                  onClick={() => trackPDFDownload('Owner Reflection Worksheet', '/pdfs/owner-self-diagnosis-worksheet.pdf')}
+                  className="text-base text-gray-600 hover:text-gray-900 underline"
+                >
+                  Optional: Owner Reflection Worksheet
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/pdfs/owner-reflection-prompt.pdf"
+                  download
+                  onClick={() => trackPDFDownload('Owner Reflection — Turning Insight Into Design', '/pdfs/owner-reflection-prompt.pdf')}
+                  className="text-base text-gray-600 hover:text-gray-900 underline"
+                >
+                  Optional: Owner Reflection — Turning Insight Into Design
+                </a>
+              </div>
             </div>
           </div>
         </div>

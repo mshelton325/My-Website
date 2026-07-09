@@ -153,6 +153,34 @@ export default function About() {
         </div>
       </section>
 
+      {/* RECENT WORK */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Recent Work
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            In January 2026, I presented at the CCA Education Day — a session focused on helping flooring dealers uncover hidden revenue, reduce operational chaos, and convert more of what they already have.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            The session was rated <span className="font-semibold">4.89 out of 5</span> by attendees. 90% of participants stayed after the scheduled time to continue the conversation — a clear signal that the content resonated.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Feedback from dealers consistently highlighted the same themes: practical tools they could implement immediately, systems for converting tribal knowledge into repeatable processes, and a clear path forward without needing to rebuild everything at once.
+          </p>
+          
+          <a
+            href="/education-day"
+            className="text-gray-900 font-medium hover:underline inline-flex items-center gap-2"
+          >
+            View the 8 resources from that session →
+          </a>
+        </div>
+      </section>
+
       {/* WHAT MAKES THIS DIFFERENT */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">

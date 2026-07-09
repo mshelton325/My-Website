@@ -18,6 +18,9 @@ https://my-website-zeta-neon-55.vercel.app/diagnostic/confirmation
 About Page
 https://my-website-zeta-neon-55.vercel.app/about
 
+Fit Page - "Who This Is For (and Who It's Not)"
+https://my-website-zeta-neon-55.vercel.app/fit
+
 Education Day Landing Page (CCA Event)
 https://my-website-zeta-neon-55.vercel.app/education-day
 
@@ -170,8 +173,8 @@ https://github.com/mshelton325/My-Website
 Main Domain:
 https://my-website-zeta-neon-55.vercel.app
 
-Total Active Pages: 18
-  - Public Pages: 8
+Total Active Pages: 19
+  - Public Pages: 9 (includes new /fit page)
   - Product/Review Pages: 4
   - Preview Pages (A/B Testing): 5
   - Dynamic Resource Page: 1

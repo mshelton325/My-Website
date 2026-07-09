@@ -33,6 +33,16 @@ export default function EducationDay() {
         </div>
       </section>
 
+      {/* SESSION VALIDATION BANNER */}
+      <section className="py-6 px-4 bg-blue-50 border-y border-blue-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+            <span className="font-semibold">January 2026 Session Results:</span>
+            {" "}Rated 4.89 out of 5 by attendees · 90% stayed after the scheduled time for more
+          </p>
+        </div>
+      </section>
+
       {/* HOW TO USE THIS PAGE */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
@@ -280,6 +290,61 @@ export default function EducationDay() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="py-16 px-4 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            What Attendees Said
+          </h2>
+          
+          <div className="space-y-8">
+            {/* Testimonial 1 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
+                "Matt was inspirational. Could have used his insights 28 years ago."
+              </p>
+              <p className="text-sm text-gray-600">
+                — CCA Member
+              </p>
+            </div>
+            
+            {/* Testimonial 2 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
+                "Great presentation. Love the systemized approach for hiring fresh salespeople. We need to convert Tribal knowledge to systems. Would love to hear more about this topic."
+              </p>
+              <p className="text-sm text-gray-600">
+                — CCA Member
+              </p>
+            </div>
+            
+            {/* Testimonial 3 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
+                "I would love to get more of the actual details of his systems. We are in desperate need of great SOPs like that."
+              </p>
+              <p className="text-sm text-gray-600">
+                — I-5 Carpet One
+              </p>
+            </div>
+            
+            {/* Testimonial 4 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
+                "This was great! Bring him back for more."
+              </p>
+              <p className="text-sm text-gray-600">
+                — CCA Member
+              </p>
+            </div>
+          </div>
+          
+          <p className="text-sm text-gray-600 text-center mt-8">
+            Session rated 4.89 out of 5 · Feedback collected by CCA Education Day organizers
+          </p>
         </div>
       </section>
 

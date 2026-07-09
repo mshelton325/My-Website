@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Anchor from './pages/Anchor';
 import Diagnostic from './pages/Diagnostic';
 import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
+import Fit from './pages/Fit';
 
 // HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
@@ -41,6 +42,7 @@ function App() {
           <Route path="/diagnostic" element={<Diagnostic />} />
           <Route path="/diagnostic/confirmation" element={<DiagnosticConfirmation />} />
           <Route path="/about" element={<About />} />
+          <Route path="/fit" element={<Fit />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />

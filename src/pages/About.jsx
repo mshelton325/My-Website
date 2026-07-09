@@ -128,9 +128,78 @@ export default function About() {
         </div>
       </section>
 
-      {/* PRACTICAL APPLICATION */}
+      {/* CREDIBILITY & TRACK RECORD */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Experience
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I spent two decades inside a multi-generation, family-owned flooring retailer — starting in traditional sales and growing into operations, systems design, and cross-functional accountability across the business.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            The breakthrough: I built and ran a sales development system that <span className="font-semibold">repeatedly took people with zero flooring or sales background and turned them into top performers</span> — not occasionally, but as a repeatable pattern.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            This directly solves what most dealers are afraid of right now: an aging, retiring workforce, no succession plan, and a belief that younger hires can't be developed into serious talent.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            The proof point: I did the thing most dealers think is impossible — and have the track record showing it wasn't luck, it was a process.
+          </p>
+        </div>
+      </section>
+
+      {/* WHAT MAKES THIS DIFFERENT */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            What Makes This Different
+          </h2>
+          
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                <span className="font-semibold">Not a generic sales consultant</span> — lived experience with the specific dysfunction of a family business trying to professionalize without losing what makes it itself
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                <span className="font-semibold">Understands both sides</span> — the operational and the emotional/relational side of these businesses (family dynamics, legacy staff, succession anxiety)
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                <span className="font-semibold">Builds transferable systems, not dependency</span> — the goal is for you to run it without me, not to keep me on retainer indefinitely
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700 leading-relaxed">
+                <span className="font-semibold">Leads with lead quality and management, not volume</span> — "Do you have a uniform accountability system, a set process, a recipe?" before "more leads"
+              </span>
+            </li>
+          </ul>
+          
+          <p className="text-lg text-gray-700 leading-relaxed">
+            I give you the recipe and the ingredients, not just instructions to follow blindly.
+          </p>
+        </div>
+      </section>
+
+      {/* PRACTICAL APPLICATION */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            What I Focus On
+          </h2>
+          
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
             The work I do — whether inside my own business or shared with others — focuses on:
           </p>
@@ -172,6 +241,66 @@ export default function About() {
         </div>
       </section>
 
+      {/* WHO I DON'T WORK WITH */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Who I Don't Work With
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I don't need every client, so I can be direct and honest instead of saying whatever it takes to close.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            I won't work with:
+          </p>
+          
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Owners who want the result but won't do the work themselves
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Dealers who don't respect or invest in their employees' experience
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                People chasing lead volume as a number instead of building a real system to manage and convert what they already have
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                People looking for a quick fix instead of a real, repeatable process
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                People who doubt the system before they've actually tried it, or want to cherry-pick pieces
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-gray-400 mt-1">•</span>
+              <span className="text-lg text-gray-700">
+                Unethical operators
+              </span>
+            </li>
+          </ul>
+          
+          <p className="text-lg text-gray-700 leading-relaxed">
+            If you're serious about building systems that work, we'll have a good conversation. If you're looking for someone to do the work for you — this isn't the fit.
+          </p>
+        </div>
+      </section>
+
       {/* LONG-TERM MISSION */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
@@ -206,6 +335,27 @@ export default function About() {
           
           <p className="text-lg text-gray-700 leading-relaxed">
             Just clear thinking, grounded in real experience.
+          </p>
+        </div>
+      </section>
+
+      {/* WHY THIS WORK MATTERS */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Why This Work Matters to Me
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Building businesses that run without constant supervision isn't just good practice — it's what makes other work possible.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Long-term, the goal is to take underprivileged and foster kids out on the water for fishing trips and mentorship experiences. The rigor of the systems work funds the ability to do that work.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            Competence first. Heart second. Both matter.
           </p>
         </div>
       </section>

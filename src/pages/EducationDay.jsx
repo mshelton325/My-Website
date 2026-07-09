@@ -262,7 +262,7 @@ export default function EducationDay() {
                 Request follow-up or resources
               </a>
               <p className="text-sm text-gray-600 mt-2">
-                Share what you'd like to talk through or what tools you want — I'll follow up personally.
+                If something specific is keeping you up at night in your business, reach out and let's talk it through — no pressure on either side, no commitment to rates or scope up front.
               </p>
             </div>
             

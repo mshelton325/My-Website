@@ -1,0 +1,115 @@
+═══════════════════════════════════════════════════════════════════════════
+                    ALL PAGES & URLS - COMPLETE LIST
+═══════════════════════════════════════════════════════════════════════════
+
+MAIN WEBSITE PAGES
+═══════════════════════════════════════════════════════════════════════════
+
+Homepage
+https://my-website-zeta-neon-55.vercel.app
+
+About Page
+https://my-website-zeta-neon-55.vercel.app/about
+
+Education Day Landing Page (Main QR Code Destination)
+https://my-website-zeta-neon-55.vercel.app/education-day
+
+Education Day Landing Page with UTM Tracking (For QR Code)
+https://my-website-zeta-neon-55.vercel.app/education-day?utm_source=qr_code&utm_medium=event&utm_campaign=cca_education_day_2026
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    ALL 8 PDF DOWNLOADS
+═══════════════════════════════════════════════════════════════════════════
+
+PDF 1: Owner One-Page Diagnostic
+https://my-website-zeta-neon-55.vercel.app/pdfs/opportunity-leak-map.pdf
+
+PDF 2: Owner Reflection Worksheet
+https://my-website-zeta-neon-55.vercel.app/pdfs/owner-self-diagnosis-worksheet.pdf
+
+PDF 3: Owner Reflection — Turning Insight Into Design
+https://my-website-zeta-neon-55.vercel.app/pdfs/owner-reflection-prompt.pdf
+
+PDF 4: One-Leak 30-Day Sprint Guide
+https://my-website-zeta-neon-55.vercel.app/pdfs/one-leak-30-day-sprint.pdf
+
+PDF 5: Call-Voicemail-Text Follow-Up Playbook
+https://my-website-zeta-neon-55.vercel.app/pdfs/call-voicemail-text-playbook.pdf
+
+PDF 6: Follow-Up Enforcement SOP
+https://my-website-zeta-neon-55.vercel.app/pdfs/follow-up-enforcement-sop.pdf
+
+PDF 7: Quote Accuracy & Margin Protection Checklist
+https://my-website-zeta-neon-55.vercel.app/pdfs/quote-accuracy-checklist.pdf
+
+PDF 8: 15-Minute Weekly KPI Performance Cadence
+https://my-website-zeta-neon-55.vercel.app/pdfs/weekly-kpi-cadence.pdf
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    CONTACT & FOLLOW-UP ASSETS
+═══════════════════════════════════════════════════════════════════════════
+
+vCard Download (Contact Card)
+https://my-website-zeta-neon-55.vercel.app/Matt-Shelton-Contact.vcf
+
+Google Form (Follow-Up Requests)
+https://forms.gle/wmRC3FWVHirc35QT9
+
+Headshot Image
+https://my-website-zeta-neon-55.vercel.app/matt-shelton-headshot.jpg
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    ANALYTICS & TRACKING
+═══════════════════════════════════════════════════════════════════════════
+
+Google Analytics Dashboard
+https://analytics.google.com
+
+GA4 Measurement ID: G-7S338S8VGN
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    GITHUB REPOSITORY
+═══════════════════════════════════════════════════════════════════════════
+
+Repository URL
+https://github.com/mshelton325/My-Website
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    QUICK REFERENCE
+═══════════════════════════════════════════════════════════════════════════
+
+Primary QR Code URL (This is what's on your printed materials):
+https://my-website-zeta-neon-55.vercel.app/education-day?utm_source=qr_code&utm_medium=event&utm_campaign=cca_education_day_2026
+
+Main Domain:
+https://my-website-zeta-neon-55.vercel.app
+
+Total Pages: 3 (Homepage, About, Education Day)
+Total PDFs: 8 (All accessible from Education Day page)
+Total Assets: 11 (8 PDFs + vCard + headshot + Google Form)
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    TESTING CHECKLIST
+═══════════════════════════════════════════════════════════════════════════
+
+□ Visit homepage
+□ Visit about page
+□ Visit education-day page
+□ Click each of the 8 PDF download buttons
+□ Test Google Form link
+□ Test vCard download
+□ Scan QR code on mobile
+□ Verify mobile responsiveness
+□ Check analytics tracking in GA4
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    PRINT THIS PAGE FOR EVENT DAY REFERENCE
+═══════════════════════════════════════════════════════════════════════════
+

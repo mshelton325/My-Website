@@ -1,0 +1,218 @@
+═══════════════════════════════════════════════════════════════════════════
+                    COMPLETE WEBSITE - ALL PAGES & URLS
+═══════════════════════════════════════════════════════════════════════════
+
+
+ACTIVE PUBLIC PAGES
+═══════════════════════════════════════════════════════════════════════════
+
+Homepage (Anchor Page - Minimal Design)
+https://my-website-zeta-neon-55.vercel.app/
+
+Diagnostic Tool
+https://my-website-zeta-neon-55.vercel.app/diagnostic
+
+Diagnostic Confirmation Page
+https://my-website-zeta-neon-55.vercel.app/diagnostic/confirmation
+
+About Page
+https://my-website-zeta-neon-55.vercel.app/about
+
+Education Day Landing Page (CCA Event)
+https://my-website-zeta-neon-55.vercel.app/education-day
+
+Education Day with UTM Tracking (QR Code URL)
+https://my-website-zeta-neon-55.vercel.app/education-day?utm_source=qr_code&utm_medium=event&utm_campaign=cca_education_day_2026
+
+CCA QR Landing Page
+https://my-website-zeta-neon-55.vercel.app/cca-qr
+
+Private Note Page
+https://my-website-zeta-neon-55.vercel.app/private-note
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    PRODUCT/REVIEW SYSTEM PAGES
+═══════════════════════════════════════════════════════════════════════════
+
+Review System Sales
+https://my-website-zeta-neon-55.vercel.app/review-system-sales
+
+Review System Complete
+https://my-website-zeta-neon-55.vercel.app/review-system-complete
+
+Review Leverage Manual
+https://my-website-zeta-neon-55.vercel.app/review-leverage-manual
+
+Review System Owner
+https://my-website-zeta-neon-55.vercel.app/review-system-owner
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    PREVIEW PAGES (A/B TESTING VERSIONS)
+═══════════════════════════════════════════════════════════════════════════
+
+Preview A - Sales System Preview
+https://my-website-zeta-neon-55.vercel.app/preview-a
+
+Preview B - Sales System Preview V2
+https://my-website-zeta-neon-55.vercel.app/preview-b
+
+Preview C - Sales System Preview V3
+https://my-website-zeta-neon-55.vercel.app/preview-c
+
+Preview D - Sales System Preview D
+https://my-website-zeta-neon-55.vercel.app/preview-d
+
+Preview E - Sales System Preview E
+https://my-website-zeta-neon-55.vercel.app/preview-e
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    DYNAMIC RESOURCE PAGES (TOKEN-BASED)
+═══════════════════════════════════════════════════════════════════════════
+
+Resources Page (Dynamic - requires token)
+https://my-website-zeta-neon-55.vercel.app/resources/[TOKEN]
+
+Example:
+https://my-website-zeta-neon-55.vercel.app/resources/demo-token-123
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    ARCHIVED PAGES (Future Expansion)
+═══════════════════════════════════════════════════════════════════════════
+
+Archived Home Page
+https://my-website-zeta-neon-55.vercel.app/archive/home
+
+Archived About Page
+https://my-website-zeta-neon-55.vercel.app/archive/about
+
+Archived Services Page
+https://my-website-zeta-neon-55.vercel.app/archive/services
+
+Archived Contact Page
+https://my-website-zeta-neon-55.vercel.app/archive/contact
+
+Archived Insights Page (Blog)
+https://my-website-zeta-neon-55.vercel.app/archive/insights
+
+Archived Individual Blog Post (Dynamic)
+https://my-website-zeta-neon-55.vercel.app/archive/insights/[SLUG]
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    ALL 8 PDF DOWNLOADS (Education Day)
+═══════════════════════════════════════════════════════════════════════════
+
+PDF 1: Owner One-Page Diagnostic
+https://my-website-zeta-neon-55.vercel.app/pdfs/opportunity-leak-map.pdf
+
+PDF 2: Owner Reflection Worksheet
+https://my-website-zeta-neon-55.vercel.app/pdfs/owner-self-diagnosis-worksheet.pdf
+
+PDF 3: Owner Reflection — Turning Insight Into Design
+https://my-website-zeta-neon-55.vercel.app/pdfs/owner-reflection-prompt.pdf
+
+PDF 4: One-Leak 30-Day Sprint Guide
+https://my-website-zeta-neon-55.vercel.app/pdfs/one-leak-30-day-sprint.pdf
+
+PDF 5: Call-Voicemail-Text Follow-Up Playbook
+https://my-website-zeta-neon-55.vercel.app/pdfs/call-voicemail-text-playbook.pdf
+
+PDF 6: Follow-Up Enforcement SOP
+https://my-website-zeta-neon-55.vercel.app/pdfs/follow-up-enforcement-sop.pdf
+
+PDF 7: Quote Accuracy & Margin Protection Checklist
+https://my-website-zeta-neon-55.vercel.app/pdfs/quote-accuracy-checklist.pdf
+
+PDF 8: 15-Minute Weekly KPI Performance Cadence
+https://my-website-zeta-neon-55.vercel.app/pdfs/weekly-kpi-cadence.pdf
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    CONTACT & ASSETS
+═══════════════════════════════════════════════════════════════════════════
+
+vCard Download (Contact Card)
+https://my-website-zeta-neon-55.vercel.app/Matt-Shelton-Contact.vcf
+
+Google Form (Follow-Up Requests)
+https://forms.gle/wmRC3FWVHirc35QT9
+
+Headshot Image
+https://my-website-zeta-neon-55.vercel.app/matt-shelton-headshot.jpg
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    ANALYTICS & TRACKING
+═══════════════════════════════════════════════════════════════════════════
+
+Google Analytics Dashboard
+https://analytics.google.com
+
+GA4 Measurement ID: G-7S338S8VGN
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    GITHUB REPOSITORY
+═══════════════════════════════════════════════════════════════════════════
+
+Repository URL
+https://github.com/mshelton325/My-Website
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    SUMMARY
+═══════════════════════════════════════════════════════════════════════════
+
+Main Domain:
+https://my-website-zeta-neon-55.vercel.app
+
+Total Active Pages: 18
+  - Public Pages: 8
+  - Product/Review Pages: 4
+  - Preview Pages (A/B Testing): 5
+  - Dynamic Resource Page: 1
+
+Total Archived Pages: 6 (Future Expansion)
+
+Total PDFs: 8
+
+Total Assets: 11 (8 PDFs + vCard + headshot + Google Form)
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    PAGE CATEGORIES EXPLAINED
+═══════════════════════════════════════════════════════════════════════════
+
+PUBLIC PAGES:
+  - Main pages accessible to general visitors
+  - Include homepage, diagnostic tool, about page, education day
+
+PRODUCT/REVIEW PAGES:
+  - Standalone sales pages for specific offerings
+  - No navigation/footer (focused conversion)
+  - Direct access via URL only
+
+PREVIEW PAGES:
+  - A/B testing variations of sales pages
+  - Different messaging/positioning approaches
+  - Used to test conversion effectiveness
+
+DYNAMIC RESOURCE PAGES:
+  - Token-based access for customers
+  - Personalized resource delivery
+  - Secure access via unique URLs
+
+ARCHIVED PAGES:
+  - Previous site structure preserved
+  - Available for future use or reference
+  - Accessible via /archive/ prefix
+
+
+═══════════════════════════════════════════════════════════════════════════
+                    PRINT THIS FOR COMPLETE REFERENCE
+═══════════════════════════════════════════════════════════════════════════
+

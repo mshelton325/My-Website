@@ -269,106 +269,62 @@ export default function About() {
         </div>
       </section>
 
-      {/* WHO I DON'T WORK WITH */}
+      {/* WHO THIS WORKS BEST FOR */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Who I Don't Work With
+            Who This Works Best For
           </h2>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I don't need every client, so I can be direct and honest instead of saying whatever it takes to close.
+            This approach tends to work best with owners who are ready to be involved in the solution — not looking for someone to do the work for them.
           </p>
           
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            I won't work with:
+            You'll probably get the most value if:
           </p>
           
-          <ul className="space-y-3 mb-6">
+          <ul className="space-y-3 mb-8">
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                Owners who want the result but won't do the work themselves
+                You're willing to implement and test systems yourself
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                Dealers who don't respect or invest in their employees' experience
+                You care about building an environment where employees can succeed
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                People chasing lead volume as a number instead of building a real system to manage and convert what they already have
+                You're more interested in converting what you already have than just chasing more volume
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                People looking for a quick fix instead of a real, repeatable process
+                You prefer sustainable processes over quick fixes
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                People who doubt the system before they've actually tried it, or want to cherry-pick pieces
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Unethical operators
+                You operate ethically and want to build a business you're proud of
               </span>
             </li>
           </ul>
           
           <p className="text-lg text-gray-700 leading-relaxed">
-            If you're serious about building systems that work, we'll have a good conversation. If you're looking for someone to do the work for you — this isn't the fit.
+            If that sounds like you, we'll probably have a productive conversation. If you're looking for something different — no problem. I can point you toward other resources or approaches that might be a better fit.
           </p>
         </div>
       </section>
 
-      {/* LONG-TERM MISSION */}
+      {/* LONG-TERM MISSION & FAITH */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            My long-term focus is building practical, digital tools and playbooks that help owners:
-          </p>
-          
-          <ul className="space-y-3 mb-6">
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                See leverage faster
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Make better decisions with less stress
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Build businesses they can actually breathe inside
-              </span>
-            </li>
-          </ul>
-          
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            No fluff. No hype. No dependency.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Just clear thinking, grounded in real experience.
-          </p>
-        </div>
-      </section>
-
-      {/* WHY THIS WORK MATTERS */}
-      <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Why This Work Matters to Me
@@ -382,9 +338,19 @@ export default function About() {
             Long-term, the goal is to take underprivileged and foster kids out on the water for fishing trips and mentorship experiences. The rigor of the systems work funds the ability to do that work.
           </p>
           
-          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
             Competence first. Heart second. Both matter.
           </p>
+          
+          {/* AL BOULOGNE TESTIMONIAL */}
+          <div className="bg-white border border-gray-200 rounded-lg p-8 mt-8">
+            <p className="text-base text-gray-700 mb-4 leading-relaxed italic">
+              "Matt lives his faith passionately. We met at a secular business dinner and he was eager to share his journey as a Christian with my wife and I. The Holy Spirit is moving in Matt and his calling to help disciple fellow Christians in their walk inside and outside of the workplace is something that the world needs right now. He is on fire for God and sees the places where he can apply those spiritual gifts."
+            </p>
+            <p className="text-sm text-gray-600">
+              <span className="font-semibold">Al Boulogne</span> — Mannington
+            </p>
+          </div>
         </div>
       </section>
 
@@ -407,12 +373,28 @@ export default function About() {
           <p className="text-lg font-semibold text-gray-900 mb-2">
             Matt Shelton
           </p>
-          <p className="text-gray-600 mb-1">
-            Systems-built clarity for flooring business owners
+          <p className="text-gray-600 mb-4">
+            Flooring operator · Systems builder · Practical problem solver
           </p>
-          <p className="text-sm text-gray-500">
-            Operator experience. Ethical execution. Practical results.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
+            <a href="/" className="text-gray-600 hover:text-gray-900">
+              Home
+            </a>
+            <a href="/about" className="text-gray-600 hover:text-gray-900">
+              About
+            </a>
+            <a href="/education-day" className="text-gray-600 hover:text-gray-900">
+              Resources
+            </a>
+            <a
+              href="https://forms.gle/wmRC3FWVHirc35QT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              Contact
+            </a>
+          </div>
         </div>
       </footer>
     </div>

@@ -409,12 +409,28 @@ export default function EducationDay() {
           <p className="text-lg font-semibold text-gray-900 mb-2">
             Matt Shelton
           </p>
-          <p className="text-gray-600 mb-1">
-            Systems-built clarity for flooring business owners
+          <p className="text-gray-600 mb-4">
+            Flooring operator · Systems builder · Practical problem solver
           </p>
-          <p className="text-sm text-gray-500">
-            Operator experience. Ethical execution. Practical results.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
+            <a href="/" className="text-gray-600 hover:text-gray-900">
+              Home
+            </a>
+            <a href="/about" className="text-gray-600 hover:text-gray-900">
+              About
+            </a>
+            <a href="/education-day" className="text-gray-600 hover:text-gray-900">
+              Resources
+            </a>
+            <a
+              href="https://forms.gle/wmRC3FWVHirc35QT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              Contact
+            </a>
+          </div>
         </div>
       </footer>
     </div>

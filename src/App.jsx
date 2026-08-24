@@ -7,6 +7,7 @@ import Anchor from './pages/Anchor';
 import Diagnostic from './pages/Diagnostic';
 import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
 import Fit from './pages/Fit';
+import ResultsFeedback from './pages/ResultsFeedback';
 
 // HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
@@ -37,12 +38,13 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Routes>
-          {/* NEW PUBLIC HOMEPAGE - Minimal Anchor Page (no nav/footer) */}
-          <Route path="/" element={<Anchor />} />
+          {/* PUBLIC HOMEPAGE - Credibility Hub & Business Development Asset */}
+          <Route path="/" element={<Home />} />
           <Route path="/diagnostic" element={<Diagnostic />} />
           <Route path="/diagnostic/confirmation" element={<DiagnosticConfirmation />} />
           <Route path="/about" element={<About />} />
           <Route path="/fit" element={<Fit />} />
+          <Route path="/results-feedback" element={<ResultsFeedback />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />
@@ -61,6 +63,7 @@ function App() {
           
           {/* HIDDEN PAGES - Preserved for future expansion (accessible via direct URL only) */}
           {/* Tagged: Future Expansion, Proof Library, Long-Form Authority Content */}
+          <Route path="/archive/anchor" element={<Anchor />} />
           <Route path="/archive/home" element={<Home />} />
           <Route path="/archive/about" element={<About />} />
           <Route path="/archive/services" element={<Services />} />

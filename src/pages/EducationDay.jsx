@@ -24,7 +24,7 @@ export default function EducationDay() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed max-w-3xl mx-auto">
-            A practical owner-level system for uncovering hidden revenue, reducing chaos, and converting more of what you already have — without adding headcount.
+            Practical tools for examining the opportunities, processes, and operating leaks already inside the business — before assuming the answer is more leads, more people, or more complexity.
           </p>
           
           <p className="text-base text-gray-600">
@@ -38,7 +38,7 @@ export default function EducationDay() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm md:text-base text-gray-700 leading-relaxed">
             <span className="font-semibold">January 2026 Session Results:</span>
-            {" "}Rated 4.89 out of 5 by attendees · 90% stayed after the scheduled time for more
+            {" "}Rated 4.89 out of 5 by attendees
           </p>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function EducationDay() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            This short diagnostic helps owners quickly identify where opportunity is being lost after the lead comes in — before blaming marketing, pricing, or people.
+            This short diagnostic is designed to help owners examine where opportunity may be slipping through the process after a lead comes in — before blaming marketing, pricing, or people.
           </p>
           
           <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
@@ -168,7 +168,7 @@ export default function EducationDay() {
               </h3>
               
               <p className="text-base text-gray-700 mb-6 leading-relaxed">
-                A proven call → voicemail → text rhythm that protects your time, humanizes follow-up, and increases response without pressure.
+                A practical call → voicemail → text rhythm designed to create more consistent follow-up without relying on pressure or constant manual remembering.
               </p>
               
               <div className="space-y-3">
@@ -198,7 +198,7 @@ export default function EducationDay() {
               </h3>
               
               <p className="text-base text-gray-700 mb-6 leading-relaxed">
-                A lightweight accuracy check designed to reduce silent margin erosion, callbacks, and rework — without slowing sales down.
+                A lightweight accuracy check designed to surface quote, scope, pricing, and handoff details that can contribute to margin loss, callbacks, or rework.
               </p>
               
               <a
@@ -356,11 +356,11 @@ export default function EducationDay() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I'm an operator first — not a theorist.
+            I spent nearly two decades inside a family flooring business — selling, managing, coaching, building systems, and solving operating problems in real time.
           </p>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I run a flooring business and built these tools out of necessity: manager turnover, inconsistent execution, margin erosion, and the constant pressure of being the backstop.
+            The tools here grew out of that hands-on experience. They were built to create more visibility, consistency, and structure around problems that otherwise depended too heavily on memory, individual effort, or constant management attention.
           </p>
           
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">

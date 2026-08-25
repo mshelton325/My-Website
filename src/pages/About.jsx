@@ -109,7 +109,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700 leading-relaxed">
-                Small, well-placed design decisions outperform big overhauls
+                I tend to favor small, well-placed design decisions before jumping to a major overhaul
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -161,7 +161,7 @@ export default function About() {
           </p>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            The session was rated <span className="font-semibold">4.89 out of 5</span> by attendees. 90% of participants stayed after the scheduled time to continue the conversation — a clear signal that the content resonated.
+            The session was rated <span className="font-semibold">4.89 out of 5</span> by attendees. Written feedback repeatedly highlighted the practical systems, tools, and ideas dealers wanted to hear more about.
           </p>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -200,7 +200,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700 leading-relaxed">
-                <span className="font-semibold">Builds transferable systems, not dependency</span> — the goal is for you to run it without me, not to keep me on retainer indefinitely
+                <span className="font-semibold">Builds transferable systems, not unnecessary dependency</span> — the goal is to make the business clearer and more capable, not make Matt the new bottleneck
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -273,7 +273,7 @@ export default function About() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            This approach tends to work best with owners who are ready to be involved in the solution — not looking for someone to do the work for them.
+            This approach tends to work best with owners and leaders who are willing to participate in the solution and give honest feedback about what's actually happening in the business.
           </p>
           
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
@@ -284,7 +284,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                You're willing to implement and test systems yourself
+                You're willing to participate, test changes, and help determine what actually works in your business
               </span>
             </li>
             <li className="flex items-start gap-3">

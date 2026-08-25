@@ -1,6 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Footer from './components/Footer';
 
 // NEW PUBLIC PAGES
 import Anchor from './pages/Anchor';
@@ -49,7 +48,7 @@ function App() {
           <Route path="/insights-resources" element={<><Navigation /><InsightsResources /></>} />
           <Route path="/work-with-matt" element={<><Navigation /><WorkWithMatt /></>} />
           <Route path="/education-day" element={<><Navigation /><EducationDay /></>} />
-          <Route path="/fit" element={<><Navigation /><Fit /></>} />
+          <Route path="/fit" element={<Navigate to="/work-with-matt" replace />} />
           
           {/* STANDALONE PAGES WITHOUT NAVIGATION */}
           <Route path="/diagnostic" element={<Diagnostic />} />
@@ -71,6 +70,7 @@ function App() {
           
           {/* HIDDEN PAGES - Preserved for future expansion (accessible via direct URL only) */}
           {/* Tagged: Future Expansion, Proof Library, Long-Form Authority Content */}
+          <Route path="/archive/fit" element={<Fit />} />
           <Route path="/archive/anchor" element={<Anchor />} />
           <Route path="/archive/home" element={<Home />} />
           <Route path="/archive/about" element={<About />} />

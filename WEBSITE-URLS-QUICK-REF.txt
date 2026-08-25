@@ -1,0 +1,52 @@
+# WEBSITE URLs - QUICK REFERENCE
+
+## Primary Pages (Public)
+- Homepage: https://mshelton.consulting
+- About: https://mshelton.consulting/about
+- Results & Feedback: https://mshelton.consulting/results-feedback
+- Education Day Resources: https://mshelton.consulting/education-day
+- Pre-Qualification (Fit): https://mshelton.consulting/fit
+- Diagnostic Tool: https://mshelton.consulting/diagnostic
+
+## Inquiry/Contact
+- Google Form: https://forms.gle/wmRC3FWVHirc35QT9
+- Contact vCard: https://mshelton.consulting/Matt-Shelton-Contact.vcf
+
+## Archived Pages (Preserved but not in navigation)
+- Old Anchor Homepage: https://mshelton.consulting/archive/anchor
+- Old Services Page: https://mshelton.consulting/archive/services
+- Old Contact Page: https://mshelton.consulting/archive/contact
+- Old Insights Blog: https://mshelton.consulting/archive/insights
+
+## Direct PDF Resources (Education Day)
+All PDFs accessible at: https://mshelton.consulting/pdfs/[filename]
+
+1. opportunity-leak-map.pdf
+2. owner-self-diagnosis-worksheet.pdf
+3. owner-reflection-prompt.pdf
+4. one-leak-30-day-sprint.pdf
+5. call-voicemail-text-playbook.pdf
+6. follow-up-enforcement-sop.pdf
+7. quote-accuracy-checklist.pdf
+8. weekly-kpi-cadence.pdf
+
+## Key CTAs on Homepage
+All CTAs point to: https://forms.gle/wmRC3FWVHirc35QT9
+
+- Hero CTA 1: "See What I've Built" → Scrolls to #things-built section
+- Hero CTA 2: "Tell Me What You're Working On" → Google Form
+- Problems Section: "Have a Different Problem?" → Google Form
+- Final CTA: "What Are You Trying to Solve?" → Google Form
+
+## Navigation Structure
+- Home → /
+- About → /about
+- Resources → /education-day
+- Contact → Google Form (external)
+
+## Status
+✅ All URLs tested and working
+✅ All CTAs point to working Google Form
+✅ All PDFs accessible
+✅ Build successful
+✅ Deployed to Vercel

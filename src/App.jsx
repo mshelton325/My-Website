@@ -1,6 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Footer from './components/Footer';
 
 // NEW PUBLIC PAGES
 import Anchor from './pages/Anchor';
@@ -8,6 +7,9 @@ import Diagnostic from './pages/Diagnostic';
 import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
 import Fit from './pages/Fit';
 import ResultsFeedback from './pages/ResultsFeedback';
+import Speaking from './pages/Speaking';
+import InsightsResources from './pages/InsightsResources';
+import WorkWithMatt from './pages/WorkWithMatt';
 
 // HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
@@ -38,13 +40,19 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Routes>
-          {/* PUBLIC HOMEPAGE - Credibility Hub & Business Development Asset */}
-          <Route path="/" element={<Home />} />
+          {/* PUBLIC PAGES WITH NAVIGATION */}
+          <Route path="/" element={<><Navigation /><Home /></>} />
+          <Route path="/about" element={<><Navigation /><About /></>} />
+          <Route path="/results-feedback" element={<><Navigation /><ResultsFeedback /></>} />
+          <Route path="/speaking" element={<><Navigation /><Speaking /></>} />
+          <Route path="/insights-resources" element={<><Navigation /><InsightsResources /></>} />
+          <Route path="/work-with-matt" element={<><Navigation /><WorkWithMatt /></>} />
+          <Route path="/education-day" element={<><Navigation /><EducationDay /></>} />
+          <Route path="/fit" element={<Navigate to="/work-with-matt" replace />} />
+          
+          {/* STANDALONE PAGES WITHOUT NAVIGATION */}
           <Route path="/diagnostic" element={<Diagnostic />} />
           <Route path="/diagnostic/confirmation" element={<DiagnosticConfirmation />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/fit" element={<Fit />} />
-          <Route path="/results-feedback" element={<ResultsFeedback />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />
@@ -57,12 +65,12 @@ function App() {
           <Route path="/review-leverage-manual" element={<ReviewLeverageManual />} />
           <Route path="/review-system-owner" element={<ReviewSystemOwner />} />
           <Route path="/resources/:token" element={<ResourceRouter />} />
-          <Route path="/education-day" element={<EducationDay />} />
           <Route path="/private-note" element={<PrivateNote />} />
           <Route path="/cca-qr" element={<CcaQr />} />
           
           {/* HIDDEN PAGES - Preserved for future expansion (accessible via direct URL only) */}
           {/* Tagged: Future Expansion, Proof Library, Long-Form Authority Content */}
+          <Route path="/archive/fit" element={<Fit />} />
           <Route path="/archive/anchor" element={<Anchor />} />
           <Route path="/archive/home" element={<Home />} />
           <Route path="/archive/about" element={<About />} />

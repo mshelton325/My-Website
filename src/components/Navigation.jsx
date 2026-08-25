@@ -10,9 +10,10 @@ export default function Navigation() {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
-    { path: '/insights', label: 'Insights' },
-    { path: '/contact', label: 'Contact' },
+    { path: '/results-feedback', label: 'Results & Feedback' },
+    { path: '/insights-resources', label: 'Insights & Resources' },
+    { path: '/speaking', label: 'Speaking' },
+    { path: '/work-with-matt', label: 'Work With Matt' },
   ];
 
   return (
@@ -26,20 +27,28 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors ${
                   isActive(link.path)
-                    ? 'text-primary-700 border-b-2 border-primary-700'
-                    : 'text-gray-700 hover:text-primary-700'
+                    ? 'text-gray-900 font-semibold'
+                    : 'text-gray-700 hover:text-gray-900'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
+            <a
+              href="https://forms.gle/wmRC3FWVHirc35QT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-4 bg-gray-900 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+            >
+              Tell Me What You're Working On
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -79,13 +88,21 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   isActive(link.path)
-                    ? 'text-primary-700 bg-primary-50'
-                    : 'text-gray-700 hover:text-primary-700 hover:bg-gray-50'
+                    ? 'text-gray-900 bg-gray-50 font-semibold'
+                    : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
+            <a
+              href="https://forms.gle/wmRC3FWVHirc35QT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-3 py-2 rounded-md text-base font-medium bg-gray-900 text-white text-center hover:bg-gray-800"
+            >
+              Tell Me What You're Working On
+            </a>
           </div>
         </div>
       )}

@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 
 /**
- * HOME PAGE - CREDIBILITY HUB & PASSIVE BUSINESS DEVELOPMENT ASSET
+ * HOME PAGE - THE PERSON BEHIND A BODY OF THINKING, SYSTEMS, EDUCATION & RESOURCES
  * 
- * Strategy: Position Matt as flooring operator + systems builder + practical problem solver
- * NOT primarily as a generic "consultant"
+ * Strategy: Position Matt as the SOURCE of practical flooring-business knowledge, not just a consultant-for-hire
+ * Build architecture for future scalable learning ecosystem (self-guided, guided, direct work)
  * 
  * Design Philosophy: 
  * - Clean, premium, calm, modern, operator-led
- * - Avoid hype, excessive animation, giant walls of copy
- * - Show credibility rather than claim it
- * - Make it easy to reach out about any problem
+ * - Experienced, grounded, human
+ * - Show systems thinking
+ * - Make it easy to learn, explore, connect
  */
 
 export default function Home() {
@@ -20,27 +20,35 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Practical systems for independent flooring businesses — built by someone who has actually had to make them work.
+            Get More Control From the Flooring Business You Already Have.
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Nearly two decades inside a family flooring business taught me where good companies quietly lose sales, margin, time, and good people. I build practical systems, tools, and processes that help owners fix those leaks without turning the business upside down.
+          <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed">
+            Before adding more leads, more people, or more complexity, it may be worth looking at what's already slipping through the cracks.
+          </p>
+          
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Nearly two decades inside a family flooring business taught me that growth problems are not always demand problems. Sometimes they are visibility problems, handoff problems, accountability problems, people-development problems, pricing problems — or systems trapped inside one person's head.
+          </p>
+          
+          <p className="text-2xl font-semibold text-gray-900 mb-8 italic">
+            Stop being the system. Start building one.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
-              href="#things-built"
-              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
-            >
-              See What I've Built
-            </a>
-            <a
               href="https://forms.gle/wmRC3FWVHirc35QT9"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors"
+              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
             >
               Tell Me What You're Working On
+            </a>
+            <a
+              href="#how-i-think"
+              className="inline-block border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors"
+            >
+              See How I Think
             </a>
           </div>
           
@@ -50,158 +58,229 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 2 — DOCUMENTED PROOF */}
+      {/* MEET MATT VIDEO SPACE - Placeholder for future video */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-50 border-2 border-gray-200 rounded-lg p-12 text-center">
+            <div className="max-w-sm mx-auto mb-6">
+              <img
+                src="/matt-shelton-headshot.jpg"
+                alt="Matt Shelton"
+                className="rounded-lg w-full shadow-lg"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Meet Matt — Why I'm Building This
+            </h3>
+            <p className="text-base text-gray-600 mb-6 leading-relaxed">
+              Nearly two decades inside a family flooring business gave me a front-row seat to where independent dealers quietly lose control, capacity, and profit. I'm building this to share what I've learned — and create something that outlasts my time in the industry.
+            </p>
+            <Link
+              to="/about"
+              className="inline-block text-gray-900 font-medium hover:underline"
+            >
+              Read More About Matt →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2 — CREDIBILITY STRIP */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200 text-center">
               <div className="text-3xl font-bold text-gray-900 mb-2">Nearly 20 Years</div>
-              <div className="text-sm text-gray-600">Inside an independent family flooring business</div>
+              <div className="text-sm text-gray-600">Flooring-industry leadership experience</div>
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200 text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-2">60% Growth</div>
-              <div className="text-sm text-gray-600">Revenue: $4.57M → $7.3M</div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200 text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-2">52.5%</div>
-              <div className="text-sm text-gray-600">Close Rate</div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200 text-center">
-              <div className="text-3xl font-bold text-gray-900 mb-2">$110K → $40K</div>
-              <div className="text-sm text-gray-600">Annual marketing spend reduction</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">CCA Speaker</div>
+              <div className="text-sm text-gray-600">Education Day 2026</div>
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200 text-center">
               <div className="text-3xl font-bold text-gray-900 mb-2">4.89 / 5</div>
-              <div className="text-sm text-gray-600">CCA Education Day attendee rating</div>
+              <div className="text-sm text-gray-600">Attendee rating</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3 — EARLY THIRD-PARTY PROOF */}
+      {/* SECTION 3 — THE PROBLEM BENEATH THE PROBLEM */}
       <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-blue-50 border border-blue-100 rounded-lg p-8">
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
-              "Great presentation. Love the systemized approach for hiring fresh salespeople. We need to convert Tribal knowledge to systems. Would love to hear more about this topic."
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            The Problem Beneath the Problem
+          </h2>
+          
+          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              When flooring dealers face pressure, the natural response is often to reach for <strong>more</strong>:
             </p>
-            <p className="text-sm text-gray-600 mb-6">
-              — CCA Education Day attendee
+            
+            <ul className="space-y-2 ml-8">
+              <li className="flex items-start gap-3">
+                <span className="text-gray-400 mt-1">•</span>
+                <span>More leads</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gray-400 mt-1">•</span>
+                <span>More advertising</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gray-400 mt-1">•</span>
+                <span>Another salesperson</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gray-400 mt-1">•</span>
+                <span>Another software tool</span>
+              </li>
+            </ul>
+            
+            <p>
+              Sometimes those are necessary. But sometimes more inputs simply amplify a weak underlying process.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-blue-200">
-              <div className="text-center sm:text-left">
-                <p className="text-2xl font-bold text-gray-900">4.89 / 5</p>
-                <p className="text-sm text-gray-600">Session Rating</p>
-              </div>
-              <a
-                href="/results-feedback"
-                className="text-gray-900 font-medium hover:underline text-sm"
-              >
-                See More Dealer Feedback →
-              </a>
+            
+            <div className="bg-gray-50 border-l-4 border-gray-900 p-6 my-8">
+              <p className="text-xl font-semibold text-gray-900 italic">
+                "If you have a leak, more water doesn't fix the bucket."
+              </p>
             </div>
+            
+            <p>
+              Over nearly two decades inside a family flooring business, I kept seeing a pattern: the real problem was often not <em>what was missing</em>, but <em>what was breaking</em> inside the systems that were already there.
+            </p>
+            
+            <div className="bg-gray-50 border-l-4 border-gray-900 p-6 my-8">
+              <p className="text-xl font-semibold text-gray-900 italic mb-3">
+                "The system had become a person."
+              </p>
+              <p className="text-base text-gray-700">
+                When the owner, manager, or strongest salesperson becomes the place where knowledge, decisions, follow-up, or accountability lives, the business becomes fragile.
+              </p>
+            </div>
+            
+            <p>
+              My work focuses on helping dealers see those leaks, strengthen the underlying systems, and reduce dependence on individual heroics.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* SECTION 4 — PROBLEMS I'VE WORKED ON */}
-      <section className="py-16 px-4 bg-gray-50" id="problems">
+      {/* SECTION 4 — FIVE METHODOLOGY PILLARS */}
+      <section className="py-16 px-4 bg-gray-50" id="how-i-think">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
-            Problems I've Worked On
+            Five Areas I Help Dealers Strengthen
           </h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Real issues I've encountered and built systems to solve — inside an operating flooring business.
+            These are not theoretical categories. They are the real patterns I've worked on inside an operating flooring business.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Card 1 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Sales Conversion & Follow-Up
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Lead ownership, follow-up, pipeline visibility, closing discipline, and lost-opportunity analysis.
-              </p>
+          <div className="space-y-6">
+            {/* Pillar 1 */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl font-bold text-gray-400 flex-shrink-0">1</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Get More from the Opportunities You Already Have
+                  </h3>
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                    Lead visibility, lead ownership, qualifying, follow-up, salesperson capacity, project development, marketing accountability, reviews and referrals.
+                  </p>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-600 mb-1 font-semibold">Dealer-language problem:</p>
+                    <p className="text-sm text-gray-700 italic mb-2">"We need more leads."</p>
+                    <p className="text-sm text-gray-600 mb-1 font-semibold">My question:</p>
+                    <p className="text-sm text-gray-700">"What is happening to the opportunities you already have?"</p>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            {/* Card 2 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Hiring & Salesperson Development
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Creating structured systems that can develop people without years of flooring experience.
-              </p>
+            {/* Pillar 2 */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl font-bold text-gray-400 flex-shrink-0">2</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Build People Who Can Execute a Process
+                  </h3>
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                    Hiring, onboarding, training, coaching, expectations, accountability, manager rhythm, reducing dependence on finding an experienced flooring superstar.
+                  </p>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-600 mb-1 font-semibold">Dealer-language problem:</p>
+                    <p className="text-sm text-gray-700 italic">"Good people are impossible to find."</p>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            {/* Card 3 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Accountability & Management
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                KPIs, scorecards, manager rhythms, pipeline review, and accountability without constant chasing.
-              </p>
+            {/* Pillar 3 */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl font-bold text-gray-400 flex-shrink-0">3</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Protect the Profit You've Already Earned
+                  </h3>
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                    Pricing discipline, margin, vendor accountability, claims, callbacks, rework, discounting, avoidable leakage.
+                  </p>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-600 mb-1 font-semibold">Dealer-language problem:</p>
+                    <p className="text-sm text-gray-700 italic">"We're busy, but the money doesn't seem to show it."</p>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            {/* Card 4 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                SOPs & Operational Clarity
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Turning tribal knowledge and inconsistent execution into processes people can actually follow.
-              </p>
+            {/* Pillar 4 */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl font-bold text-gray-400 flex-shrink-0">4</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Make the Handoffs Harder to Break
+                  </h3>
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                    Proposal clarity, drawings, internal notes, sales → operations, scheduling, installation, customer expectations, photos/documentation, closeout.
+                  </p>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-600 mb-1 font-semibold">Dealer-language problem:</p>
+                    <p className="text-sm text-gray-700 italic">"Somebody said something, but nobody knew about it."</p>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            {/* Card 5 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Reviews, Reputation & Lead Quality
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Building repeatable systems around customer reviews, reputation, and stronger inbound opportunity.
-              </p>
-            </div>
-            
-            {/* Card 6 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Margin & Execution Leaks
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Quote accuracy, handoffs, callbacks, claims, documentation, and the small breakdowns that quietly cost money.
-              </p>
-            </div>
-          </div>
-          
-          {/* Different Problem Card */}
-          <div className="mt-8 max-w-2xl mx-auto">
-            <div className="bg-blue-50 border-2 border-blue-200 p-8 rounded-lg text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Have a Different Problem?
-              </h3>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                I've encountered plenty of strange, specific flooring-business problems over the years. If something is keeping you up at night and you're wondering whether I've dealt with it before, ask me.
-              </p>
-              <a
-                href="https://forms.gle/wmRC3FWVHirc35QT9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
-              >
-                Tell Me What's Going On
-              </a>
+            {/* Pillar 5 */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 border-2 border-gray-900">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl font-bold text-gray-900 flex-shrink-0">5</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Give the Owner Control Without Making the Owner the System
+                  </h3>
+                  <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                    Visibility, KPIs, one source of truth, delegation, management cadence, accountability, surfacing problems earlier, reducing owner dependence.
+                  </p>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-600 mb-1 font-semibold">Dealer-language problem:</p>
+                    <p className="text-sm text-gray-700 italic mb-2">"Everything still comes back to me."</p>
+                    <p className="text-sm text-gray-600 mt-3">
+                      <strong>This is the destination the other four contribute toward.</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* SECTION 5 — THINGS I'VE BUILT */}
       <section className="py-16 px-4" id="things-built">
         <div className="max-w-6xl mx-auto">
@@ -363,113 +442,286 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 7 — COMPACT REAL-WORLD STORY */}
+      {/* SECTION 7 — RESULTS & FEEDBACK PREVIEW */}
       <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            From Heroics to Systems
-          </h2>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            The systems I've built grew out of necessity — running and improving a real flooring operation while dealing with sales development, inconsistency, accountability challenges, lead conversion problems, errors, margin pressure, and owner dependence.
-          </p>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed font-medium">
-            They were built because they had to work in real life, not because they sounded good in a presentation.
-          </p>
-          
-          <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-            <p className="text-base text-gray-700 mb-3 leading-relaxed">
-              Over nearly two decades:
-            </p>
-            <ul className="space-y-2 text-base text-gray-700">
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span>Grew revenue from $4.57M to $7.3M (60% growth)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span>Reduced annual marketing spend from $110K to $40K</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span>Achieved 52.5% close rate through systematic follow-up and conversion processes</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-gray-400 mt-1">•</span>
-                <span>Repeatedly developed salespeople with zero flooring experience into top performers</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 8 — CCA EDUCATION DAY */}
-      <section className="py-16 px-4 bg-blue-50 border-y border-blue-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
-            Gold Beneath Your Feet
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            Results & Feedback
           </h2>
           
-          <p className="text-lg text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
-            A CCA Education Day session focused on helping flooring dealers find hidden revenue, improve conversion, reduce operational chaos, and turn tribal knowledge into repeatable systems.
+          <p className="text-lg text-gray-700 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
+            The systems I've built grew out of necessity — they had to work in real life, not just sound good in a presentation.
           </p>
           
-          <div className="bg-white rounded-lg p-8 mb-8 text-center border border-blue-200">
-            <p className="text-3xl font-bold text-gray-900 mb-2">4.89 / 5</p>
-            <p className="text-base text-gray-600 mb-4">Attendee Rating</p>
-            <p className="text-base text-gray-700">
-              90% of the class stayed after the scheduled session for more
-            </p>
-          </div>
-          
-          <div className="space-y-6 mb-8">
-            <div className="bg-white p-6 rounded-lg border border-blue-200">
-              <p className="text-base text-gray-700 italic mb-3">
-                "Matt was inspirational. Could have used his insights 28 years ago."
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Talent Development Result */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Talent Development
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                In 2025, one salesperson I hired with no prior sales or flooring experience went on to set a new full-year sales high within our core retail-sales cohort, surpassing the previous best by 7.6%.
               </p>
-              <p className="text-sm text-gray-600">— CCA Member</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg border border-blue-200">
-              <p className="text-base text-gray-700 italic mb-3">
-                "I would love to get more of the actual details of his systems. We are in desperate need of great SOPs like that."
+            {/* Systems Built */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Systems Built
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Built or led roughly two dozen documented sales, marketing, and operations systems addressing sales development, inconsistency, accountability, lead conversion, margin pressure, and leadership dependence.
               </p>
-              <p className="text-sm text-gray-600">— I-5 Carpet One</p>
+            </div>
+          </div>
+          
+          <div className="bg-blue-50 border border-blue-100 rounded-lg p-8 mb-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                <p className="text-lg text-gray-700 mb-2 leading-relaxed italic">
+                  "Great presentation. Love the systemized approach for hiring fresh salespeople. We need to convert Tribal knowledge to systems."
+                </p>
+                <p className="text-sm text-gray-600">
+                  — CCA Education Day attendee
+                </p>
+              </div>
+              <div className="text-center flex-shrink-0">
+                <p className="text-3xl font-bold text-gray-900">4.89 / 5</p>
+                <p className="text-sm text-gray-600">Session Rating</p>
+              </div>
             </div>
           </div>
           
           <div className="text-center">
             <Link
-              to="/education-day"
-              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
+              to="/results-feedback"
+              className="inline-block text-gray-900 font-medium hover:underline text-lg"
             >
-              View Education Day Resources
+              See More Results & Feedback →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* SECTION 9 — RESOURCES (simplified for now) */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Practical Tools You Can Use
+      {/* SECTION 8 — GOLD BENEATH YOUR FEET PHILOSOPHY */}
+      <section className="py-20 px-4 bg-blue-50 border-y border-blue-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            Gold Beneath Your Feet
           </h2>
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-            I believe in showing how I think, not just telling you to trust me. The tools and resources on this site are designed to be immediately useful — whether you work with me or not.
-          </p>
-          <Link
-            to="/education-day"
-            className="inline-block border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors"
-          >
-            View Resources
-          </Link>
+          
+          <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-12">
+            <p className="text-center max-w-3xl mx-auto">
+              Sometimes the next opportunity is not outside the business. It may already be sitting inside:
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Leads already paid for</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Existing customers</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Current employees</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Knowledge trapped in someone's head</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Margin leaking from a process</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Callbacks and rework</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Missed follow-up</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg border border-blue-200 text-center">
+                <p className="text-base text-gray-700">Poor handoffs</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-lg p-8 mb-8 text-center border-2 border-gray-900">
+            <p className="text-2xl md:text-3xl font-bold text-gray-900 italic mb-4">
+              "Stop being the system. Start building one."
+            </p>
+            <p className="text-base text-gray-600">
+              This is the idea I keep coming back to.
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <Link
+              to="/about"
+              className="inline-block text-gray-900 font-medium hover:underline text-lg"
+            >
+              Read More About How I Think →
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* SECTION 10 — SHORT ABOUT SECTION */}
+      {/* SECTION 9 — INSIGHTS & RESOURCES PREVIEW */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Insights & Resources
+          </h2>
+          <p className="text-xl text-gray-700 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
+            Learn something. Try something. Use something.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {/* WATCH */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 text-center">
+              <div className="text-4xl mb-4">🎥</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">WATCH</h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Teaching videos and practical demonstrations
+              </p>
+            </div>
+            
+            {/* READ */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 text-center">
+              <div className="text-4xl mb-4">📝</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">READ</h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Field notes, insights, and operating philosophy
+              </p>
+            </div>
+            
+            {/* USE */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 text-center">
+              <div className="text-4xl mb-4">🛠️</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">USE</h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Checklists, scripts, worksheets, and downloadable tools
+              </p>
+            </div>
+          </div>
+          
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 mb-8">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+              Available Now: CCA Education Day Resource Pack
+            </h3>
+            <p className="text-base text-gray-700 mb-4 leading-relaxed text-center">
+              8 downloadable tools focused on finding hidden revenue, improving conversion, and reducing operational chaos.
+            </p>
+            <div className="text-center">
+              <Link
+                to="/education-day"
+                className="inline-block text-gray-900 font-medium hover:underline"
+              >
+                View Resources →
+              </Link>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-sm text-gray-600 mb-4">
+              More practical resources are being added.
+            </p>
+            <Link
+              to="/insights-resources"
+              className="inline-block border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors"
+            >
+              Explore Insights & Resources
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 10 — WAYS TO LEARN/WORK WITH MATT */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Ways to Learn From / Work With Matt
+          </h2>
+          <p className="text-xl text-gray-700 mb-12 text-center leading-relaxed max-w-3xl mx-auto">
+            Different businesses need different amounts of help.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {/* Pathway 1: Learn */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <div className="text-4xl mb-4 text-center">📚</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                Learn from Matt
+              </h3>
+              <p className="text-base text-gray-700 mb-4 leading-relaxed text-center">
+                Ideas, videos, practical tools, and resources dealers can use on their own.
+              </p>
+              <div className="text-center">
+                <Link
+                  to="/insights-resources"
+                  className="text-gray-900 font-medium hover:underline"
+                >
+                  Explore Resources →
+                </Link>
+              </div>
+            </div>
+            
+            {/* Pathway 2: Get Guidance */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <div className="text-4xl mb-4 text-center">💬</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                Get Guidance
+              </h3>
+              <p className="text-base text-gray-700 mb-4 leading-relaxed text-center">
+                For dealers who want a second set of eyes while applying ideas or working through a specific problem.
+              </p>
+              <div className="text-center">
+                <a
+                  href="https://forms.gle/wmRC3FWVHirc35QT9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-900 font-medium hover:underline"
+                >
+                  Tell Me What You're Working On →
+                </a>
+              </div>
+            </div>
+            
+            {/* Pathway 3: Work Directly */}
+            <div className="bg-white p-8 rounded-lg border-2 border-gray-900">
+              <div className="text-4xl mb-4 text-center">🤝</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                Work Directly with Matt
+              </h3>
+              <p className="text-base text-gray-700 mb-4 leading-relaxed text-center">
+                For situations requiring deeper diagnosis, system design, implementation help, or selected hands-on involvement.
+              </p>
+              <div className="text-center">
+                <Link
+                  to="/work-with-matt"
+                  className="text-gray-900 font-medium hover:underline"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-base text-gray-600 mb-6">
+              Not sure which pathway makes sense? Start by telling me what you're working on.
+            </p>
+            <a
+              href="https://forms.gle/wmRC3FWVHirc35QT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
+            >
+              Tell Me What You're Working On
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      {/* SECTION 11 — ABOUT PREVIEW */}
+      <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1">
@@ -484,10 +736,10 @@ export default function Home() {
                 About Matt
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                Matt spent nearly two decades inside a multi-generation family flooring business, moving from sales into leadership, training, systems development, and cross-functional problem solving.
+                Nearly two decades of hands-on experience inside a family flooring business: selling, managing, hiring, coaching, troubleshooting, building systems, solving operating problems.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                His focus became finding repeatable ways to make the business less dependent on tribal knowledge, individual heroics, and constant management intervention.
+                Over time, I began seeing the same pattern: Many problems that looked like "sales problems" or "people problems" were often system problems underneath.
               </p>
               <Link
                 to="/about"
@@ -499,8 +751,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* SECTION 11 — FINAL OPEN-DOOR CTA */}
+      
+      {/* SECTION 12 — WHY I'M BUILDING THIS */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            Why I'm Building This
+          </h2>
+          
+          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              After nearly two decades inside a family flooring business, I want to share the lessons, mistakes, systems, tools, and experience accumulated over that time rather than letting that knowledge simply disappear.
+            </p>
+            
+            <p>
+              I also have a broader life mission: eventually creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, spending meaningful time outdoors together.
+            </p>
+            
+            <p className="font-medium">
+              This is part of what I hope this next chapter gives me the capacity to do.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* SECTION 13 — FINAL OPEN-DOOR CTA */}
       <section className="py-16 px-4 border-t border-gray-200">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -532,11 +806,23 @@ export default function Home() {
             Flooring operator · Systems builder · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
+            <Link to="/" className="text-gray-600 hover:text-gray-900">
+              Home
+            </Link>
             <Link to="/about" className="text-gray-600 hover:text-gray-900">
               About
             </Link>
-            <Link to="/education-day" className="text-gray-600 hover:text-gray-900">
-              Resources
+            <Link to="/results-feedback" className="text-gray-600 hover:text-gray-900">
+              Results & Feedback
+            </Link>
+            <Link to="/insights-resources" className="text-gray-600 hover:text-gray-900">
+              Insights & Resources
+            </Link>
+            <Link to="/speaking" className="text-gray-600 hover:text-gray-900">
+              Speaking
+            </Link>
+            <Link to="/work-with-matt" className="text-gray-600 hover:text-gray-900">
+              Work With Matt
             </Link>
             <a
               href="https://forms.gle/wmRC3FWVHirc35QT9"

@@ -16,7 +16,7 @@ export default function About() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Why I Care About Design More Than Hustle
+            Stop Being the System. Start Building One.
           </h1>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function About() {
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            For a long time, I thought stress was just part of ownership.
+            For a long time, I thought stress was just part of carrying responsibility in a growing business.
           </p>
           
           <p className="text-lg text-gray-700 mb-2 leading-relaxed">
@@ -67,7 +67,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                When the owner is available
+                When the manager or key leader is available
               </span>
             </li>
           </ul>
@@ -77,7 +77,7 @@ export default function About() {
           </p>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I didn't want a business that only worked when I was stressed, present, and solving problems in real time.
+            I didn't want a business that only worked when key people were stressed, present, and solving problems in real time.
           </p>
           
           <p className="text-lg text-gray-700 leading-relaxed font-medium">
@@ -354,15 +354,36 @@ export default function About() {
         </div>
       </section>
 
-      {/* CLOSING */}
+      {/* WHY I'M BUILDING THIS */}
       <section className="py-16 px-4 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Why I'm Building This
+          </h2>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Nearly two decades inside a family flooring business gave me a front-row seat to where independent dealers quietly lose control, capacity, and profit. I'm building this to share what I've learned — and give back to an industry that shaped me.
+          </p>
+          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I also have a broader life mission: creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, spending meaningful time outdoors together.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-medium">
+            This is part of what I hope this next chapter gives me the capacity to do.
+          </p>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section className="py-16 px-4 bg-gray-50 border-t border-gray-200">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
             If you're looking for motivation, there are better places to find it.
           </p>
           
           <p className="text-lg text-gray-700 leading-relaxed font-medium">
-            If you're looking for clarity, design, and systems that actually work — you're in the right place.
+            If you're looking for clarity, systems thinking, and practical help — you're in the right place.
           </p>
         </div>
       </section>
@@ -383,8 +404,14 @@ export default function About() {
             <a href="/about" className="text-gray-600 hover:text-gray-900">
               About
             </a>
-            <a href="/education-day" className="text-gray-600 hover:text-gray-900">
-              Resources
+            <a href="/results-feedback" className="text-gray-600 hover:text-gray-900">
+              Results & Feedback
+            </a>
+            <a href="/insights-resources" className="text-gray-600 hover:text-gray-900">
+              Insights & Resources
+            </a>
+            <a href="/speaking" className="text-gray-600 hover:text-gray-900">
+              Speaking
             </a>
             <a
               href="https://forms.gle/wmRC3FWVHirc35QT9"

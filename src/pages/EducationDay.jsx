@@ -419,8 +419,14 @@ export default function EducationDay() {
             <a href="/about" className="text-gray-600 hover:text-gray-900">
               About
             </a>
-            <a href="/education-day" className="text-gray-600 hover:text-gray-900">
-              Resources
+            <a href="/results-feedback" className="text-gray-600 hover:text-gray-900">
+              Results & Feedback
+            </a>
+            <a href="/insights-resources" className="text-gray-600 hover:text-gray-900">
+              Insights & Resources
+            </a>
+            <a href="/speaking" className="text-gray-600 hover:text-gray-900">
+              Speaking
             </a>
             <a
               href="https://forms.gle/wmRC3FWVHirc35QT9"

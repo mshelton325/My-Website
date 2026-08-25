@@ -28,47 +28,28 @@ export default function ResultsFeedback() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            Documented Results
+            Performance & Development
           </h2>
           
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Revenue Growth
+                Talent Development
               </h3>
-              <p className="text-3xl font-bold text-gray-900 mb-2">60%</p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                $4.57M → $7.3M over the documented operating period inside a competitive retail market.
+              <p className="text-base text-gray-700 leading-relaxed mb-4">
+                In 2025, one salesperson Matt hired with no prior sales or flooring experience posted the highest full-year Written Net Sales among the full-year results in the 10-person core retail-sales cohort's available RFMS history from 2018–2025 — surpassing the previous high by 7.6%.
+              </p>
+              <p className="text-sm text-gray-600 italic">
+                This result reflects structured training and accountability systems that can develop people without years of flooring experience.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Marketing Spend Reduction
+                Systems Built
               </h3>
-              <p className="text-3xl font-bold text-gray-900 mb-2">$110K → $40K</p>
               <p className="text-base text-gray-700 leading-relaxed">
-                Annual marketing spend reduced by 64% while maintaining and growing revenue through review-based lead generation and improved conversion systems.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Close Rate
-              </h3>
-              <p className="text-3xl font-bold text-gray-900 mb-2">52.5%</p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Documented retail sales performance through systematic follow-up and lead conversion processes.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Salesperson Development
-              </h3>
-              <p className="text-3xl font-bold text-gray-900 mb-2">Zero → Top Performer</p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Repeatedly developed salespeople with zero flooring or sales background into top performers through structured training and accountability systems.
+                Matt built or led roughly two dozen documented sales, marketing, and operations systems and processes over nearly two decades inside a family flooring business.
               </p>
             </div>
           </div>
@@ -212,7 +193,7 @@ export default function ResultsFeedback() {
             </h3>
             
             <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              The systems grew out of the necessity of running and improving a real flooring operation — dealing with sales development, inconsistency, accountability, lead conversion, errors, margin pressure, and owner dependence.
+              The systems grew out of nearly two decades of hands-on experience inside a family flooring business — dealing with sales development, inconsistency, accountability, lead conversion, errors, margin pressure, and leadership dependence.
             </p>
             
             <p className="text-base text-gray-700 mb-6 leading-relaxed font-medium">
@@ -221,28 +202,28 @@ export default function ResultsFeedback() {
             
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-base text-gray-700 mb-3 font-semibold">
-                Key Outcomes:
+                Focus Areas:
               </p>
               <ul className="space-y-2 text-base text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-gray-400 mt-1">•</span>
-                  <span>Business grew from $4.57M to $7.3M (60% growth)</span>
+                  <span>Sales development and lead conversion systems</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-gray-400 mt-1">•</span>
-                  <span>Marketing spend reduced from $110K to $40K annually</span>
+                  <span>Hiring and training structured processes</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-gray-400 mt-1">•</span>
-                  <span>Achieved 52.5% close rate through systematic processes</span>
+                  <span>Accountability and management infrastructure</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-gray-400 mt-1">•</span>
-                  <span>Developed multiple salespeople with zero flooring experience into consistent performers</span>
+                  <span>Operational clarity and documentation</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-gray-400 mt-1">•</span>
-                  <span>Reduced owner workload while improving operational consistency</span>
+                  <span>Reduced dependence on tribal knowledge and individual heroics</span>
                 </li>
               </ul>
             </div>
@@ -286,8 +267,14 @@ export default function ResultsFeedback() {
             <Link to="/about" className="text-gray-600 hover:text-gray-900">
               About
             </Link>
-            <Link to="/education-day" className="text-gray-600 hover:text-gray-900">
-              Resources
+            <Link to="/results-feedback" className="text-gray-600 hover:text-gray-900">
+              Results & Feedback
+            </Link>
+            <Link to="/insights-resources" className="text-gray-600 hover:text-gray-900">
+              Insights & Resources
+            </Link>
+            <Link to="/speaking" className="text-gray-600 hover:text-gray-900">
+              Speaking
             </Link>
             <a
               href="https://forms.gle/wmRC3FWVHirc35QT9"

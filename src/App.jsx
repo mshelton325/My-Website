@@ -8,6 +8,9 @@ import Diagnostic from './pages/Diagnostic';
 import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
 import Fit from './pages/Fit';
 import ResultsFeedback from './pages/ResultsFeedback';
+import Speaking from './pages/Speaking';
+import InsightsResources from './pages/InsightsResources';
+import WorkWithMatt from './pages/WorkWithMatt';
 
 // HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
@@ -45,6 +48,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/fit" element={<Fit />} />
           <Route path="/results-feedback" element={<ResultsFeedback />} />
+          <Route path="/speaking" element={<Speaking />} />
+          <Route path="/insights-resources" element={<InsightsResources />} />
+          <Route path="/work-with-matt" element={<WorkWithMatt />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />

@@ -225,17 +225,17 @@ export default function WorkWithMatt() {
         </div>
       </section>
 
-      {/* NO RIGID PRICING NOTICE */}
+      {/* START WITH THE PROBLEM */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-            No One-Size-Fits-All Packages
+            Start With the Problem
           </h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed text-center">
-            I don't offer rigid consulting packages because every flooring business has different problems, different resources, and different amounts of help they actually need.
+            You don't need to know which kind of help makes sense before reaching out. Some dealers need an idea or resource. Some want guidance applying it. Others need deeper involvement.
           </p>
           <p className="text-lg text-gray-700 mb-8 leading-relaxed text-center">
-            Some dealers need an idea or a tool. Some need guidance applying it. Some need deeper hands-on involvement. We'll figure out what makes sense after I understand what you're working on.
+            Start by telling me what's happening.
           </p>
           <div className="text-center">
             <a
@@ -257,7 +257,7 @@ export default function WorkWithMatt() {
             Matt Shelton
           </p>
           <p className="text-gray-600 mb-4">
-            Flooring operator · Systems builder · Practical problem solver
+            Flooring-industry systems builder · Coach · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <Link to="/" className="text-gray-600 hover:text-gray-900">

@@ -97,13 +97,13 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700 leading-relaxed">
-                Most owners don't have a lead problem — they have a conversion and clarity problem
+                Sometimes what looks like a lead problem is really a visibility, conversion, or process problem
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700 leading-relaxed">
-                Process beats talent more often than people want to admit
+                A good process can make performance less dependent on exceptional individual talent
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -115,7 +115,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700 leading-relaxed">
-                A system that works for an average rep will work for anyone
+                A useful system should make good execution easier for ordinary people — not depend on exceptional people
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -136,19 +136,15 @@ export default function About() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I spent two decades inside a multi-generation, family-owned flooring retailer — starting in traditional sales and growing into operations, systems design, and cross-functional accountability across the business.
+            I spent nearly two decades inside a multi-generation family flooring business — starting in sales and growing into leadership, management, coaching, systems-building, and cross-functional problem-solving.
           </p>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            The breakthrough: I built and ran a sales development system that <span className="font-semibold">repeatedly took people with zero flooring or sales background and turned them into top performers</span> — not occasionally, but as a repeatable pattern.
+            Some of the retail salespeople I personally hired — including people with no prior sales or flooring experience — went on to become some of the strongest producers on our team. That experience shaped how I think about hiring, onboarding, coaching, accountability, and the role good systems can play in developing people.
           </p>
           
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            This directly solves what most dealers are afraid of right now: an aging, retiring workforce, no succession plan, and a belief that younger hires can't be developed into serious talent.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed font-medium">
-            The proof point: I did the thing most dealers think is impossible — and have the track record showing it wasn't luck, it was a process.
+          <p className="text-lg text-gray-700 leading-relaxed">
+            It also shaped how I think about a challenge many dealers raise: how to build capable teams when experienced flooring talent is difficult to find.
           </p>
         </div>
       </section>
@@ -229,7 +225,7 @@ export default function About() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            The work I do — whether inside my own business or shared with others — focuses on:
+            The work I did inside the family flooring business — and the ideas I now share with others — focused on:
           </p>
           
           <ul className="space-y-3 mb-8">
@@ -331,15 +327,15 @@ export default function About() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Building businesses that run without constant supervision isn't just good practice — it's what makes other work possible.
+            After nearly two decades inside a family flooring business, I want to share the lessons, mistakes, systems, tools, and experience accumulated over that time rather than letting that knowledge simply disappear.
           </p>
           
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Long-term, the goal is to take underprivileged and foster kids out on the water for fishing trips and mentorship experiences. The rigor of the systems work funds the ability to do that work.
+            I also have a broader life mission: eventually creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, and spending meaningful time outdoors together.
           </p>
           
           <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
-            Competence first. Heart second. Both matter.
+            This is part of what I hope this next chapter gives me the capacity to do.
           </p>
           
           {/* AL BOULOGNE TESTIMONIAL */}
@@ -395,7 +391,7 @@ export default function About() {
             Matt Shelton
           </p>
           <p className="text-gray-600 mb-4">
-            Flooring operator · Systems builder · Practical problem solver
+            Flooring-industry systems builder · Coach · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <a href="/" className="text-gray-600 hover:text-gray-900">

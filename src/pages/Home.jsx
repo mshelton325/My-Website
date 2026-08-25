@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           
           <p className="text-sm text-gray-500">
-            Flooring operator · Systems builder · CCA Education Day speaker · 4.89/5 attendee rating
+            Flooring-industry leader · Systems builder · CCA Education Day speaker · 4.89/5 attendee rating
           </p>
         </div>
       </section>
@@ -298,7 +298,7 @@ export default function Home() {
                 Sales Development System
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                A repeatable system that takes people with zero flooring or sales background and develops them into top performers — not occasionally, but as a pattern.
+                A structured approach to hiring, onboarding, training, and accountability focused on developing retail salespeople — including those without prior flooring experience.
               </p>
               <a
                 href="https://forms.gle/wmRC3FWVHirc35QT9"
@@ -316,7 +316,7 @@ export default function Home() {
                 Lead Conversion & Follow-Up System
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Call → voicemail → text rhythms, pipeline visibility, and lead ownership discipline that protects time while increasing response rates.
+                Call → voicemail → text rhythms, pipeline visibility, and lead-ownership discipline designed to create more consistent follow-up while protecting salesperson time.
               </p>
               <Link
                 to="/education-day"
@@ -803,7 +803,7 @@ export default function Home() {
             Matt Shelton
           </p>
           <p className="text-gray-600 mb-4">
-            Flooring operator · Systems builder · Practical problem solver
+            Flooring-industry systems builder · Coach · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <Link to="/" className="text-gray-600 hover:text-gray-900">

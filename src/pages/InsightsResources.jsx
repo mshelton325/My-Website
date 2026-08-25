@@ -120,7 +120,7 @@ export default function InsightsResources() {
                   Call-Voicemail-Text Follow-Up Playbook
                 </h4>
                 <p className="text-base text-gray-700 mb-4">
-                  A proven rhythm that protects your time, humanizes follow-up, and increases response without pressure.
+                  A practical follow-up rhythm designed to keep opportunities moving without relying on pressure or constant manual remembering.
                 </p>
                 <Link
                   to="/education-day"
@@ -135,7 +135,7 @@ export default function InsightsResources() {
                   Quote Accuracy & Margin Protection Checklist
                 </h4>
                 <p className="text-base text-gray-700 mb-4">
-                  Reduce silent margin erosion, callbacks, and rework without slowing sales down.
+                  A checklist designed to surface quote, scope, pricing, and handoff details that can contribute to margin loss, callbacks, or rework.
                 </p>
                 <Link
                   to="/education-day"
@@ -236,7 +236,7 @@ export default function InsightsResources() {
             Matt Shelton
           </p>
           <p className="text-gray-600 mb-4">
-            Flooring operator · Systems builder · Practical problem solver
+            Flooring-industry systems builder · Coach · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <Link to="/" className="text-gray-600 hover:text-gray-900">

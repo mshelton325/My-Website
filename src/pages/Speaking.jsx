@@ -39,9 +39,6 @@ export default function Speaking() {
             <p className="text-base text-gray-700 font-medium">
               January 2026 · CCA Education Day
             </p>
-            <p className="text-base text-gray-700 mt-2">
-              90% of attendees stayed after the scheduled session time for more
-            </p>
           </div>
           
           <div className="text-center mb-12">
@@ -96,6 +93,13 @@ export default function Speaking() {
                 "Amazing, I wish we had more time."
               </p>
               <p className="text-sm text-gray-600">— CCA Member</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 italic mb-3">
+                "90% of the Class stayed AFTER the class for more."
+              </p>
+              <p className="text-sm text-gray-600">— CCA attendee feedback</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -205,7 +209,7 @@ export default function Speaking() {
                 Building People Without Flooring Superstars
               </h3>
               <p className="text-base text-gray-700">
-                How structured systems can develop salespeople without years of flooring experience — solving the succession problem dealers fear most.
+                How structured hiring, onboarding, and development can help dealers build capable salespeople without requiring years of prior flooring experience.
               </p>
             </div>
           </div>
@@ -239,7 +243,7 @@ export default function Speaking() {
             Matt Shelton
           </p>
           <p className="text-gray-600 mb-4">
-            Flooring operator · Systems builder · Practical problem solver
+            Flooring-industry systems builder · Coach · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <Link to="/" className="text-gray-600 hover:text-gray-900">

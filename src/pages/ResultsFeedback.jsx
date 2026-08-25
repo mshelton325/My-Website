@@ -40,7 +40,7 @@ export default function ResultsFeedback() {
                 In 2025, one salesperson Matt hired with no prior sales or flooring experience posted the highest full-year Written Net Sales among the full-year results in the 10-person core retail-sales cohort's available RFMS history from 2018–2025 — surpassing the previous high by 7.6%.
               </p>
               <p className="text-sm text-gray-600 italic">
-                This result reflects structured training and accountability systems that can develop people without years of flooring experience.
+                This is one documented example from Matt's broader experience hiring, onboarding, coaching, and developing retail salespeople.
               </p>
             </div>
             
@@ -68,10 +68,7 @@ export default function ResultsFeedback() {
           
           <div className="bg-blue-50 border border-blue-100 rounded-lg p-8 mb-8 text-center">
             <p className="text-4xl font-bold text-gray-900 mb-2">4.89 / 5</p>
-            <p className="text-base text-gray-600 mb-4">Attendee Rating</p>
-            <p className="text-base text-gray-700">
-              90% of the class stayed after the scheduled session time for more
-            </p>
+            <p className="text-base text-gray-600">Attendee Rating</p>
           </div>
           
           <div className="space-y-6">
@@ -94,6 +91,13 @@ export default function ResultsFeedback() {
                 "I would love to get more of the actual details of his systems. We are in desperate need of great SOPs like that."
               </p>
               <p className="text-sm text-gray-600">— I-5 Carpet One</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
+                "90% of the Class stayed AFTER the class for more."
+              </p>
+              <p className="text-sm text-gray-600">— CCA attendee feedback</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -161,16 +165,6 @@ export default function ResultsFeedback() {
               </p>
               <p className="text-sm text-gray-600">
                 <span className="font-semibold">Ben McElroy</span> — Entrepreneur
-              </p>
-            </div>
-            
-            {/* Al Boulogne - Faith/Character */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed italic">
-                "Matt lives his faith passionately. We met at a secular business dinner and he was eager to share his journey as a Christian with my wife and I. The Holy Spirit is moving in Matt and his calling to help disciple fellow Christians in their walk inside and outside of the workplace is something that the world needs right now. He is on fire for God and sees the places where he can apply those spiritual gifts."
-              </p>
-              <p className="text-sm text-gray-600">
-                <span className="font-semibold">Al Boulogne</span> — Mannington
               </p>
             </div>
           </div>
@@ -258,7 +252,7 @@ export default function ResultsFeedback() {
             Matt Shelton
           </p>
           <p className="text-gray-600 mb-4">
-            Flooring operator · Systems builder · Practical problem solver
+            Flooring-industry systems builder · Coach · Practical problem solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
             <Link to="/" className="text-gray-600 hover:text-gray-900">

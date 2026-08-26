@@ -148,10 +148,10 @@ export default function ResultsFeedback() {
           </h2>
           
           <div className="space-y-8">
-            {/* Keith Enslow - Full Version */}
+            {/* Keith Enslow - Governed Excerpt */}
             <div className="bg-white p-8 rounded-lg border border-gray-200">
               <p className="text-lg text-gray-700 mb-6 leading-relaxed italic">
-                "Matt brings a rare mix of strategic insight and genuine passion to everything he takes on. He's results-driven, but never at the expense of integrity or compassion for others. Well-read and intellectually curious, he consistently brings thoughtful perspective to every conversation. I continue to be impressed by Matt's logical, thoughtful and impactful decision-making, both professionally and in his personal life. If there's a smarter, better way to do something, he'll find it—and make it happen."
+                "If there's a smarter, better way to do something, he'll find it—and make it happen."
               </p>
               <p className="text-sm text-gray-600">
                 <span className="font-semibold">Keith Enslow</span> — Director of Finance

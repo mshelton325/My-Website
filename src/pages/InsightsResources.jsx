@@ -85,10 +85,7 @@ export default function InsightsResources() {
                 CCA Education Day Resource Pack
               </h3>
               <p className="text-base text-gray-700 mb-4 leading-relaxed">
-                8 downloadable tools from the "Gold Beneath Your Feet" session — focused on finding hidden revenue, improving conversion, and reducing operational chaos.
-              </p>
-              <p className="text-sm text-gray-600 mb-6">
-                Rated 4.89 / 5 by attendees · January 2026
+                8 downloadable tools from the January 2026 "Gold Beneath Your Feet" session, which attendees rated 4.89 / 5.
               </p>
               <Link
                 to="/education-day"
@@ -111,7 +108,7 @@ export default function InsightsResources() {
                   to="/education-day"
                   className="text-gray-900 font-medium hover:underline text-sm"
                 >
-                  Download (PDF) →
+                  View Resource →
                 </Link>
               </div>
               
@@ -126,7 +123,7 @@ export default function InsightsResources() {
                   to="/education-day"
                   className="text-gray-900 font-medium hover:underline text-sm"
                 >
-                  Download (PDF) →
+                  View Resource →
                 </Link>
               </div>
               
@@ -141,7 +138,7 @@ export default function InsightsResources() {
                   to="/education-day"
                   className="text-gray-900 font-medium hover:underline text-sm"
                 >
-                  Download (PDF) →
+                  View Resource →
                 </Link>
               </div>
               
@@ -156,7 +153,7 @@ export default function InsightsResources() {
                   to="/education-day"
                   className="text-gray-900 font-medium hover:underline text-sm"
                 >
-                  Download (PDF) →
+                  View Resource →
                 </Link>
               </div>
             </div>

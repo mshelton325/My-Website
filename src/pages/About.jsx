@@ -188,7 +188,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700 leading-relaxed">
-                <span className="font-semibold">Not a generic sales consultant</span> — lived experience with the specific dysfunction of a family business trying to professionalize without losing what makes it itself
+                <span className="font-semibold">Not a generic sales consultant</span> — lived experience with the specific complexities of a family business trying to professionalize without losing what makes it itself
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -347,27 +347,6 @@ export default function About() {
               <span className="font-semibold">Al Boulogne</span> — Mannington
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* WHY I'M BUILDING THIS */}
-      <section className="py-16 px-4 border-t border-gray-200">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Why I'm Building This
-          </h2>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Nearly two decades inside a family flooring business gave me a front-row seat to where independent dealers quietly lose control, capacity, and profit. I'm building this to share what I've learned — and give back to an industry that shaped me.
-          </p>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I also have a broader life mission: creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, spending meaningful time outdoors together.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed font-medium">
-            This is part of what I hope this next chapter gives me the capacity to do.
-          </p>
         </div>
       </section>
 

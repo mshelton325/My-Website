@@ -106,7 +106,7 @@ export default function CcaQr() {
               fontSize: '13px',
               color: '#666'
             }}>
-              Matt Shelton • Carpet One Dealer
+              Matt Shelton • Flooring-industry systems builder
             </div>
           </div>
         )}
@@ -186,7 +186,7 @@ export default function CcaQr() {
               fontSize: '13px',
               color: '#666'
             }}>
-              Matt Shelton • Carpet One Dealer
+              Matt Shelton • Flooring-industry systems builder
             </div>
           </div>
         )}

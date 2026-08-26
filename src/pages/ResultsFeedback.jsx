@@ -95,13 +95,6 @@ export default function ResultsFeedback() {
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
               <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
-                "90% of the Class stayed AFTER the class for more."
-              </p>
-              <p className="text-sm text-gray-600">— CCA attendee feedback</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed italic">
                 "This was great! Bring him back for more."
               </p>
               <p className="text-sm text-gray-600">— CCA Member</p>

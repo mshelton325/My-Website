@@ -10,18 +10,18 @@ import { useLocation } from 'react-router-dom';
 
 const routeMetadata = {
   '/': {
-    title: 'Matt Shelton Consulting | Flooring Business Systems & Sales Training',
-    description: 'Operator-built playbooks to grow sales, protect margin, and get your life back. Systems-driven consulting for independent flooring dealers.',
+    title: 'Matt Shelton Consulting | Practical Systems for Independent Flooring Dealers',
+    description: 'Practical systems, tools, and guidance for independent flooring dealers to improve control, follow-up, people development, profit protection, and owner visibility.',
     canonical: 'https://mattshelton.co/',
   },
   '/about': {
-    title: 'About Matt Shelton | Flooring Business Systems Expert',
-    description: 'Nearly two decades inside a family flooring business. Learn about Matt\'s experience building systems, coaching teams, and helping dealers gain control.',
+    title: 'About Matt Shelton | Matt Shelton Consulting',
+    description: 'Nearly two decades of hands-on leadership, management, selling, coaching, systems-building, and operational problem-solving inside a family flooring business.',
     canonical: 'https://mattshelton.co/about',
   },
   '/results-feedback': {
     title: 'Results & Feedback | Matt Shelton Consulting',
-    description: 'Documented outcomes, dealer feedback, and testimonials from flooring business owners who have worked with Matt Shelton.',
+    description: 'Documented outcomes, dealer feedback, and professional endorsements from Matt Shelton\'s flooring-industry work and experience.',
     canonical: 'https://mattshelton.co/results-feedback',
   },
   '/insights-resources': {
@@ -41,7 +41,7 @@ const routeMetadata = {
   },
   '/education-day': {
     title: 'CCA Education Day Resources | Matt Shelton',
-    description: '8 downloadable tools from the "Gold Beneath Your Feet" CCA Education Day session. Find hidden revenue and reduce operational chaos.',
+    description: '8 downloadable tools from the "Gold Beneath Your Feet" CCA Education Day session, focused on opportunity, follow-up, conversion, accountability, and operating leaks.',
     canonical: 'https://mattshelton.co/education-day',
   },
 };
@@ -50,7 +50,37 @@ export default function SEO() {
   const location = useLocation();
 
   useEffect(() => {
-    const metadata = routeMetadata[location.pathname] || routeMetadata['/'];
+    const isKnownRoute = routeMetadata[location.pathname];
+    
+    // Handle 404/unknown routes
+    if (!isKnownRoute) {
+      document.title = 'Page Not Found | Matt Shelton Consulting';
+      
+      // Set noindex for 404 pages
+      let robotsMeta = document.querySelector('meta[name="robots"]');
+      if (!robotsMeta) {
+        robotsMeta = document.createElement('meta');
+        robotsMeta.name = 'robots';
+        document.head.appendChild(robotsMeta);
+      }
+      robotsMeta.content = 'noindex';
+      
+      // Remove canonical for 404 pages
+      const canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) {
+        canonicalLink.remove();
+      }
+      
+      return;
+    }
+    
+    // Remove robots noindex if it exists (for valid routes)
+    const robotsMeta = document.querySelector('meta[name="robots"]');
+    if (robotsMeta) {
+      robotsMeta.remove();
+    }
+    
+    const metadata = routeMetadata[location.pathname];
 
     // Update document title
     document.title = metadata.title;

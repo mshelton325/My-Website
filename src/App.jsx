@@ -4,8 +4,6 @@ import SEO from './components/SEO';
 
 // NEW PUBLIC PAGES
 import Anchor from './pages/Anchor';
-import Diagnostic from './pages/Diagnostic';
-import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
 import Fit from './pages/Fit';
 import ResultsFeedback from './pages/ResultsFeedback';
 import Speaking from './pages/Speaking';

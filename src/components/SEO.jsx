@@ -8,6 +8,65 @@ import { useLocation } from 'react-router-dom';
  * Ensures each page has its own canonical URL and metadata
  */
 
+// Helper function to identify legitimate auxiliary routes
+function isLegitimateRoute(pathname) {
+  // Main SEO routes with full metadata
+  const mainRoutes = [
+    '/',
+    '/about',
+    '/results-feedback',
+    '/insights-resources',
+    '/speaking',
+    '/work-with-matt',
+    '/education-day',
+  ];
+  
+  if (mainRoutes.includes(pathname)) {
+    return 'main';
+  }
+  
+  // Legitimate auxiliary routes (utility, product, archive pages)
+  const auxiliaryRoutes = [
+    '/fit',
+    '/diagnostic',
+    '/diagnostic/confirmation',
+    '/preview-a',
+    '/preview-b',
+    '/preview-c',
+    '/preview-d',
+    '/preview-e',
+    '/review-system-sales',
+    '/review-system-complete',
+    '/review-leverage-manual',
+    '/review-system-owner',
+    '/private-note',
+    '/cca-qr',
+    '/archive/fit',
+    '/archive/anchor',
+    '/archive/home',
+    '/archive/about',
+    '/archive/services',
+    '/archive/contact',
+    '/archive/insights',
+  ];
+  
+  if (auxiliaryRoutes.includes(pathname)) {
+    return 'auxiliary';
+  }
+  
+  // Dynamic route patterns
+  if (pathname.startsWith('/resources/')) {
+    return 'auxiliary';
+  }
+  
+  if (pathname.startsWith('/archive/insights/')) {
+    return 'auxiliary';
+  }
+  
+  // If we reach here, it's genuinely a 404
+  return '404';
+}
+
 const routeMetadata = {
   '/': {
     title: 'Matt Shelton Consulting | Practical Systems for Independent Flooring Dealers',
@@ -50,10 +109,10 @@ export default function SEO() {
   const location = useLocation();
 
   useEffect(() => {
-    const isKnownRoute = routeMetadata[location.pathname];
+    const routeType = isLegitimateRoute(location.pathname);
     
-    // Handle 404/unknown routes
-    if (!isKnownRoute) {
+    // Handle true 404 routes
+    if (routeType === '404') {
       document.title = 'Page Not Found | Matt Shelton Consulting';
       
       // Set noindex for 404 pages
@@ -74,7 +133,30 @@ export default function SEO() {
       return;
     }
     
-    // Remove robots noindex if it exists (for valid routes)
+    // Handle legitimate auxiliary routes (utility, product, archive pages)
+    if (routeType === 'auxiliary') {
+      document.title = 'Matt Shelton Consulting';
+      
+      // Set noindex for auxiliary routes
+      let robotsMeta = document.querySelector('meta[name="robots"]');
+      if (!robotsMeta) {
+        robotsMeta = document.createElement('meta');
+        robotsMeta.name = 'robots';
+        document.head.appendChild(robotsMeta);
+      }
+      robotsMeta.content = 'noindex';
+      
+      // Remove canonical for auxiliary routes
+      const canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) {
+        canonicalLink.remove();
+      }
+      
+      return;
+    }
+    
+    // Handle main SEO routes with full metadata
+    // Remove robots noindex if it exists
     const robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.remove();

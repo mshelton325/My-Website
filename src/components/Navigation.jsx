@@ -56,6 +56,9 @@ export default function Navigation() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-primary-700 focus:outline-none"
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
             >
               <svg
                 className="h-6 w-6"

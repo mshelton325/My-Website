@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import SEO from './components/SEO';
 
 // NEW PUBLIC PAGES
 import Anchor from './pages/Anchor';
-import Diagnostic from './pages/Diagnostic';
-import DiagnosticConfirmation from './pages/DiagnosticConfirmation';
 import Fit from './pages/Fit';
 import ResultsFeedback from './pages/ResultsFeedback';
 import Speaking from './pages/Speaking';
@@ -34,10 +33,12 @@ import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
 import EducationDay from './pages/EducationDay';
 import PrivateNote from './pages/PrivateNote';
 import CcaQr from './pages/CcaQr';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <Router>
+      <SEO />
       <div className="flex flex-col min-h-screen">
         <Routes>
           {/* PUBLIC PAGES WITH NAVIGATION */}
@@ -50,9 +51,9 @@ function App() {
           <Route path="/education-day" element={<><Navigation /><EducationDay /></>} />
           <Route path="/fit" element={<Navigate to="/work-with-matt" replace />} />
           
-          {/* STANDALONE PAGES WITHOUT NAVIGATION */}
-          <Route path="/diagnostic" element={<Diagnostic />} />
-          <Route path="/diagnostic/confirmation" element={<DiagnosticConfirmation />} />
+          {/* DISABLED DIAGNOSTIC - Redirect to Work With Matt */}
+          <Route path="/diagnostic" element={<Navigate to="/work-with-matt" replace />} />
+          <Route path="/diagnostic/confirmation" element={<Navigate to="/work-with-matt" replace />} />
           
           {/* Standalone Product Pages - no navigation/footer */}
           <Route path="/preview-a" element={<ReviewSystemSalesPreview />} />
@@ -78,6 +79,9 @@ function App() {
           <Route path="/archive/contact" element={<Contact />} />
           <Route path="/archive/insights" element={<Insights />} />
           <Route path="/archive/insights/:slug" element={<BlogPostEnhanced />} />
+          
+          {/* 404 FALLBACK - Must be last */}
+          <Route path="*" element={<><Navigation /><NotFound /></>} />
         </Routes>
       </div>
     </Router>

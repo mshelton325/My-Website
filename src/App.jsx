@@ -10,6 +10,7 @@ import ResultsFeedback from './pages/ResultsFeedback';
 import Speaking from './pages/Speaking';
 import InsightsResources from './pages/InsightsResources';
 import WorkWithMatt from './pages/WorkWithMatt';
+import Ask from './pages/Ask';
 
 // HIDDEN PAGES (preserved, not deleted - for future expansion)
 import Home from './pages/Home';
@@ -47,6 +48,7 @@ function App() {
           <Route path="/speaking" element={<><Navigation /><Speaking /></>} />
           <Route path="/insights-resources" element={<><Navigation /><InsightsResources /></>} />
           <Route path="/work-with-matt" element={<><Navigation /><WorkWithMatt /></>} />
+          <Route path="/ask" element={<><Navigation /><Ask /></>} />
           <Route path="/education-day" element={<><Navigation /><EducationDay /></>} />
           <Route path="/fit" element={<Navigate to="/work-with-matt" replace />} />
           

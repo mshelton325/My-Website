@@ -332,7 +332,7 @@ export default function Home() {
                 Review & Reputation System
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Processes for building and leveraging customer reviews to improve lead quality and reduce reliance on expensive paid advertising.
+                Processes for building and leveraging customer reviews as part of reputation, referral, and lead-quality strategy.
               </p>
               <a
                 href="https://forms.gle/wmRC3FWVHirc35QT9"
@@ -398,7 +398,7 @@ export default function Home() {
                 CCA Education Day Resource Pack
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                8 downloadable tools focused on finding hidden revenue, improving conversion, and reducing operational chaos — rated 4.89/5 by attendees.
+                8 downloadable tools from a CCA Education Day session rated 4.89/5 by attendees.
               </p>
               <Link
                 to="/education-day"

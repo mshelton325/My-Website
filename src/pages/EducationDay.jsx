@@ -383,7 +383,7 @@ export default function EducationDay() {
             <li className="flex items-start gap-3">
               <span className="text-gray-400 mt-1">•</span>
               <span className="text-lg text-gray-700">
-                Convert more opportunity without adding staff
+                Make better use of existing opportunities before assuming more staff is needed
               </span>
             </li>
           </ul>

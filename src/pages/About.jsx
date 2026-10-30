@@ -245,7 +245,7 @@ export default function About() {
           </p>
 
           <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
-            I want to build my teaching, resources, and business work in a way that can eventually help pay for those outings — so the children and families can enjoy them at no charge. I'm working toward that vision, not claiming it's an established program today.
+            My goal is to grow my teaching, resources, and business work so they can help fund those outings — allowing children and families to participate at no charge. It's a vision I'm working toward, and I want to build it responsibly.
           </p>
 
           {/* AL BOULOGNE TESTIMONIAL */}

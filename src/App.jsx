@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { SEO_PAGES } from './seoPages';
 import Navigation from './components/Navigation';
 
@@ -37,6 +37,17 @@ import ReviewSystemSalesPreviewE from './pages/ReviewSystemSalesPreviewE';
 import EducationDay from './pages/EducationDay';
 import PrivateNote from './pages/PrivateNote';
 import CcaQr from './pages/CcaQr';
+
+// Reset React Router page navigation to the top while preserving anchor links.
+function ScrollToTopOnNavigation() {
+  const { pathname, hash, key } = useLocation();
+
+  useLayoutEffect(() => {
+    if (!hash) window.scrollTo(0, 0);
+  }, [pathname, hash, key]);
+
+  return null;
+}
 
 function PageMetadata() {
   const { pathname } = useLocation();
@@ -77,6 +88,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <ScrollToTopOnNavigation />
         <PageMetadata />
         <Routes>
           {/* PUBLIC PAGES WITH NAVIGATION */}

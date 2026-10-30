@@ -21,30 +21,26 @@ export default function About() {
         </div>
       </section>
 
-      {/* OPENING SECTION */}
+      {/* OPENING: WHY I HAD TO BUILD SYSTEMS */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">How I Got Here</h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            For a long time, I thought stress was just part of carrying responsibility in a growing business.
-          </p>
-          
-          <p className="text-lg text-gray-700 mb-2 leading-relaxed">
-            If something went wrong, it landed on me.
-          </p>
-          <p className="text-lg text-gray-700 mb-2 leading-relaxed">
-            If the team was unsure, I filled the gap.
+            Early in my leadership career at our family flooring business, a longtime manager left and the retail sales team went from roughly six people to essentially two — including me. There wasn't a clear playbook to follow. Much of what made the business run lived in people's heads.
           </p>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            If a process broke down, I became the workaround.
+            I used to describe it as being put on a treadmill running at 12 miles an hour when I'd only been conditioned for four. The customers, quotes, installations, hiring, and training didn't stop just because we were short-handed. When something broke, I became the workaround.
           </p>
-          
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I had to learn to accomplish more with less: find the wasted steps, protect the opportunities already coming in, develop people without years of experience, and turn knowledge into repeatable processes.
+          </p>
           <p className="text-lg text-gray-700 leading-relaxed font-medium">
-            Eventually, I realized the issue wasn't effort — it was design.
+            That's why I care so much about systems today. They aren't about making people work harder. They're about building a business that can perform without consuming the people running it.
           </p>
         </div>
       </section>
 
-      {/* CORE SHIFT */}
+            {/* CORE SHIFT */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
@@ -229,25 +225,29 @@ export default function About() {
         </div>
       </section>
 
-      {/* LONG-TERM MISSION & FAITH */}
+      {/* THE TWO MISSIONS BEHIND THIS WORK */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Why This Work Matters to Me
           </h2>
-          
+
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            After nearly two decades inside a family flooring business, I want to share the lessons, mistakes, systems, tools, and experience accumulated over that time rather than letting that knowledge simply disappear.
+            I don't want nearly two decades of lessons — including the hard ones — to disappear. I want to share practical systems, tools, and experience with other flooring owners, managers, and people coming up in the industry, especially those who feel like the business has taken over their lives.
           </p>
-          
+
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I also have a broader life mission: eventually creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, and spending meaningful time outdoors together.
+            My hope is to help them build businesses that are more profitable, less stressful, and less dependent on constant heroics — so they have more freedom for their families, their health, and the life they want outside work.
           </p>
-          
+
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            I also have a longer-term mission close to my heart: taking children in foster care, children with disabilities or serious illnesses, and kids whose families face financial barriers out on the water to fish, explore, and experience the joy of being outdoors together.
+          </p>
+
           <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
-            This is part of what I hope this next chapter gives me the capacity to do.
+            I want to build my teaching, resources, and business work in a way that can eventually help pay for those outings — so the children and families can enjoy them at no charge. I'm working toward that vision, not claiming it's an established program today.
           </p>
-          
+
           {/* AL BOULOGNE TESTIMONIAL */}
           <div className="bg-white border border-gray-200 rounded-lg p-8 mt-8">
             <p className="text-base text-gray-700 mb-4 leading-relaxed italic">
@@ -260,7 +260,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* CLOSING */}
+            {/* CLOSING */}
       <section className="py-16 px-4 bg-gray-50 border-t border-gray-200">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">

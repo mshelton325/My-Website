@@ -178,28 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 12 — WHY I'M BUILDING THIS */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-            Why I'm Building This
-          </h2>
-          
-          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-            <p>
-              After nearly two decades inside a family flooring business, I want to share the lessons, mistakes, systems, tools, and experience accumulated over that time rather than letting that knowledge simply disappear.
-            </p>
-            
-            <p>
-              I also have a broader life mission: eventually creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, spending meaningful time outdoors together.
-            </p>
-            
-            <p className="font-medium">
-              This is part of what I hope this next chapter gives me the capacity to do.
-            </p>
-          </div>
-        </div>
-      </section>
       {/* SECTION 13 — FINAL OPEN-DOOR CTA */}
       <section className="py-16 px-4 border-t border-gray-200">
         <div className="max-w-3xl mx-auto text-center">
@@ -222,4 +200,45 @@ export default function Home() {
         </div>
       </section>
 
-      
+      {/* FOOTER */}
+      <footer className="py-12 px-4 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg font-semibold text-gray-900 mb-2">
+            Matt Shelton
+          </p>
+          <p className="text-gray-600 mb-4">
+            Flooring-industry systems builder · Coach · Practical problem solver
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm">
+            <Link to="/" className="text-gray-600 hover:text-gray-900">
+              Home
+            </Link>
+            <Link to="/about" className="text-gray-600 hover:text-gray-900">
+              About
+            </Link>
+            <Link to="/results-feedback" className="text-gray-600 hover:text-gray-900">
+              Results & Feedback
+            </Link>
+            <Link to="/insights-resources" className="text-gray-600 hover:text-gray-900">
+              Insights & Resources
+            </Link>
+            <Link to="/speaking" className="text-gray-600 hover:text-gray-900">
+              Speaking
+            </Link>
+            <Link to="/work-with-matt" className="text-gray-600 hover:text-gray-900">
+              Work With Matt
+            </Link>
+            <a
+              href="https://forms.gle/wmRC3FWVHirc35QT9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

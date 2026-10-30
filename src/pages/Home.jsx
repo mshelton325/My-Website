@@ -85,6 +85,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FEATURED VIDEO PREVIEW */}
+      <section className="py-16 px-4 bg-blue-50 border-y border-blue-100">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              Learn From Real Experience
+            </h2>
+            <p className="text-lg text-gray-700">
+              Teaching videos on systems thinking and practical solutions for flooring dealers.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <div className="aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/_0cQITQITUE"
+                title="Before You Spend More on Leads, Fix This First"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Before You Spend More on Leads, Fix This First
+              </h3>
+              <p className="text-base text-gray-700 mb-4">
+                Why throwing more money at lead generation might be masking a deeper conversion problem in your sales process.
+              </p>
+              <Link
+                to="/insights-resources"
+                className="inline-block text-gray-900 font-medium hover:underline"
+              >
+                Watch More Videos & Access Resources →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2 — CREDIBILITY STRIP */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">

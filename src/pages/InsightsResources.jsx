@@ -25,23 +25,89 @@ export default function InsightsResources() {
         </div>
       </section>
 
-      {/* SECTION CATEGORIES */}
+      {/* FEATURED VIDEOS */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* WATCH */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="text-4xl mb-4">🎥</div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                WATCH
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Teaching videos on systems thinking, operating problems, and practical solutions for flooring dealers.
-              </p>
-              <p className="text-sm text-gray-500 mt-4 italic">
-                More teaching content being added.
-              </p>
+          <div className="text-center mb-12">
+            <div className="text-4xl mb-4">🎥</div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              WATCH
+            </h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              Teaching videos on systems thinking, operating problems, and practical solutions for flooring dealers.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {/* Video 1 */}
+            <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/_0cQITQITUE"
+                  title="Before You Spend More on Leads, Fix This First"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Before You Spend More on Leads, Fix This First
+                </h3>
+                <p className="text-base text-gray-700 mb-4">
+                  Why throwing more money at lead generation might be masking a deeper conversion problem in your sales process.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=_0cQITQITUE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-900 font-medium hover:underline inline-flex items-center"
+                >
+                  Watch on YouTube →
+                </a>
+              </div>
             </div>
+
+            {/* Video 2 */}
+            <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/5uzk6iAH1tM"
+                  title="Why Most Sales Meetings Don't Change Anything"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Why Most Sales Meetings Don't Change Anything
+                </h3>
+                <p className="text-base text-gray-700 mb-4">
+                  What's missing from most sales meetings that prevents real behavior change and accountability.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=5uzk6iAH1tM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-900 font-medium hover:underline inline-flex items-center"
+                >
+                  Watch on YouTube →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-sm text-gray-600 italic">
+            More teaching content being added.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION CATEGORIES */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             {/* READ */}
             <div className="bg-white p-8 rounded-lg border border-gray-200">

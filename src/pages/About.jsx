@@ -86,48 +86,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* BELIEFS */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-xl text-gray-900 mb-6 font-semibold">
-            A few things I've learned the hard way:
-          </p>
-          
-          <ul className="space-y-4">
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700 leading-relaxed">
-                Sometimes what looks like a lead problem is really a visibility, conversion, or process problem
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700 leading-relaxed">
-                A good process can make performance less dependent on exceptional individual talent
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700 leading-relaxed">
-                I tend to favor small, well-placed design decisions before jumping to a major overhaul
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700 leading-relaxed">
-                A useful system should make good execution easier for ordinary people — not depend on exceptional people
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700 leading-relaxed">
-                Stability is not about control — it's about clarity
-              </span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
       {/* CREDIBILITY & TRACK RECORD */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
@@ -217,54 +175,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* PRACTICAL APPLICATION */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            What I Focus On
-          </h2>
-          
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            The work I did inside the family flooring business — and the ideas I now share with others — focused on:
-          </p>
-          
-          <ul className="space-y-3 mb-8">
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Designing guardrails instead of policing behavior
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Creating clarity so teams sound confident
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Reducing callbacks, rework, and emotional drain
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-gray-400 mt-1">•</span>
-              <span className="text-lg text-gray-700">
-                Helping owners stop being the bottleneck
-              </span>
-            </li>
-          </ul>
-          
-          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            This isn't about squeezing more out of people.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed font-medium">
-            It's about building businesses that don't rely on heroics to survive.
-          </p>
-        </div>
-      </section>
-
       {/* WHO THIS WORKS BEST FOR */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
@@ -347,27 +257,6 @@ export default function About() {
               <span className="font-semibold">Al Boulogne</span> — Mannington
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* WHY I'M BUILDING THIS */}
-      <section className="py-16 px-4 border-t border-gray-200">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Why I'm Building This
-          </h2>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Nearly two decades inside a family flooring business gave me a front-row seat to where independent dealers quietly lose control, capacity, and profit. I'm building this to share what I've learned — and give back to an industry that shaped me.
-          </p>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            I also have a broader life mission: creating experiences on the water for foster kids, underprivileged kids, and their families — fishing, boating, exploring nature, spending meaningful time outdoors together.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed font-medium">
-            This is part of what I hope this next chapter gives me the capacity to do.
-          </p>
         </div>
       </section>
 

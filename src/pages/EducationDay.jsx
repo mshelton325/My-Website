@@ -28,7 +28,7 @@ export default function EducationDay() {
           </p>
           
           <p className="text-base text-gray-600">
-            Thank you for attending the CCA Education Day session. The resources below are the exact tools referenced during the presentation.
+            Originally shared at CCA Education Day in January 2026, these resources are available whether you attended the session or found them later. Start with one practical tool, not all eight.
           </p>
         </div>
       </section>

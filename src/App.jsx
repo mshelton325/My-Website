@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { useEffect, useLayoutEffect } from 'react';
+import { SEO_PAGES } from './seoPages';
 import Navigation from './components/Navigation';
 
 // NEW PUBLIC PAGES
@@ -36,10 +38,58 @@ import EducationDay from './pages/EducationDay';
 import PrivateNote from './pages/PrivateNote';
 import CcaQr from './pages/CcaQr';
 
+// Reset React Router page navigation to the top while preserving anchor links.
+function ScrollToTopOnNavigation() {
+  const { pathname, hash, key } = useLocation();
+
+  useLayoutEffect(() => {
+    if (!hash) window.scrollTo(0, 0);
+  }, [pathname, hash, key]);
+
+  return null;
+}
+
+function PageMetadata() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const data = SEO_PAGES[pathname] ?? SEO_PAGES['/'];
+    const canonical = 'https://mattshelton.co' + (SEO_PAGES[pathname] ? pathname : '/');
+    document.title = data.title;
+
+    const setMeta = (selector, attribute, value) => {
+      const element = document.querySelector(selector);
+      if (element) element.setAttribute(attribute, value);
+    };
+    setMeta('meta[name="description"]', 'content', data.description);
+    setMeta('meta[property="og:title"]', 'content', data.title);
+    setMeta('meta[property="og:description"]', 'content', data.description);
+    setMeta('meta[property="og:url"]', 'content', canonical);
+    setMeta('link[rel="canonical"]', 'href', canonical);
+
+    const existingRobots = document.querySelector('meta[name="robots"]');
+    if (pathname === '/diagnostic/confirmation') {
+      if (existingRobots) existingRobots.setAttribute('content', 'noindex,follow');
+      else {
+        const tag = document.createElement('meta');
+        tag.setAttribute('name', 'robots');
+        tag.setAttribute('content', 'noindex,follow');
+        document.head.appendChild(tag);
+      }
+    } else if (existingRobots) {
+      existingRobots.remove();
+    }
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <ScrollToTopOnNavigation />
+        <PageMetadata />
         <Routes>
           {/* PUBLIC PAGES WITH NAVIGATION */}
           <Route path="/" element={<><Navigation /><Home /></>} />

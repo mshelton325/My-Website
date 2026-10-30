@@ -1,6 +1,42 @@
 {
   "rewrites": [
     {
+      "source": "/about",
+      "destination": "/seo/about.html"
+    },
+    {
+      "source": "/results-feedback",
+      "destination": "/seo/results-feedback.html"
+    },
+    {
+      "source": "/insights-resources",
+      "destination": "/seo/insights-resources.html"
+    },
+    {
+      "source": "/speaking",
+      "destination": "/seo/speaking.html"
+    },
+    {
+      "source": "/work-with-matt",
+      "destination": "/seo/work-with-matt.html"
+    },
+    {
+      "source": "/ask",
+      "destination": "/seo/ask.html"
+    },
+    {
+      "source": "/education-day",
+      "destination": "/seo/education-day.html"
+    },
+    {
+      "source": "/diagnostic",
+      "destination": "/seo/diagnostic.html"
+    },
+    {
+      "source": "/diagnostic/confirmation",
+      "destination": "/seo/diagnostic/confirmation.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

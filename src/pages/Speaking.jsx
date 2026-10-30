@@ -55,60 +55,18 @@ export default function Speaking() {
       {/* WHAT ATTENDEES SAID */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-            What Attendees Said
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "Matt was inspirational. Could have used his insights 28 years ago."
-              </p>
-              <p className="text-sm text-gray-600">— CCA Member</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "Great presentation. Love the systemized approach for hiring fresh salespeople. We need to convert Tribal knowledge to systems. Would love to hear more about this topic."
-              </p>
-              <p className="text-sm text-gray-600">— CCA Member</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "I would love to get more of the actual details of his systems. We are in desperate need of great SOPs like that."
-              </p>
-              <p className="text-sm text-gray-600">— I-5 Carpet One</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "This was great! Bring him back for more."
-              </p>
-              <p className="text-sm text-gray-600">— CCA Member</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "Amazing, I wish we had more time."
-              </p>
-              <p className="text-sm text-gray-600">— CCA Member</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "90% of the Class stayed AFTER the class for more."
-              </p>
-              <p className="text-sm text-gray-600">— CCA attendee feedback</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="text-lg text-gray-700 italic mb-3">
-                "Excellent speaker"
-              </p>
-              <p className="text-sm text-gray-600">— CCA Member</p>
-            </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">What Attendees Said</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <blockquote className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 italic mb-3">“Matt was inspirational. Could have used his insights 28 years ago.”</p>
+              <p className="text-sm text-gray-600">CCA Member</p>
+            </blockquote>
+            <blockquote className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="text-lg text-gray-700 italic mb-3">“This was great! Bring him back for more.”</p>
+              <p className="text-sm text-gray-600">CCA Member</p>
+            </blockquote>
           </div>
+          <p className="text-center mt-6"><Link to="/results-feedback" className="underline font-medium hover:text-gray-600">See more feedback →</Link></p>
         </div>
       </section>
 
